@@ -1,0 +1,233 @@
+/* ==========================================================================
+   CYPHEROX TECHNOLOGIES — GERMAN HOMEPAGE RESPONSIVE STYLES
+   (Header & Footer responsive behaviors are handled in css/components.css)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LAPTOPS & SMALL SCREENS (<= 1280px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  .hero__container {
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLET LANDSCAPE (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* Hero */
+  .hero {
+    padding-top: calc(var(--header-height) + 40px);
+    padding-bottom: 70px;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .hero__content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__trust {
+    justify-content: center;
+  }
+
+  .hero__visual-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Industries Grid */
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Split Visual Showcase */
+  .split-visual {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .split-visual__content {
+    order: 1;
+  }
+
+  .split-visual__graphic {
+    order: 2;
+  }
+
+  /* Tech Stack */
+  .tech-tab-nav {
+    justify-content: center;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Process */
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Case Studies */
+  .case-studies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Dev Team Grid */
+  .dev-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  /* Consultation Form */
+  .consultation-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLET PORTRAIT (<= 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .service-card {
+    padding: 28px 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .consultation-form-wrapper {
+    padding: 28px 20px;
+  }
+
+  .testimonial-card {
+    padding: 32px 20px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. MOBILE DEVICES (<= 576px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+  :root {
+    --container-padding: 18px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__trust {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-diagram {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .split-visual {
+    padding: 24px 16px;
+  }
+
+  .cta-banner {
+    padding: 60px 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. SMALL PHONES (<= 375px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .stat-card__value {
+    font-size: 32px;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. ACCESSIBILITY: REDUCED MOTION
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

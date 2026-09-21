@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cypherox Technologies | Produktionsreife KI & Software Engineering</title>
+  <meta name="description"
+    content="Cypherox entwickelt produktive KI-Systeme, individuelle Unternehmenssoftware, Cloud-Infrastrukturen und stellt dedizierte Entwicklerteams für anspruchsvolle Unternehmen in Deutschland, Europa, den USA und Großbritannien bereit.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Cypherox Technologies | Produktionsreife KI & Software Engineering">
+  <meta property="og:description"
+    content="Von KI-Anwendungen und Software-Engineering bis hin zu Cloud-Infrastruktur und Data Intelligence: Wir transformieren komplexe Anforderungen in skalierbare Produktivsysteme.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cypherox.com">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2312141a'/%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-weight='bold' font-size='65' fill='%23faf9f6' text-anchor='middle'%3EC%3C/text%3E%3Ccircle cx='75' cy='25' r='12' fill='%23f26e65'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Local Fonts (Poppins) handled in css/components.css -->
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Deferred Scripts -->
+  <script src="js/components.js" defer></script>
+  <script src="js/header-footer.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+
+<body>
+
+  <!-- REUSABLE DYNAMIC HEADER CONTAINER -->
+  <div id="site-header"></div>
+
+  <main id="main-content">
+
+    <!-- ====================================================================
+         SECTION 01 — HERO
+         ==================================================================== -->
+    <section class="hero" id="hero">
+      <canvas id="hero-canvas" class="hero__canvas-bg"></canvas>
+      <div class="hero__container container">
+        <div class="hero__content">
+          <div class="hero__eyebrow-badge">
+            <span class="hero__eyebrow-pulse"></span>
+            <span>Produktionsreife KI- & Software-Entwicklung</span>
+          </div>
+          <h1 class="hero__title">
+            Digitale Produkte, die Ihr Unternehmen <br>
+            <span class="text-gradient">voranbringen.</span>
+          </h1>
+          <p class="hero__subtitle">
+            KI-Anwendungen, maßgeschneiderte Software, Cloud-Infrastruktur und dedizierte Entwicklerteams. Entwickelt und betreut für Unternehmen, die skalierbare Produktivsysteme statt Prototypen benötigen.
+          </p>
+          <div class="hero__actions">
+            <a href="#consultation" class="btn btn--primary btn--large">Gespräch starten</a>
+            <a href="#services" class="btn btn--secondary btn--large">Leistungen entdecken</a>
+          </div>
+          <div class="hero__trust">
+            <div class="hero__stars" aria-label="5 von 5 Sternen">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="hero__trust-text">
+              <strong>4.9/5 Bewertung</strong> von 150+ Unternehmenskunden auf Clutch & Google
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Architecture Schematic Visual -->
+        <div class="hero__visual-wrapper">
+          <div class="hero-schematic">
+            <div class="schematic__header">
+              <span class="schematic__title">Enterprise System Architecture</span>
+              <span class="schematic__status">
+                <span class="schematic__status-dot"></span>
+                <span>Active 99.98%</span>
+              </span>
+            </div>
+            <div class="schematic__nodes">
+              <div class="schematic__node schematic__node--active">
+                <div class="schematic__node-left">
+                  <span class="schematic__node-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><polygon points="12 6 12 12 16 14"/></svg>
+                  </span>
+                  <span class="schematic__node-name">LLM & Multi-Agent Orchestration</span>
+                </div>
+                <span class="schematic__node-badge">AI CORE</span>
+              </div>
+              <div class="schematic__node">
+                <div class="schematic__node-left">
+                  <span class="schematic__node-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                  </span>
+                  <span class="schematic__node-name">Real-Time Data Pipelines & Analytics</span>
+                </div>
+                <span class="schematic__node-badge">DATA MESH</span>
+              </div>
+              <div class="schematic__node">
+                <div class="schematic__node-left">
+                  <span class="schematic__node-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                  </span>
+                  <span class="schematic__node-name">Cloud-Native Infrastructure (AWS/K8s)</span>
+                </div>
+                <span class="schematic__node-badge">DEVOPS</span>
+              </div>
+              <div class="schematic__node">
+                <div class="schematic__node-left">
+                  <span class="schematic__node-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                  </span>
+                  <span class="schematic__node-name">High-Performance Web & Mobile Apps</span>
+                </div>
+                <span class="schematic__node-badge">REACT/NODE</span>
+              </div>
+            </div>
+            <div class="schematic__footer">
+              <span>Produktionsumgebung</span>
+              <span style="color: var(--primary); font-family: var(--font-mono); font-size: 11px;">Zero Downtime Deployments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 02 — KENNZAHLEN (STATS STRIP)
+         ==================================================================== -->
+    <section class="stats-strip" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stat-card__value">
+              <span class="stat-number" data-target="11">0</span><span class="stat-card__suffix">+</span>
+            </div>
+            <div class="stat-card__label">
+              <strong>Jahre Erfahrung</strong>
+              Entwicklung robuster Technologie seit 2015.
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="stat-card__value">
+              <span class="stat-number" data-target="130">0</span><span class="stat-card__suffix">+</span>
+            </div>
+            <div class="stat-card__label">
+              <strong>Ingenieure</strong>
+              in KI, Software, Cloud, Mobile und Data.
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="stat-card__value">
+              <span class="stat-number" data-target="1500">0</span><span class="stat-card__suffix">+</span>
+            </div>
+            <div class="stat-card__label">
+              <strong>Gelieferte Projekte</strong>
+              erfolgreich umgesetzt für Web, Mobile & Enterprise.
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="stat-card__value">
+              <span class="stat-number" data-target="5">0</span><span class="stat-card__suffix"> Regionen</span>
+            </div>
+            <div class="stat-card__label">
+              <strong>Global präsent</strong>
+              Kunden in Deutschland/Europa, UK, USA, VAE und Indien.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 03 — KERNKOMPETENZEN (SERVICES)
+         ==================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Full Stack Engineering</span>
+          <h2 class="section-title">
+            Vier Disziplinen. <br><span class="text-gradient">Ein verantwortlicher Partner.</span>
+          </h2>
+          <p class="section-subtitle">
+            Die meisten Unternehmen koordinieren separate Dienstleister für KI, Software, Cloud und Daten. Bei Übergaben gehen Anforderungen verloren. Cypherox bündelt diese Disziplinen in einem eingespielten Engineering-Team.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: AI & ML -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <span class="service-card__badge">01 &middot; Künstliche Intelligenz</span>
+              <h3 class="service-card__title">KI- & Machine-Learning-Engineering</h3>
+              <p class="service-card__desc">
+                Wir entwickeln KI-Systeme rund um Ihre Daten, Workflows und Geschäftsregeln — mit der Validierung, Integration und Absicherung für den zuverlässigen Produktiveinsatz.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Konzeption und Orchestrierung autonomer KI-Agenten</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Entwicklung und Fine-Tuning von Large Language Models (LLMs)</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Generative KI-Applikationen & RAG-Architekturen</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Computer Vision, NLP und kontinuierliches Modell-Monitoring</span>
+                </li>
+              </ul>
+              <div class="service-card__tags">
+                <span class="service-card__tag">Python</span>
+                <span class="service-card__tag">PyTorch</span>
+                <span class="service-card__tag">LangChain</span>
+                <span class="service-card__tag">OpenAI API</span>
+                <span class="service-card__tag">AWS SageMaker</span>
+              </div>
+            </div>
+            <a href="#consultation" class="service-card__cta">Mehr über KI-Entwicklung erfahren &rarr;</a>
+          </article>
+
+          <!-- Service 2: Software Engineering -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <span class="service-card__badge">02 &middot; Anwendungsentwicklung</span>
+              <h3 class="service-card__title">Software- & Plattform-Engineering</h3>
+              <p class="service-card__desc">
+                Web, Mobile, APIs und Backend-Systeme — gebaut für hohe Skalierbarkeit, langfristige Wartbarkeit und passgenau auf Ihre bestehende technologische Basis abgestimmt.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Maßgeschneiderte Web- und Mobilanwendungen (iOS & Android)</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Moderne API-Architektur und Microservices</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Unternehmens-CMS und skalierbare E-Commerce-Plattformen</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Modernisierung geschäftskritischer Altsysteme (Legacy Modernization)</span>
+                </li>
+              </ul>
+              <div class="service-card__tags">
+                <span class="service-card__tag">React</span>
+                <span class="service-card__tag">Node.js</span>
+                <span class="service-card__tag">TypeScript</span>
+                <span class="service-card__tag">Flutter</span>
+                <span class="service-card__tag">PostgreSQL</span>
+              </div>
+            </div>
+            <a href="#consultation" class="service-card__cta">Mehr über Software-Engineering erfahren &rarr;</a>
+          </article>
+
+          <!-- Service 3: Data & Cloud -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <span class="service-card__badge">03 &middot; Infrastruktur & Daten</span>
+              <h3 class="service-card__title">Data- & Cloud-Engineering</h3>
+              <p class="service-card__desc">
+                Die robuste Basis unter Ihren Anwendungen: Verlässliche Datenflüsse, sichere Cloud-Umgebungen, vollständige Observability und strikte Kostenkontrolle.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Cloud-Architektur, Migration und Multi-Cloud-Strategie</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Design robuster Datenpipelines und Systemintegration</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>DevOps-Automatisierung, Infrastructure as Code (IaC) & CI/CD</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Cloud-Sicherheit, Compliance und Kostenoptimierung</span>
+                </li>
+              </ul>
+              <div class="service-card__tags">
+                <span class="service-card__tag">AWS</span>
+                <span class="service-card__tag">Azure</span>
+                <span class="service-card__tag">Google Cloud</span>
+                <span class="service-card__tag">Kubernetes</span>
+                <span class="service-card__tag">Terraform</span>
+              </div>
+            </div>
+            <a href="#consultation" class="service-card__cta">Mehr über Cloud & Data erfahren &rarr;</a>
+          </article>
+
+          <!-- Service 4: Consulting -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <span class="service-card__badge">04 &middot; Strategie & Architektur</span>
+              <h3 class="service-card__title">Produkt- & Technologieberatung</h3>
+              <p class="service-card__desc">
+                Entscheidungen über Systemarchitektur, Scope und technologische Ausrichtung vor der ersten Zeile Code entscheiden maßgeblich über den Projekterfolg.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Technisches Architektur-Review und System-Audits</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>AI-Readiness-Assessment und Machbarkeitsprüfung</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Produkt-Roadmap, Scoping und Meilensteinplanung</span>
+                </li>
+                <li class="service-card__feature">
+                  <svg class="service-card__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Technologieauswahl und neutrale Tool-Evaluierung</span>
+                </li>
+              </ul>
+              <div class="service-card__tags">
+                <span class="service-card__tag">System Design</span>
+                <span class="service-card__tag">API Strategy</span>
+                <span class="service-card__tag">Cloud Planning</span>
+                <span class="service-card__tag">AI Feasibility</span>
+              </div>
+            </div>
+            <a href="#consultation" class="service-card__cta">Mit einem Berater sprechen &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ====================================================================
+         SECTION 04 — HORIZONTAL ACCORDION (FOUR AREAS)
+         ==================================================================== -->
+    <section class="section accordion-section" id="four-areas">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Vier Disziplinen</span>
+          <h2 class="section-title">
+            Vier Kernbereiche. <br>
+            <span class="text-gradient">Ein verantwortlicher Partner.</span>
+          </h2>
+          <p class="section-subtitle">
+            Die meisten Unternehmen beauftragen separate Dienstleister für KI, Software, Cloud und Daten. Bei Cypherox bündeln wir diese Funktionen unter einem Engineering-Team, damit alles reibungslos ineinandergreift.
+          </p>
+        </div>
+
+        
+        
+        <div class="areas-grid">
+          
+          <!-- Card 1: AI & ML -->
+          <div class="area-card">
+            <div class="area-card__front">
+              <div class="area-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><polygon points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h3 class="area-title">KI & Agenten Entwicklung</h3>
+              <p class="area-desc">
+                Wir bauen KI-Systeme rund um Ihre Daten, Workflows und Geschäftsregeln, inklusive der Evaluierung, Integration und Kontrollen für den produktiven Einsatz.
+              </p>
+              <div class="area-tech-tags">
+                <span class="tag">OpenAI</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">LangChain</span>
+              </div>
+            </div>
+            
+            <div class="area-card__reveal">
+              <h4 class="reveal-title">Fähigkeiten:</h4>
+              <ul class="reveal-list">
+                <li>Design & Orchestrierung von KI-Agenten</li>
+                <li>LLM-Entwicklung und Fine-Tuning</li>
+                <li>Generative KI-Anwendungen</li>
+                <li>Computer Vision und NLP</li>
+                <li>Evaluation & Monitoring von ML-Modellen</li>
+              </ul>
+              <a href="#consultation" class="btn btn--primary btn--full">KI Lösungen anfragen</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Software Engineering -->
+          <div class="area-card">
+            <div class="area-card__front">
+              <div class="area-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              </div>
+              <h3 class="area-title">Software & Enterprise Apps</h3>
+              <p class="area-desc">
+                Performante, intuitive Web- und Mobilanwendungen. Wir bauen Systeme, die mit dem Unternehmen wachsen, statt alle zwei Jahre ersetzt werden zu müssen.
+              </p>
+              <div class="area-tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+            
+            <div class="area-card__reveal">
+              <h4 class="reveal-title">Fähigkeiten:</h4>
+              <ul class="reveal-list">
+                <li>Produkte & Features schneller ausliefern</li>
+                <li>Beseitigung von Engineering-Bottlenecks</li>
+                <li>Moderne Frontend- und Backend-Entwicklung</li>
+                <li>API-Design und Integration</li>
+                <li>Performance-Optimierung</li>
+              </ul>
+              <a href="#consultation" class="btn btn--primary btn--full">Software anfragen</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Data Intelligence -->
+          <div class="area-card">
+            <div class="area-card__front">
+              <div class="area-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <h3 class="area-title">Data Intelligence & Analytics</h3>
+              <p class="area-desc">
+                Gute Entscheidungen erfordern präzise, aktuelle Daten. Wir entwickeln Pipelines, die Unternehmensdaten direkt dort verfügbar machen, wo Entscheidungen getroffen werden.
+              </p>
+              <div class="area-tech-tags">
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">Snowflake</span>
+              </div>
+            </div>
+            
+            <div class="area-card__reveal">
+              <h4 class="reveal-title">Fähigkeiten:</h4>
+              <ul class="reveal-list">
+                <li>Single Source of Truth Konsolidierung</li>
+                <li>Automatisierte Datenextraktion</li>
+                <li>Vektordatenbanken für KI</li>
+                <li>Echtzeitfähige Streaming-Pipelines</li>
+                <li>Prognosemodelle für die Planung</li>
+              </ul>
+              <a href="#consultation" class="btn btn--primary btn--full">Datenlösungen anfragen</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Cloud & DevOps -->
+          <div class="area-card">
+            <div class="area-card__front">
+              <div class="area-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <h3 class="area-title">Cloud & Infrastruktur</h3>
+              <p class="area-desc">
+                Skalierbare Container-Infrastruktur mit automatisierter CI/CD, Observability und Zero-Trust-Sicherheit für einen reibungslosen, effizienten Betrieb.
+              </p>
+              <div class="area-tech-tags">
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+              </div>
+            </div>
+            
+            <div class="area-card__reveal">
+              <h4 class="reveal-title">Fähigkeiten:</h4>
+              <ul class="reveal-list">
+                <li>Automatisierte CI/CD Pipelines</li>
+                <li>Cloud-Migration und Architektur</li>
+                <li>Zero-Trust-Sicherheit</li>
+                <li>Volle Transparenz über Systemgesundheit</li>
+                <li>Betriebskosten senken durch Automatisierung</li>
+              </ul>
+              <a href="#consultation" class="btn btn--primary btn--full">Infrastruktur anfragen</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 07 — LIEFERPHILOSOPHIE (HOW WE WORK)
+         ==================================================================== -->
+    <section class="section section--alt" id="why-choose-us">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Lieferphilosophie</span>
+          <h2 class="section-title">
+            Entwickelt für Geschwindigkeit, <br>
+            <span class="text-gradient">gebaut für Großprojekte.</span>
+          </h2>
+          <p class="section-subtitle">
+            Geschwindigkeit ohne Struktur erzeugt spätere Probleme. Struktur ohne Geschwindigkeit führt zu Verzögerungen. Wir bauen Systeme, die termingerecht live gehen und langfristig wartbar bleiben.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <span class="process-card__number">01</span>
+            <h3 class="process-card__title">Früh ausliefern</h3>
+            <p class="process-card__desc">
+              Lauffähige Software erreicht Ihre Umgebung in Wochen. Iterative Releases schaffen messbaren Geschäftswert, bevor das Gesamtprojekt abgeschlossen ist.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-card__number">02</span>
+            <h3 class="process-card__title">Für Wandel konstruieren</h3>
+            <p class="process-card__desc">
+              Jedes System verkraftet neue Anforderungen, Schnittstellen und Laststeigerungen ohne aufwendige Neuentwicklung. Modularität ist unser Standard.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-card__number">03</span>
+            <h3 class="process-card__title">Konsequent testen</h3>
+            <p class="process-card__desc">
+              Automatisierte Testabdeckung, strukturierte Code Reviews und kontinuierliche Deployment-Validierung sind fest verankert. Qualität ist das Ergebnis präziser Prozesse.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-card__number">04</span>
+            <h3 class="process-card__title">Mit Transparenz betreiben</h3>
+            <p class="process-card__desc">
+              Integrierte Überwachung, zentrales Logging und Alerting. Sie behalten jederzeit den vollen Überblick über Systemgesundheit und Handlungsbedarf.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 08 — TECHNOLOGIE-EXPERTISE (TECH STACK)
+         ==================================================================== -->
+    <section class="section" id="tech-stack">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Technische Tiefe</span>
+          <h2 class="section-title">
+            Kompetenz über moderne <br>
+            <span class="text-gradient">Technologien hinweg.</span>
+          </h2>
+          <p class="section-subtitle">
+            Unsere Ingenieure arbeiten mit den Stacks, die Ihr Projekt erfordert. Wir wählen Werkzeuge nach dem Problem aus, nicht nach Modetrends. Ihre Anforderungen bestimmen die Technologie.
+          </p>
+        </div>
+
+        <div class="tech-tabs-wrapper">
+          <div class="tech-tabs-nav" role="tablist">
+            <button type="button" class="tech-tab-btn is-active" data-tab="tab-ai" role="tab" aria-selected="true">Künstliche Intelligenz</button>
+            <button type="button" class="tech-tab-btn" data-tab="tab-frontend" role="tab" aria-selected="false">Frontend & Web</button>
+            <button type="button" class="tech-tab-btn" data-tab="tab-backend" role="tab" aria-selected="false">Backend & APIs</button>
+            <button type="button" class="tech-tab-btn" data-tab="tab-cloud" role="tab" aria-selected="false">Cloud & DevOps</button>
+            <button type="button" class="tech-tab-btn" data-tab="tab-data" role="tab" aria-selected="false">Datenbanken & Analytics</button>
+          </div>
+
+          <!-- AI Tab -->
+          <div class="tech-tab-pane is-active" id="tab-ai" role="tabpanel">
+            <div class="tech-badges-grid">
+              <div class="tech-chip"><span class="tech-chip__dot"></span>OpenAI API</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Claude / Anthropic</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Gemini</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Llama 3</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>PyTorch</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>TensorFlow</div>
+            </div>
+          </div>
+
+          <!-- Frontend Tab -->
+          <div class="tech-tab-pane" id="tab-frontend" role="tabpanel">
+            <div class="tech-badges-grid">
+              <div class="tech-chip"><span class="tech-chip__dot"></span>React.js</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Next.js</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>TypeScript</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Vue.js</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Angular</div>
+            </div>
+          </div>
+
+          <!-- Backend Tab -->
+          <div class="tech-tab-pane" id="tab-backend" role="tabpanel">
+            <div class="tech-badges-grid">
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Node.js</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Python (FastAPI)</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Java / Spring</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>PHP / Laravel</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>.NET Core</div>
+            </div>
+          </div>
+
+          <!-- Cloud Tab -->
+          <div class="tech-tab-pane" id="tab-cloud" role="tabpanel">
+            <div class="tech-badges-grid">
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Amazon Web Services (AWS)</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Microsoft Azure</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Google Cloud Platform</div>
+            </div>
+          </div>
+
+          <!-- Data Tab -->
+          <div class="tech-tab-pane" id="tab-data" role="tabpanel">
+            <div class="tech-badges-grid">
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Snowflake</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Databricks</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Google BigQuery</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Power BI</div>
+              <div class="tech-chip"><span class="tech-chip__dot"></span>Tableau</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 09 — DEDIZIERTE ENTWICKLERTEAMS (DEVELOPER PROFILES)
+         ==================================================================== -->
+    <section class="section section--alt" id="developer-profiles">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Dedizierte Teams</span>
+          <h2 class="section-title">
+            Erweitern Sie Ihr <br><span class="text-gradient">Engineering-Team.</span>
+          </h2>
+          <p class="section-subtitle">
+            Ergänzen Sie Ihr bestehendes Entwicklungsteam oder stellen Sie ein dediziertes Projektteam zusammen. Jeder Entwickler arbeitet direkt in Ihren Tools, Prozessen und Zeitzonenanforderungen.
+          </p>
+        </div>
+
+        <div class="dev-grid">
+          <!-- Dev 1: Hardik -->
+          <div class="dev-card">
+            <div>
+              <div class="dev-card__header">
+                <div class="dev-card__avatar">H</div>
+                <div class="dev-card__info">
+                  <h3>Hardik</h3>
+                  <p class="dev-card__role">Senior AI & ML Engineer</p>
+                  <span class="dev-card__status">
+                    <span class="dev-card__status-dot"></span>
+                    <span>Sofort verfügbar</span>
+                  </span>
+                </div>
+              </div>
+              <p class="dev-card__desc">
+                Entwickelt produktionsreife KI-Systeme mit LLM-Integration, Agenten-Orchestrierung und ML-Pipelines. Übernimmt Modellevaluierung, RAG-Architekturen und Deployment.
+              </p>
+              <div class="dev-card__skills-title">Skills:</div>
+              <div class="dev-card__skills">
+                <span class="dev-card__skill">Python</span>
+                <span class="dev-card__skill">PyTorch</span>
+                <span class="dev-card__skill">LangChain</span>
+                <span class="dev-card__skill">OpenAI API</span>
+                <span class="dev-card__skill">AWS SageMaker</span>
+                <span class="dev-card__skill">FastAPI</span>
+              </div>
+            </div>
+            <a href="#consultation" class="btn btn--primary btn--full">Entwickler anfragen</a>
+          </div>
+
+          <!-- Dev 2: Krupa -->
+          <div class="dev-card">
+            <div>
+              <div class="dev-card__header">
+                <div class="dev-card__avatar">K</div>
+                <div class="dev-card__info">
+                  <h3>Krupa</h3>
+                  <p class="dev-card__role">Senior Full Stack Engineer</p>
+                  <span class="dev-card__status">
+                    <span class="dev-card__status-dot"></span>
+                    <span>Sofort verfügbar</span>
+                  </span>
+                </div>
+              </div>
+              <p class="dev-card__desc">
+                Realisierte Web- und Mobilanwendungen über Frontend, Backend und APIs hinweg. Beherrscht moderne Frameworks, relationale Datenbanken und Cloud-Pipelines.
+              </p>
+              <div class="dev-card__skills-title">Skills:</div>
+              <div class="dev-card__skills">
+                <span class="dev-card__skill">React</span>
+                <span class="dev-card__skill">Node.js</span>
+                <span class="dev-card__skill">TypeScript</span>
+                <span class="dev-card__skill">PostgreSQL</span>
+                <span class="dev-card__skill">Docker</span>
+                <span class="dev-card__skill">AWS</span>
+              </div>
+            </div>
+            <a href="#consultation" class="btn btn--primary btn--full">Entwickler anfragen</a>
+          </div>
+
+          <!-- Dev 3: Akash -->
+          <div class="dev-card">
+            <div>
+              <div class="dev-card__header">
+                <div class="dev-card__avatar">A</div>
+                <div class="dev-card__info">
+                  <h3>Akash</h3>
+                  <p class="dev-card__role">Senior Cloud & DevOps Engineer</p>
+                  <span class="dev-card__status">
+                    <span class="dev-card__status-dot"></span>
+                    <span>Sofort verfügbar</span>
+                  </span>
+                </div>
+              </div>
+              <p class="dev-card__desc">
+                Konzipiert Cloud-Infrastrukturen mit automatisierter Bereitstellung, Monitoring und Sicherheitsarchitektur: Container-Orchestrierung, IaC und Kostenoptimierung.
+              </p>
+              <div class="dev-card__skills-title">Skills:</div>
+              <div class="dev-card__skills">
+                <span class="dev-card__skill">AWS</span>
+                <span class="dev-card__skill">Terraform</span>
+                <span class="dev-card__skill">Kubernetes</span>
+                <span class="dev-card__skill">Docker</span>
+                <span class="dev-card__skill">CI/CD Pipelines</span>
+                <span class="dev-card__skill">Linux</span>
+              </div>
+            </div>
+            <a href="#consultation" class="btn btn--primary btn--full">Entwickler anfragen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 10 — PROJEKTERFOLGE AUS DER PRAXIS (CASE STUDIES)
+         ==================================================================== -->
+    <section class="section" id="case-studies">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Nachgewiesene Projekterfolge</span>
+          <h2 class="section-title">
+            Reale Ergebnisse in <br><span class="text-gradient">anspruchsvollen Branchen.</span>
+          </h2>
+          <p class="section-subtitle">
+            Produktivsysteme im echten Einsatz, keine oberflächlichen Demos. Jedes Projekt ging von den initialen Anforderungen über die Systemarchitektur bis zum erfolgreichen Produktiv-Deployment.
+          </p>
+        </div>
+
+        <div class="case-studies-grid">
+          <!-- Case 1: Healthcare -->
+          <div class="case-card">
+            <span class="case-card__category">Healthcare</span>
+            <h3 class="case-card__title">KI-Dokumentenverarbeitung & Extraktion</h3>
+            <p class="case-card__desc">
+              Automatisierte Erfassung klinischer Dokumente und drastische Reduktion manueller Prüfzeiten bei hohem Dokumentenaufkommen.
+            </p>
+            <div class="case-card__details">
+              <div class="case-card__row">
+                <span class="case-card__label">Herausforderung:</span>
+                <span class="case-card__text">Tausende wöchentliche Dokumente banden klinisches Personal; manuelle Datenerfassung führte zu Verzögerungen.</span>
+              </div>
+              <div class="case-card__row">
+                <span class="case-card__label">Lösung & Ergebnis:</span>
+                <span class="case-card__text">NLP-Pipeline zur Klassifikation und Informationsextraktion, angebunden an bestehende Patientensysteme via gesicherter APIs.</span>
+              </div>
+              <div class="case-card__tech">
+                <span class="case-card__tech-pill">Python</span>
+                <span class="case-card__tech-pill">NLP</span>
+                <span class="case-card__tech-pill">FastAPI</span>
+                <span class="case-card__tech-pill">AWS</span>
+                <span class="case-card__tech-pill">PostgreSQL</span>
+                <span class="case-card__tech-pill">Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2: Fintech -->
+          <div class="case-card">
+            <span class="case-card__category">FinTech</span>
+            <h3 class="case-card__title">Echtzeit-Betrugserkennung & Monitoring</h3>
+            <p class="case-card__desc">
+              Bereitstellung einer Transaktionsüberwachung zur Erkennung von Anomalien in Echtzeit mit automatisierter Weiterleitung an Prüfteams.
+            </p>
+            <div class="case-card__details">
+              <div class="case-card__row">
+                <span class="case-card__label">Herausforderung:</span>
+                <span class="case-card__text">Altsysteme übersahen komplexe Betrugsmuster und erzeugten hohe Raten an Fehlalarmen (False Positives).</span>
+              </div>
+              <div class="case-card__row">
+                <span class="case-card__label">Lösung & Ergebnis:</span>
+                <span class="case-card__text">Maßgeschneidertes ML-Modell auf historischen Transaktionsdaten mit konfigurierbarem Alert-Dashboard und Case-Management.</span>
+              </div>
+              <div class="case-card__tech">
+                <span class="case-card__tech-pill">Python</span>
+                <span class="case-card__tech-pill">TensorFlow</span>
+                <span class="case-card__tech-pill">Kafka</span>
+                <span class="case-card__tech-pill">PostgreSQL</span>
+                <span class="case-card__tech-pill">React</span>
+                <span class="case-card__tech-pill">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 3: Logistics -->
+          <div class="case-card">
+            <span class="case-card__category">Logistik & Flotte</span>
+            <h3 class="case-card__title">Dynamische Tourenoptimierung & Disposition</h3>
+            <p class="case-card__desc">
+              Ablösung manueller Disposition durch ein automatisiertes Routensystem mit reduzierten Planungszeiten und höherer Liefergenauigkeit.
+            </p>
+            <div class="case-card__details">
+              <div class="case-card__row">
+                <span class="case-card__label">Herausforderung:</span>
+                <span class="case-card__text">Manuelle Tourenplanung über Hunderte Stopps führte zu Ineffizienzen und erhöhten Betriebskosten.</span>
+              </div>
+              <div class="case-card__row">
+                <span class="case-card__label">Lösung & Ergebnis:</span>
+                <span class="case-card__text">Tourenoptimierungs-Engine mit Live-Verkehrsdaten, integriert in Lagerverwaltung und mobile Fahrer-Apps.</span>
+              </div>
+              <div class="case-card__tech">
+                <span class="case-card__tech-pill">Python</span>
+                <span class="case-card__tech-pill">React Native</span>
+                <span class="case-card__tech-pill">Node.js</span>
+                <span class="case-card__tech-pill">Google Maps API</span>
+                <span class="case-card__tech-pill">PostgreSQL</span>
+                <span class="case-card__tech-pill">AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 11 — KUNDENSTIMMEN (TESTIMONIALS)
+         ==================================================================== -->
+    <section class="section section--alt" id="testimonials">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Kundenfeedback</span>
+          <h2 class="section-title">
+            Was unsere <br><span class="text-gradient">Kunden sagen.</span>
+          </h2>
+        </div>
+
+        <div class="testimonials-slider">
+
+          <div class="testimonials-track">
+            <!-- Review 1: Britney -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote-mark">&ldquo;</div>
+            <blockquote class="testimonial-card__quote">
+              Ich bin Britney und leite die Conversion-Optimierung bei Acadia, einer Digitalmarketing-Agentur. Ich arbeite seit über zwei, bald drei Jahren mit dem Cypherox-Team zusammen. Sie sind schnelle, fleißige und ausgesprochen gewissenhafte Entwickler. Ein absolut verlässlicher Partner, mit dem die Zusammenarbeit große Freude macht.
+            </blockquote>
+            <div class="testimonial-card__author">Britney</div>
+            <div class="testimonial-card__role">Head of Conversion Optimization, Acadia</div>
+          </div>
+
+          <!-- Review 2: Jeff -->
+          <div class="testimonial-card" >
+            <div class="testimonial-card__quote-mark">&ldquo;</div>
+            <blockquote class="testimonial-card__quote">
+              Eine herausragende Webdesign- und Entwicklungserfahrung. Ihr Team kombinierte Kreativität mit hoher Funktionalität, um eine erstklassige Website zu liefern, die Besucher begeistert und messbare Ergebnisse erzielt. Höchst professionell und ergebnisorientiert.
+            </blockquote>
+            <div class="testimonial-card__author">Jeff</div>
+            <div class="testimonial-card__role">Geschäftsführer & Klient</div>
+          </div>
+
+          <!-- Review 3: Gabrielle -->
+          <div class="testimonial-card" >
+            <div class="testimonial-card__quote-mark">&ldquo;</div>
+            <blockquote class="testimonial-card__quote">
+              Ich möchte meine Erfahrung mit Cypherox Technologies bei der gemeinsamen Entwicklung einer unserer Mobile Apps und Websites teilen: Die Teammitglieder waren aufmerksam, gewissenhaft, stets erreichbar und fachlich brillant. Ich kann die Zusammenarbeit uneingeschränkt empfehlen.
+            </blockquote>
+            <div class="testimonial-card__author">Gabrielle</div>
+            <div class="testimonial-card__role">Produktverantwortliche & Klientin</div>
+          </div>
+
+          <!-- Review 4: Becke -->
+          <div class="testimonial-card" >
+            <div class="testimonial-card__quote-mark">&ldquo;</div>
+            <blockquote class="testimonial-card__quote">
+              Für ein anspruchsvolles, individuelles CRM-System war die Zusammenarbeit mit Cypherox nahtlos von Beginn bis zum Abschluss. Das Produkt wurde pünktlich geliefert, und das Team hat alles dafür getan, dass wir jeden Schritt verstehen. Wirklich exzellenter Service.
+            </blockquote>
+            <div class="testimonial-card__author">Becke</div>
+            <div class="testimonial-card__role">Operations Lead & Klientin</div>
+          </div>
+
+          <!-- Review 5: Lauren -->
+          <div class="testimonial-card" >
+            <div class="testimonial-card__quote-mark">&ldquo;</div>
+            <blockquote class="testimonial-card__quote">
+              Ich kann Cypherox Technologies wärmstens empfehlen, wenn Sie eine individuelle CRM- oder E-Commerce-Plattform benötigen. Sie übertreffen die Erwartungen ihrer Kunden in jeder Projektphase mit bemerkenswerter Kompetenz und Hingabe.
+            </blockquote>
+            <div class="testimonial-card__author">Lauren</div>
+            <div class="testimonial-card__role">Projektleitung & Klientin</div>
+          </div>
+          </div>
+          
+          <!-- Slider Dots -->
+          <div class="testimonials-nav" aria-label="Testimonial Navigation">
+            <button type="button" class="testimonials-dot is-active" data-index="0" aria-label="Testimonial 1"></button>
+            <button type="button" class="testimonials-dot" data-index="1" aria-label="Testimonial 2"></button>
+            <button type="button" class="testimonials-dot" data-index="2" aria-label="Testimonial 3"></button>
+            <button type="button" class="testimonials-dot" data-index="3" aria-label="Testimonial 4"></button>
+            <button type="button" class="testimonials-dot" data-index="4" aria-label="Testimonial 5"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 12 — BERATUNGSGESPRÄCH & KONTAKT (#consultation)
+         ==================================================================== -->
+    <section class="consultation-section" id="consultation">
+      <div class="container">
+        <div class="consultation-grid">
+          <!-- Left Info Side -->
+          <div class="consultation-info">
+            <span class="eyebrow">Erstgespräch</span>
+            <h2 class="section-title">
+              Lassen Sie uns etwas <br>
+              <span class="text-gradient">Relevantes bauen.</span>
+            </h2>
+            <p class="section-subtitle">
+              Kein Verkaufsgespräch. Wir besprechen, was Sie entwickeln möchten, welche Rahmenbedingungen gelten und welcher technische Pfad der pragmatischste ist — im direkten Dialog mit einem erfahrenen Ingenieur.
+            </p>
+
+            <div class="consultation-person">
+              <div class="consultation-person__avatar">JD</div>
+              <div>
+                <div class="consultation-person__name">James Davidson</div>
+                <div class="consultation-person__role">Head of Client Solutions</div>
+              </div>
+            </div>
+
+            <div class="consultation-contacts">
+              <div class="consultation-item">
+                <span class="consultation-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <a href="mailto:hello@cypherox.com" style="color:#0f172a; font-weight:600;">hello@cypherox.com</a>
+              </div>
+              <div class="consultation-item">
+                <span class="consultation-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <a href="tel:+442012345678" style="color:#0f172a; font-weight:600;">+44 20 1234 5678</a>
+              </div>
+              <div class="consultation-item">
+                <span class="consultation-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span>London, United Kingdom &middot; Betreuung von Unternehmen im DACH-Raum & Europa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form Side -->
+          <div class="consultation-form-wrapper">
+            <form id="consultation-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="fullName">Vor- und Nachname *</label>
+                  <input class="form-input" type="text" id="fullName" name="fullName" placeholder="z. B. Max Mustermann" required>
+                  <span class="form-error-msg">Bitte geben Sie Ihren Namen ein.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="workEmail">Geschäftliche E-Mail *</label>
+                  <input class="form-input" type="email" id="workEmail" name="workEmail" placeholder="name@unternehmen.de" required>
+                  <span class="form-error-msg">Gültige geschäftliche E-Mail erforderlich.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="phone">Telefonnummer (optional)</label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="+49 30 12345678">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="company">Unternehmen *</label>
+                  <input class="form-input" type="text" id="company" name="company" placeholder="Name Ihres Unternehmens" required>
+                  <span class="form-error-msg">Bitte Unternehmensnamen angeben.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="service">Wobei können wir helfen? *</label>
+                <select class="form-input form-select" id="service" name="service" required>
+                  <option value="" disabled selected>Bitte Leistungsbereich auswählen</option>
+                  <option value="ai">KI- & Machine-Learning-Engineering</option>
+                  <option value="software">Software- & Plattform-Engineering</option>
+                  <option value="data">Data Intelligence & Analytics</option>
+                  <option value="cloud">Cloud-Infrastruktur & DevOps</option>
+                  <option value="transformation">Digitale Transformation & Architektur</option>
+                  <option value="product">Produktentwicklung</option>
+                  <option value="team">Dediziertes Entwicklerteam</option>
+                  <option value="other">Sonstiges / Erstberatung</option>
+                </select>
+                <span class="form-error-msg">Bitte wählen Sie einen Bereich.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Erzählen Sie uns von Ihrem Projekt *</label>
+                <textarea class="form-input" id="message" name="message" rows="4" placeholder="Beschreiben Sie Ihre Ziele, geplante Timelines oder technische Rahmenbedingungen..." required></textarea>
+                <span class="form-error-msg">Bitte kurze Beschreibung eingeben.</span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large btn--full">Gespräch starten</button>
+              <p class="form-privacy">
+                Mit dem Absenden erklären Sie sich mit unserer Datenschutzerklärung einverstanden. Wir garantieren Vertraulichkeit und antworten innerhalb von 24 Stunden.
+              </p>
+            </form>
+
+            <div class="form-success-box" id="form-success-box">
+              <div class="form-success-box__icon">✅</div>
+              <h3 class="form-success-box__title">Vielen Dank für Ihre Anfrage!</h3>
+              <p class="form-success-box__desc">
+                Wir haben Ihre Projektdaten erhalten. Ein erfahrener Ingenieur aus unserem Team wird sich innerhalb von 24 Stunden direkt mit Ihnen in Verbindung setzen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- REUSABLE DYNAMIC FOOTER CONTAINER -->
+  <div id="site-footer"></div>
+
+</body>
+
+</html>
