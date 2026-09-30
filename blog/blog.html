@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Engineering Journal &amp; Architectural Insights | Cypherox Technologies</title>
+  <meta name="description"
+    content="Entdecken Sie fundierte Fachartikel, Architektur-Blaupausen und Benchmarks zu produktionsreifer KI, Cloud-Infrastruktur, FinTech und verteilten Systemen von den Cypherox-Architekten.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2312141a'/%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-weight='bold' font-size='65' fill='%23faf9f6' text-anchor='middle'%3EC%3C/text%3E%3Ccircle cx='75' cy='25' r='12' fill='%23f26e65'/%3E%3C/svg%3E">
+
+  <!-- Single Unified Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Deferred Scripts -->
+  <script src="../js/components.js" defer></script>
+  <script src="../js/header-footer.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/animations.js" defer></script>
+</head>
+
+<body>
+
+  <!-- REUSABLE DYNAMIC HEADER CONTAINER -->
+  <div id="site-header"></div>
+
+  <main id="main-content">
+
+    <!-- ====================================================================
+         BREADCRUMB NAVIGATION
+         ==================================================================== -->
+    <div class="industry-breadcrumb-wrapper">
+      <div class="container">
+        <nav class="service-breadcrumb" aria-label="Breadcrumb">
+          <div class="service-breadcrumb__item">
+            <a href="/index.html" class="service-breadcrumb__link">Home</a>
+            <span class="service-breadcrumb__separator">/</span>
+          </div>
+          <div class="service-breadcrumb__item">
+            <span class="service-breadcrumb__link">Insights</span>
+            <span class="service-breadcrumb__separator">/</span>
+          </div>
+          <div class="service-breadcrumb__item">
+            <span class="service-breadcrumb__current" aria-current="page">Engineering Journal</span>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         HERO SECTION: EDITORIAL MASTHEAD & INTEGRATED TOOLBAR
+         ==================================================================== -->
+    <header class="blog-hero">
+      <div class="container">
+        <div class="blog-hero__content">
+          <div class="blog-hero__badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Cypherox Engineering Journal • Production Research</span>
+          </div>
+
+          <h1 class="blog-hero__title">
+            Architectural Rigor. <br>
+            <span class="text-gradient">Real-World Engineering Insights.</span>
+          </h1>
+
+          <p class="blog-hero__subtitle">
+            In-depth technical essays, cloud scalability benchmarks, sovereign AI blueprints, and engineering culture teardowns
+            written by Cypherox Principal Architects and Technical Leads.
+          </p>
+        </div>
+
+        <!-- Integrated Toolbar: Filter Pills + Search -->
+        <div class="blog-toolbar">
+          <div class="blog-tags-list" role="tablist">
+            <button class="blog-tag-pill is-active" data-category="all" role="tab" aria-selected="true">All Disciplines (7)</button>
+            <button class="blog-tag-pill" data-category="ai-ml" role="tab" aria-selected="false">Artificial Intelligence (2)</button>
+            <button class="blog-tag-pill" data-category="fintech" role="tab" aria-selected="false">FinTech &amp; Banking (1)</button>
+            <button class="blog-tag-pill" data-category="cloud-devops" role="tab" aria-selected="false">Cloud &amp; DevOps (2)</button>
+            <button class="blog-tag-pill" data-category="architecture" role="tab" aria-selected="false">Software Architecture (2)</button>
+          </div>
+
+          <div class="blog-search-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="blog-search-input" class="blog-search-input" placeholder="Search dispatches by keyword..." aria-label="Search articles">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         BLOG ARTICLES FEED SECTION
+         ==================================================================== -->
+    <section class="blog-feed-section">
+      <div class="container">
+        <div class="blog-feed-grid" id="blog-grid">
+
+          <!-- Card 1: Sovereign AI Systems -->
+          <article class="blog-card" data-category="ai-ml">
+            <div class="blog-card__header">
+              <span class="blog-card__category-badge">AI &amp; Governance</span>
+              <span class="blog-card__readtime">Sept 28, 2026 • 8 min read</span>
+            </div>
+
+            <div class="blog-card__body">
+              <h3 class="blog-card__title">
+                <a href="/blog/blog-detail.html">
+                  Building Sovereign Agentic AI Systems: Self-Hosted LLMs &amp; Air-Gapped RAG Under EU Compliance
+                </a>
+              </h3>
+              <p class="blog-card__desc">
+                How enterprise engineering teams deploy performant multi-agent reasoning frameworks on private European
+                infrastructure while satisfying strict GDPR, BaFin, and EU AI Act governance requirements without sacrificing
+                sub-second retrieval latency.
+              </p>
+              <div class="blog-card__tags">
+                <span class="blog-card__tag">#SovereignAI</span>
+                <span class="blog-card__tag">#vLLM</span>
+                <span class="blog-card__tag">#EUAIAct</span>
+                <span class="blog-card__tag">#GDPR</span>
+              </div>
+            </div>
+
+            <div class="blog-card__footer">
+              <div class="blog-card__author">
+                <div class="blog-author-avatar">FB</div>
+                <span>Dr. Florian Becker</span>
+              </div>
+              <a href="/blog/blog-detail.html" class="blog-card__link">
+                <span>Read Article</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: FinTech & Banking -->
+          <article class="blog-card" data-category="fintech">
+            <div class="blog-card__header">
+              <span class="blog-card__category-badge">FinTech &amp; Banking</span>
+              <span class="blog-card__readtime">Sept 22, 2026 • 6 min read</span>
+            </div>
+
+            <div class="blog-card__body">
+              <h3 class="blog-card__title">
+                <a href="/blog/blog-detail.html">
+                  Event-Driven Core Banking: Why We Replaced Monolithic ACID Transactions with Kafka &amp; CQRS
+                </a>
+              </h3>
+              <p class="blog-card__desc">
+                How transactional outbox patterns, idempotent consumers, and strict schema registries enabled 99.999%
+                availability during peak payment volumes without ledger discrepancies.
+              </p>
+              <div class="blog-card__tags">
+                <span class="blog-card__tag">#Kafka</span>
+                <span class="blog-card__tag">#CQRS</span>
+                <span class="blog-card__tag">#FinTech</span>
+                <span class="blog-card__tag">#EventDriven</span>
+              </div>
+            </div>
+
+            <div class="blog-card__footer">
+              <div class="blog-card__author">
+                <div class="blog-author-avatar">MS</div>
+                <span>Marcus Schmidt</span>
+              </div>
+              <a href="/blog/blog-detail.html" class="blog-card__link">
+                <span>Read Article</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Cloud & FinOps -->
+          <article class="blog-card" data-category="cloud-devops">
+            <div class="blog-card__header">
+              <span class="blog-card__category-badge">Cloud &amp; FinOps</span>
+              <span class="blog-card__readtime">Sept 14, 2026 • 7 min read</span>
+            </div>
+
+            <div class="blog-card__body">
+              <h3 class="blog-card__title">
+                <a href="/blog/blog-detail.html">
+                  Kubernetes FinOps in Practice: How We Reduced Cloud Spend by 42% on AWS Frankfurt
+                </a>
+              </h3>
+              <p class="blog-card__desc">
+                A pragmatic teardown of dynamic Karpenter autoscaling, Graviton instance migration, and automated right-sizing
+                policies in production Kubernetes clusters.
+              </p>
+              <div class="blog-card__tags">
+                <span class="blog-card__tag">#Kubernetes</span>
+                <span class="blog-card__tag">#FinOps</span>
+                <span class="blog-card__tag">#AWS</span>
+                <span class="blog-card__tag">#Karpenter</span>
+              </div>
+            </div>
+
+            <div class="blog-card__footer">
+              <div class="blog-card__author">
+                <div class="blog-author-avatar">JW</div>
+                <span>Julia Weber</span>
+              </div>
+              <a href="/blog/blog-detail.html" class="blog-card__link">
+                <span>Read Article</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Software Architecture -->
+          <article class="blog-card" data-category="architecture">
+            <div class="blog-card__header">
+              <span class="blog-card__category-badge">Architecture</span>
+              <span class="blog-card__readtime">Aug 29, 2026 • 9 min read</span>
+            </div>
+
+            <div class="blog-card__body">
+              <h3 class="blog-card__title">
+                <a href="/blog/blog-detail.html">
+                  The Strangler-Fig Pattern for Legacy Enterprise Modernization: A Production Post-Mortem
+                </a>
+              </h3>
+              <p class="blog-card__desc">
+                Deconstructing a zero-downtime, step-by-step decoupling of an on-premise ERP into independently scalable cloud
+                microservices over an 18-month roadmap.
+              </p>
+              <div class="blog-card__tags">
+                <span class="blog-card__tag">#Modernization</span>
+                <span class="blog-card__tag">#StranglerFig</span>
+                <span class="blog-card__tag">#Microservices</span>
+              </div>
+            </div>
+
+            <div class="blog-card__footer">
+              <div class="blog-card__author">
+                <div class="blog-author-avatar">SK</div>
+                <span>Stefan Krause</span>
+              </div>
+              <a href="/blog/blog-detail.html" class="blog-card__link">
+                <span>Read Article</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5: Cloud & DevOps -->
+          <article class="blog-card" data-category="cloud-devops">
+            <div class="blog-card__header">
+              <span class="blog-card__category-badge">Cloud &amp; DevOps</span>
+              <span class="blog-card__readtime">Aug 18, 2026 • 6 min read</span>
+            </div>
+
+            <div class="blog-card__body">
+              <h3 class="blog-card__title">
+                <a href="/blog/blog-detail.html">
+                  Zero-Trust Service Meshes with Istio &amp; SPIFFE/SPIRE in Regulated Banking
+                </a>
+              </h3>
+              <p class="blog-card__desc">
+                Implementing cryptographic workload identity, dynamic mTLS key rotation, and granular network isolation
+                to meet strict BaFin and EBA cloud compliance audits.
+              </p>
+              <div class="blog-card__tags">
+                <span class="blog-card__tag">#ZeroTrust</span>
+                <span class="blog-card__tag">#Istio</span>
+                <span class="blog-card__tag">#mTLS</span>
+                <span class="blog-card__tag">#Security</span>
+              </div>
+            </div>
+
+            <div class="blog-card__footer">
+              <div class="blog-card__author">
+                <div class="blog-author-avatar">TR</div>
+                <span>Thomas Richter</span>
+              </div>
+              <a href="/blog/blog-detail.html" class="blog-card__link">
+                <span>Read Article</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6: AI & Machine Learning -->
+          <article class="blog-card" data-category="ai-ml">
+            <div class="blog-card__header">
+              <span class="blog-card__category-badge">AI &amp; ML</span>
+              <span class="blog-card__readtime">Aug 04, 2026 • 8 min read</span>
+            </div>
+
+            <div class="blog-card__body">
+              <h3 class="blog-card__title">
+                <a href="/blog/blog-detail.html">
+                  Automated LLM Evaluation in CI/CD: Catching RAG Hallucinations Before Production
+                </a>
+              </h3>
+              <p class="blog-card__desc">
+                Building deterministic regression test suites for generative AI pipelines using synthetic golden datasets,
+                semantic drift detectors, and automated adversarial red-teaming.
+              </p>
+              <div class="blog-card__tags">
+                <span class="blog-card__tag">#LLMEval</span>
+                <span class="blog-card__tag">#Ragas</span>
+                <span class="blog-card__tag">#CICD</span>
+                <span class="blog-card__tag">#Hallucinations</span>
+              </div>
+            </div>
+
+            <div class="blog-card__footer">
+              <div class="blog-card__author">
+                <div class="blog-author-avatar">FB</div>
+                <span>Dr. Florian Becker</span>
+              </div>
+              <a href="/blog/blog-detail.html" class="blog-card__link">
+                <span>Read Article</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 7: Software Architecture & Culture -->
+          <article class="blog-card" data-category="architecture">
+            <div class="blog-card__header">
+              <span class="blog-card__category-badge">Engineering Pods</span>
+              <span class="blog-card__readtime">July 21, 2026 • 5 min read</span>
+            </div>
+
+            <div class="blog-card__body">
+              <h3 class="blog-card__title">
+                <a href="/blog/blog-detail.html">
+                  Dual-Track Agile in Distributed Pods: Bridging European Delivery &amp; Global Scale
+                </a>
+              </h3>
+              <p class="blog-card__desc">
+                A proven operational blueprint for synchronizing client-facing solutions architects in Frankfurt/London
+                with high-capacity engineering pods without communication friction.
+              </p>
+              <div class="blog-card__tags">
+                <span class="blog-card__tag">#Agile</span>
+                <span class="blog-card__tag">#DeliveryPods</span>
+                <span class="blog-card__tag">#EngineeringCulture</span>
+              </div>
+            </div>
+
+            <div class="blog-card__footer">
+              <div class="blog-card__author">
+                <div class="blog-author-avatar">TR</div>
+                <span>Thomas Richter</span>
+              </div>
+              <a href="/blog/blog-detail.html" class="blog-card__link">
+                <span>Read Article</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONSULTATION / CTA SECTION (LIGHT THEME)
+         ==================================================================== -->
+    <section class="consultation-section" id="consultation" style="background: #ffffff; border-top: 1px solid rgba(0, 0, 0, 0.08);">
+      <div class="container">
+        <div class="consultation-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+          <div class="consultation-info">
+            <span class="section-tag" style="background: rgba(242, 110, 101, 0.08); color: var(--primary, #f26e65); padding: 6px 14px; border-radius: 9999px; font-size: 12px; font-weight: 700; text-transform: uppercase;">
+              Architectural Advisory
+            </span>
+            <h2 class="section-title" style="color: #0f172a; margin-bottom: 16px; margin-top: 16px;">
+              Discuss Your Next System Architecture with Our Principal Engineers
+            </h2>
+            <p class="section-desc" style="color: #475569; margin-bottom: 24px; line-height: 1.65;">
+              Whether you are evaluating self-hosted sovereign AI, planning a zero-downtime core migration, or optimizing
+              cloud infrastructure, book a confidential session with our technical leadership in Frankfurt or London.
+            </p>
+            <div class="contact-details" style="display: flex; flex-direction: column; gap: 14px;">
+              <div class="contact-item" style="display: flex; align-items: center; gap: 12px; font-size: 14px; color: #334155;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary, #f26e65)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:info@cypherox.com" style="color: #0f172a; font-weight: 600; text-decoration: none;">info@cypherox.com</a>
+              </div>
+              <div class="contact-item" style="display: flex; align-items: center; gap: 12px; font-size: 14px; color: #334155;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary, #f26e65)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+496912345678" style="color: #0f172a; font-weight: 600; text-decoration: none;">+49 (0) 69 1234 5678 (Frankfurt / London)</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="consultation-form-card" style="background: #fdfcf9; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 20px; padding: 36px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);">
+            <h3 style="font-size: 18px; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Schedule an Architecture Review</h3>
+            <p style="font-size: 13px; color: #64748b; margin-bottom: 20px;">Receive a preliminary architecture assessment within 24 hours.</p>
+            <form onsubmit="event.preventDefault(); alert('Vielen Dank! Ein Principal Architect wird sich in Kürze mit Ihnen in Verbindung setzen.');">
+              <div style="margin-bottom: 14px;">
+                <input type="text" placeholder="Full Name" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: #ffffff; color: #0f172a; font-size: 13.5px; outline: none;">
+              </div>
+              <div style="margin-bottom: 14px;">
+                <input type="email" placeholder="Corporate Email" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: #ffffff; color: #0f172a; font-size: 13.5px; outline: none;">
+              </div>
+              <div style="margin-bottom: 18px;">
+                <textarea rows="3" placeholder="Brief overview of your architecture challenges or project scope..." style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: #ffffff; color: #0f172a; font-size: 13.5px; outline: none; resize: vertical;"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" style="width: 100%; padding: 14px; border-radius: 8px; font-weight: 700; font-size: 14px;">
+                Submit Advisory Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- REUSABLE DYNAMIC FOOTER CONTAINER -->
+  <div id="site-footer"></div>
+
+</body>
+
+</html>
