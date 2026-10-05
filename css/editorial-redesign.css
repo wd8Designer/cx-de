@@ -548,7 +548,7 @@ a {
 }
 
 /* --------------------------------------------------------------------------
-   07. SERVICES SECTION — APPINVENTIV 4-COLUMN INTERACTIVE CARD GRID
+   07. SERVICES SECTION — APPINVENTIV ENTERPRISE DISCIPLINES BENTO
    -------------------------------------------------------------------------- */
 .appi-services-section {
   padding-top: clamp(80px, 9vw, 130px);
@@ -557,34 +557,63 @@ a {
   border-bottom: 1px solid var(--rule-hairline);
 }
 
-.appi-services-grid {
+.appi-services-bento-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
 }
 
-.appi-service-card {
+.appi-bento-card {
   background: #ffffff;
   border: 1px solid var(--rule-hairline);
-  border-radius: var(--radius-lg);
-  padding: 32px 28px;
+  border-radius: 20px;
+  padding: 40px 36px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
+  overflow: hidden;
 }
 
-.appi-service-card:hover {
+.appi-bento-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-coral) 0%, rgba(242, 110, 101, 0.2) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.appi-bento-card:hover {
   transform: translateY(-6px);
-  border-color: var(--accent-coral);
-  box-shadow: 0 16px 36px rgba(242, 110, 101, 0.12);
+  border-color: rgba(242, 110, 101, 0.5);
+  box-shadow: 0 20px 48px rgba(242, 110, 101, 0.12);
+}
+
+.appi-bento-card:hover::before {
+  opacity: 1;
+}
+
+.appi-bento-card-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.appi-bento-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .appi-service-icon-box {
-  width: 54px;
-  height: 54px;
+  width: 58px;
+  height: 58px;
   border-radius: var(--radius-md);
   background: var(--accent-coral-light);
   border: 1px solid var(--accent-coral-border);
@@ -592,80 +621,135 @@ a {
   align-items: center;
   justify-content: center;
   color: var(--accent-coral);
-  margin-bottom: 24px;
   transition: all 0.3s ease;
 }
 
-.appi-service-card:hover .appi-service-icon-box {
+.appi-bento-card:hover .appi-service-icon-box {
   background: var(--accent-coral);
   color: #ffffff;
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
-.appi-service-title {
-  font-size: 1.35rem;
+.appi-bento-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.appi-bento-num {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
   font-weight: 800;
-  line-height: 1.25;
-  margin-bottom: 12px;
+  color: var(--accent-coral);
+  letter-spacing: -0.02em;
 }
 
-.appi-service-desc {
+.appi-bento-status {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  background: var(--bg-tint);
+  border: 1px solid var(--rule-hairline);
+  padding: 5px 12px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.appi-bento-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.28;
+  margin-bottom: 12px;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.appi-bento-desc {
   font-size: 0.9375rem;
   color: var(--text-body);
-  line-height: 1.6;
-  margin-bottom: 24px;
+  line-height: 1.65;
+  margin-bottom: 28px;
 }
 
-.appi-service-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 28px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border-top: 1px solid var(--rule-hairline);
-  padding-top: 18px;
+/* Sub-capabilities 2x2 Grid inside the card */
+.appi-subcap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 32px;
 }
 
-.appi-service-menu-item {
+.appi-subcap-pill {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  background: var(--bg-tint);
+  border: 1px solid var(--rule-hairline);
+  border-radius: 12px;
+  padding: 13px 16px;
+  text-decoration: none;
+  color: var(--text-main);
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--text-main);
-  padding: 4px 0;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.appi-service-menu-arrow {
+.appi-subcap-title {
+  line-height: 1.35;
+}
+
+.appi-subcap-arrow {
   color: var(--text-muted);
-  transition: all 0.2s ease;
-}
-
-.appi-service-card:hover .appi-service-menu-item:hover {
-  color: var(--accent-coral);
-  transform: translateX(3px);
-}
-
-.appi-service-card:hover .appi-service-menu-item:hover .appi-service-menu-arrow {
-  color: var(--accent-coral);
-  transform: translate(2px, -2px);
-}
-
-.appi-service-cta {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  font-family: var(--font-heading);
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--accent-coral);
-  transition: gap 0.2s ease;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, color 0.25s ease;
 }
 
-.appi-service-cta:hover {
-  gap: 12px;
+.appi-subcap-pill:hover {
+  background: #ffffff;
+  border-color: var(--accent-coral);
+  color: var(--accent-coral);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(242, 110, 101, 0.12);
+}
+
+.appi-subcap-pill:hover .appi-subcap-arrow {
+  color: var(--accent-coral);
+  transform: translate(3px, -3px);
+}
+
+/* Bento Footer */
+.appi-bento-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule-hairline);
+  margin-top: auto;
+}
+
+.appi-bento-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack-chip {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: #ffffff;
+  border: 1px solid var(--rule-hairline);
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
 }
 
 /* --------------------------------------------------------------------------
@@ -1652,8 +1736,9 @@ a {
     gap: 40px;
   }
 
-  .appi-services-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .appi-services-bento-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .appi-spotlight-card {
@@ -1720,8 +1805,27 @@ a {
     border-bottom: 1px solid var(--rule-hairline);
   }
 
-  .appi-services-grid {
+  .appi-services-bento-grid {
     grid-template-columns: 1fr;
+  }
+
+  .appi-bento-card {
+    padding: 28px 22px;
+  }
+
+  .appi-subcap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .appi-bento-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .appi-bento-footer .swap-text-button {
+    width: 100%;
+    justify-content: center;
   }
 
   .appi-compliance-cards-grid {
