@@ -155,35 +155,44 @@ function initPipelineCycle() {
 }
 
 // --------------------------------------------------------------------------
-// 4. UNIVERSAL FAQ ACCORDION (SERVICE DETAIL & HIRE DETAIL PAGES)
+// 4. UNIVERSAL FAQ ACCORDION (SERVICE DETAIL, HIRE DETAIL & HOMEPAGE)
 // --------------------------------------------------------------------------
 function initUniversalFAQ() {
-  const faqItems = document.querySelectorAll('.faq-item');
+  const faqItems = document.querySelectorAll('.faq-item, .faq-accordion-item');
   if (!faqItems.length) return;
 
   faqItems.forEach(item => {
-    const questionBtn = item.querySelector('.faq-question-btn');
+    const questionBtn = item.querySelector('.faq-question-btn, .faq-accordion-header');
+    const answerBody = item.querySelector('.faq-answer, .faq-accordion-body');
     if (!questionBtn) return;
 
     questionBtn.addEventListener('click', () => {
       const isOpen = item.classList.contains('is-open');
 
-      // Close other accordion panels
-      faqItems.forEach(other => {
-        if (other !== item) {
-          other.classList.remove('is-open');
-          const btn = other.querySelector('.faq-question-btn');
-          if (btn) btn.setAttribute('aria-expanded', 'false');
-        }
-      });
+      // Close other accordion panels in the same list
+      const parentList = item.parentElement;
+      if (parentList) {
+        const siblings = parentList.querySelectorAll('.faq-item, .faq-accordion-item');
+        siblings.forEach(other => {
+          if (other !== item) {
+            other.classList.remove('is-open');
+            const otherBtn = other.querySelector('.faq-question-btn, .faq-accordion-header');
+            const otherBody = other.querySelector('.faq-answer, .faq-accordion-body');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+            if (otherBody) otherBody.style.display = 'none';
+          }
+        });
+      }
 
       // Toggle current panel
       if (isOpen) {
         item.classList.remove('is-open');
         questionBtn.setAttribute('aria-expanded', 'false');
+        if (answerBody) answerBody.style.display = 'none';
       } else {
         item.classList.add('is-open');
         questionBtn.setAttribute('aria-expanded', 'true');
+        if (answerBody) answerBody.style.display = 'block';
       }
     });
   });
