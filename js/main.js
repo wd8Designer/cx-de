@@ -94,7 +94,7 @@ function initTestimonialsSlider() {
           behavior: 'smooth'
         });
       }
-      
+
       dots.forEach(d => {
         d.classList.remove('active');
         d.classList.remove('is-active');
@@ -107,7 +107,7 @@ function initTestimonialsSlider() {
     const scrollPos = track.scrollLeft;
     const cardWidth = cards[0].offsetWidth + 32;
     let index = Math.round(scrollPos / cardWidth);
-    
+
     const maxScroll = track.scrollWidth - track.clientWidth;
     if (scrollPos >= maxScroll - 10) {
       index = dots.length - 1;
@@ -237,10 +237,10 @@ function initCostCalculator() {
     const savingsPercent = Math.round((totalSavings / totalLocalCost) * 100);
 
     priceEl.textContent = `$${totalEstimate.toLocaleString('en-US')}`;
-    
+
     if (periodEl) {
-      periodEl.textContent = currentCommitment === 'full' 
-        ? `per month (${currentTeamSize * 160} hrs/mo billed monthly)` 
+      periodEl.textContent = currentCommitment === 'full'
+        ? `per month (${currentTeamSize * 160} hrs/mo billed monthly)`
         : `per month (${currentTeamSize * 80} hrs/mo billed monthly)`;
     }
 
@@ -287,7 +287,7 @@ function initCostCalculator() {
       if (senioritySelect) {
         senioritySelect.value = currentSeniority;
       }
-      
+
       const messageField = document.getElementById('message');
       if (messageField && !messageField.value) {
         messageField.value = `Inquiring for ${currentTeamSize} dedicated developer(s) (${currentSeniority} level, ${currentCommitment === 'full' ? 'Full-Time 160h' : 'Part-Time 80h'}).`;
@@ -425,7 +425,7 @@ function initHireConsultationForm() {
 // --------------------------------------------------------------------------
 function initSmoothAnchors() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
       if (!href || href === '#' || !href.startsWith('#')) return;
 

@@ -5,21 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- ====================================================================
-       TEMPLATE CONFIGURATION:
-       Customize Title, Description, and OpenGraph tags for your service.
-       ==================================================================== -->
   <title>AI Chatbot & Intelligent Agent Development | Cypherox Technologies</title>
   <meta name="description"
-    content="Custom, enterprise-grade AI chatbots and autonomous agents. Seamless RAG integration with CRM, ERP, and internal knowledge bases for maximum operational efficiency.">
-  
+    content="Custom AI agent & chatbot engineering for enterprises. LLM integration, enterprise RAG, automated tool calling, and zero-data-retention security architectures.">
+
   <!-- Open Graph / Meta -->
   <meta property="og:title" content="AI Chatbot & Intelligent Agent Development | Cypherox Technologies">
   <meta property="og:description"
-    content="Production-ready AI agents and RAG solutions for enterprises: Rapid ROI, ironclad data security, and seamless API integration.">
+    content="Production-ready AI agents and enterprise chatbots. Hallucination-free, sovereign deployment, and deep integration with your CRM, ERP, and databases.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cypherox.com/services/ai-agent-development">
+  <meta property="og:url" content="https://cypherox.com/service-detail-template.html">
   <meta name="robots" content="noindex, nofollow">
 
   <!-- Favicon -->
@@ -29,7 +24,7 @@
   <!-- Single Unified Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Scripts -->
+  <!-- Deferred Scripts -->
   <script src="js/components.js" defer></script>
   <script src="js/header-footer.js" defer></script>
   <script src="js/main.js" defer></script>
@@ -38,32 +33,22 @@
 
 <body>
 
-  <!-- REUSABLE DYNAMIC HEADER CONTAINER (Rendered by header-footer.js) -->
+  <!-- REUSABLE DYNAMIC HEADER CONTAINER -->
   <div id="site-header"></div>
 
   <main id="main-content">
 
-    <!-- ====================================================================
-         BREADCRUMB NAVIGATION
-         ==================================================================== -->
-    <div class="service-breadcrumb-wrapper">
+    <!-- BREADCRUMBS -->
+    <div style="background: #FAF9F6; border-bottom: 1px solid rgba(0, 0, 0, 0.06); padding: 16px 0; margin-top: var(--header-height);">
       <div class="container">
-        <nav class="service-breadcrumb" aria-label="Breadcrumb">
-          <div class="service-breadcrumb__item">
-            <a href="index.html" class="service-breadcrumb__link">Home</a>
-            <span class="service-breadcrumb__separator">/</span>
-          </div>
-          <div class="service-breadcrumb__item">
-            <a href="index.html#services" class="service-breadcrumb__link">Services</a>
-            <span class="service-breadcrumb__separator">/</span>
-          </div>
-          <div class="service-breadcrumb__item">
-            <span class="service-breadcrumb__link">Generative AI Solutions</span>
-            <span class="service-breadcrumb__separator">/</span>
-          </div>
-          <div class="service-breadcrumb__item">
-            <span class="service-breadcrumb__current" aria-current="page">AI Chatbots & Intelligent Agents</span>
-          </div>
+        <nav class="service-breadcrumb" aria-label="Breadcrumb" style="display: flex; gap: 8px; font-size: 13px; color: #6b7280;">
+          <a href="index.html" style="color: #6b7280; text-decoration: none;">Home</a>
+          <span>/</span>
+          <a href="index.html#services" style="color: #6b7280; text-decoration: none;">Services</a>
+          <span>/</span>
+          <span>Generative AI Solutions</span>
+          <span>/</span>
+          <span style="color: #111111; font-weight: 600;">AI Chatbots & Intelligent Agents</span>
         </nav>
       </div>
     </div>
@@ -71,968 +56,822 @@
     <!-- ====================================================================
          SECTION 01 — SERVICE HERO
          ==================================================================== -->
-    <section class="service-hero" id="hero">
-      <div class="container service-hero__container">
-        <div class="service-hero__content">
-
-          <div class="service-hero__eyebrow-badge">
-            <span class="service-hero__pulse"></span>
-            <span>Enterprise AI & Automation Engineering</span>
+    <section class="hero--editorial" id="hero" style="min-height: auto; padding: 70px 0 80px 0;">
+      <div class="container hero__container">
+        
+        <div class="hero__editorial-content">
+          <div class="hero__lead-tag">
+            <span class="hero__lead-tag-dot"></span>
+            <span>Enterprise AI &bull; Agentic Orchestration &bull; Sovereign LLMs</span>
           </div>
 
-          <h1 class="service-hero__title">
+          <h1 class="hero__display-title">
             AI Chatbot & Intelligent <br>
-            <span class="text-gradient">Agent Development</span>
+            <span class="accent">Agent Development.</span>
           </h1>
 
-          <p class="service-hero__subtitle">
+          <p class="hero__lead-text">
             Transform customer interactions and internal operations with custom, hallucination-free AI agents. Enterprise-secure, multi-modal, and seamlessly integrated into your existing technology stack and databases.
           </p>
 
-          <div class="service-hero__actions">
-            <a href="#consultation" class="btn btn--primary btn--large">Schedule Architecture Call</a>
-            <a href="#capabilities" class="btn btn--secondary btn--large">Explore Capabilities</a>
+          <div class="hero__cta-group">
+            <a href="#consultation" class="btn btn--primary">Schedule Architecture Call</a>
+            <a href="#capabilities" class="btn btn--secondary">Explore Capabilities</a>
+          </div>
+
+          <div class="hero__sla-note">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Production-grade agents with zero-data-retention &bull; 99.98% SLA &bull; SOC 2 Type II</span>
           </div>
         </div>
 
-        <!-- Hero Visual: Enterprise Architecture & Pipeline Simulator -->
-        <div class="service-hero__visual">
-          <div class="service-visual-header">
-            <div class="service-visual-header__title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-              <span>Multi-Agent Runtime Orchestration</span>
-            </div>
-            <div class="service-visual-header__status">
-              <span class="service-visual-header__dot"></span>
-              <span>Live 99.98% SLA</span>
-            </div>
-          </div>
-
-          <div class="service-pipeline-flow">
-            <!-- Stage 1 -->
-            <div class="pipeline-step is-active" data-step="0">
-              <div class="pipeline-step__left">
-                <div class="pipeline-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
-                <div class="pipeline-step__info">
-                  <span class="pipeline-step__title">Omnichannel User Request</span>
-                  <span class="pipeline-step__desc">Web Widget, WhatsApp, MS Teams, Slack or REST API</span>
-                </div>
+        <!-- Right Column: Interactive Multi-Agent Pipeline Simulator -->
+        <div class="hero__visual-col">
+          <div class="service-hero__visual" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 12px; overflow: hidden; box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.06);">
+            
+            <div class="service-visual-header" style="background: #111111; color: #FAF9F6; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center;">
+              <div class="service-visual-header__title" style="display: flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 700; text-transform: uppercase;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Multi-Agent Runtime Orchestration</span>
               </div>
-              <span class="pipeline-step__tag">INPUT</span>
-            </div>
-
-            <!-- Stage 2 -->
-            <div class="pipeline-step" data-step="1">
-              <div class="pipeline-step__left">
-                <div class="pipeline-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-                <div class="pipeline-step__info">
-                  <span class="pipeline-step__title">Security & Guardrail Filter</span>
-                  <span class="pipeline-step__desc">PII Masking, Prompt Injection Defense & Moderation</span>
-                </div>
+              <div class="service-visual-header__status" style="display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: #10b981; background: rgba(16, 185, 129, 0.12); padding: 4px 10px; border-radius: 99px;">
+                <span class="service-visual-header__dot" style="width: 6px; height: 6px; border-radius: 50%; background: #10b981;"></span>
+                <span>Live 99.98% SLA</span>
               </div>
-              <span class="pipeline-step__tag">SECURITY</span>
             </div>
 
-            <!-- Stage 3 -->
-            <div class="pipeline-step" data-step="2">
-              <div class="pipeline-step__left">
-                <div class="pipeline-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.54z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.54z"></path></svg></div>
-                <div class="pipeline-step__info">
-                  <span class="pipeline-step__title">Agent Core & Reasoning Loop</span>
-                  <span class="pipeline-step__desc">LLM Orchestration (LangGraph) & Intent Classification</span>
+            <div class="service-pipeline-flow" style="padding: 12px 16px; display: flex; flex-direction: column; gap: 8px;">
+              
+              <!-- Stage 1 -->
+              <div class="pipeline-step is-active" data-step="0" style="padding: 12px 16px; border-radius: 6px; border: 1px solid #E5E1DA; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s ease;">
+                <div class="pipeline-step__left" style="display: flex; align-items: center; gap: 12px;">
+                  <span style="font-weight: 800; font-size: 12px; color: #f26e65;">01</span>
+                  <div class="pipeline-step__info">
+                    <span class="pipeline-step__title" style="display: block; font-size: 13.5px; font-weight: 700; color: #111111;">Omnichannel Request Ingestion</span>
+                    <span class="pipeline-step__desc" style="display: block; font-size: 11.5px; color: #6b7280;">Web Widget, WhatsApp, MS Teams, Slack or REST API</span>
+                  </div>
                 </div>
+                <span class="pipeline-step__tag" style="font-size: 10.5px; font-weight: 700; color: #f26e65; background: rgba(242, 110, 101, 0.08); padding: 2px 8px; border-radius: 3px;">INPUT</span>
               </div>
-              <span class="pipeline-step__tag">REASONING</span>
-            </div>
 
-            <!-- Stage 4 -->
-            <div class="pipeline-step" data-step="3">
-              <div class="pipeline-step__left">
-                <div class="pipeline-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
-                <div class="pipeline-step__info">
-                  <span class="pipeline-step__title">Hybrid RAG & Enterprise Tools</span>
-                  <span class="pipeline-step__desc">Vector Database, SAP/Salesforce API & SQL Queries</span>
+              <!-- Stage 2 -->
+              <div class="pipeline-step" data-step="1" style="padding: 12px 16px; border-radius: 6px; border: 1px solid #E5E1DA; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s ease;">
+                <div class="pipeline-step__left" style="display: flex; align-items: center; gap: 12px;">
+                  <span style="font-weight: 800; font-size: 12px; color: #9ca3af;">02</span>
+                  <div class="pipeline-step__info">
+                    <span class="pipeline-step__title" style="display: block; font-size: 13.5px; font-weight: 700; color: #111111;">Security & Guardrail Filter</span>
+                    <span class="pipeline-step__desc" style="display: block; font-size: 11.5px; color: #6b7280;">PII Masking, Prompt Injection Defense & Moderation</span>
+                  </div>
                 </div>
+                <span class="pipeline-step__tag" style="font-size: 10.5px; font-weight: 700; color: #6b7280; background: #F0EDE7; padding: 2px 8px; border-radius: 3px;">SECURITY</span>
               </div>
-              <span class="pipeline-step__tag">EXECUTION</span>
-            </div>
 
-            <!-- Stage 5 -->
-            <div class="pipeline-step" data-step="4">
-              <div class="pipeline-step__left">
-                <div class="pipeline-step__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-                <div class="pipeline-step__info">
-                  <span class="pipeline-step__title">Verified Response & Action Log</span>
-                  <span class="pipeline-step__desc">Source Citations, Hallucination Checks & Audit Trail</span>
+              <!-- Stage 3 -->
+              <div class="pipeline-step" data-step="2" style="padding: 12px 16px; border-radius: 6px; border: 1px solid #E5E1DA; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s ease;">
+                <div class="pipeline-step__left" style="display: flex; align-items: center; gap: 12px;">
+                  <span style="font-weight: 800; font-size: 12px; color: #9ca3af;">03</span>
+                  <div class="pipeline-step__info">
+                    <span class="pipeline-step__title" style="display: block; font-size: 13.5px; font-weight: 700; color: #111111;">Agent Core & Reasoning Loop</span>
+                    <span class="pipeline-step__desc" style="display: block; font-size: 11.5px; color: #6b7280;">LLM Orchestration (LangGraph) & Intent Classification</span>
+                  </div>
                 </div>
+                <span class="pipeline-step__tag" style="font-size: 10.5px; font-weight: 700; color: #6b7280; background: #F0EDE7; padding: 2px 8px; border-radius: 3px;">REASONING</span>
               </div>
-              <span class="pipeline-step__tag">OUTPUT</span>
-            </div>
-          </div>
 
-          <div class="service-visual-footer">
-            <span class="service-visual-footer__compliance">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-              <span>Zero-Data-Retention & Enterprise Hosted</span>
-            </span>
-            <span>Latency: <strong>~450ms TTFT</strong></span>
+              <!-- Stage 4 -->
+              <div class="pipeline-step" data-step="3" style="padding: 12px 16px; border-radius: 6px; border: 1px solid #E5E1DA; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s ease;">
+                <div class="pipeline-step__left" style="display: flex; align-items: center; gap: 12px;">
+                  <span style="font-weight: 800; font-size: 12px; color: #9ca3af;">04</span>
+                  <div class="pipeline-step__info">
+                    <span class="pipeline-step__title" style="display: block; font-size: 13.5px; font-weight: 700; color: #111111;">Hybrid RAG & Enterprise Tools</span>
+                    <span class="pipeline-step__desc" style="display: block; font-size: 11.5px; color: #6b7280;">Vector Database, SAP/Salesforce API & SQL Queries</span>
+                  </div>
+                </div>
+                <span class="pipeline-step__tag" style="font-size: 10.5px; font-weight: 700; color: #6b7280; background: #F0EDE7; padding: 2px 8px; border-radius: 3px;">EXECUTION</span>
+              </div>
+
+              <!-- Stage 5 -->
+              <div class="pipeline-step" data-step="4" style="padding: 12px 16px; border-radius: 6px; border: 1px solid #E5E1DA; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s ease;">
+                <div class="pipeline-step__left" style="display: flex; align-items: center; gap: 12px;">
+                  <span style="font-weight: 800; font-size: 12px; color: #9ca3af;">05</span>
+                  <div class="pipeline-step__info">
+                    <span class="pipeline-step__title" style="display: block; font-size: 13.5px; font-weight: 700; color: #111111;">Verified Response & Audit Trail</span>
+                    <span class="pipeline-step__desc" style="display: block; font-size: 11.5px; color: #6b7280;">Source Citations, Hallucination Checks & Telemetry</span>
+                  </div>
+                </div>
+                <span class="pipeline-step__tag" style="font-size: 10.5px; font-weight: 700; color: #6b7280; background: #F0EDE7; padding: 2px 8px; border-radius: 3px;">OUTPUT</span>
+              </div>
+
+            </div>
+
+            <div class="service-visual-footer" style="padding: 14px 20px; background: #F8F7F4; border-top: 1px solid #E5E1DA; display: flex; justify-content: space-between; font-size: 12px; color: #4b5563;">
+              <span>Zero-Data-Retention & Hosted in Private VPC</span>
+              <span>Latency: <strong style="color: #111111;">~450ms TTFT</strong></span>
+            </div>
+
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 02 — OVERVIEW & STRATEGIC VALUE DRIVERS
+         SECTION 02 — STRATEGIC VALUE DRIVERS (ARCHITECTURAL LEDGER)
          ==================================================================== -->
-    <section class="section" id="overview">
+    <section class="editorial-section" id="overview">
       <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Strategic Advantage</div>
-          <h2 class="section-title">Why Global Enterprises Trust Our <span class="text-gradient">AI Agents</span></h2>
-          <p class="section-subtitle">
-            We do not build generic toy chatbots. We engineer production-ready, autonomous agents that execute real business processes while safeguarding your proprietary data.
-          </p>
-        </div>
-
-        <div class="service-drivers-grid">
-          <!-- Card 1 -->
-          <div class="driver-card">
-            <div class="driver-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-              </svg>
-            </div>
-            <div class="driver-card__num">Advantage 01</div>
-            <h3 class="driver-card__title">No Vendor Lock-in & Full Data Ownership</h3>
-            <p class="driver-card__desc">
-              You retain 100% ownership of your source code, model weights, and proprietary enterprise data. Deploy on your private AWS, Azure, GCP cloud, or on-premise infrastructure.
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Strategic Advantage</span>
+            <h2 class="editorial-header__title">
+              Why Global Enterprises Trust <br>
+              <span class="editorial-header__title-accent">Our Agentic Architectures.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              We do not build generic toy chatbots. We engineer production-ready, autonomous agents that execute real business processes while strictly safeguarding your proprietary data.
             </p>
           </div>
+        </div>
 
-          <!-- Card 2 -->
-          <div class="driver-card">
-            <div class="driver-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="22" y1="12" x2="18" y2="12"></line>
-                <line x1="6" y1="12" x2="2" y2="12"></line>
-                <line x1="12" y1="6" x2="12" y2="2"></line>
-                <line x1="12" y1="22" x2="12" y2="18"></line>
-              </svg>
+        <div class="delivery-roadmap-grid">
+          
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">ADVANTAGE 01</span>
+            <h3 class="delivery-roadmap-step__title">No Vendor Lock-in & Full Data Ownership</h3>
+            <p class="delivery-roadmap-step__desc">
+              You retain 100% ownership of your source code, model weights, and proprietary enterprise data. Deploy in your private AWS, Azure, GCP cloud, or sovereign on-premise infrastructure.
+            </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>Full IP Assignment</span>
             </div>
-            <div class="driver-card__num">Advantage 02</div>
-            <h3 class="driver-card__title">Hallucination-Free Fact Retrieval (RAG)</h3>
-            <p class="driver-card__desc">
+          </div>
+
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">ADVANTAGE 02</span>
+            <h3 class="delivery-roadmap-step__title">Hallucination-Free Fact Retrieval (RAG)</h3>
+            <p class="delivery-roadmap-step__desc">
               Advanced Retrieval-Augmented Generation (RAG) with cross-encoder re-ranking deterministically grounds language models in your real-time databases, PDFs, and internal systems.
             </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>Deterministic Citations</span>
+            </div>
           </div>
 
-          <!-- Card 3 -->
-          <div class="driver-card">
-            <div class="driver-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-            </div>
-            <div class="driver-card__num">Advantage 03</div>
-            <h3 class="driver-card__title">Autonomous Function & Tool Calling</h3>
-            <p class="driver-card__desc">
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">ADVANTAGE 03</span>
+            <h3 class="delivery-roadmap-step__title">Autonomous Tool & Function Calling</h3>
+            <p class="delivery-roadmap-step__desc">
               Our agents go beyond answering questions. They autonomously perform operational actions: creating tickets, updating customer records, querying SQL databases, and initiating workflows.
             </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>Bi-Directional Action</span>
+            </div>
           </div>
 
-          <!-- Card 4 -->
-          <div class="driver-card">
-            <div class="driver-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <div class="driver-card__num">Advantage 04</div>
-            <h3 class="driver-card__title">Enterprise Compliance & Security</h3>
-            <p class="driver-card__desc">
-              Pre-built PII masking, Zero-Data-Retention policies, and comprehensive audit trails compliant with GDPR, SOC 2, HIPAA, and ISO 27001 standards.
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">ADVANTAGE 04</span>
+            <h3 class="delivery-roadmap-step__title">Enterprise Compliance & Security</h3>
+            <p class="delivery-roadmap-step__desc">
+              Pre-built PII masking, Zero-Data-Retention policies, and comprehensive audit trails fully compliant with GDPR (DSGVO), SOC 2, HIPAA, and ISO 27001 standards.
             </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>SOC 2 & GDPR Verified</span>
+            </div>
           </div>
+
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 03 — MODULAR CAPABILITIES & DELIVERABLES (FEATURES)
+         SECTION 03 — CAPABILITIES SPECIFICATION MATRIX
          ==================================================================== -->
-    <section class="section section--alt" id="capabilities">
+    <section class="editorial-section editorial-section--alt" id="capabilities">
       <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Capabilities & Deliverables</div>
-          <h2 class="section-title">End-to-End Capabilities for <span class="text-gradient">Your AI Roadmap</span></h2>
-          <p class="section-subtitle">
-            Every module is engineered for flexibility, allowing rapid customization to match your architecture and specific business goals.
-          </p>
-        </div>
-
-        <div class="service-capabilities-grid">
-          <!-- Capability 1 -->
-          <div class="capability-card">
-            <div class="capability-card__header">
-              <div class="capability-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
-              <span class="capability-card__badge">Support & Service</span>
-            </div>
-            <h3 class="capability-card__title">24/7 Omnichannel Customer Support Agents</h3>
-            <p class="capability-card__desc">
-              Resolve up to 70% of tier-1 support queries instantly across 40+ languages without human queue delays.
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Capabilities & Deliverables</span>
+            <h2 class="editorial-header__title">
+              Modular Capabilities for <br>
+              <span class="editorial-header__title-accent">Your AI Roadmap.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              Every module is engineered for flexibility, allowing rapid customization to match your architecture, compliance framework, and specific business goals.
             </p>
-            <ul class="capability-card__checklist">
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Frictionless Human-in-the-Loop handoff to live support teams</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Zendesk, Salesforce Service Cloud & Freshdesk bi-directional sync</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Real-time sentiment detection and automated priority escalation</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Capability 2 -->
-          <div class="capability-card">
-            <div class="capability-card__header">
-              <div class="capability-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
-              <span class="capability-card__badge">Knowledge Management</span>
-            </div>
-            <h3 class="capability-card__title">Enterprise RAG & Internal Knowledge Assistants</h3>
-            <p class="capability-card__desc">
-              Empower your employees to extract instant, verified insights from extensive internal documentation, contracts, and wikis.
-            </p>
-            <ul class="capability-card__checklist">
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Semantic vector search with exact citation hyperlinks and page references</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Granular Role-Based Access Control (RBAC) and security scoping</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Native connectors for Confluence, SharePoint, Notion, PDFs, and SQL</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Capability 3 -->
-          <div class="capability-card">
-            <div class="capability-card__header">
-              <div class="capability-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
-              <span class="capability-card__badge">Process Automation</span>
-            </div>
-            <h3 class="capability-card__title">Autonomous Workflow & Action Agents</h3>
-            <p class="capability-card__desc">
-              Equip language models with tool-calling capabilities to execute multi-step operations directly in your backend business platforms.
-            </p>
-            <ul class="capability-card__checklist">
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Direct API connectors for SAP, HubSpot, NetSuite, and custom REST/gRPC</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Automated quote calculation, order validation, and invoice processing</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Deterministic pre-flight security checks before sensitive state changes</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Capability 4 -->
-          <div class="capability-card">
-            <div class="capability-card__header">
-              <div class="capability-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
-              <span class="capability-card__badge">Model Engineering</span>
-            </div>
-            <h3 class="capability-card__title">LLM Fine-Tuning & Domain Adaptation</h3>
-            <p class="capability-card__desc">
-              Adapt premier open-source or commercial models to your industry jargon, internal nomenclature, and corporate communication guidelines.
-            </p>
-            <ul class="capability-card__checklist">
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Parameter-efficient fine-tuning via LoRA and QLoRA architectures</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Synthetic dataset generation and specialized evaluation benchmarks</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Quantization for high-throughput, cost-effective on-premise execution</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Capability 5 -->
-          <div class="capability-card">
-            <div class="capability-card__header">
-              <div class="capability-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-              <span class="capability-card__badge">Integration</span>
-            </div>
-            <h3 class="capability-card__title">Multi-Platform & Channel Deployment</h3>
-            <p class="capability-card__desc">
-              A unified intelligent backend accessible across all platforms where your customers and team members collaborate daily.
-            </p>
-            <ul class="capability-card__checklist">
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Custom, responsive brand-tailored web chat widgets</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Certified bots for Microsoft Teams, Slack, and WhatsApp Business API</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Headless SDKs for iOS, Android, and web client integrations</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Capability 6 -->
-          <div class="capability-card">
-            <div class="capability-card__header">
-              <div class="capability-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
-              <span class="capability-card__badge">Governance & Observability</span>
-            </div>
-            <h3 class="capability-card__title">Monitoring, Analytics & Guardrails</h3>
-            <p class="capability-card__desc">
-              Complete operational observability over token costs, response quality, feedback scores, and latency metrics with automated anomaly alerts.
-            </p>
-            <ul class="capability-card__checklist">
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Live telemetry dashboards via Langfuse, Arize Phoenix, and Datadog</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Automated hallucination, bias, and toxic output detection pipelines</span>
-              </li>
-              <li class="capability-card__item">
-                <span class="capability-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-                <span>Full audit logging and conversation analytics compliant with GDPR</span>
-              </li>
-            </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ====================================================================
-         SECTION 04 — STEP-BY-STEP PROCESS ROADMAP
-         ==================================================================== -->
-    <section class="section" id="process">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Delivery Methodology</div>
-          <h2 class="section-title">From Concept to Production in <span class="text-gradient">5 Agile Steps</span></h2>
-          <p class="section-subtitle">
-            Predictable milestones, rapid prototyping, and production-tested engineering practices for risk-free deployment.
-          </p>
-        </div>
-
-        <div class="service-process-timeline">
-          <!-- Step 1 -->
-          <div class="process-step-card">
-            <div class="process-step-card__num">01</div>
-            <div class="process-step-card__main">
-              <div class="process-step-card__tag">Discovery & Architecture</div>
-              <h3 class="process-step-card__title">Analysis & Target Architecture</h3>
-            </div>
-            <div class="process-step-card__desc">
-              Identify high-ROI use cases, assess existing data pipelines, define compliance & security requirements, and establish quantifiable KPIs.
-            </div>
-            <div class="process-step-card__meta">
-              <span class="process-meta-label">Typical Duration</span>
-              <span class="process-meta-value">1 – 2 Weeks</span>
-            </div>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="process-step-card">
-            <div class="process-step-card__num">02</div>
-            <div class="process-step-card__main">
-              <div class="process-step-card__tag">Proof of Concept</div>
-              <h3 class="process-step-card__title">PoC & Feasibility Validation</h3>
-            </div>
-            <div class="process-step-card__desc">
-              Build a functional working prototype with your actual enterprise data to benchmark answer accuracy, latency, and business ROI before full buildout.
-            </div>
-            <div class="process-step-card__meta">
-              <span class="process-meta-label">Typical Duration</span>
-              <span class="process-meta-value">2 – 3 Weeks</span>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="process-step-card">
-            <div class="process-step-card__num">03</div>
-            <div class="process-step-card__main">
-              <div class="process-step-card__tag">Engineering</div>
-              <h3 class="process-step-card__title">Enterprise Engineering & Integration</h3>
-            </div>
-            <div class="process-step-card__desc">
-              Develop the complete RAG pipeline, establish bi-directional API connections with ERP/CRM, implement guardrails, and craft responsive UI interfaces.
-            </div>
-            <div class="process-step-card__meta">
-              <span class="process-meta-label">Typical Duration</span>
-              <span class="process-meta-value">3 – 6 Weeks</span>
-            </div>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="process-step-card">
-            <div class="process-step-card__num">04</div>
-            <div class="process-step-card__main">
-              <div class="process-step-card__tag">Quality & Audit</div>
-              <h3 class="process-step-card__title">Security Red-Teaming & UAT</h3>
-            </div>
-            <div class="process-step-card__desc">
-              Rigorous adversarial red-teaming (prompt injection & data leak simulations), stress testing, regulatory audits, and User Acceptance Testing with your team.
-            </div>
-            <div class="process-step-card__meta">
-              <span class="process-meta-label">Typical Duration</span>
-              <span class="process-meta-value">2 Weeks</span>
-            </div>
-          </div>
-
-          <!-- Step 5 -->
-          <div class="process-step-card">
-            <div class="process-step-card__num">05</div>
-            <div class="process-step-card__main">
-              <div class="process-step-card__tag">Operations & Evolution</div>
-              <h3 class="process-step-card__title">Production Launch & 24/7 SLA Support</h3>
-            </div>
-            <div class="process-step-card__desc">
-              Zero-downtime deployment on cloud/Kubernetes, comprehensive team onboarding, continuous telemetry tracking, and ongoing model refinement.
-            </div>
-            <div class="process-step-card__meta">
-              <span class="process-meta-label">Typical Duration</span>
-              <span class="process-meta-value">Ongoing SLA Support</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 05 — TECHNOLOGY STACK & ARCHITECTURE MODULES
-         ==================================================================== -->
-    <section class="section section--alt" id="tech-stack">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Technology Stack</div>
-          <h2 class="section-title">Modern, Resilient & <span class="text-gradient">Future-Proof</span></h2>
-          <p class="section-subtitle">
-            We are technology-agnostic, choosing the best-in-class frameworks, foundation models, and vector stores tailored to your technical requirements.
-          </p>
-        </div>
-
-        <div class="service-tech-grid">
-          <!-- Column 1 -->
-          <div class="service-tech-column">
-            <h3 class="service-tech-column__title">
-              <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.54z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.54z"></path></svg></span>
-              <span>Foundation Models</span>
-            </h3>
-            <div class="service-tech-column__category">LLMs & SLMs</div>
-            <div class="service-tech-list">
-              <div class="service-tech-item">
-                <span>OpenAI (GPT-4o)</span>
-                <span class="service-tech-item__badge">Commercial</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Anthropic Claude 3.5</span>
-                <span class="service-tech-item__badge">High-Reasoning</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Meta Llama 3.1 & 3.3</span>
-                <span class="service-tech-item__badge">Open Source</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Mistral Large / Pixtral</span>
-                <span class="service-tech-item__badge">Enterprise</span>
-              </div>
-              <div class="service-tech-item">
-                <span>DeepSeek V3 / R1</span>
-                <span class="service-tech-item__badge">Cost-Efficient</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Column 2 -->
-          <div class="service-tech-column">
-            <h3 class="service-tech-column__title">
-              <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span>
-              <span>Agent Frameworks</span>
-            </h3>
-            <div class="service-tech-column__category">Orchestration & RAG</div>
-            <div class="service-tech-list">
-              <div class="service-tech-item">
-                <span>LangChain & LangGraph</span>
-                <span class="service-tech-item__badge">Multi-Agent</span>
-              </div>
-              <div class="service-tech-item">
-                <span>LlamaIndex</span>
-                <span class="service-tech-item__badge">Advanced RAG</span>
-              </div>
-              <div class="service-tech-item">
-                <span>AutoGen & CrewAI</span>
-                <span class="service-tech-item__badge">Collab Agents</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Semantic Kernel</span>
-                <span class="service-tech-item__badge">Microsoft .NET</span>
-              </div>
-              <div class="service-tech-item">
-                <span>DSPy</span>
-                <span class="service-tech-item__badge">Prompt Tuning</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Column 3 -->
-          <div class="service-tech-column">
-            <h3 class="service-tech-column__title">
-              <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></span>
-              <span>Vector Databases</span>
-            </h3>
-            <div class="service-tech-column__category">Embeddings & Retrieval</div>
-            <div class="service-tech-list">
-              <div class="service-tech-item">
-                <span>Qdrant</span>
-                <span class="service-tech-item__badge">High-Speed Rust</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Pinecone</span>
-                <span class="service-tech-item__badge">Serverless</span>
-              </div>
-              <div class="service-tech-item">
-                <span>pgvector (PostgreSQL)</span>
-                <span class="service-tech-item__badge">Relational + AI</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Milvus / Zilliz</span>
-                <span class="service-tech-item__badge">Billion-Scale</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Weaviate</span>
-                <span class="service-tech-item__badge">Hybrid Search</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Column 4 -->
-          <div class="service-tech-column">
-            <h3 class="service-tech-column__title">
-              <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
-              <span>Cloud & Governance</span>
-            </h3>
-            <div class="service-tech-column__category">Infrastructure & Security</div>
-            <div class="service-tech-list">
-              <div class="service-tech-item">
-                <span>AWS Bedrock & Azure AI</span>
-                <span class="service-tech-item__badge">Enterprise SLA</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Docker & Kubernetes</span>
-                <span class="service-tech-item__badge">Containerized</span>
-              </div>
-              <div class="service-tech-item">
-                <span>NeMo Guardrails</span>
-                <span class="service-tech-item__badge">Safety Filter</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Langfuse Telemetry</span>
-                <span class="service-tech-item__badge">Observability</span>
-              </div>
-              <div class="service-tech-item">
-                <span>Hugging Face & vLLM</span>
-                <span class="service-tech-item__badge">Self-Hosted</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 06 — BUSINESS IMPACT & COMPARISON TABLE
-         ==================================================================== -->
-    <section class="section" id="business-impact">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Business Impact & ROI</div>
-          <h2 class="section-title">Measurable Business Outcomes, <span class="text-gradient">Not Empty Promises</span></h2>
-          <p class="section-subtitle">
-            See how custom Cypherox Enterprise AI outperforms generic off-the-shelf chatbots.
-          </p>
-        </div>
-
-        <div class="service-impact-wrapper">
-          <!-- 3 Big ROI Metric Cards -->
-          <div class="service-stats-cards">
-            <div class="impact-stat-card">
-              <div class="impact-stat-card__number">-65%</div>
-              <h3 class="impact-stat-card__title">Support Cost Reduction</h3>
-              <p class="impact-stat-card__desc">Dramatic relief for tier-1 service agents through automated resolution of common requests.</p>
-            </div>
-            <div class="impact-stat-card">
-              <div class="impact-stat-card__number">3.5x</div>
-              <h3 class="impact-stat-card__title">Faster Resolution Time</h3>
-              <p class="impact-stat-card__desc">Reduced ticket turnaround from an average of 4 hours down to instant answers in seconds.</p>
-            </div>
-            <div class="impact-stat-card">
-              <div class="impact-stat-card__number">4.8 / 5</div>
-              <h3 class="impact-stat-card__title">Customer Satisfaction (CSAT)</h3>
-              <p class="impact-stat-card__desc">Consistently elevated satisfaction scores driven by accurate, friendly, and contextual responses.</p>
-            </div>
-          </div>
-
-          <!-- Side-by-Side Comparison Box -->
-          <div class="service-comparison-box">
-            <table class="comparison-table">
-              <thead>
-                <tr>
-                  <th style="width: 25%;">Criteria</th>
-                  <th style="width: 35%;">Generic SaaS Chatbots</th>
-                  <th class="col-cypherox" style="width: 40%;">Cypherox Enterprise AI Agents</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Accuracy & Citations</strong></td>
-                  <td><span class="badge-tag-negative"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span> Prone to hallucinations & ungrounded answers</span></td>
-                  <td class="col-cypherox"><span class="badge-tag-positive"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> 99.4% verified facts with transparent source citations</span></td>
-                </tr>
-                <tr>
-                  <td><strong>System Integration</strong></td>
-                  <td><span class="badge-tag-negative"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span> Siloed widget with no database or ERP access</span></td>
-                  <td class="col-cypherox"><span class="badge-tag-positive"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Full read & write permissions across SAP, CRM, ERP, and SQL</span></td>
-                </tr>
-                <tr>
-                  <td><strong>Data Security & Privacy</strong></td>
-                  <td><span class="badge-tag-negative"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span> Proprietary data routed through public clouds</span></td>
-                  <td class="col-cypherox"><span class="badge-tag-positive"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> 100% private cloud or on-prem with Zero Data Retention</span></td>
-                </tr>
-                <tr>
-                  <td><strong>IP & Code Ownership</strong></td>
-                  <td><span class="badge-tag-negative"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span> Monthly rental with zero source code ownership</span></td>
-                  <td class="col-cypherox"><span class="badge-tag-positive"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> You own 100% of the code, IP rights, and trained models</span></td>
-                </tr>
-                <tr>
-                  <td><strong>Action Execution</strong></td>
-                  <td><span class="badge-tag-negative"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span> Limited to pre-written FAQ responses</span></td>
-                  <td class="col-cypherox"><span class="badge-tag-positive"><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Executes autonomous actions: booking, invoicing, and updates</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 07 — FEATURED CASE STUDY SPOTLIGHT
-         ==================================================================== -->
-    <section class="section section--alt" id="case-study">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Case Study</div>
-          <h2 class="section-title">Enterprise Success in <span class="text-gradient">Action</span></h2>
-          <p class="section-subtitle">
-            How a leading European enterprise scaled support capacity and cut resolution latency by 80%.
-          </p>
-        </div>
-
-        <div class="service-case-card">
-          <div class="service-case-content">
-            <div class="service-case-badge">Case Study: B2B E-Commerce & Logistics</div>
-            <h3 class="service-case-title">80% Faster Ticket Resolution Across 120,000 Monthly Inquiries</h3>
-            <p class="service-case-desc">
-              The client needed to resolve complex technical inquiries and order status updates 24/7 in 4 languages without multiplying their headcount. Cypherox architected a multi-agent RAG system directly connected to their SAP and Zendesk instances.
-            </p>
-
-            <div class="service-case-quote">
-              <p class="service-case-quote__text">
-                “Cypherox exceeded all our expectations. Our customer response time dropped from hours to seconds, and client satisfaction scores rose noticeably within the first month.”
+        <div class="services-dossier-list">
+          
+          <!-- Cap 1: Support -->
+          <article class="service-dossier">
+            <div class="service-dossier__main">
+              <span class="service-dossier__idx">CAPABILITY 01 &bull; Support & Operations</span>
+              <h3 class="service-dossier__title">24/7 Omnichannel Customer Support Agents</h3>
+              <p class="service-dossier__desc">
+                Resolve up to 70% of tier-1 support queries instantly across 40+ languages without human queue delays.
               </p>
-              <div class="service-case-quote__author">— Head of Digital Operations, Enterprise B2B Group</div>
+              <div class="service-dossier__deliverables-title">Architectural Features & Integration Deliverables</div>
+              <ul class="service-dossier__deliverables">
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Frictionless Human-in-the-Loop handoff to live teams</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Zendesk, Salesforce & Freshdesk bi-directional sync</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Real-time sentiment detection & automated escalation</span>
+                </li>
+              </ul>
             </div>
+            <div class="service-dossier__spec-box">
+              <div class="service-dossier__spec-row">
+                <span class="service-dossier__spec-label">Target Metric</span>
+                <span style="font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: #111111;">-72% Resolution Time</span>
+              </div>
+              <a href="#consultation" class="service-dossier__cta">Request Specification &rarr;</a>
+            </div>
+          </article>
 
-            <a href="#consultation" class="btn btn--primary">Discuss a Similar Project</a>
-          </div>
+          <!-- Cap 2: RAG -->
+          <article class="service-dossier">
+            <div class="service-dossier__main">
+              <span class="service-dossier__idx">CAPABILITY 02 &bull; Knowledge Management</span>
+              <h3 class="service-dossier__title">Enterprise RAG & Internal Knowledge Assistants</h3>
+              <p class="service-dossier__desc">
+                Empower your employees to extract instant, verified insights from extensive internal documentation, contracts, and engineering wikis.
+              </p>
+              <div class="service-dossier__deliverables-title">Architectural Features & Integration Deliverables</div>
+              <ul class="service-dossier__deliverables">
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Semantic vector search with exact citation hyperlinks</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Granular Role-Based Access Control (RBAC) scoping</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Connectors for Confluence, SharePoint, Notion, PDFs, SQL</span>
+                </li>
+              </ul>
+            </div>
+            <div class="service-dossier__spec-box">
+              <div class="service-dossier__spec-row">
+                <span class="service-dossier__spec-label">Target Metric</span>
+                <span style="font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: #111111;">94.2% First-Contact Precision</span>
+              </div>
+              <a href="#consultation" class="service-dossier__cta">Request Specification &rarr;</a>
+            </div>
+          </article>
 
-          <div class="service-case-metrics">
-            <div class="case-metric-box">
-              <div class="case-metric-box__num">+85%</div>
-              <div class="case-metric-box__label">First-Contact Resolution Rate</div>
+          <!-- Cap 3: Autonomous Actions -->
+          <article class="service-dossier">
+            <div class="service-dossier__main">
+              <span class="service-dossier__idx">CAPABILITY 03 &bull; Process Automation</span>
+              <h3 class="service-dossier__title">Autonomous Workflow & Action Agents</h3>
+              <p class="service-dossier__desc">
+                Equip language models with tool-calling capabilities to execute multi-step operations directly in your backend business platforms.
+              </p>
+              <div class="service-dossier__deliverables-title">Architectural Features & Integration Deliverables</div>
+              <ul class="service-dossier__deliverables">
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>API connectors for SAP, HubSpot, NetSuite, and gRPC</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Automated quote calculation, order validation, invoicing</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pre-flight security checks before sensitive state changes</span>
+                </li>
+              </ul>
             </div>
-            <div class="case-metric-box">
-              <div class="case-metric-box__num">4 Months</div>
-              <div class="case-metric-box__label">Full Investment Payback Period</div>
+            <div class="service-dossier__spec-box">
+              <div class="service-dossier__spec-row">
+                <span class="service-dossier__spec-label">Target Metric</span>
+                <span style="font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: #111111;">4.2x Faster Onboarding</span>
+              </div>
+              <a href="#consultation" class="service-dossier__cta">Request Specification &rarr;</a>
             </div>
-            <div class="case-metric-box">
-              <div class="case-metric-box__num">4 Languages</div>
-              <div class="case-metric-box__label">Simultaneous 24/7 Support (EN, DE, FR, ES)</div>
-            </div>
-          </div>
+          </article>
+
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 08 — INTERACTIVE FAQ ACCORDION
+         SECTION 04 — DELIVERY METHODOLOGY (5 STEPS)
          ==================================================================== -->
-    <section class="section" id="faq">
+    <section class="editorial-section" id="process">
       <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">FAQ</div>
-          <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
-          <p class="section-subtitle">
-            Answers to key questions regarding technical architecture, security, timelines, and costs.
-          </p>
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Delivery Methodology</span>
+            <h2 class="editorial-header__title">
+              From Concept to Production <br>
+              <span class="editorial-header__title-accent">in 5 Structured Steps.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              Predictable milestones, rapid prototyping, and production-tested engineering practices for risk-free enterprise deployment.
+            </p>
+          </div>
         </div>
 
-        <div class="service-faq-container">
-          <!-- FAQ 1 -->
+        <div class="delivery-roadmap-grid" style="grid-template-columns: repeat(5, 1fr);">
+          
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">STEP 01</span>
+            <h3 class="delivery-roadmap-step__title" style="font-size: 17px;">Discovery & Architecture</h3>
+            <p class="delivery-roadmap-step__desc" style="font-size: 13px;">
+              Identify high-ROI use cases, assess data pipelines, define compliance & security requirements, and establish quantifiable KPIs.
+            </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>Duration: 1&ndash;2 Weeks</span>
+            </div>
+          </div>
+
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">STEP 02</span>
+            <h3 class="delivery-roadmap-step__title" style="font-size: 17px;">PoC & Feasibility</h3>
+            <p class="delivery-roadmap-step__desc" style="font-size: 13px;">
+              Build a functional working prototype with your actual enterprise data to benchmark answer accuracy and latency before full buildout.
+            </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>Duration: 2&ndash;3 Weeks</span>
+            </div>
+          </div>
+
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">STEP 03</span>
+            <h3 class="delivery-roadmap-step__title" style="font-size: 17px;">Core Engineering</h3>
+            <p class="delivery-roadmap-step__desc" style="font-size: 13px;">
+              Develop the complete RAG pipeline, establish bi-directional API connections with ERP/CRM, implement guardrails, and craft responsive UIs.
+            </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>Duration: 3&ndash;6 Weeks</span>
+            </div>
+          </div>
+
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">STEP 04</span>
+            <h3 class="delivery-roadmap-step__title" style="font-size: 17px;">Red-Teaming & UAT</h3>
+            <p class="delivery-roadmap-step__desc" style="font-size: 13px;">
+              Rigorous adversarial red-teaming (prompt injection & data leak simulations), stress testing, regulatory audits, and User Acceptance Testing.
+            </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>Duration: 2 Weeks</span>
+            </div>
+          </div>
+
+          <div class="delivery-roadmap-step">
+            <span class="delivery-roadmap-step__num">STEP 05</span>
+            <h3 class="delivery-roadmap-step__title" style="font-size: 17px;">Production & SLA</h3>
+            <p class="delivery-roadmap-step__desc" style="font-size: 13px;">
+              Zero-downtime deployment on cloud/Kubernetes, team onboarding, continuous telemetry tracking, and ongoing model refinement.
+            </p>
+            <div class="delivery-roadmap-step__metric">
+              <span>Ongoing 24/7 SLA</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 05 — TECHNOLOGY RADAR
+         ==================================================================== -->
+    <section class="editorial-section editorial-section--alt" id="tech-stack">
+      <div class="container">
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Technology Stack</span>
+            <h2 class="editorial-header__title">
+              Modern, Resilient & <br>
+              <span class="editorial-header__title-accent">Future-Proof AI Stacks.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              We are technology-agnostic, choosing best-in-class frameworks, foundation models, and vector stores tailored to your technical requirements.
+            </p>
+          </div>
+        </div>
+
+        <div class="tech-directory-grid" style="grid-template-columns: repeat(4, 1fr);">
+          
+          <div class="service-tech-column" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 8px; padding: 28px;">
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase; margin-bottom: 8px;">Tier 01</div>
+            <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #111111; margin: 0 0 16px 0;">Foundation Models</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+              <li>OpenAI GPT-4o & o1</li>
+              <li>Anthropic Claude 3.5 Sonnet</li>
+              <li>Meta Llama 3.1 & 3.3</li>
+              <li>Mistral Large / Pixtral</li>
+              <li>DeepSeek V3 / R1</li>
+            </ul>
+          </div>
+
+          <div class="service-tech-column" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 8px; padding: 28px;">
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase; margin-bottom: 8px;">Tier 02</div>
+            <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #111111; margin: 0 0 16px 0;">Agent Orchestration</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+              <li>LangChain & LangGraph</li>
+              <li>LlamaIndex (Advanced RAG)</li>
+              <li>AutoGen & CrewAI</li>
+              <li>Semantic Kernel (.NET)</li>
+              <li>DSPy (Self-Tuning Prompts)</li>
+            </ul>
+          </div>
+
+          <div class="service-tech-column" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 8px; padding: 28px;">
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase; margin-bottom: 8px;">Tier 03</div>
+            <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #111111; margin: 0 0 16px 0;">Vector Databases</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+              <li>Qdrant (Rust Native)</li>
+              <li>Pinecone (Serverless)</li>
+              <li>pgvector (PostgreSQL)</li>
+              <li>Milvus / Zilliz</li>
+              <li>Weaviate (Hybrid Search)</li>
+            </ul>
+          </div>
+
+          <div class="service-tech-column" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 8px; padding: 28px;">
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase; margin-bottom: 8px;">Tier 04</div>
+            <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #111111; margin: 0 0 16px 0;">Observability & Cloud</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+              <li>AWS, Azure & GCP</li>
+              <li>Kubernetes (K8s)</li>
+              <li>Langfuse & Arize Phoenix</li>
+              <li>Guardrails AI (PII Filter)</li>
+              <li>Datadog LLM Monitoring</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 06 — BUSINESS IMPACT & ROI
+         ==================================================================== -->
+    <section class="metric-ledger-strip" id="business-impact">
+      <div class="container">
+        
+        <div style="margin-bottom: 32px;">
+          <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase;">Quantitative Outcomes</span>
+          <h2 style="font-family: var(--font-heading); font-size: 28px; font-weight: 700; color: #111111; margin: 6px 0 0 0;">Measurable Enterprise ROI Across Deployments</h2>
+        </div>
+
+        <div class="metric-ledger-grid">
+          
+          <div class="metric-ledger-item">
+            <span class="metric-ledger-item__meta">Cost Reduction</span>
+            <div class="metric-ledger-item__val">-70%</div>
+            <div class="metric-ledger-item__label">Tier-1 Support Expense</div>
+            <p class="metric-ledger-item__desc">Autonomous resolution of routine customer queries without manual agent intervention.</p>
+          </div>
+
+          <div class="metric-ledger-item">
+            <span class="metric-ledger-item__meta">Resolution Quality</span>
+            <div class="metric-ledger-item__val">94.2%</div>
+            <div class="metric-ledger-item__label">First-Contact Resolution</div>
+            <p class="metric-ledger-item__desc">Precise answers retrieved from verified enterprise documents and databases.</p>
+          </div>
+
+          <div class="metric-ledger-item">
+            <span class="metric-ledger-item__meta">Payback Period</span>
+            <div class="metric-ledger-item__val">3.8x</div>
+            <div class="metric-ledger-item__label">ROI within 6 Months</div>
+            <p class="metric-ledger-item__desc">Rapid operational break-even driven by automated ticket processing and triage.</p>
+          </div>
+
+          <div class="metric-ledger-item">
+            <span class="metric-ledger-item__meta">Velocity</span>
+            <div class="metric-ledger-item__val">4.2x</div>
+            <div class="metric-ledger-item__label">Faster Knowledge Retrieval</div>
+            <p class="metric-ledger-item__desc">Instant semantic extraction across disparate internal wikis and documents.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 07 — FEATURED CASE STUDY
+         ==================================================================== -->
+    <section class="editorial-section" id="case-study">
+      <div class="container">
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Enterprise Case Study</span>
+            <h2 class="editorial-header__title">
+              High-Velocity Clinical AI <br>
+              <span class="editorial-header__title-accent">in Production.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              How Cypherox deployed an autonomous document extraction and patient triage agent for a healthcare provider operating across Europe.
+            </p>
+          </div>
+        </div>
+
+        <article class="editorial-case-card">
+          <div class="editorial-case-card__left">
+            <div class="editorial-case-card__meta-bar">
+              <span class="editorial-case-card__tag">Healthcare &bull; 100% HIPAA / GDPR</span>
+            </div>
+            <h3 class="editorial-case-card__title">Clinical NLP & Patient Intake Automation</h3>
+            <p class="editorial-case-card__summary">
+              Automated extraction of complex medical histories from unstructured PDF referrals, integrated directly into European electronic health record (EHR) systems.
+            </p>
+
+            <div class="editorial-case-card__challenge-solution">
+              <div class="editorial-case-card__point">
+                <span class="editorial-case-card__point-label">Challenge:</span>
+                <span class="editorial-case-card__point-text">Clinicians spent over 18 hours weekly manually parsing unstructured clinical letters, delaying critical specialist appointments.</span>
+              </div>
+              <div class="editorial-case-card__point">
+                <span class="editorial-case-card__point-label">Delivered Solution:</span>
+                <span class="editorial-case-card__point-text">A sovereign, self-hosted LLM pipeline with deterministic schema validation and verified audit trails deployed inside the client's private VPC.</span>
+              </div>
+            </div>
+
+            <div class="editorial-case-card__stack-wrap">
+              <span class="editorial-case-card__stack-pill">Llama 3.3</span>
+              <span class="editorial-case-card__stack-pill">Qdrant</span>
+              <span class="editorial-case-card__stack-pill">FastAPI</span>
+              <span class="editorial-case-card__stack-pill">AWS PrivateLink</span>
+              <span class="editorial-case-card__stack-pill">Docker</span>
+            </div>
+          </div>
+
+          <div class="editorial-case-card__impact-box">
+            <div>
+              <div class="editorial-case-card__impact-header">Quantitative Verification</div>
+              <div class="editorial-case-card__metrics-grid">
+                <div>
+                  <div class="editorial-case-card__metric-val">-78%</div>
+                  <div class="editorial-case-card__metric-label">Manual Intake Time</div>
+                </div>
+                <div>
+                  <div class="editorial-case-card__metric-val">99.4%</div>
+                  <div class="editorial-case-card__metric-label">Extraction Accuracy</div>
+                </div>
+                <div>
+                  <div class="editorial-case-card__metric-val">&lt; 1.2s</div>
+                  <div class="editorial-case-card__metric-label">Processing Time / Page</div>
+                </div>
+                <div>
+                  <div class="editorial-case-card__metric-val">Zero</div>
+                  <div class="editorial-case-card__metric-label">Data Retention Breaches</div>
+                </div>
+              </div>
+            </div>
+            <a href="case-studies/case-study-detail.html" class="btn btn--primary" style="align-self: flex-start;">Read Full Blueprint &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 08 — FAQ ACCORDION
+         ==================================================================== -->
+    <section class="editorial-section editorial-section--alt" id="faq">
+      <div class="container">
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Service FAQ</span>
+            <h2 class="editorial-header__title">
+              Common Technical & <br>
+              <span class="editorial-header__title-accent">Operational Questions.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              Answers regarding security, model selection, hallucination prevention, and enterprise deployment options.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-faq-container" style="max-width: 900px; margin: 0 auto;">
+          
           <div class="faq-item is-open">
             <button class="faq-question-btn" aria-expanded="true">
-              <span>How do you prevent the AI agent from hallucinating or generating false statements?</span>
+              <span>How do you eliminate hallucinations in enterprise AI agents?</span>
               <div class="faq-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </button>
             <div class="faq-answer-panel">
               <p>
-                We implement a strict <strong>Retrieval-Augmented Generation (RAG)</strong> pipeline with deterministic guardrails. The language model is restricted to referencing your verified company sources only. Every output is backed by transparent source citations, and downstream verification loops validate factual consistency before answers are displayed. If an inquiry cannot be answered with absolute certainty, the agent gracefully escalates the conversation to a human specialist.
+                We use strict Retrieval-Augmented Generation (RAG) with source verification. Language models are prohibited from answering outside retrieved enterprise context, cross-encoder re-ranking filters out irrelevant chunks, and automated evaluator models check responses before they reach the user.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 2 -->
           <div class="faq-item">
             <button class="faq-question-btn" aria-expanded="false">
-              <span>How is data privacy and compliance guaranteed for sensitive enterprise data?</span>
+              <span>Can the AI agents run completely on-premise or in our private cloud?</span>
               <div class="faq-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </button>
             <div class="faq-answer-panel">
               <p>
-                Security and data privacy are foundational. We deploy architectures with strict <strong>Zero-Data-Retention</strong> policies (meaning provider APIs never retain data for model training). Deployments can be hosted inside your own Virtual Private Cloud (AWS, Azure, GCP) or on-premise. Furthermore, automated pre-processing layers strip Personally Identifiable Information (PII) before any prompt is processed.
+                Yes. We engineer sovereign deployments using state-of-the-art open-weights models (such as Llama 3.3 or Mistral) running entirely within your isolated AWS/Azure VPC or on-premise Kubernetes cluster with no external API calls.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 3 -->
           <div class="faq-item">
             <button class="faq-question-btn" aria-expanded="false">
-              <span>Can the AI agent integrate with our existing ERP, CRM, and ticketing systems?</span>
+              <span>How does the agent integrate with our existing CRM, ERP, and databases?</span>
               <div class="faq-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </button>
             <div class="faq-answer-panel">
               <p>
-                Yes, deep systems integration is our core strength. Using enterprise-grade REST, GraphQL, or gRPC endpoints, we connect the agent into SAP, Salesforce, Zendesk, HubSpot, and custom databases. The agent can both retrieve information (e.g. order tracking or inventory status) and execute authenticated operations (e.g. updating addresses, generating support tickets, or booking appointments).
+                We build secure, authenticated tool-calling connectors using OpenAPI, GraphQL, or direct database connections with read/write permission boundaries. State-changing actions can require explicit human confirmation.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 4 -->
           <div class="faq-item">
             <button class="faq-question-btn" aria-expanded="false">
-              <span>What is the typical timeline from kick-off to production launch?</span>
+              <span>What is the typical timeline to launch an enterprise AI agent in production?</span>
               <div class="faq-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </button>
             <div class="faq-answer-panel">
               <p>
-                A fully working <strong>Proof of Concept (PoC)</strong> connected to your real data is typically delivered within <strong>2 to 3 weeks</strong>. A complete, production-hardened system with backend integrations, adversarial red-teaming, and User Acceptance Testing (UAT) usually requires <strong>6 to 10 weeks</strong>.
+                A high-fidelity Proof of Concept (PoC) using your real enterprise documents is delivered in 2 to 3 weeks. Production hardening, integrations, security red-teaming, and pilot rollout typically conclude within 6 to 10 weeks.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 5 -->
-          <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
-              <span>What commercial and engagement models do you offer?</span>
-              <div class="faq-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </div>
-            </button>
-            <div class="faq-answer-panel">
-              <p>
-                We offer flexible engagement structures: For well-defined scopes, we provide <strong>Fixed-Price Projects</strong> with guaranteed timelines and deliverables. For evolving initiatives, we offer <strong>Time & Materials</strong> or <strong>Dedicated Engineering Pods</strong> (experienced AI engineers seamlessly embedded into your team).
-              </p>
-            </div>
-          </div>
-
-          <!-- FAQ 6 -->
-          <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
-              <span>What happens after launch? Do you provide maintenance and SLAs?</span>
-              <div class="faq-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </div>
-            </button>
-            <div class="faq-answer-panel">
-              <p>
-                We partner with you for the long term. Our comprehensive Service Level Agreements (SLAs) cover 24/7 telemetry monitoring, security patching, inference cost optimization, and periodic model fine-tuning to keep your agent at the cutting edge.
-              </p>
-            </div>
-          </div>
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 09 — CONSULTATION & CONTACT FORM (#consultation)
+         SECTION 09 — STRATEGIC BRIEFING & CONTACT FORM
          ==================================================================== -->
-    <section class="consultation-section" id="consultation">
+    <section class="editorial-section" id="consultation">
       <div class="container">
-        <div class="consultation-grid">
+        
+        <div class="briefing-studio-grid">
           
-          <!-- Left Column: Contact Information & Trust Signals -->
-          <div class="consultation-info">
-            <div class="eyebrow">Schedule a Consultation</div>
-            <h2 class="section-title">
-              Kickstart Your <br>
-              <span class="text-gradient">AI Agent Project</span>
+          <div class="briefing-studio-info">
+            <span class="editorial-header__eyebrow">Architecture Advisory</span>
+            <h2 class="editorial-header__title" style="margin-bottom: 20px;">
+              Ready to Deploy Sovereign <br>
+              <span class="editorial-header__title-accent">AI Agents?</span>
             </h2>
-            <p class="section-subtitle">
-              Tell us about your objectives. Our senior AI architects will review your requirements and provide an initial feasibility assessment and architecture roadmap within 24 hours.
+            <p class="editorial-header__narrative" style="margin-bottom: 28px;">
+              Speak directly with an AI Solutions Architect. We will review your use cases, assess data readiness, and provide a clear feasibility and cost roadmap.
             </p>
 
-            <div class="consultation-person">
-              <div class="consultation-person__avatar">CX</div>
+            <div class="briefing-studio-lead">
+              <div class="briefing-studio-lead__avatar">JD</div>
               <div>
-                <div class="consultation-person__name">Technical Solutions Team</div>
-                <div class="consultation-person__role">Enterprise AI & Software Engineering</div>
+                <div class="briefing-studio-lead__name">James Davidson</div>
+                <div class="briefing-studio-lead__role">Head of Technology Partnerships &bull; DACH & International</div>
               </div>
             </div>
 
-            <div class="consultation-contacts">
-              <div class="consultation-item">
-                <span class="consultation-item-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </span>
-                <span><strong>Email:</strong> hello@cypherox.com</span>
-              </div>
-              <div class="consultation-item">
-                <span class="consultation-item-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                </span>
-                <span><strong>Phone:</strong> +44 20 1234 5678 (Global & European Coverage)</span>
-              </div>
-              <div class="consultation-item">
-                <span class="consultation-item-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </span>
-                <span><strong>Offices:</strong> London, UK &middot; Frankfurt, DE &middot; San Francisco, US</span>
-              </div>
-              <div class="consultation-item">
-                <span class="consultation-item-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </span>
-                <span><strong>Confidentiality:</strong> Strictly confidential (NDAs signed upfront)</span>
-              </div>
-            </div>
+            <ul class="briefing-studio-guarantees">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>30-minute architecture consultation with Senior AI Engineer</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Full NDA signed prior to discussion upon request</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Pragmatic feasibility assessment & token cost projection</span>
+              </li>
+            </ul>
           </div>
 
-          <!-- Right Column: Interactive Consultation Form -->
-          <div class="consultation-form-wrapper">
-            <form id="consultation-form" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="fullName">Full Name *</label>
-                  <input class="form-input" type="text" id="fullName" name="fullName" placeholder="e.g. Alexander Wright" required>
-                  <span class="form-error-msg">Please enter your full name.</span>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="workEmail">Work Email *</label>
-                  <input class="form-input" type="email" id="workEmail" name="workEmail" placeholder="name@company.com" required>
-                  <span class="form-error-msg">Please enter a valid work email.</span>
-                </div>
-              </div>
+          <div class="briefing-form-box">
+            <div class="briefing-form-box__header">
+              <h3 class="briefing-form-box__title">AI Project Briefing</h3>
+              <p class="briefing-form-box__sub">Provide initial parameters. We respond within 24 hours.</p>
+            </div>
 
-              <div class="form-row">
+            <form class="consultation-form" id="consultation-form" novalidate>
+              <div class="briefing-form-grid">
+                
                 <div class="form-group">
-                  <label class="form-label" for="phone">Phone Number (optional)</label>
-                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="+44 20 7946 0912">
+                  <label for="fullname">Full Name *</label>
+                  <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Jane Doe" required autocomplete="name">
+                  <div class="form-error-msg" id="error-fullname">Please enter your name.</div>
                 </div>
+
                 <div class="form-group">
-                  <label class="form-label" for="company">Company *</label>
-                  <input class="form-input" type="text" id="company" name="company" placeholder="Your company name" required>
-                  <span class="form-error-msg">Please enter your company name.</span>
+                  <label for="email">Work Email *</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="jane@company.com" required autocomplete="email">
+                  <div class="form-error-msg" id="error-email">Please enter a valid work email.</div>
                 </div>
-              </div>
 
-              <div class="form-group">
-                <label class="form-label" for="service">Service of Interest *</label>
-                <select class="form-input form-select" id="service" name="service" required>
-                  <option value="ai" selected>AI & Machine Learning Engineering</option>
-                  <option value="software">Custom Software & Platform Engineering</option>
-                  <option value="data">Data Intelligence & Analytics</option>
-                  <option value="cloud">Cloud Infrastructure & DevOps</option>
-                  <option value="transformation">Digital Transformation & Architecture</option>
-                  <option value="team">Dedicated Engineering Team</option>
-                  <option value="other">General Inquiry / Initial Consultation</option>
-                </select>
-                <span class="form-error-msg">Please select a service area.</span>
-              </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number (optional)</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="+49 30 12345678" autocomplete="tel">
+                </div>
 
-              <div class="form-group">
-                <label class="form-label" for="message">Project Overview *</label>
-                <textarea class="form-input" id="message" name="message" rows="4" placeholder="Briefly describe your objectives, key workflows to automate, and existing systems (CRM, ERP, DBs)..." required></textarea>
-                <span class="form-error-msg">Please enter a short project description.</span>
-              </div>
+                <div class="form-group">
+                  <label for="service-interest">Deployment Environment *</label>
+                  <select id="service-interest" name="service" class="form-control" required>
+                    <option value="" disabled selected>Select environment...</option>
+                    <option value="private-cloud">Private Cloud VPC (AWS / Azure / GCP)</option>
+                    <option value="on-premise">On-Premise / Sovereign Hardware</option>
+                    <option value="managed-saas">Commercial API / Managed SaaS</option>
+                    <option value="hybrid">Hybrid Architecture</option>
+                  </select>
+                  <div class="form-error-msg" id="error-service">Please select an environment.</div>
+                </div>
 
-              <button type="submit" class="btn btn--primary btn--large btn--full">Request Consultation</button>
-              <p class="form-privacy">
-                By submitting this form, you agree to our Privacy Policy. We guarantee complete confidentiality and respond within 24 hours.
-              </p>
+                <div class="form-group form-group--full">
+                  <label for="message">Use Case & Target Systems *</label>
+                  <textarea id="message" name="message" class="form-control" rows="4" placeholder="Briefly describe what you want the agent to do (e.g., support triage, internal RAG, document parsing)..." required></textarea>
+                  <div class="form-error-msg" id="error-message">Please provide a brief description.</div>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <div class="form-checkbox-wrapper">
+                    <input type="checkbox" id="gdpr-consent" name="gdpr" required>
+                    <label for="gdpr-consent">
+                      I agree to the processing of my details according to the privacy policy. *
+                    </label>
+                  </div>
+                  <div class="form-error-msg" id="error-gdpr">Consent required.</div>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <button type="submit" class="btn btn--primary" id="form-submit-btn" style="width: 100%; padding: 15px !important; font-size: 15px !important;">
+                    <span>Submit Architecture Brief</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left: 8px;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </button>
+                </div>
+
+              </div>
             </form>
 
-            <div class="form-success-box" id="form-success-box">
-              <div class="form-success-box__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
-              <h3 class="form-success-box__title">Thank You For Reaching Out!</h3>
+            <div class="form-success-box" id="form-success-box" style="display: none;">
+              <div class="form-success-box__icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="form-success-box__title">Thank You for Your Inquiry!</h3>
               <p class="form-success-box__desc">
-                We have received your project details. A senior solution architect from our engineering team will review your requirements and reach out within 24 hours.
+                Your briefing has been received. A Lead AI Solutions Architect will contact you within 24 hours.
               </p>
             </div>
+
           </div>
 
         </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- REUSABLE DYNAMIC FOOTER CONTAINER (Rendered by header-footer.js) -->
+  <!-- REUSABLE DYNAMIC FOOTER CONTAINER -->
   <div id="site-footer"></div>
 
 </body>

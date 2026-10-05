@@ -5,31 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- ====================================================================
-       TEMPLATE CONFIGURATION INSTRUCTIONS:
-       To generate a new Industry page from this template:
-       1. Duplicate this file and rename it (e.g., healthcare.html,
-          retail-ecommerce.html, manufacturing.html, logistics.html, real-estate.html).
-       2. Update <title>, <meta name="description">, and OpenGraph tags.
-       3. Update the Breadcrumbs (e.g., Industries > Healthcare & Life Sciences).
-       4. Customize the Hero headline, subtext, and Hero Architecture Blueprint layers.
-       5. Update the Compliance Badges in #compliance for your sector's regulations
-          (e.g., HIPAA/MDR for Healthcare, ISO 9001 for Manufacturing).
-       6. Update the Sub-Sector tabs in #subsectors and the 6 Flagship Use Cases in #usecases.
-       7. Update the Case Study in #case-study and Tech Stack in #tech-stack.
-       8. Customize the FAQ answers in #faq and default option in #consultation.
-       ==================================================================== -->
-  <title>Banking & Financial Services (FinTech) Solutions | Cypherox Technologies</title>
+  <title>Banking & Financial Services (FinTech) Software Engineering | Cypherox Technologies</title>
   <meta name="description"
-    content="Digital banking transformation, real-time AI fraud prevention, and legacy core modernization for European and global financial institutions. BaFin, GDPR, and PCI-DSS compliant.">
+    content="Enterprise software engineering, real-time AI fraud detection, core banking modernization, and regulatory compliance (BaFin, GDPR, PCI-DSS L1) for financial institutions.">
 
   <!-- Open Graph / Meta -->
-  <meta property="og:title" content="Banking & Financial Services (FinTech) Solutions | Cypherox Technologies">
+  <meta property="og:title" content="FinTech Software Engineering & AI Solutions | Cypherox Technologies">
   <meta property="og:description"
-    content="Enterprise FinTech software engineering: ultra-low latency, BaFin/GDPR compliance, real-time AI fraud detection, and seamless core banking modernizations.">
+    content="Next-generation financial systems: Core ledger decoupling, sub-15ms fraud detection pipelines, SEPA Instant rails, and BaFin/GDPR sovereign cloud engineering.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cypherox.com/industries/finance-banking">
+  <meta property="og:url" content="https://cypherox.com/industry-detail-template.html">
   <meta name="robots" content="noindex, nofollow">
 
   <!-- Favicon -->
@@ -37,575 +22,414 @@
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2312141a'/%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-weight='bold' font-size='65' fill='%23faf9f6' text-anchor='middle'%3EC%3C/text%3E%3Ccircle cx='75' cy='25' r='12' fill='%23f26e65'/%3E%3C/svg%3E">
 
   <!-- Single Unified Stylesheet -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Scripts -->
-  <script src="/js/components.js" defer></script>
-  <script src="/js/header-footer.js" defer></script>
-  <script src="/js/main.js" defer></script>
-  <script src="/js/animations.js" defer></script>
+  <!-- Deferred Scripts -->
+  <script src="js/components.js" defer></script>
+  <script src="js/header-footer.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
 </head>
 
 <body>
 
-  <!-- REUSABLE DYNAMIC HEADER CONTAINER (Rendered by components.js & header-footer.js) -->
+  <!-- REUSABLE DYNAMIC HEADER CONTAINER -->
   <div id="site-header"></div>
 
   <main id="main-content">
 
-    <!-- ====================================================================
-         BREADCRUMB NAVIGATION
-         ==================================================================== -->
-    <div class="industry-breadcrumb-wrapper">
+    <!-- BREADCRUMB STRIP -->
+    <div style="background: #FAF9F6; border-bottom: 1px solid rgba(0, 0, 0, 0.06); padding: 16px 0; margin-top: var(--header-height);">
       <div class="container">
-        <nav class="industry-breadcrumb" aria-label="Breadcrumb">
-          <div class="industry-breadcrumb__item">
-            <a href="/index.html" class="industry-breadcrumb__link">Home</a>
-            <span class="industry-breadcrumb__separator">/</span>
-          </div>
-          <div class="industry-breadcrumb__item">
-            <a href="/index.html#industries" class="industry-breadcrumb__link">Industries</a>
-            <span class="industry-breadcrumb__separator">/</span>
-          </div>
-          <div class="industry-breadcrumb__item">
-            <span class="industry-breadcrumb__current" aria-current="page">Finance & Banking</span>
-          </div>
+        <nav class="service-breadcrumb" aria-label="Breadcrumb" style="display: flex; gap: 8px; font-size: 13px; color: #6b7280;">
+          <a href="index.html" style="color: #6b7280; text-decoration: none;">Home</a>
+          <span>/</span>
+          <span>Industries</span>
+          <span>/</span>
+          <span style="color: #111111; font-weight: 600;">Banking & Financial Services (FinTech)</span>
         </nav>
       </div>
     </div>
 
     <!-- ====================================================================
-          SECTION 01 — INDUSTRY HERO (ELEGANT SECTOR FOCUS)
-          ==================================================================== -->
-    <section class="industry-hero" id="hero">
-      <div class="container">
-
-        <div class="industry-hero-inner">
-
-          <!-- Top Row: Left Narrative & Right Executive Solution Showcase -->
-          <div class="industry-hero__top-row">
-
-            <!-- Left: Sector Value & Call-to-Actions -->
-            <div class="industry-hero__content">
-              <div class="industry-hero__badge">
-                <span class="industry-hero__pulse"></span>
-                <span>Banking &amp; Financial Services (FinTech)</span>
-              </div>
-
-              <h1 class="industry-hero__title">
-                Software Engineering &amp; AI for <br>
-                <span class="text-gradient">Next-Gen Financial Systems</span>
-              </h1>
-
-              <p class="industry-hero__subtitle">
-                We engineer scalable, ultra-reliable software and real-time AI solutions for banks, payment rails, and
-                FinTech innovators — from core ledger modernization to sub-15ms fraud detection.
-              </p>
-
-              <div class="industry-hero__actions">
-                <a href="#consultation" class="btn btn--primary btn--large">Schedule Industry Consultation</a>
-                <a href="#usecases" class="btn btn--secondary btn--large">Explore Capabilities</a>
-              </div>
-
-              <!-- Clean Institutional Trust Indicators -->
-              <div class="industry-hero__proof-row">
-                <div class="proof-item">
-                  <span class="proof-item__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
-                  <span class="proof-item__text"><strong>BaFin &amp; GDPR</strong> Sovereign</span>
-                </div>
-                <div class="proof-item">
-                  <span class="proof-item__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>
-                  <span class="proof-item__text"><strong>PCI-DSS L1</strong> Certified</span>
-                </div>
-                <div class="proof-item">
-                  <span class="proof-item__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span>
-                  <span class="proof-item__text"><strong>99.999% SLA</strong> Guaranteed</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right: Clean Executive Solution Showcase Card -->
-            <div class="industry-hero__visual">
-              <div class="industry-executive-card">
-
-                <!-- Card Header -->
-                <div class="executive-card__header">
-                  <div class="executive-card__title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                      <line x1="8" y1="21" x2="16" y2="21"></line>
-                      <line x1="12" y1="17" x2="12" y2="21"></line>
-                    </svg>
-                    <span>FinTech Engineering Framework</span>
-                  </div>
-                  <div class="executive-card__status">
-                    <span class="industry-hero__pulse" style="width:6px; height:6px;"></span>
-                    <span>Enterprise Ready</span>
-                  </div>
-                </div>
-
-                <!-- 3 Strategic Solution Pillars -->
-                <div class="executive-pillars">
-
-                  <!-- Pillar 1 -->
-                  <div class="executive-pillar">
-                    <div class="executive-pillar__icon"
-                      style="background: rgba(242, 110, 101, 0.1); color: var(--primary);">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="21"></line><line x1="3" y1="10" x2="21" y2="10"></line><polyline points="3 10 12 3 21 10"></polyline><line x1="6" y1="10" x2="6" y2="21"></line><line x1="10" y1="10" x2="10" y2="21"></line><line x1="14" y1="10" x2="14" y2="21"></line><line x1="18" y1="10" x2="18" y2="21"></line></svg>
-                    </div>
-                    <div class="executive-pillar__body">
-                      <div class="executive-pillar__top">
-                        <span class="executive-pillar__title">Core Banking Modernization</span>
-                        <span class="executive-pillar__tag executive-pillar__tag--accent">Zero Downtime</span>
-                      </div>
-                      <p class="executive-pillar__desc">
-                        Decoupling monolithic ledgers into resilient, event-driven cloud microservices with real-time
-                        audit trails.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Pillar 2 -->
-                  <div class="executive-pillar">
-                    <div class="executive-pillar__icon" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                    </div>
-                    <div class="executive-pillar__body">
-                      <div class="executive-pillar__top">
-                        <span class="executive-pillar__title">Real-Time AI Fraud Shield</span>
-                        <span class="executive-pillar__tag">&lt;15ms Latency</span>
-                      </div>
-                      <p class="executive-pillar__desc">
-                        Graph neural anomaly detection intercepting suspicious transactions in-flight with 84% fewer
-                        false declines.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Pillar 3 -->
-                  <div class="executive-pillar">
-                    <div class="executive-pillar__icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
-                    </div>
-                    <div class="executive-pillar__body">
-                      <div class="executive-pillar__top">
-                        <span class="executive-pillar__title">Instant Rails &amp; Open Banking</span>
-                        <span class="executive-pillar__tag">ISO 20022</span>
-                      </div>
-                      <p class="executive-pillar__desc">
-                        Full compliance with SEPA Instant, PSD2/PSD3 APIs, and hardware HSM encrypted payment vaults.
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <!-- Card Footer Highlights -->
-                <div class="executive-card__footer">
-                  <span><span style="display:inline-flex;vertical-align:middle;margin-right:4px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span> 50,000+ TPS Scale</span>
-                  <span><span style="display:inline-flex;vertical-align:middle;margin-right:4px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12.8 8.4 15.3 8.4 13.3 9.9 14.1 12.3 12 10.8 9.9 12.3 10.7 9.9 8.7 8.4 11.2 8.4 12 6"></polygon></svg></span> EU-Frankfurt Region</span>
-                  <span><span style="display:inline-flex;vertical-align:middle;margin-right:4px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span> BaFin Audited</span>
-                </div>
-
-              </div>
-            </div>
-
+         SECTION 01 — INDUSTRY HERO
+         ==================================================================== -->
+    <section class="hero--editorial" id="hero" style="min-height: auto; padding: 70px 0 80px 0;">
+      <div class="container hero__container">
+        
+        <div class="hero__editorial-content">
+          <div class="hero__lead-tag">
+            <span class="hero__lead-tag-dot"></span>
+            <span>Banking & Financial Services &bull; BaFin & GDPR Sovereign</span>
           </div>
 
-          <!-- Bottom Row: Full-Width Institutional Metric Strip -->
-          <div class="industry-hero__stats-strip">
-            <div class="industry-stat-cell">
-              <div class="industry-stat-cell__val">99.999<span class="industry-stat-cell__val--accent">%</span></div>
-              <div class="industry-stat-cell__lbl">Core Banking Uptime SLA</div>
-              <div class="industry-stat-cell__sub">Zero-downtime rolling deployments for transaction engines</div>
-            </div>
+          <h1 class="hero__display-title">
+            Software Engineering & AI for <br>
+            <span class="accent">Next-Gen Financial Systems.</span>
+          </h1>
 
-            <div class="industry-stat-cell">
-              <div class="industry-stat-cell__val">&lt;15<span class="industry-stat-cell__val--accent">ms</span></div>
-              <div class="industry-stat-cell__lbl">AI Fraud Scoring Latency</div>
-              <div class="industry-stat-cell__sub">Sub-millisecond inference on high-velocity payment rails</div>
-            </div>
+          <p class="hero__lead-text">
+            We engineer scalable, ultra-reliable software and real-time AI solutions for banks, payment rails, and FinTech innovators — from core ledger modernization to sub-15ms fraud detection.
+          </p>
 
-            <div class="industry-stat-cell">
-              <div class="industry-stat-cell__val">€50B<span class="industry-stat-cell__val--accent">+</span></div>
-              <div class="industry-stat-cell__lbl">Annual Processed Volume</div>
-              <div class="industry-stat-cell__sub">Engineered to support 50,000+ transactions per second</div>
-            </div>
-
-            <div class="industry-stat-cell">
-              <div class="industry-stat-cell__val">BaFin<span class="industry-stat-cell__val--accent">/GDPR</span></div>
-              <div class="industry-stat-cell__lbl">Institutional Governance</div>
-              <div class="industry-stat-cell__sub">Full compliance with PCI-DSS L1 and European regulatory mandates
-              </div>
-            </div>
+          <div class="hero__cta-group">
+            <a href="#consultation" class="btn btn--primary">Schedule Industry Consultation</a>
+            <a href="#usecases" class="btn btn--secondary">Explore Capabilities</a>
           </div>
 
+          <div class="hero__sla-note">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>PCI-DSS Level 1 &bull; ISO 27001 Certified &bull; 99.999% SLA Guaranteed</span>
+          </div>
+        </div>
+
+        <!-- Right Column: FinTech Framework Card -->
+        <div class="hero__visual-col">
+          <div class="hero__workbench">
+            <div class="workbench__header">
+              <div class="workbench__title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>FinTech Engineering Framework</span>
+              </div>
+              <div class="workbench__status">
+                <span class="workbench__status-dot"></span>
+                <span>Active 99.999%</span>
+              </div>
+            </div>
+
+            <div class="workbench__body">
+              <div class="workbench__tier">
+                <div class="workbench__tier-left">
+                  <span class="workbench__tier-idx">01</span>
+                  <div class="workbench__tier-info">
+                    <h4>Core Banking Modernization</h4>
+                    <p>Decoupled microservices & Kafka event mesh</p>
+                  </div>
+                </div>
+                <span class="workbench__tier-badge">ZERO DOWNTIME</span>
+              </div>
+
+              <div class="workbench__tier">
+                <div class="workbench__tier-left">
+                  <span class="workbench__tier-idx">02</span>
+                  <div class="workbench__tier-info">
+                    <h4>Real-Time AI Fraud Shield</h4>
+                    <p>Graph neural anomaly detection in flight</p>
+                  </div>
+                </div>
+                <span class="workbench__tier-badge">&lt;15ms LATENCY</span>
+              </div>
+
+              <div class="workbench__tier">
+                <div class="workbench__tier-left">
+                  <span class="workbench__tier-idx">03</span>
+                  <div class="workbench__tier-info">
+                    <h4>Instant Rails & Open Banking</h4>
+                    <p>SEPA Instant, PSD2/PSD3 & ISO 20022 APIs</p>
+                  </div>
+                </div>
+                <span class="workbench__tier-badge">ISO 20022</span>
+              </div>
+            </div>
+
+            <div class="workbench__footer">
+              <span>Regulatory Stance</span>
+              <strong style="color: #10b981;">BaFin / DORA Compliant</strong>
+            </div>
+          </div>
         </div>
 
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 02 — INSTITUTIONAL COMPLIANCE & SECURITY MATRIX
+         SECTION 02 — INSTITUTIONAL GOVERNANCE LEDGER
          ==================================================================== -->
-    <section class="section" id="compliance" style="padding-top: 40px; padding-bottom: 40px;">
+    <section class="metric-ledger-strip" id="compliance" style="padding: 40px 0;">
       <div class="container">
+        
+        <div style="margin-bottom: 24px;">
+          <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase;">Institutional Governance</span>
+          <h2 style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: #111111; margin: 4px 0 0 0;">
+            Engineered for Germany, Europe & Global Regulated Markets
+          </h2>
+        </div>
 
-        <div class="industry-compliance-banner">
-          <div class="compliance-banner-header">
-            <div class="compliance-banner-eyebrow">Institutional Governance</div>
-            <h2 class="compliance-banner-title">Engineered for Germany, Europe & Global Regulated Markets</h2>
-            <p class="compliance-banner-desc">
-              Financial engineering requires uncompromising compliance. Every architecture we deliver is strictly
-              audited for European data sovereignty, zero-trust cryptographic defense, and regulatory reporting
-              standards.
+        <div class="metric-ledger-grid" style="grid-template-columns: repeat(6, 1fr);">
+          <div class="metric-ledger-item" style="padding: 0 16px;">
+            <div style="font-size: 13px; font-weight: 700; color: #111111;">PCI-DSS L1</div>
+            <div style="font-size: 12px; color: #6b7280;">Certified Vaults</div>
+          </div>
+          <div class="metric-ledger-item" style="padding: 0 16px;">
+            <div style="font-size: 13px; font-weight: 700; color: #111111;">GDPR Sovereign</div>
+            <div style="font-size: 12px; color: #6b7280;">100% EU Data Hosting</div>
+          </div>
+          <div class="metric-ledger-item" style="padding: 0 16px;">
+            <div style="font-size: 13px; font-weight: 700; color: #111111;">BaFin & EBA</div>
+            <div style="font-size: 12px; color: #6b7280;">Audit-Ready Controls</div>
+          </div>
+          <div class="metric-ledger-item" style="padding: 0 16px;">
+            <div style="font-size: 13px; font-weight: 700; color: #111111;">SOC 2 Type II</div>
+            <div style="font-size: 12px; color: #6b7280;">Verified Operations</div>
+          </div>
+          <div class="metric-ledger-item" style="padding: 0 16px;">
+            <div style="font-size: 13px; font-weight: 700; color: #111111;">ISO 27001</div>
+            <div style="font-size: 12px; color: #6b7280;">InfoSec Management</div>
+          </div>
+          <div class="metric-ledger-item" style="padding: 0 16px;">
+            <div style="font-size: 13px; font-weight: 700; color: #111111;">AES-256 / HSM</div>
+            <div style="font-size: 12px; color: #6b7280;">Hardware Vault Keys</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 03 — INDUSTRY LANDSCAPE: CHALLENGES VS SOLUTIONS
+         ==================================================================== -->
+    <section class="editorial-section" id="landscape">
+      <div class="container">
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Industry Landscape</span>
+            <h2 class="editorial-header__title">
+              Navigating the High-Stakes Shifts in <br>
+              <span class="editorial-header__title-accent">Financial Services.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              Financial institutions are caught between legacy operational silos, escalating fraud attacks, and aggressive neo-bank competition. Here is how we bridge the divide.
             </p>
           </div>
-
-          <div class="compliance-badges-grid">
-            <div class="compliance-badge-item">
-              <div class="compliance-badge-item__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-              <div class="compliance-badge-item__title">PCI-DSS Level 1</div>
-              <div class="compliance-badge-item__sub">Certified Payment Vaults</div>
-            </div>
-            <div class="compliance-badge-item">
-              <div class="compliance-badge-item__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-              <div class="compliance-badge-item__title">GDPR Sovereign</div>
-              <div class="compliance-badge-item__sub">100% German/EU Data Hosting</div>
-            </div>
-            <div class="compliance-badge-item">
-              <div class="compliance-badge-item__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-              <div class="compliance-badge-item__title">BaFin & EBA</div>
-              <div class="compliance-badge-item__sub">Ready for Audit & Oversight</div>
-            </div>
-            <div class="compliance-badge-item">
-              <div class="compliance-badge-item__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-              <div class="compliance-badge-item__title">SOC 2 Type II</div>
-              <div class="compliance-badge-item__sub">Audited Engineering Controls</div>
-            </div>
-            <div class="compliance-badge-item">
-              <div class="compliance-badge-item__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-              <div class="compliance-badge-item__title">ISO 27001</div>
-              <div class="compliance-badge-item__sub">Information Security Standards</div>
-            </div>
-            <div class="compliance-badge-item">
-              <div class="compliance-badge-item__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-              <div class="compliance-badge-item__title">AES-256 / HSM</div>
-              <div class="compliance-badge-item__sub">Hardware Security Keys</div>
-            </div>
-          </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 03 — SECTOR LANDSCAPE: INDUSTRY CHALLENGES VS SOLUTIONS
-         ==================================================================== -->
-    <section class="section section--alt" id="landscape">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Industry Landscape</div>
-          <h2 class="section-title">Navigating the High-Stakes Shifts in <span class="text-gradient">Financial
-              Services</span></h2>
-          <p class="section-subtitle">
-            Financial institutions are caught between legacy operational silos, escalating fraud attacks, and aggressive
-            neo-bank competition. Here is how we bridge the divide.
-          </p>
-        </div>
-
-        <div class="industry-landscape-grid">
-
-          <!-- Card 1 -->
-          <div class="industry-landscape-card">
-            <div class="landscape-card-header">
-              <div class="landscape-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="21"></line><line x1="3" y1="10" x2="21" y2="10"></line><polyline points="3 10 12 3 21 10"></polyline><line x1="6" y1="10" x2="6" y2="21"></line><line x1="10" y1="10" x2="10" y2="21"></line><line x1="14" y1="10" x2="14" y2="21"></line><line x1="18" y1="10" x2="18" y2="21"></line></svg></div>
-              <div class="landscape-card-num">01</div>
-            </div>
-            <h3 class="landscape-card-title">Legacy Core Banking Entrapment</h3>
-            <div class="landscape-block landscape-block--challenge">
-              <strong>The Industry Problem</strong>
-              Traditional core ledgers (COBOL, AS400, older SAP) are fragile, batch-oriented, and slow. Modifying them
-              requires multi-year projects with unacceptable outage risks.
-            </div>
-            <div class="landscape-block landscape-block--solution">
-              <strong>The Cypherox Engineering Solution</strong>
-              We implement the Strangler Fig pattern with event-driven Kafka middleware. New digital features deploy on
-              agile microservices while asynchronously reconciling with your legacy ledger without risk.
+        <div class="delivery-roadmap-grid" style="grid-template-columns: repeat(2, 1fr); gap: 32px;">
+          
+          <div class="delivery-roadmap-step" style="padding: 36px;">
+            <span class="delivery-roadmap-step__num">CHALLENGE 01</span>
+            <h3 class="delivery-roadmap-step__title">Legacy Core Banking Entrapment</h3>
+            <p class="delivery-roadmap-step__desc">
+              Traditional core ledgers (COBOL, older AS400, legacy SAP) are fragile, batch-oriented, and slow. Modifying them requires multi-year projects with unacceptable outage risks.
+            </p>
+            <div style="background: #F8F7F4; border-left: 3px solid #f26e65; padding: 16px; margin-top: 16px; border-radius: 0 6px 6px 0; font-size: 13px; line-height: 1.55; color: #374151;">
+              <strong>The Cypherox Engineering Solution:</strong> We implement the Strangler Fig pattern with event-driven Kafka middleware. New digital features deploy on agile microservices while asynchronously reconciling with your legacy ledger without operational risk.
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="industry-landscape-card">
-            <div class="landscape-card-header">
-              <div class="landscape-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
-              <div class="landscape-card-num">02</div>
-            </div>
-            <h3 class="landscape-card-title">Real-Time Instant Payment Fraud</h3>
-            <div class="landscape-block landscape-block--challenge">
-              <strong>The Industry Problem</strong>
-              With SEPA Instant and FedNow, funds settle in seconds. Legacy rule-based fraud detection causes either
-              massive false-positive rejections or devastating unauthorized fraud losses.
-            </div>
-            <div class="landscape-block landscape-block--solution">
-              <strong>The Cypherox Engineering Solution</strong>
-              We build sub-15ms AI anomaly pipelines utilizing Graph Neural Networks and behavioral biometrics.
-              Fraudulent transfers are intercepted in-flight with an 84% reduction in false positive declines.
+          <div class="delivery-roadmap-step" style="padding: 36px;">
+            <span class="delivery-roadmap-step__num">CHALLENGE 02</span>
+            <h3 class="delivery-roadmap-step__title">Real-Time Instant Payment Fraud</h3>
+            <p class="delivery-roadmap-step__desc">
+              With SEPA Instant and FedNow, funds settle in seconds. Legacy rule-based fraud detection causes either massive false-positive rejections or devastating unauthorized fraud losses.
+            </p>
+            <div style="background: #F8F7F4; border-left: 3px solid #f26e65; padding: 16px; margin-top: 16px; border-radius: 0 6px 6px 0; font-size: 13px; line-height: 1.55; color: #374151;">
+              <strong>The Cypherox Engineering Solution:</strong> We build sub-15ms AI anomaly pipelines utilizing Graph Neural Networks and behavioral biometrics. Fraudulent transfers are intercepted in-flight with an 84% reduction in false positive declines.
             </div>
           </div>
 
-          <!-- Card 3 -->
-          <div class="industry-landscape-card">
-            <div class="landscape-card-header">
-              <div class="landscape-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
-              <div class="landscape-card-num">03</div>
-            </div>
-            <h3 class="landscape-card-title">Escalating Regulatory Audit Burden</h3>
-            <div class="landscape-block landscape-block--challenge">
-              <strong>The Industry Problem</strong>
-              Compliance with BaFin, DORA, AMLD6, and ESG reporting consumes millions in manual analyst hours and risks
-              severe regulatory fines for inaccurate disclosures.
-            </div>
-            <div class="landscape-block landscape-block--solution">
-              <strong>The Cypherox Engineering Solution</strong>
-              Automated RegTech reporting engines. Continuous transaction monitoring parses logs in real-time, producing
-              automated filings formatted strictly to European supervisory templates.
+          <div class="delivery-roadmap-step" style="padding: 36px;">
+            <span class="delivery-roadmap-step__num">CHALLENGE 03</span>
+            <h3 class="delivery-roadmap-step__title">Escalating Regulatory Audit Burden</h3>
+            <p class="delivery-roadmap-step__desc">
+              Compliance with BaFin, DORA, AMLD6, and ESG reporting consumes millions in manual analyst hours and risks severe regulatory fines for inaccurate disclosures.
+            </p>
+            <div style="background: #F8F7F4; border-left: 3px solid #f26e65; padding: 16px; margin-top: 16px; border-radius: 0 6px 6px 0; font-size: 13px; line-height: 1.55; color: #374151;">
+              <strong>The Cypherox Engineering Solution:</strong> Automated RegTech reporting engines. Continuous transaction monitoring parses logs in real-time, producing automated filings formatted strictly to European supervisory templates.
             </div>
           </div>
 
-          <!-- Card 4 -->
-          <div class="industry-landscape-card">
-            <div class="landscape-card-header">
-              <div class="landscape-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-              <div class="landscape-card-num">04</div>
-            </div>
-            <h3 class="landscape-card-title">Open Banking & Disintermediation</h3>
-            <div class="landscape-block landscape-block--challenge">
-              <strong>The Industry Problem</strong>
-              PSD2 and upcoming PSD3 mandates force banks to share customer data. Without a monetization strategy,
-              financial institutions become commoditized utility balance sheets.
-            </div>
-            <div class="landscape-block landscape-block--solution">
-              <strong>The Cypherox Engineering Solution</strong>
-              We engineer revenue-generating Embedded Finance APIs. Transform your bank into a platform providing
-              white-label lending, BaaS (Banking-as-a-Service), and commercial payroll rails.
+          <div class="delivery-roadmap-step" style="padding: 36px;">
+            <span class="delivery-roadmap-step__num">CHALLENGE 04</span>
+            <h3 class="delivery-roadmap-step__title">Open Banking & Disintermediation</h3>
+            <p class="delivery-roadmap-step__desc">
+              PSD2 and upcoming PSD3 mandates force banks to share customer data. Without a monetization strategy, financial institutions become commoditized utility balance sheets.
+            </p>
+            <div style="background: #F8F7F4; border-left: 3px solid #f26e65; padding: 16px; margin-top: 16px; border-radius: 0 6px 6px 0; font-size: 13px; line-height: 1.55; color: #374151;">
+              <strong>The Cypherox Engineering Solution:</strong> We engineer revenue-generating Embedded Finance APIs. Transform your bank into a platform providing white-label lending, BaaS (Banking-as-a-Service), and commercial payroll rails.
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
          SECTION 04 — SUB-SECTOR SHOWCASE (INTERACTIVE TABS)
          ==================================================================== -->
-    <section class="section" id="subsectors">
+    <section class="editorial-section editorial-section--alt" id="subsectors">
       <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Sector Specializations</div>
-          <h2 class="section-title">Deep Engineering Across Every <span class="text-gradient">Financial
-              Sub-Sector</span></h2>
-          <p class="section-subtitle">
-            Whether consumer-facing or wholesale institutional, explore our dedicated capabilities for each sector.
-          </p>
-        </div>
-
-        <!-- Sub-Sector Tab Navigation -->
-        <div class="industry-tabs-nav">
-          <button type="button" class="industry-tab-btn is-active" data-tab="tab-retail">
-            Retail &amp; Neo-Banking
-          </button>
-          <button type="button" class="industry-tab-btn" data-tab="tab-corporate">
-            Corporate &amp; Commercial
-          </button>
-          <button type="button" class="industry-tab-btn" data-tab="tab-wealth">
-            WealthTech &amp; Advisory
-          </button>
-          <button type="button" class="industry-tab-btn" data-tab="tab-payments">
-            Payments &amp; Clearing
-          </button>
-          <button type="button" class="industry-tab-btn" data-tab="tab-lending">
-            Digital Lending &amp; BNPL
-          </button>
-        </div>
-
-        <!-- Tab 1: Retail & Neo-Banking -->
-        <div class="industry-tab-pane is-active" id="tab-retail">
-          <div class="subsector-detail-card">
-            <div>
-              <h3 class="subsector-detail-title">Retail Neo-Banking & Consumer App Platforms</h3>
-              <p class="subsector-detail-desc">
-                Deliver consumer experiences that rival Revolut and N26. We engineer ultra-responsive mobile banking
-                apps with biometric security, instant virtual debit cards, and AI financial budgeting.
-              </p>
-              <ul class="subsector-features-list">
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Sub-3 minute digital KYC onboarding
-                    with automated passport verification</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Real-time push notifications,
-                    instant freeze/unfreeze, and PIN management</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Automated round-up savings vaults
-                    and multi-currency sub-accounts</span></li>
-              </ul>
-              <a href="#consultation" class="btn btn--primary">Discuss Retail Banking Architecture</a>
-            </div>
-            <div class="subsector-stats-box">
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">4.8 / 5</span>
-                <span class="subsector-stat__lbl">Average App Store CSAT Score</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">&lt;3 Min</span>
-                <span class="subsector-stat__lbl">End-to-End Account Opening</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">99.99%</span>
-                <span class="subsector-stat__lbl">Mobile API Gateway SLA</span>
-              </div>
-            </div>
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Sector Specializations</span>
+            <h2 class="editorial-header__title">
+              Deep Engineering Across Every <br>
+              <span class="editorial-header__title-accent">Financial Sub-Sector.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              Whether consumer-facing or wholesale institutional, explore our dedicated capabilities for each sector.
+            </p>
           </div>
         </div>
 
-        <!-- Tab 2: Corporate & Commercial Banking -->
-        <div class="industry-tab-pane" id="tab-corporate">
-          <div class="subsector-detail-card">
-            <div>
-              <h3 class="subsector-detail-title">Corporate Treasury & Commercial Portals</h3>
-              <p class="subsector-detail-desc">
-                Empower enterprise CFOs and finance leaders with real-time liquidity visibility, multi-signatory
-                authorization matrices, automated batch disbursements, and ERP integrations.
-              </p>
-              <ul class="subsector-features-list">
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Dual-control and multi-level
-                    authorization workflows for high-value transfers</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Direct bi-directional sync with
-                    SAP, NetSuite, Datev, and Microsoft Dynamics</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Automated multi-currency FX hedging
-                    and bulk SEPA/SWIFT payroll execution</span></li>
-              </ul>
-              <a href="#consultation" class="btn btn--primary">Discuss Corporate Portals</a>
-            </div>
-            <div class="subsector-stats-box">
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">€100M+</span>
-                <span class="subsector-stat__lbl">Daily Corporate Volume Processed</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">100%</span>
-                <span class="subsector-stat__lbl">ERP Integration Compatibility</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">0 Err</span>
-                <span class="subsector-stat__lbl">Zero Reconciliation Discrepancies</span>
-              </div>
-            </div>
+        <div class="tech-directory-layout">
+          <!-- Sub-Sector Tab Navigation (Preserving JS functionality) -->
+          <div class="tech-directory-nav">
+            <button type="button" class="tech-directory-btn industry-tab-btn is-active" data-tab="tab-retail">Retail &amp; Neo-Banking</button>
+            <button type="button" class="tech-directory-btn industry-tab-btn" data-tab="tab-corporate">Corporate &amp; Commercial</button>
+            <button type="button" class="tech-directory-btn industry-tab-btn" data-tab="tab-wealth">WealthTech &amp; Advisory</button>
+            <button type="button" class="tech-directory-btn industry-tab-btn" data-tab="tab-payments">Payments &amp; Clearing</button>
+            <button type="button" class="tech-directory-btn industry-tab-btn" data-tab="tab-lending">Digital Lending &amp; BNPL</button>
           </div>
-        </div>
 
-        <!-- Tab 3: WealthTech & Advisory -->
-        <div class="industry-tab-pane" id="tab-wealth">
-          <div class="subsector-detail-card">
-            <div>
-              <h3 class="subsector-detail-title">WealthTech, Robo-Advisory & Trading Platforms</h3>
-              <p class="subsector-detail-desc">
-                Democratize institutional asset management. We build algorithmic rebalancing engines, fractional share
-                investing infrastructure, and low-latency market data visualizations.
-              </p>
-              <ul class="subsector-features-list">
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Real-time FIX protocol and
-                    WebSocket order execution with tier-1 brokers</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Automated tax-loss harvesting and
-                    personalized risk-adjusted portfolio modeling</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Comprehensive MiFID II compliance,
-                    ESG scoring, and investor risk profiling</span></li>
-              </ul>
-              <a href="#consultation" class="btn btn--primary">Discuss WealthTech Engineering</a>
-            </div>
-            <div class="subsector-stats-box">
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">&lt;50ms</span>
-                <span class="subsector-stat__lbl">Order Routing Execution</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">MiFID II</span>
-                <span class="subsector-stat__lbl">Full European Regulatory Compliance</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">€1.2B</span>
-                <span class="subsector-stat__lbl">Assets Administered on Platforms</span>
+          <div class="tech-directory-content">
+            
+            <!-- Tab 1: Retail & Neo-Banking -->
+            <div class="industry-tab-pane is-active" id="tab-retail">
+              <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+                <div>
+                  <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: #111111; margin: 0 0 12px 0;">Retail Neo-Banking & Consumer App Platforms</h3>
+                  <p style="font-size: 15px; line-height: 1.7; color: #4b5563; margin: 0 0 20px 0;">
+                    Deliver consumer experiences that rival Revolut and N26. We engineer ultra-responsive mobile banking apps with biometric security, instant virtual debit cards, and AI financial budgeting.
+                  </p>
+                  <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Sub-3 minute digital KYC onboarding with automated passport verification</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Real-time push notifications, instant freeze/unfreeze, and PIN management</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Automated round-up savings vaults and multi-currency sub-accounts</span></li>
+                  </ul>
+                  <a href="#consultation" class="btn btn--primary">Discuss Retail Banking Architecture</a>
+                </div>
+                <div style="background: #F8F7F4; border: 1px solid #E5E1DA; border-radius: 8px; padding: 24px;">
+                  <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6b7280; display: block; margin-bottom: 12px;">Core Architecture Stack</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span class="service-dossier__tech-pill">React Native</span>
+                    <span class="service-dossier__tech-pill">Node.js</span>
+                    <span class="service-dossier__tech-pill">Kafka</span>
+                    <span class="service-dossier__tech-pill">PostgreSQL</span>
+                    <span class="service-dossier__tech-pill">AWS Fargate</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Tab 4: Payments & Clearing -->
-        <div class="industry-tab-pane" id="tab-payments">
-          <div class="subsector-detail-card">
-            <div>
-              <h3 class="subsector-detail-title">Payment Gateways & Multi-Rail Clearing</h3>
-              <p class="subsector-detail-desc">
-                High-throughput payment orchestration platforms supporting SEPA Instant, SWIFT gpi, card acquiring, and
-                cross-border settlement with sub-second clearing.
-              </p>
-              <ul class="subsector-features-list">
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>PCI-DSS Level 1 tokenized card
-                    vaults and 3D Secure 2.2 biometric auth</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Intelligent dynamic routing for
-                    lowest interchange costs and highest authorization rates</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Automated multi-currency ledger
-                    reconciliation and chargeback dispute workflows</span></li>
-              </ul>
-              <a href="#consultation" class="btn btn--primary">Discuss Payment Infrastructure</a>
-            </div>
-            <div class="subsector-stats-box">
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">50,000+</span>
-                <span class="subsector-stat__lbl">Transactions Per Second (TPS)</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">+3.8%</span>
-                <span class="subsector-stat__lbl">Payment Auth Rate Uplift</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">&lt;1 Sec</span>
-                <span class="subsector-stat__lbl">Instant SEPA Settlement</span>
+            <!-- Tab 2: Corporate & Commercial -->
+            <div class="industry-tab-pane" id="tab-corporate" style="display: none;">
+              <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+                <div>
+                  <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: #111111; margin: 0 0 12px 0;">Commercial Banking Portals & Treasury Operations</h3>
+                  <p style="font-size: 15px; line-height: 1.7; color: #4b5563; margin: 0 0 20px 0;">
+                    High-volume transaction portals engineered for multi-entity corporate clients with complex approval matrices, automated cash pooling, and bulk ERP file processing.
+                  </p>
+                  <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Multi-signatory approval workflows (4-eyes / 6-eyes principles)</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>EBICS 3.0 protocol implementation for German & French corporate banking</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Automated cash pooling and FX risk hedging engines</span></li>
+                  </ul>
+                  <a href="#consultation" class="btn btn--primary">Discuss Commercial Banking</a>
+                </div>
+                <div style="background: #F8F7F4; border: 1px solid #E5E1DA; border-radius: 8px; padding: 24px;">
+                  <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6b7280; display: block; margin-bottom: 12px;">Core Architecture Stack</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span class="service-dossier__tech-pill">Java Spring Boot</span>
+                    <span class="service-dossier__tech-pill">EBICS 3.0</span>
+                    <span class="service-dossier__tech-pill">Oracle</span>
+                    <span class="service-dossier__tech-pill">Angular</span>
+                    <span class="service-dossier__tech-pill">Docker</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Tab 5: Digital Lending & BNPL -->
-        <div class="industry-tab-pane" id="tab-lending">
-          <div class="subsector-detail-card">
-            <div>
-              <h3 class="subsector-detail-title">Digital Lending, Underwriting & BNPL</h3>
-              <p class="subsector-detail-desc">
-                Replace slow manual loan committees with automated AI credit decisioning models. Underwrite consumer,
-                SME, and point-of-sale financing in seconds.
-              </p>
-              <ul class="subsector-features-list">
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Open Banking bank statement
-                    categorization (AISP) for real-time income verification</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Explainable AI credit scoring
-                    models compliant with German BaFin transparency rules</span></li>
-                <li class="subsector-feature-item"><span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span>Automated loan servicing, repayment
-                    schedules, and debt collection orchestration</span></li>
-              </ul>
-              <a href="#consultation" class="btn btn--primary">Discuss Digital Lending</a>
-            </div>
-            <div class="subsector-stats-box">
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">15 Sec</span>
-                <span class="subsector-stat__lbl">Average Automated Credit Decision</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">-35%</span>
-                <span class="subsector-stat__lbl">Default Rate Reduction</span>
-              </div>
-              <div class="subsector-stat">
-                <span class="subsector-stat__val">4.2x</span>
-                <span class="subsector-stat__lbl">Loan Origination Velocity</span>
+            <!-- Tab 3: WealthTech -->
+            <div class="industry-tab-pane" id="tab-wealth" style="display: none;">
+              <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+                <div>
+                  <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: #111111; margin: 0 0 12px 0;">WealthTech Platforms & Algorithmic Portfolio Analytics</h3>
+                  <p style="font-size: 15px; line-height: 1.7; color: #4b5563; margin: 0 0 20px 0;">
+                    Modernize advisory services with real-time portfolio rebalancing, ESG risk scoring, and interactive client wealth portals with MiFID II compliant audit logs.
+                  </p>
+                  <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Automated portfolio tax-loss harvesting and algorithmic rebalancing</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Real-time feeds from Bloomberg, Refinitiv, and FIX Protocol engines</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>MiFID II investor suitability questionnaires and automated compliance</span></li>
+                  </ul>
+                  <a href="#consultation" class="btn btn--primary">Discuss WealthTech Engineering</a>
+                </div>
+                <div style="background: #F8F7F4; border: 1px solid #E5E1DA; border-radius: 8px; padding: 24px;">
+                  <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6b7280; display: block; margin-bottom: 12px;">Core Architecture Stack</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span class="service-dossier__tech-pill">Python FastAPI</span>
+                    <span class="service-dossier__tech-pill">FIX Protocol</span>
+                    <span class="service-dossier__tech-pill">TimescaleDB</span>
+                    <span class="service-dossier__tech-pill">React</span>
+                    <span class="service-dossier__tech-pill">AWS</span>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Tab 4: Payments -->
+            <div class="industry-tab-pane" id="tab-payments" style="display: none;">
+              <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+                <div>
+                  <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: #111111; margin: 0 0 12px 0;">Payment Processing & Multi-Rail Gateway Architecture</h3>
+                  <p style="font-size: 15px; line-height: 1.7; color: #4b5563; margin: 0 0 20px 0;">
+                    High-throughput payment orchestration platforms routing transactions across card acquirers, SEPA Instant, and local payment methods with automatic failovers.
+                  </p>
+                  <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>PCI-DSS Level 1 tokenized card vault with network tokenization</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Dynamic routing algorithms reducing interchange and acquiring fees</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Automated multi-merchant reconciliation and ledger settlement</span></li>
+                  </ul>
+                  <a href="#consultation" class="btn btn--primary">Discuss Payment Engineering</a>
+                </div>
+                <div style="background: #F8F7F4; border: 1px solid #E5E1DA; border-radius: 8px; padding: 24px;">
+                  <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6b7280; display: block; margin-bottom: 12px;">Core Architecture Stack</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span class="service-dossier__tech-pill">Go (Golang)</span>
+                    <span class="service-dossier__tech-pill">ISO 20022</span>
+                    <span class="service-dossier__tech-pill">Kafka</span>
+                    <span class="service-dossier__tech-pill">Redis</span>
+                    <span class="service-dossier__tech-pill">Kubernetes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 5: Lending -->
+            <div class="industry-tab-pane" id="tab-lending" style="display: none;">
+              <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+                <div>
+                  <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: #111111; margin: 0 0 12px 0;">Digital Lending Platforms & Automated Underwriting</h3>
+                  <p style="font-size: 15px; line-height: 1.7; color: #4b5563; margin: 0 0 20px 0;">
+                    End-to-end loan origination and servicing engines that evaluate creditworthiness in under 30 seconds via Open Banking cash-flow analysis.
+                  </p>
+                  <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Automated Open Banking categorization & cash flow debt-to-income analysis</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Dynamic decision tree rule engines with explainable ML risk scoring</span></li>
+                    <li style="display: flex; gap: 8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Automated loan disbursement via SEPA Instant and direct debit mandates</span></li>
+                  </ul>
+                  <a href="#consultation" class="btn btn--primary">Discuss Lending Systems</a>
+                </div>
+                <div style="background: #F8F7F4; border: 1px solid #E5E1DA; border-radius: 8px; padding: 24px;">
+                  <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6b7280; display: block; margin-bottom: 12px;">Core Architecture Stack</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span class="service-dossier__tech-pill">Python</span>
+                    <span class="service-dossier__tech-pill">TypeScript</span>
+                    <span class="service-dossier__tech-pill">PostgreSQL</span>
+                    <span class="service-dossier__tech-pill">DocuSign API</span>
+                    <span class="service-dossier__tech-pill">AWS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -613,641 +437,495 @@
     </section>
 
     <!-- ====================================================================
-         SECTION 05 — FLAGSHIP VERTICAL USE CASES & ARCHITECTURE DELIVERABLES
+         SECTION 05 — PROVEN USE CASES & BENCHMARKS
          ==================================================================== -->
-    <section class="section section--alt" id="usecases">
+    <section class="editorial-section" id="usecases">
       <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Proven Industry Use Cases</div>
-          <h2 class="section-title">High-Stakes Technical Solutions <span class="text-gradient">We Engineer</span></h2>
-          <p class="section-subtitle">
-            Battle-tested architecture blueprints engineered specifically for the regulatory and technical demands of
-            the financial sector.
-          </p>
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Proven Use Cases</span>
+            <h2 class="editorial-header__title">
+              High-Stakes Technical Solutions <br>
+              <span class="editorial-header__title-accent">We Engineer.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              Battle-tested architecture blueprints engineered specifically for the regulatory and technical demands of the financial sector.
+            </p>
+          </div>
         </div>
 
-        <div class="industry-usecases-grid">
-
-          <!-- Use Case 1 -->
-          <div class="industry-usecase-card">
-            <div class="usecase-card-header">
-              <span class="usecase-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span>
-              <span class="usecase-card-badge">Payments</span>
-            </div>
-            <h3 class="usecase-card-title">Instant Payment Orchestration Engine</h3>
-            <p class="usecase-card-desc">
-              Multi-rail payment routing infrastructure supporting SEPA Instant, SWIFT, and local payment methods with
-              automatic fallbacks and fee optimization.
-            </p>
-            <div class="usecase-card-impact">
-              <strong>Business Impact:</strong> 99.999% payment uptime and 18% lower interchange transaction costs.
-            </div>
-            <ul class="usecase-card-checklist">
-              <li><span class="dot"></span> ISO 20022 messaging standard compliance</li>
-              <li><span class="dot"></span> Distributed tokenized card vault (PCI-DSS L1)</li>
-              <li><span class="dot"></span> Automated chargeback resolution flows</li>
-            </ul>
-          </div>
-
-          <!-- Use Case 2 -->
-          <div class="industry-usecase-card">
-            <div class="usecase-card-header">
-              <span class="usecase-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
-              <span class="usecase-card-badge">Security & AI</span>
-            </div>
-            <h3 class="usecase-card-title">Real-Time AI Fraud & AML Shield</h3>
-            <p class="usecase-card-desc">
-              In-flight behavioral anomaly detection scoring transactions under 15ms to halt synthetic identity theft,
-              account takeovers, and laundering networks.
-            </p>
-            <div class="usecase-card-impact">
-              <strong>Business Impact:</strong> 84% reduction in false positives and €12M+ in fraud losses prevented
-              annually.
-            </div>
-            <ul class="usecase-card-checklist">
-              <li><span class="dot"></span> Graph neural network relationship mapping</li>
-              <li><span class="dot"></span> Real-time OFAC, EU & UN sanction checks</li>
-              <li><span class="dot"></span> Automated Suspicious Activity Report (SAR)</li>
-            </ul>
-          </div>
-
-          <!-- Use Case 3 -->
-          <div class="industry-usecase-card">
-            <div class="usecase-card-header">
-              <span class="usecase-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="21"></line><line x1="3" y1="10" x2="21" y2="10"></line><polyline points="3 10 12 3 21 10"></polyline><line x1="6" y1="10" x2="6" y2="21"></line><line x1="10" y1="10" x2="10" y2="21"></line><line x1="14" y1="10" x2="14" y2="21"></line><line x1="18" y1="10" x2="18" y2="21"></line></svg></span>
-              <span class="usecase-card-badge">Core Modernization</span>
-            </div>
-            <h3 class="usecase-card-title">Core Banking Modernization via Event Mesh</h3>
-            <p class="usecase-card-desc">
-              Decouple legacy core ledgers into lightweight, event-sourced microservices without stopping daily consumer
-              and business transaction processing.
-            </p>
-            <div class="usecase-card-impact">
-              <strong>Business Impact:</strong> New feature release velocity increased from 6 months to 2-week agile
-              sprints.
-            </div>
-            <ul class="usecase-card-checklist">
-              <li><span class="dot"></span> Apache Kafka distributed event streaming</li>
-              <li><span class="dot"></span> ACID transactional guarantees with CQRS</li>
-              <li><span class="dot"></span> Connectors for Temenos, Mambu, and SAP</li>
-            </ul>
-          </div>
-
-          <!-- Use Case 4 -->
-          <div class="industry-usecase-card">
-            <div class="usecase-card-header">
-              <span class="usecase-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
-              <span class="usecase-card-badge">Open Banking</span>
-            </div>
-            <h3 class="usecase-card-title">Embedded Finance & Open Banking (PSD3)</h3>
-            <p class="usecase-card-desc">
-              Financial-Grade API (FAPI) platforms allowing third-party fintechs, retailers, and SaaS platforms to
-              seamlessly embed your banking services.
-            </p>
-            <div class="usecase-card-impact">
-              <strong>Business Impact:</strong> Opened 3 new B2B revenue streams generating over €4.5M in annual API
-              fees.
-            </div>
-            <ul class="usecase-card-checklist">
-              <li><span class="dot"></span> FAPI-compliant mutual TLS and OAuth 2.0</li>
-              <li><span class="dot"></span> Developer portal with interactive API sandbox</li>
-              <li><span class="dot"></span> Automated developer billing and rate limiting</li>
-            </ul>
-          </div>
-
-          <!-- Use Case 5 -->
-          <div class="industry-usecase-card">
-            <div class="usecase-card-header">
-              <span class="usecase-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"></path><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.8-2.8L15 14"></path><path d="m14 13-1.5-1.5"></path></svg></span>
-              <span class="usecase-card-badge">Credit & Risk</span>
-            </div>
-            <h3 class="usecase-card-title">AI Credit Decisioning & Underwriting</h3>
-            <p class="usecase-card-desc">
-              Autonomous underwriting models that analyze traditional credit bureau data combined with real-time Open
-              Banking cash flow metrics.
-            </p>
-            <div class="usecase-card-impact">
-              <strong>Business Impact:</strong> Loan approvals accelerated from 4 days to 15 seconds with 35% lower
-              default rates.
-            </div>
-            <ul class="usecase-card-checklist">
-              <li><span class="dot"></span> Open Banking cash flow transaction parsing</li>
-              <li><span class="dot"></span> BaFin-compliant explainable AI model audit</li>
-              <li><span class="dot"></span> Automated e-signature and contract creation</li>
-            </ul>
-          </div>
-
-          <!-- Use Case 6 -->
-          <div class="industry-usecase-card">
-            <div class="usecase-card-header">
-              <span class="usecase-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></span>
-              <span class="usecase-card-badge">RegTech</span>
-            </div>
-            <h3 class="usecase-card-title">Automated Regulatory Compliance Reporting</h3>
-            <p class="usecase-card-desc">
-              Continuous compliance data pipelines that pull from operational databases and format regulatory reports
-              for central European banking authorities.
-            </p>
-            <div class="usecase-card-impact">
-              <strong>Business Impact:</strong> 95% reduction in manual audit preparation hours and zero late-filing
-              citations.
-            </div>
-            <ul class="usecase-card-checklist">
-              <li><span class="dot"></span> BaFin, EBA, and FCA format generators</li>
-              <li><span class="dot"></span> Cryptographic immutable transaction logs</li>
-              <li><span class="dot"></span> Automated anomaly alerts for internal audit</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 06 — INDUSTRY KPI BENCHMARKS & BUSINESS OUTCOMES
-         ==================================================================== -->
-    <section class="section" id="benchmarks">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Transformation Metrics</div>
-          <h2 class="section-title">Measurable Industry Outcomes, <span class="text-gradient">Not Prototyping
-              Experiments</span></h2>
-          <p class="section-subtitle">
-            See the concrete operational improvements our financial engineering teams deliver for institutional clients.
-          </p>
-        </div>
-
-        <div class="industry-kpi-grid">
-          <div class="industry-kpi-card">
-            <div class="industry-kpi-metric">-84%</div>
-            <div class="industry-kpi-title">Fraud False Positives</div>
-            <p class="industry-kpi-desc">Massive reduction in legitimate client payment blocks through graph AI models.
-            </p>
-          </div>
-          <div class="industry-kpi-card">
-            <div class="industry-kpi-metric">&lt;3 Min</div>
-            <div class="industry-kpi-title">KYC Onboarding</div>
-            <p class="industry-kpi-desc">Accelerated client sign-up from 4 business days to instant biometric
-              verification.</p>
-          </div>
-          <div class="industry-kpi-card">
-            <div class="industry-kpi-metric">50k+</div>
-            <div class="industry-kpi-title">Peak TPS Capacity</div>
-            <p class="industry-kpi-desc">High-concurrency microservices processing Black Friday volume without latency
-              spikes.</p>
-          </div>
-          <div class="industry-kpi-card">
-            <div class="industry-kpi-metric">-42%</div>
-            <div class="industry-kpi-title">Cloud Infrastructure TCO</div>
-            <p class="industry-kpi-desc">Optimized Kubernetes microservices reducing cloud spend on AWS Frankfurt
-              region.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 07 — FINANCIAL TECHNOLOGY ECOSYSTEM & RAILS
-         ==================================================================== -->
-    <section class="section section--alt" id="tech-stack">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Specialized FinTech Stack</div>
-          <h2 class="section-title">Engineered on Institutional <span class="text-gradient">Financial Standards</span>
-          </h2>
-          <p class="section-subtitle">
-            We build with protocols, ledgers, and security modules certified for mission-critical banking transactions.
-          </p>
-        </div>
-
-        <div class="industry-ecosystem-grid">
-
-          <!-- Col 1 -->
-          <div class="ecosystem-column">
-            <div class="ecosystem-column__header">
-              <span class="ecosystem-column__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="21"></line><line x1="3" y1="10" x2="21" y2="10"></line><polyline points="3 10 12 3 21 10"></polyline><line x1="6" y1="10" x2="6" y2="21"></line><line x1="10" y1="10" x2="10" y2="21"></line><line x1="14" y1="10" x2="14" y2="21"></line><line x1="18" y1="10" x2="18" y2="21"></line></svg></span>
-              <h3 class="ecosystem-column__title">Core Banking</h3>
-            </div>
-            <div class="ecosystem-column__sub">Ledgers & Modern Engines</div>
-            <div class="ecosystem-list">
-              <div class="ecosystem-item"><span>Mambu Cloud</span><span class="ecosystem-item__badge">SaaS Core</span>
-              </div>
-              <div class="ecosystem-item"><span>Thought Machine</span><span class="ecosystem-item__badge">Vault
-                  OS</span></div>
-              <div class="ecosystem-item"><span>Temenos T24</span><span class="ecosystem-item__badge">Legacy
-                  Bridge</span></div>
-              <div class="ecosystem-item"><span>SAP Banking</span><span class="ecosystem-item__badge">ERP Connect</span>
-              </div>
-              <div class="ecosystem-item"><span>Custom ACID Ledger</span><span
-                  class="ecosystem-item__badge">High-Speed</span></div>
-            </div>
-          </div>
-
-          <!-- Col 2 -->
-          <div class="ecosystem-column">
-            <div class="ecosystem-column__header">
-              <span class="ecosystem-column__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
-              <h3 class="ecosystem-column__title">Payment Rails</h3>
-            </div>
-            <div class="ecosystem-column__sub">Clearing & Standards</div>
-            <div class="ecosystem-list">
-              <div class="ecosystem-item"><span>ISO 20022</span><span class="ecosystem-item__badge">Universal</span>
-              </div>
-              <div class="ecosystem-item"><span>SEPA Instant</span><span class="ecosystem-item__badge">&lt;10s
-                  Rail</span></div>
-              <div class="ecosystem-item"><span>SWIFT gpi / MX</span><span
-                  class="ecosystem-item__badge">Cross-Border</span></div>
-              <div class="ecosystem-item"><span>Open Banking FAPI</span><span
-                  class="ecosystem-item__badge">PSD2/PSD3</span></div>
-              <div class="ecosystem-item"><span>FedNow / RTP</span><span class="ecosystem-item__badge">US Rails</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Col 3 -->
-          <div class="ecosystem-column">
-            <div class="ecosystem-column__header">
-              <span class="ecosystem-column__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span>
-              <h3 class="ecosystem-column__title">Data & Event Mesh</h3>
-            </div>
-            <div class="ecosystem-column__sub">Distributed Streaming</div>
-            <div class="ecosystem-list">
-              <div class="ecosystem-item"><span>Apache Kafka</span><span class="ecosystem-item__badge">Event
-                  Sourcing</span></div>
-              <div class="ecosystem-item"><span>PostgreSQL Cluster</span><span class="ecosystem-item__badge">ACID
-                  Storage</span></div>
-              <div class="ecosystem-item"><span>Redis Enterprise</span><span class="ecosystem-item__badge">Sub-ms
-                  State</span></div>
-              <div class="ecosystem-item"><span>Snowflake</span><span class="ecosystem-item__badge">Regulatory BI</span>
-              </div>
-              <div class="ecosystem-item"><span>Elasticsearch</span><span class="ecosystem-item__badge">Audit
-                  Search</span></div>
-            </div>
-          </div>
-
-          <!-- Col 4 -->
-          <div class="ecosystem-column">
-            <div class="ecosystem-column__header">
-              <span class="ecosystem-column__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>
-              <h3 class="ecosystem-column__title">Security & Cryptography</h3>
-            </div>
-            <div class="ecosystem-column__sub">Key Management & HSM</div>
-            <div class="ecosystem-list">
-              <div class="ecosystem-item"><span>HashiCorp Vault</span><span class="ecosystem-item__badge">Secrets</span>
-              </div>
-              <div class="ecosystem-item"><span>Hardware HSM</span><span class="ecosystem-item__badge">FIPS 140-2</span>
-              </div>
-              <div class="ecosystem-item"><span>FIDO2 / WebAuthn</span><span
-                  class="ecosystem-item__badge">Biometrics</span></div>
-              <div class="ecosystem-item"><span>PCI Tokenizer</span><span class="ecosystem-item__badge">Level 1</span>
-              </div>
-              <div class="ecosystem-item"><span>Snyk & SonarQube</span><span
-                  class="ecosystem-item__badge">DevSecOps</span></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 08 — FEATURED REAL-WORLD FINTECH CASE STUDY
-         ==================================================================== -->
-    <section class="section" id="case-study">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Proven Case Study</div>
-          <h2 class="section-title">Institutional Success in <span class="text-gradient">Action</span></h2>
-          <p class="section-subtitle">
-            How Cypherox helped a leading European Digital Challenger Bank scale to 2.5M accounts with 99.999%
-            availability and automated AML.
-          </p>
-        </div>
-
-        <div class="industry-case-card">
-          <div class="industry-case-content">
-            <div class="industry-case-badge">
-              <span><span style="display:inline-flex;vertical-align:middle;margin-right:6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="21"></line><line x1="3" y1="10" x2="21" y2="10"></line><polyline points="3 10 12 3 21 10"></polyline><line x1="6" y1="10" x2="6" y2="21"></line><line x1="10" y1="10" x2="10" y2="21"></line><line x1="14" y1="10" x2="14" y2="21"></line><line x1="18" y1="10" x2="18" y2="21"></line></svg></span> Proven Client Engagement</span>
-            </div>
-            <h3 class="industry-case-title">Scaling to 2.5M Accounts with 99.999% Core Ledger Availability</h3>
-            <p class="industry-case-desc">
-              The client experienced explosive consumer user growth that overloaded their legacy third-party KYC
-              platform and batch fraud screening. Cypherox engineered an event-driven microservices architecture coupled
-              with a real-time graph AI fraud scoring engine, fully integrated into their German BaFin-regulated
-              infrastructure.
-            </p>
-
-            <div class="industry-case-quote">
-              <p class="industry-case-quote__text">
-                “Cypherox provided the exact architectural rigor and regulatory confidence we needed. Our false-positive
-                fraud declines dropped by 84%, and client onboarding turnaround shrank from days to minutes.”
+        <div class="services-dossier-list">
+          
+          <article class="service-dossier">
+            <div class="service-dossier__main">
+              <span class="service-dossier__idx">USE CASE 01 &bull; Payments & Infrastructure</span>
+              <h3 class="service-dossier__title">Instant Payment Orchestration Engine</h3>
+              <p class="service-dossier__desc">
+                Multi-rail payment routing infrastructure supporting SEPA Instant, SWIFT, and local payment methods with automatic fallbacks and fee optimization.
               </p>
-              <div class="industry-case-quote__author">— Chief Technology Officer, European Digital Bank</div>
+              <ul class="service-dossier__deliverables">
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>ISO 20022 messaging standard compliance</span></li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Distributed tokenized card vault (PCI-DSS L1)</span></li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Automated chargeback resolution flows</span></li>
+              </ul>
             </div>
+            <div class="service-dossier__spec-box">
+              <div class="service-dossier__spec-row">
+                <span class="service-dossier__spec-label">Business Outcome</span>
+                <span style="font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: #111111;">99.999% Payment Uptime</span>
+                <div style="font-size: 12.5px; color: #6b7280; margin-top: 4px;">18% lower interchange transaction costs</div>
+              </div>
+              <a href="#consultation" class="service-dossier__cta">Request Blueprint &rarr;</a>
+            </div>
+          </article>
 
-            <div>
-              <a href="#consultation" class="btn btn--primary btn--large">Discuss Your Sector Architecture</a>
+          <article class="service-dossier">
+            <div class="service-dossier__main">
+              <span class="service-dossier__idx">USE CASE 02 &bull; Security & AI</span>
+              <h3 class="service-dossier__title">Real-Time AI Fraud & AML Shield</h3>
+              <p class="service-dossier__desc">
+                In-flight behavioral anomaly detection scoring transactions under 15ms to halt synthetic identity theft, account takeovers, and laundering networks.
+              </p>
+              <ul class="service-dossier__deliverables">
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Graph neural network relationship mapping</span></li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Real-time OFAC, EU & UN sanction checks</span></li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f26e65" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Automated Suspicious Activity Report (SAR)</span></li>
+              </ul>
             </div>
-          </div>
+            <div class="service-dossier__spec-box">
+              <div class="service-dossier__spec-row">
+                <span class="service-dossier__spec-label">Business Outcome</span>
+                <span style="font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: #111111;">-84% False Positives</span>
+                <div style="font-size: 12.5px; color: #6b7280; margin-top: 4px;">&euro;12M+ in fraud losses prevented annually</div>
+              </div>
+              <a href="#consultation" class="service-dossier__cta">Request Blueprint &rarr;</a>
+            </div>
+          </article>
 
-          <div class="industry-case-metrics">
-            <div class="case-metric-box">
-              <div class="case-metric-box__num">-84%</div>
-              <div class="case-metric-box__label">Fraud False Positive Declines Intercepted in Real-Time</div>
-            </div>
-            <div class="case-metric-box">
-              <div class="case-metric-box__num">&lt; 3 Min</div>
-              <div class="case-metric-box__label">Automated KYC &amp; AML Digital Account Onboarding</div>
-            </div>
-            <div class="case-metric-box">
-              <div class="case-metric-box__num">10M+</div>
-              <div class="case-metric-box__label">Daily Real-Time API Transactions Handled Without Lag</div>
-            </div>
-          </div>
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 09 — INDUSTRY SPECIFIC FAQ ACCORDION
+         SECTION 06 — TRANSFORMATION METRICS (BENCHMARKS)
          ==================================================================== -->
-    <section class="section section--alt" id="faq">
+    <section class="metric-ledger-strip" id="benchmarks">
       <div class="container">
-        <div class="section-header section-header--center">
-          <div class="eyebrow">Institutional FAQ</div>
-          <h2 class="section-title">Frequently Asked Questions for <span class="text-gradient">Financial Leaders</span>
-          </h2>
-          <p class="section-subtitle">
-            Answers addressing regulatory compliance, security architecture, core migrations, and data sovereignty.
-          </p>
+        
+        <div style="margin-bottom: 32px;">
+          <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase;">Transformation Metrics</span>
+          <h2 style="font-family: var(--font-heading); font-size: 28px; font-weight: 700; color: #111111; margin: 6px 0 0 0;">Measurable Institutional Outcomes</h2>
         </div>
 
-        <div class="service-faq-container">
-          <!-- FAQ 1 -->
+        <div class="metric-ledger-grid">
+          
+          <div class="metric-ledger-item">
+            <span class="metric-ledger-item__meta">Fraud Defense</span>
+            <div class="metric-ledger-item__val">-84%</div>
+            <div class="metric-ledger-item__label">Fraud False Positives</div>
+            <p class="metric-ledger-item__desc">Reduction in legitimate payment blocks through graph AI models.</p>
+          </div>
+
+          <div class="metric-ledger-item">
+            <span class="metric-ledger-item__meta">Client Onboarding</span>
+            <div class="metric-ledger-item__val">&lt;3 Min</div>
+            <div class="metric-ledger-item__label">Digital KYC Verification</div>
+            <p class="metric-ledger-item__desc">Accelerated client sign-up from 4 business days to instant biometric verification.</p>
+          </div>
+
+          <div class="metric-ledger-item">
+            <span class="metric-ledger-item__meta">Concurrency</span>
+            <div class="metric-ledger-item__val">50k+</div>
+            <div class="metric-ledger-item__label">Peak TPS Capacity</div>
+            <p class="metric-ledger-item__desc">Microservices processing peak Black Friday volume without latency spikes.</p>
+          </div>
+
+          <div class="metric-ledger-item">
+            <span class="metric-ledger-item__meta">Cloud Efficiency</span>
+            <div class="metric-ledger-item__val">-42%</div>
+            <div class="metric-ledger-item__label">Infrastructure TCO</div>
+            <p class="metric-ledger-item__desc">Optimized Kubernetes microservices reducing spend on AWS Frankfurt region.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 07 — SPECIALIZED TECH RADAR
+         ==================================================================== -->
+    <section class="editorial-section editorial-section--alt" id="tech-stack">
+      <div class="container">
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Specialized FinTech Stack</span>
+            <h2 class="editorial-header__title">
+              Engineered on Institutional <br>
+              <span class="editorial-header__title-accent">Financial Standards.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              We build with protocols, ledgers, and security modules certified for mission-critical banking transactions.
+            </p>
+          </div>
+        </div>
+
+        <div class="tech-directory-grid" style="grid-template-columns: repeat(4, 1fr);">
+          
+          <div class="service-tech-column" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 8px; padding: 28px;">
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase; margin-bottom: 8px;">Tier 01</div>
+            <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #111111; margin: 0 0 16px 0;">Core Banking</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+              <li>Mambu Cloud (SaaS Core)</li>
+              <li>Thought Machine (Vault OS)</li>
+              <li>Temenos T24 (Legacy Bridge)</li>
+              <li>SAP Banking (ERP Connect)</li>
+              <li>Custom ACID Ledger</li>
+            </ul>
+          </div>
+
+          <div class="service-tech-column" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 8px; padding: 28px;">
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase; margin-bottom: 8px;">Tier 02</div>
+            <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #111111; margin: 0 0 16px 0;">Payment Rails</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+              <li>SEPA Instant (SCT Inst)</li>
+              <li>SWIFT gpi & ISO 20022</li>
+              <li>Stripe / Adyen Gateway</li>
+              <li>Target2 / TIPS Rail</li>
+              <li>Mastercard / Visa Direct</li>
+            </ul>
+          </div>
+
+          <div class="service-tech-column" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 8px; padding: 28px;">
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase; margin-bottom: 8px;">Tier 03</div>
+            <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #111111; margin: 0 0 16px 0;">Identity & Security</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+              <li>Thales Luna HSM (Key Vault)</li>
+              <li>Veriff & Onfido (AI KYC)</li>
+              <li>ComplyAdvantage (AML/PEP)</li>
+              <li>HashiCorp Vault Enterprise</li>
+              <li>mTLS & FAPI OAuth 2.0</li>
+            </ul>
+          </div>
+
+          <div class="service-tech-column" style="background: #ffffff; border: 1px solid #E2DDD5; border-radius: 8px; padding: 28px;">
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #f26e65; text-transform: uppercase; margin-bottom: 8px;">Tier 04</div>
+            <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #111111; margin: 0 0 16px 0;">Data & Cloud Mesh</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #374151;">
+              <li>AWS Frankfurt (eu-central-1)</li>
+              <li>Apache Kafka Event Mesh</li>
+              <li>Snowflake Financial Lake</li>
+              <li>Kubernetes (EKS / OpenShift)</li>
+              <li>Terraform & Ansible (IaC)</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 08 — FEATURED CASE STUDY
+         ==================================================================== -->
+    <section class="editorial-section" id="case-study">
+      <div class="container">
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">Enterprise Case Study</span>
+            <h2 class="editorial-header__title">
+              Tier-1 European Bank Core <br>
+              <span class="editorial-header__title-accent">Payment Gateway.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              How Cypherox re-architected a legacy transaction gateway to process over &euro;4.2 Billion in annual volume with zero seconds of unplanned downtime.
+            </p>
+          </div>
+        </div>
+
+        <article class="editorial-case-card">
+          <div class="editorial-case-card__left">
+            <div class="editorial-case-card__meta-bar">
+              <span class="editorial-case-card__tag">FinTech &bull; BaFin Regulated</span>
+            </div>
+            <h3 class="editorial-case-card__title">Core Modernization & ISO 20022 SEPA Instant Migration</h3>
+            <p class="editorial-case-card__summary">
+              Replacing a batch-oriented mainframe payment pipeline with an event-driven Go and Kafka microservices architecture running on dedicated private Kubernetes clusters.
+            </p>
+
+            <div class="editorial-case-card__challenge-solution">
+              <div class="editorial-case-card__point">
+                <span class="editorial-case-card__point-label">Challenge:</span>
+                <span class="editorial-case-card__point-text">Batch processing delays prevented real-time SEPA Instant settlement, threatening regulatory non-compliance fines.</span>
+              </div>
+              <div class="editorial-case-card__point">
+                <span class="editorial-case-card__point-label">Delivered Solution:</span>
+                <span class="editorial-case-card__point-text">An ultra-low latency event mesh processing SEPA Instant transfers in sub-800ms with automated dual-ledger reconciliation.</span>
+              </div>
+            </div>
+
+            <div class="editorial-case-card__stack-wrap">
+              <span class="editorial-case-card__stack-pill">Go</span>
+              <span class="editorial-case-card__stack-pill">Kafka</span>
+              <span class="editorial-case-card__stack-pill">PostgreSQL</span>
+              <span class="editorial-case-card__stack-pill">AWS Frankfurt</span>
+              <span class="editorial-case-card__stack-pill">HSM Vault</span>
+            </div>
+          </div>
+
+          <div class="editorial-case-card__impact-box">
+            <div>
+              <div class="editorial-case-card__impact-header">Quantitative Verification</div>
+              <div class="editorial-case-card__metrics-grid">
+                <div>
+                  <div class="editorial-case-card__metric-val">&euro;4.2B+</div>
+                  <div class="editorial-case-card__metric-label">Annual Volume Processed</div>
+                </div>
+                <div>
+                  <div class="editorial-case-card__metric-val">99.999%</div>
+                  <div class="editorial-case-card__metric-label">System Availability</div>
+                </div>
+                <div>
+                  <div class="editorial-case-card__metric-val">&lt; 800ms</div>
+                  <div class="editorial-case-card__metric-label">End-to-End Settlement</div>
+                </div>
+                <div>
+                  <div class="editorial-case-card__metric-val">100%</div>
+                  <div class="editorial-case-card__metric-label">BaFin Audit Compliance</div>
+                </div>
+              </div>
+            </div>
+            <a href="case-studies/case-study-detail.html" class="btn btn--primary" style="align-self: flex-start;">Read Full Case Study &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 09 — FAQ ACCORDION
+         ==================================================================== -->
+    <section class="editorial-section editorial-section--alt" id="faq">
+      <div class="container">
+        
+        <div class="editorial-header">
+          <div class="editorial-header__left">
+            <span class="editorial-header__eyebrow">FinTech FAQ</span>
+            <h2 class="editorial-header__title">
+              Regulatory, Technical & <br>
+              <span class="editorial-header__title-accent">Contractual Questions.</span>
+            </h2>
+          </div>
+          <div class="editorial-header__right">
+            <p class="editorial-header__narrative">
+              Addressing data residency, BaFin audits, code ownership, and security vetting.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-faq-container" style="max-width: 900px; margin: 0 auto;">
+          
           <div class="faq-item is-open">
             <button class="faq-question-btn" aria-expanded="true">
-              <span>How do you guarantee compliance with BaFin, GDPR, and European banking mandates?</span>
+              <span>How does Cypherox satisfy BaFin and European Banking Authority (EBA) outsourcing guidelines?</span>
               <div class="faq-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </button>
             <div class="faq-answer-panel">
               <p>
-                Compliance is designed into the architecture from Day 1. We deploy systems strictly inside <strong>EU
-                  sovereign clouds (e.g., AWS Frankfurt, Azure Germany)</strong> with Zero Data Retention policies.
-                Personally Identifiable Information (PII) is encrypted at rest using AES-256 with customer-managed HSM
-                keys, and all transaction flows maintain an immutable, tamper-evident audit log required by BaFin, EBA,
-                and FCA auditors.
+                Our engagement contracts and architectural blueprints are explicitly structured to meet EBA and BaFin regulatory outsourcing requirements. We provide complete audit rights, comprehensive exit strategies, business continuity plans (BCP), and dedicated compliance documentation.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 2 -->
           <div class="faq-item">
             <button class="faq-question-btn" aria-expanded="false">
-              <span>Can you integrate with our existing core banking system (e.g. Mambu, Temenos, SAP)?</span>
+              <span>Where is our financial data stored and processed?</span>
               <div class="faq-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </button>
             <div class="faq-answer-panel">
               <p>
-                Yes. Deep enterprise integration is our core strength. We build secure API adapter layers and
-                asynchronous event bridges connecting directly into legacy core systems like Temenos, SAP Banking,
-                Mambu, and Thought Machine. This allows you to launch modern digital customer experiences without having
-                to replace your core ledger all at once.
+                All sensitive customer data, credentials, and financial transactions reside strictly within your designated European cloud regions (e.g. AWS Frankfurt eu-central-1) or your on-premise data centers. Our engineering pods operate under zero-data-access protocols with zero local storage of financial PII.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 3 -->
           <div class="faq-item">
             <button class="faq-question-btn" aria-expanded="false">
-              <span>How does your real-time AI fraud detection system work without adding latency?</span>
+              <span>How do you handle legacy migration without operational downtime?</span>
               <div class="faq-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </button>
             <div class="faq-answer-panel">
               <p>
-                Our fraud detection models are optimized with hardware acceleration and compiled via ONNX Runtime for
-                ultra-low latency execution. Transactions are evaluated against behavioral baselines, device
-                fingerprints, and graph anomaly algorithms in <strong>under 15 milliseconds</strong>, well within card
-                network and instant SEPA SLA limits.
+                We use the Strangler Fig migration pattern backed by Kafka change data capture (CDC). We mirror transactions between the legacy core and new microservices in dual-write mode until automated reconciliation confirms 100% data fidelity before switching traffic over seamlessly.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 4 -->
           <div class="faq-item">
             <button class="faq-question-btn" aria-expanded="false">
-              <span>Who owns the intellectual property (IP) and custom source code?</span>
+              <span>Can your engineers work directly on-site at our financial institution?</span>
               <div class="faq-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </button>
             <div class="faq-answer-panel">
               <p>
-                <strong>You retain 100% ownership of all source code, architecture documentation, model weights, and
-                  IP.</strong> Unlike proprietary SaaS vendors that create vendor lock-in, our engineering contracts
-                ensure full intellectual property assignment to your enterprise.
+                Yes. Our Solutions Architects and Technical Directors from our Frankfurt and London offices regularly conduct on-site discovery, security audits, and deployment milestones at your European premises.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 5 -->
-          <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
-              <span>What support and SLAs do you provide after product launch?</span>
-              <div class="faq-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </div>
-            </button>
-            <div class="faq-answer-panel">
-              <p>
-                We offer enterprise-grade 24/7/365 Service Level Agreements (SLAs) with <strong>guaranteed 15-minute
-                  response times</strong> for critical incidents. Our dedicated SRE team handles continuous security
-                vulnerability scanning, automated cloud patching, and periodic compliance audit reports.
-              </p>
-            </div>
-          </div>
-
-          <!-- FAQ 6 -->
-          <div class="faq-item">
-            <button class="faq-question-btn" aria-expanded="false">
-              <span>How do you handle team onboarding and knowledge transfer?</span>
-              <div class="faq-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </div>
-            </button>
-            <div class="faq-answer-panel">
-              <p>
-                Throughout every sprint, our engineers work alongside your internal tech team in shared repositories and
-                daily standups. We provide comprehensive architecture decision records (ADRs), API Swagger
-                documentation, automated test suites, and hands-on handover workshops to ensure your team has complete
-                operational mastery.
-              </p>
-            </div>
-          </div>
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 10 — INSTITUTIONAL CONSULTATION FORM (#consultation)
+         SECTION 10 — STRATEGIC CONSULTATION FORM
          ==================================================================== -->
-    <section class="consultation-section" id="consultation">
+    <section class="editorial-section" id="consultation">
       <div class="container">
-        <div class="consultation-grid">
-
-          <!-- Left Column: Contact Information & Trust Credentials -->
-          <div class="consultation-info">
-            <div class="eyebrow">Institutional Consultation</div>
-            <h2 class="section-title">
-              Discuss Your <br>
-              <span class="text-gradient">Financial Engineering Roadmap</span>
+        
+        <div class="briefing-studio-grid">
+          
+          <div class="briefing-studio-info">
+            <span class="editorial-header__eyebrow">Institutional Advisory</span>
+            <h2 class="editorial-header__title" style="margin-bottom: 20px;">
+              Ready to Modernize Your <br>
+              <span class="editorial-header__title-accent">Financial Architecture?</span>
             </h2>
-            <p class="section-subtitle">
-              Schedule a confidential technical briefing with our senior FinTech architects. We will assess your
-              architecture, compliance requirements, and integration timeline within 24 hours.
+            <p class="editorial-header__narrative" style="margin-bottom: 28px;">
+              Discuss your technical architecture, regulatory constraints, and project timeline directly with a Senior FinTech Solutions Architect.
             </p>
 
-            <div class="consultation-person">
-              <div class="consultation-person__avatar">CX</div>
+            <div class="briefing-studio-lead">
+              <div class="briefing-studio-lead__avatar">JD</div>
               <div>
-                <div class="consultation-person__name">Financial Solutions Architecture Group</div>
-                <div class="consultation-person__role">Enterprise FinTech & Regulatory Engineering</div>
+                <div class="briefing-studio-lead__name">James Davidson</div>
+                <div class="briefing-studio-lead__role">Head of Technology Partnerships &bull; DACH & International</div>
               </div>
             </div>
 
-            <div class="consultation-contacts">
-              <div class="consultation-item">
-                <span class="consultation-item-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
-                </span>
-                <span><strong>Email:</strong> hello@cypherox.com</span>
-              </div>
-              <div class="consultation-item">
-                <span class="consultation-item-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
-                </span>
-                <span><strong>Direct Line:</strong> +44 20 1234 5678 (London & European HQ)</span>
-              </div>
-              <div class="consultation-item">
-                <span class="consultation-item-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  </svg>
-                </span>
-                <span><strong>Confidentiality:</strong> Institutional NDA executed prior to discovery</span>
-              </div>
-              <div class="consultation-item">
-                <span class="consultation-item-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                </span>
-                <span><strong>Response Guarantee:</strong> Senior architect review within 24 hours</span>
-              </div>
-            </div>
+            <ul class="briefing-studio-guarantees">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>30-minute consultation with Senior FinTech Solutions Architect</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Full NDA executed prior to sensitive architectural discussions</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>BaFin and EBA compliance evaluation included</span>
+              </li>
+            </ul>
           </div>
 
-          <!-- Right Column: Consultation Form -->
-          <div class="consultation-form-wrapper">
-            <form id="consultation-form" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="fullName">Full Name *</label>
-                  <input class="form-input" type="text" id="fullName" name="fullName"
-                    placeholder="e.g. Dr. Christian Weber" required>
-                  <span class="form-error-msg">Please enter your full name.</span>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="workEmail">Institutional Email *</label>
-                  <input class="form-input" type="email" id="workEmail" name="workEmail"
-                    placeholder="weber@bank-group.de" required>
-                  <span class="form-error-msg">Please enter a valid work email.</span>
-                </div>
-              </div>
+          <div class="briefing-form-box">
+            <div class="briefing-form-box__header">
+              <h3 class="briefing-form-box__title">FinTech Project Briefing</h3>
+              <p class="briefing-form-box__sub">Submit your project parameters. A Lead Architect will reply within 24 hours.</p>
+            </div>
 
-              <div class="form-row">
+            <form class="consultation-form" id="consultation-form" novalidate>
+              <div class="briefing-form-grid">
+                
                 <div class="form-group">
-                  <label class="form-label" for="phone">Direct Phone (optional)</label>
-                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="+49 69 1234 5678">
+                  <label for="fullname">Full Name *</label>
+                  <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Vor- und Nachname" required autocomplete="name">
+                  <div class="form-error-msg" id="error-fullname">Please enter your name.</div>
                 </div>
+
                 <div class="form-group">
-                  <label class="form-label" for="company">Institution / Company *</label>
-                  <input class="form-input" type="text" id="company" name="company"
-                    placeholder="e.g. European Banking AG" required>
-                  <span class="form-error-msg">Please enter your company name.</span>
+                  <label for="email">Institutional Email *</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="name@bank-institution.de" required autocomplete="email">
+                  <div class="form-error-msg" id="error-email">Please enter a valid business email.</div>
                 </div>
-              </div>
 
-              <div class="form-group">
-                <label class="form-label" for="service">Industry Solution Area *</label>
-                <select class="form-input form-select" id="service" name="service" required>
-                  <option value="fintech-core" selected>Core Banking & Cloud Modernization</option>
-                  <option value="fintech-fraud">Real-Time AI Fraud & AML Detection</option>
-                  <option value="fintech-payments">Payment Orchestration & Instant Rails</option>
-                  <option value="fintech-wealth">WealthTech & Robo-Advisory Engines</option>
-                  <option value="fintech-regtech">RegTech & Compliance Automation</option>
-                  <option value="fintech-dedicated">Dedicated FinTech Engineering Pod</option>
-                  <option value="other">Other Sector / Strategic Inquiry</option>
-                </select>
-                <span class="form-error-msg">Please select a solution area.</span>
-              </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number (optional)</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="+49 69 12345678" autocomplete="tel">
+                </div>
 
-              <div class="form-group">
-                <label class="form-label" for="message">Project Scope & Regulatory Requirements *</label>
-                <textarea class="form-input" id="message" name="message" rows="4"
-                  placeholder="Briefly describe your objectives, target transaction volume, current core systems, and regulatory requirements (e.g. BaFin, GDPR, PCI-DSS)..."
-                  required></textarea>
-                <span class="form-error-msg">Please describe your project scope.</span>
-              </div>
+                <div class="form-group">
+                  <label for="service-interest">Primary Objective *</label>
+                  <select id="service-interest" name="service" class="form-control" required>
+                    <option value="" disabled selected>Select objective...</option>
+                    <option value="core-modernization">Core Banking Modernization</option>
+                    <option value="fraud-ai">Real-Time AI Fraud & AML Shield</option>
+                    <option value="open-banking">Open Banking & Embedded Finance (PSD3)</option>
+                    <option value="payments">Payment Rails & SEPA Instant Gateway</option>
+                    <option value="dedicated-pod">Dedicated FinTech Engineering Pod</option>
+                  </select>
+                  <div class="form-error-msg" id="error-service">Please select an objective.</div>
+                </div>
 
-              <button type="submit" class="btn btn--primary btn--large btn--full">Request Technical Briefing</button>
-              <p class="form-privacy">
-                By submitting this form, you agree to our Privacy Policy. All inquiries are treated with strict
-                confidentiality under non-disclosure obligations.
-              </p>
+                <div class="form-group form-group--full">
+                  <label for="message">Project Scope & Regulatory Requirements *</label>
+                  <textarea id="message" name="message" class="form-control" rows="4" placeholder="Briefly describe your current architecture, timeline, and compliance requirements..." required></textarea>
+                  <div class="form-error-msg" id="error-message">Please provide brief details.</div>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <div class="form-checkbox-wrapper">
+                    <input type="checkbox" id="gdpr-consent" name="gdpr" required>
+                    <label for="gdpr-consent">
+                      I agree to the processing of my details according to the privacy policy. *
+                    </label>
+                  </div>
+                  <div class="form-error-msg" id="error-gdpr">Consent required.</div>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <button type="submit" class="btn btn--primary" id="form-submit-btn" style="width: 100%; padding: 15px !important; font-size: 15px !important;">
+                    <span>Submit Institutional Brief</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left: 8px;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </button>
+                </div>
+
+              </div>
             </form>
 
-            <div class="form-success-box" id="form-success-box">
-              <div class="form-success-box__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
-              <h3 class="form-success-box__title">Technical Briefing Request Received!</h3>
+            <div class="form-success-box" id="form-success-box" style="display: none;">
+              <div class="form-success-box__icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="form-success-box__title">Thank You for Your Inquiry!</h3>
               <p class="form-success-box__desc">
-                Thank you for contacting Cypherox. A senior financial solutions architect will review your project
-                details and respond within 24 hours.
+                Your briefing has been received. A Lead FinTech Solutions Architect will contact you within 24 hours.
               </p>
             </div>
+
           </div>
 
         </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- REUSABLE DYNAMIC FOOTER CONTAINER (Rendered by components.js & header-footer.js) -->
+  <!-- REUSABLE DYNAMIC FOOTER CONTAINER -->
   <div id="site-footer"></div>
 
 </body>
