@@ -1,0 +1,4057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cypherox | eCommerce & Conversion-First Digital Solutions</title>
+  <meta name="description"
+    content="Custom eCommerce store builds, conversion rate optimization, and full-stack software development built for scale and high performance.">
+
+  <!-- Core Fonts & Design Tokens -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- Component & Layout Stylesheets -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/custom-global.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/es-forms.css">
+  <link rel="stylesheet" href="css/es-polish.css">
+  <link rel="stylesheet" href="css/es-home.css">
+  <link rel="stylesheet" href="css/section-cta.css">
+  <link rel="stylesheet" href="css/section-testimonials.css">
+  <link rel="stylesheet" href="css/section-scheduler.css">
+  <link rel="stylesheet" href="css/trust-lockup.css">
+  <link rel="stylesheet" href="css/varn-launch.css">
+  <link rel="stylesheet" href="css/es-footer.css">
+
+  <!-- Brand Colors & Typography Overrides (#f26e65) -->
+  <link rel="stylesheet" href="css/curtain.css">
+  <link rel="stylesheet" href="css/brand-override.css">
+</head>
+
+<body class="home">
+
+  <!-- Header Navigation with Morphing Mega-Menu & Mobile Drawer -->
+
+  <!-- ==========================================
+     1. HEADER NAVIGATION & MEGA-MENU STAGE
+     ========================================== -->
+  <header class="esn-header" data-header>
+
+    <div class="esn-inner">
+
+      <a class="esn-brand" href="/" aria-label="Enstacked home">
+
+        <img class="esn-brand__mark esn-brand__mark--light" src="images/logo.svg" alt="Enstacked" width="140"
+          height="45" />
+
+      </a>
+
+      <nav class="esn-nav" aria-label="Primary">
+
+        <ul class="esn-list">
+
+          <li class="esn-item" data-menu="shopify">
+
+            <button type="button" class="esn-trigger" aria-haspopup="true" aria-expanded="false"
+              aria-controls="esn-menu-shopify">
+
+              <span>Shopify</span><svg class="esn-caret" data-icon="caret" width="10" height="10" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg> </button>
+
+          </li>
+
+          <li class="esn-item" data-menu="whitelabel">
+
+            <button type="button" class="esn-trigger" aria-haspopup="true" aria-expanded="false"
+              aria-controls="esn-menu-whitelabel">
+
+              <span>White-Label</span><svg class="esn-caret" data-icon="caret" width="10" height="10"
+                viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg> </button>
+
+          </li>
+
+          <li class="esn-item" data-menu="products">
+
+            <button type="button" class="esn-trigger" aria-haspopup="true" aria-expanded="false"
+              aria-controls="esn-menu-products">
+
+              <span>Products</span><svg class="esn-caret" data-icon="caret" width="10" height="10" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg> </button>
+
+          </li>
+
+          <li class="esn-item" data-menu="insights">
+
+            <button type="button" class="esn-trigger" aria-haspopup="true" aria-expanded="false"
+              aria-controls="esn-menu-insights">
+
+              <span>Insights</span><svg class="esn-caret" data-icon="caret" width="10" height="10" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg> </button>
+
+          </li>
+
+          <li class="esn-item" data-menu="company">
+
+            <button type="button" class="esn-trigger" aria-haspopup="true" aria-expanded="false"
+              aria-controls="esn-menu-company">
+
+              <span>Company</span><svg class="esn-caret" data-icon="caret" width="10" height="10" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg> </button>
+
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="esn-actions">
+
+        <a class="esn-cta" href="javascript:;">
+
+          <span>Contact Us</span>
+
+        </a>
+
+        <button type="button" class="esn-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="esn-drawer"
+          data-mobile-toggle>
+
+          <span class="esn-bar"></span>
+
+          <span class="esn-bar"></span>
+
+          <span class="esn-bar"></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- ===================  MEGA MENU STAGE  =================== -->
+
+    <div class="esn-stage" data-stage aria-hidden="true">
+
+      <div class="esn-stage-inner">
+
+        <!-- Shopify. No data-width, so the card fills the container. -->
+
+        <section class="esn-panel" id="esn-menu-shopify" data-panel="shopify" role="region" aria-label="Shopify" hidden>
+
+          <div class="esn-mega">
+
+            <div class="esn-groups">
+
+              <div class="esn-group">
+
+                <p class="esn-label esn-grouplabel">Build</p>
+
+                <ul class="esn-services">
+
+                  <li><a class="esn-service" href="https://enstacked.com/shopify-development-services/"><b>Shopify
+                        Development</b><span>Custom store builds, strategy to launch.</span><span
+                        class="esn-service__go" aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right"
+                          width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true" focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                  <li><a class="esn-service" href="https://enstacked.com/shopify-theme-development-services/"><b>Shopify
+                        Theme Development</b><span>Custom themes, engineered to stay fast.</span><span
+                        class="esn-service__go" aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right"
+                          width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true" focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                  <li><a class="esn-service" href="https://enstacked.com/shopify-app-development-services/"><b>Shopify
+                        App Development</b><span>Public and private Shopify apps.</span><span class="esn-service__go"
+                        aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right" width="16" height="14"
+                          viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                          focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                </ul>
+
+              </div>
+
+              <div class="esn-group">
+
+                <p class="esn-label esn-grouplabel">Scale</p>
+
+                <ul class="esn-services">
+
+                  <li><a class="esn-service" href="https://enstacked.com/shopify-plus-service/"><b>Shopify
+                        Plus</b><span>Enterprise builds for high-volume stores.</span><span class="esn-service__go"
+                        aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right" width="16" height="14"
+                          viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                          focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                  <li><a class="esn-service" href="https://enstacked.com/shopify-migration-services/"><b>Shopify
+                        Migration</b><span>Replatform without losing traffic or data.</span><span
+                        class="esn-service__go" aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right"
+                          width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true" focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                </ul>
+
+              </div>
+
+              <div class="esn-group">
+
+                <p class="esn-label esn-grouplabel">Grow</p>
+
+                <ul class="esn-services">
+
+                  <li><a class="esn-service" href="https://enstacked.com/shopify-seo-services/"><b>Shopify
+                        SEO</b><span>Technical fixes, structure and content.</span><span class="esn-service__go"
+                        aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right" width="16" height="14"
+                          viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                          focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                  <li><a class="esn-service"
+                      href="https://enstacked.com/shopify-conversion-rate-optimization-services/"><b>Shopify
+                        CRO</b><span>Audits, UX fixes and checkout work.</span><span class="esn-service__go"
+                        aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right" width="16" height="14"
+                          viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                          focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                </ul>
+
+              </div>
+
+              <div class="esn-group">
+
+                <p class="esn-label esn-grouplabel">Run</p>
+
+                <ul class="esn-services">
+
+                  <li><a class="esn-service" href="https://enstacked.com/shopify-support-and-maintenance/"><b>Shopify
+                        Support and Maintenance</b><span>Retainers with agreed response times.</span><span
+                        class="esn-service__go" aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right"
+                          width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true" focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                  <li><a class="esn-service" href="https://enstacked.com/hire-shopify-developer/"><b>Hire a Shopify
+                        Developer</b><span>Dedicated developers inside your team.</span><span class="esn-service__go"
+                        aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right" width="16" height="14"
+                          viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                          focusable="false">
+                          <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        </svg></span></a></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+            <div class="esn-feature es-bg-dark">
+
+              <span class="esn-feature__head">
+
+                <span class="esn-label esn-label--on-dark">Case studies</span>
+
+                <a class="esn-ghost" href="javascript:;">View all<svg class="arrow-icon esn-link__icon"
+                    data-icon="arrow" width="17" height="16" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path opacity="0.6"
+                      d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                      fill="currentColor" />
+                    <path opacity="0.8"
+                      d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                      fill="currentColor" />
+                    <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                      fill="currentColor" />
+                  </svg></a>
+
+              </span>
+
+              <p class="esn-feature__title">See the work behind the services.</p>
+
+              <a class="esn-feature__study" href="https://enstacked.com/case-study/nuclia-case-study/"
+                aria-label="Nuclia: Building a High-Trust, Agentic RAG Platform for Enterprise">
+
+                <span class="esn-feature__shot">
+
+                  <picture>
+                    <source
+                      srcset="https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-300x263.webp 300w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-768x673.webp 768w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1024x897.webp 1024w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1536x1346.webp 1536w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured.webp 1920w"
+                      sizes='auto, 236px' type="image/webp"><img width="300" height="263"
+                      src="images/nuclia-deployment-options-featured-300x263.png"
+                      class="attachment-medium size-medium wp-post-image" alt="" sizes="auto, 236px" loading="lazy"
+                      decoding="async"
+                      srcset="https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-300x263.png 300w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-768x673.png 768w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1024x897.png 1024w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1536x1346.png 1536w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured.png 1920w"
+                      data-eio="p" />
+                  </picture>
+                </span>
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="esn-panefoot">
+
+            <span class="esn-panefoot__meta"><b>Shopify Partner</b> &middot; 250+ projects delivered</span>
+
+            <a class="esn-panefoot__cta" href="https://enstacked.com/shopify-development-services/">
+
+              View all Shopify services<svg class="arrow-icon esn-link__icon" data-icon="arrow" width="17" height="16"
+                viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path opacity="0.6"
+                  d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                  fill="currentColor" />
+                <path opacity="0.8"
+                  d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                  fill="currentColor" />
+                <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                  fill="currentColor" />
+              </svg> </a>
+
+          </div>
+
+        </section>
+
+        <!-- White-Label -->
+
+        <section class="esn-panel" id="esn-menu-whitelabel" data-panel="whitelabel" data-width="880" role="region"
+          aria-label="White-Label" hidden>
+
+          <div class="esn-grid esn-grid--panel">
+
+            <p class="esn-label esn-panel__eyebrow">For agencies</p>
+
+            <div class="esn-lead esn-panel__lead">
+
+              <p class="esn-heading">Your delivery team, under your brand.</p>
+
+              <p class="esn-sub">We build in the background. You ship the work as your own.</p>
+
+            </div>
+
+            <div class="esn-panel__col">
+
+              <p class="esn-label esn-grouplabel esn-panel__collabel">Services</p>
+
+              <ul class="esn-services esn-panel__links">
+
+                <li><a class="esn-service" href="https://enstacked.com/white-label-shopify-services/"><b>White-Label
+                      Shopify</b><span>Shopify delivery under your agency name.</span><span class="esn-service__go"
+                      aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right" width="16" height="14"
+                        viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></a></li>
+                <li><a class="esn-service" href="https://enstacked.com/white-label-wordpress-services/"><b>White-Label
+                      WordPress</b><span>WordPress delivery under your agency name.</span><span class="esn-service__go"
+                      aria-hidden="true"><svg class="esn-arrow" data-icon="arrow-right" width="16" height="14"
+                        viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="esn-panefoot">
+
+            <span class="esn-panefoot__meta"><b>Every engagement under NDA</b> &middot; your clients never know we
+              exist</span>
+
+            <a class="esn-panefoot__cta" href="javascript:;">
+
+              Become a partner<svg class="arrow-icon esn-link__icon" data-icon="arrow" width="17" height="16"
+                viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path opacity="0.6"
+                  d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                  fill="currentColor" />
+                <path opacity="0.8"
+                  d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                  fill="currentColor" />
+                <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                  fill="currentColor" />
+              </svg> </a>
+
+          </div>
+
+        </section>
+
+        <!-- Products. 1180 wide (owner, 11 Sep 2026: "too much white space"
+
+           between the copy and the cards at full container width). That is
+
+           a ~490px lead column, the 48px gap and the 36rem card column, plus
+
+           the stage's 32px inset each side. 1120 was tried first and broke
+
+           the second proof point's description onto three lines. -->
+
+        <section class="esn-panel" id="esn-menu-products" data-panel="products" data-width="1180" role="region"
+          aria-label="Products" hidden>
+
+          <div class="esn-prodpanel">
+
+            <div class="esn-prodpanel__lead">
+
+              <p class="esn-label esn-prodpanel__eyebrow">Products</p>
+
+              <p class="esn-heading esn-prodpanel__heading">Built by Enstacked, <span>on Shopify.</span></p>
+
+              <ul class="esn-prodpoints">
+
+                <li class="esn-prodpoint">
+
+                  <span class="esn-prodpoint__icon"><svg class="esn-prodpoint__glyph" data-icon="box" width="22"
+                      height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M12 2.8 20 7.2v9.6l-8 4.4-8-4.4V7.2l8-4.4Z" fill="none" stroke="currentColor"
+                        stroke-width="1.6" stroke-linejoin="round" />
+                      <path d="M4 7.2l8 4.4 8-4.4M12 11.6v9.6" fill="none" stroke="currentColor" stroke-width="1.6"
+                        stroke-linejoin="round" />
+                    </svg></span>
+
+                  <span class="esn-prodpoint__text"><b>Built in-house</b><span>Shaped by the stores we ship for
+                      clients.</span></span>
+
+                </li>
+
+                <li class="esn-prodpoint">
+
+                  <span class="esn-prodpoint__icon"><svg class="esn-prodpoint__glyph" data-icon="cart" width="22"
+                      height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M2.8 3.6h2.4l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.5a1.6 1.6 0 0 0 1.6-1.2l1.5-6.6H6.3"
+                        fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <circle cx="9.6" cy="19.8" r="1.4" fill="none" stroke="currentColor" stroke-width="1.6" />
+                      <circle cx="17.2" cy="19.8" r="1.4" fill="none" stroke="currentColor" stroke-width="1.6" />
+                    </svg></span>
+
+                  <span class="esn-prodpoint__text"><b>Built for Shopify</b><span>One app and one theme, native to
+                      Shopify.</span></span>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+            <ul class="esn-products">
+
+              <li><a class="esn-product esn-product--violet" href="javascript:;"><span class="esn-product__head"><span
+                      class="esn-product__tag">Shopify App</span><span class="esn-product__go"><svg class="esn-arrow"
+                        data-icon="arrow-right" width="18" height="16" viewBox="0 0 16 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></span><span class="esn-product__plate esn-product__plate--logo"><img
+                      class="esn-product__logo" src="images/Varn_mark.svg" alt="" width="64" height="64" /></span><span
+                    class="esn-product__name">Varn</span><span class="esn-product__desc">Advanced variant experience for
+                    modern stores.</span></a></li>
+              <li><span class="esn-product esn-product--warm is-soon"><span class="esn-product__head"><span
+                      class="esn-product__tag">Shopify Theme</span><em
+                      class="esn-badge esn-product__chip">Soon</em></span><span class="esn-product__plate"><span
+                      class="esn-product__mono">C</span></span><span class="esn-product__name">Caffenza</span><span
+                    class="esn-product__desc">A premium theme for modern brands.</span></span></li>
+            </ul>
+
+          </div>
+
+          <div class="esn-panefoot">
+
+            <span class="esn-panefoot__meta"><span class="esn-label esn-panefoot__tag">Products</span><span
+                class="esn-panefoot__dot" aria-hidden="true">&middot;</span>Built in-house, shaped by the stores we ship
+              for clients</span>
+
+            <a class="esn-panefoot__cta" href="javascript:;">
+
+              Ask about early access<svg class="esn-link__icon esn-arrow" data-icon="arrow-right" width="17" height="15"
+                viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" fill="none" />
+              </svg> </a>
+
+          </div>
+
+        </section>
+
+        <section class="esn-panel" id="esn-menu-insights" data-panel="insights" data-width="880" role="region"
+          aria-label="Insights" hidden>
+
+          <div class="esn-grid esn-grid--panel">
+
+            <p class="esn-label esn-panel__eyebrow">Insights</p>
+
+            <div class="esn-lead esn-panel__lead">
+
+              <p class="esn-heading">What we learned building it.</p>
+
+              <p class="esn-sub">Written by the people who shipped the work, not by a content team.</p>
+
+            </div>
+
+            <div class="esn-panel__col">
+
+              <p class="esn-label esn-grouplabel esn-panel__collabel">Browse</p>
+
+              <ul class="esn-services esn-panel__links">
+
+                <li><a class="esn-service" href="https://enstacked.com/blogs/"><b>Blogs</b><span>Guides and notes from
+                      the work.</span><span class="esn-service__go" aria-hidden="true"><svg class="esn-arrow"
+                        data-icon="arrow-right" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></a></li>
+                <li><a class="esn-service" href="javascript:;"><b>Case Studies</b><span>Builds and
+                      replatforms, written up end to end.</span><span class="esn-service__go" aria-hidden="true"><svg
+                        class="esn-arrow" data-icon="arrow-right" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="esn-panefoot">
+
+            <span class="esn-panefoot__meta"><b>Guides, teardowns and case studies</b> &middot; written by the team that
+              ships</span>
+
+            <a class="esn-panefoot__cta" href="https://enstacked.com/blogs/">
+
+              Browse all insights<svg class="arrow-icon esn-link__icon" data-icon="arrow" width="17" height="16"
+                viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path opacity="0.6"
+                  d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                  fill="currentColor" />
+                <path opacity="0.8"
+                  d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                  fill="currentColor" />
+                <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                  fill="currentColor" />
+              </svg> </a>
+
+          </div>
+
+        </section>
+
+        <!-- Company -->
+
+        <section class="esn-panel" id="esn-menu-company" data-panel="company" data-width="1120" role="region"
+          aria-label="Company" hidden>
+
+          <div class="esn-grid esn-grid--panel esn-grid--trio">
+
+            <p class="esn-label esn-panel__eyebrow">Company</p>
+
+            <div class="esn-lead esn-panel__lead">
+
+              <p class="esn-heading">Built by people who kept getting let down by vendors.</p>
+
+              <p class="esn-sub">So they built the delivery team they wanted to hire.</p>
+
+              <dl class="esn-stats" aria-label="At a glance">
+
+                <div>
+                  <dt>3+</dt>
+                  <dd>Years</dd>
+                </div>
+
+                <div>
+                  <dt>250+</dt>
+                  <dd>Projects delivered</dd>
+                </div>
+
+                <div>
+                  <dt>98%</dt>
+                  <dd>Client retention</dd>
+                </div>
+
+              </dl>
+
+            </div>
+
+            <div class="esn-panel__col">
+
+              <p class="esn-label esn-grouplabel esn-panel__collabel">Explore</p>
+
+              <ul class="esn-services esn-panel__links">
+
+                <li><a class="esn-service" href="https://enstacked.com/about-us/"><b>About</b><span>Who we are and how
+                      we got here.</span><span class="esn-service__go" aria-hidden="true"><svg class="esn-arrow"
+                        data-icon="arrow-right" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></a></li>
+                <li><a class="esn-service" href="https://enstacked.com/how-we-work/"><b>How We Work</b><span>A clear
+                      process, Agile or Waterfall.</span><span class="esn-service__go" aria-hidden="true"><svg
+                        class="esn-arrow" data-icon="arrow-right" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></a></li>
+                <li><a class="esn-service" href="https://enstacked.com/industries/"><b>Industries</b><span>The sectors
+                      we build for.</span><span class="esn-service__go" aria-hidden="true"><svg class="esn-arrow"
+                        data-icon="arrow-right" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></a></li>
+                <li><a class="esn-service" href="https://enstacked.com/careers/"><b>Careers</b><span>Open roles on the
+                      team.</span><span class="esn-service__go" aria-hidden="true"><svg class="esn-arrow"
+                        data-icon="arrow-right" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" fill="none" />
+                      </svg></span></a></li>
+              </ul>
+
+            </div>
+
+            <aside class="esn-reviews esn-reviews--card esn-panel__reviews" aria-label="Client reviews">
+
+              <p class="esn-label">Loved by clients</p>
+
+              <div class="esn-reviews__head">
+
+                <span class="esn-reviews__stars" aria-hidden="true">
+
+                  <svg class="esn-reviews__star" data-icon="star" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path
+                      d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                      fill="currentColor" />
+                  </svg><svg class="esn-reviews__star" data-icon="star" width="14" height="14" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path
+                      d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                      fill="currentColor" />
+                  </svg><svg class="esn-reviews__star" data-icon="star" width="14" height="14" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path
+                      d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                      fill="currentColor" />
+                  </svg><svg class="esn-reviews__star" data-icon="star" width="14" height="14" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path
+                      d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                      fill="currentColor" />
+                  </svg><svg class="esn-reviews__star" data-icon="star" width="14" height="14" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path
+                      d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                      fill="currentColor" />
+                  </svg> </span>
+
+                <p class="esn-reviews__score">4.7</p>
+
+                <p class="esn-reviews__note">Average across all platforms</p>
+
+              </div>
+
+              <ul class="esn-reviews__list">
+
+                <li>
+
+                  <a class="esn-reviews__row" href="https://clutch.co/profile/enstacked-technologies" target="_blank"
+                    rel="noopener nofollow">
+
+                    <img class="esn-reviews__logo" src="images/clutch.svg" alt="Clutch" width="72" height="18"
+                      loading="lazy" />
+
+                    <span class="esn-reviews__rating">5.0<span>/5.0</span></span>
+
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a class="esn-reviews__row" href="https://www.trustpilot.com/review/enstacked.com" target="_blank"
+                    rel="noopener nofollow">
+
+                    <img class="esn-reviews__logo" src="images/trustpilot.svg" alt="Trustpilot" width="72" height="18"
+                      loading="lazy" />
+
+                    <span class="esn-reviews__rating">4.0<span>/5.0</span></span>
+
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a class="esn-reviews__row" href="https://share.google/URhv77rbXcKSSAjZx" target="_blank"
+                    rel="noopener nofollow">
+
+                    <img class="esn-reviews__logo" src="images/google.svg" alt="Google" width="72" height="18"
+                      loading="lazy" />
+
+                    <span class="esn-reviews__rating">5.0<span>/5.0</span></span>
+
+                  </a>
+
+                </li>
+
+              </ul>
+
+              <p class="esn-reviews__foot">250+ projects delivered</p>
+
+            </aside>
+
+          </div>
+
+          <div class="esn-panefoot">
+
+            <span class="esn-panefoot__meta"><b>An in-house team</b> &middot; not a marketplace of freelancers</span>
+
+            <a class="esn-panefoot__cta" href="https://enstacked.com/about-us/">
+
+              Read our story<svg class="arrow-icon esn-link__icon" data-icon="arrow" width="17" height="16"
+                viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path opacity="0.6"
+                  d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                  fill="currentColor" />
+                <path opacity="0.8"
+                  d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                  fill="currentColor" />
+                <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                  fill="currentColor" />
+              </svg> </a>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- Main Content Layout -->
+  <main id="main-content">
+
+    <div class="esn-backdrop" data-backdrop aria-hidden="true"></div>
+
+    <!-- ===================  MOBILE DRAWER  =================== -->
+
+    <aside class="esn-drawer" id="esn-drawer" data-drawer aria-hidden="true" inert aria-label="Mobile menu">
+
+      <div class="esn-drawer__inner">
+
+        <div class="esn-acc-wrap">
+
+          <details class="esn-acc" name="esn-nav">
+
+            <summary>Shopify<svg class="esn-acc-caret" data-icon="caret" width="12" height="12" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></summary>
+
+            <details class="esn-acc esn-acc--nested" name="esn-shopify">
+
+              <summary>
+
+                Build <svg class="esn-acc-caret esn-acc-caret--sub" data-icon="caret" width="12" height="12"
+                  viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  focusable="false">
+                  <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg> </summary>
+
+              <ul>
+
+                <li><a class="esn-acc-go" href="https://enstacked.com/shopify-development-services/"><span>Shopify
+                      Development</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right" width="16"
+                      height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+                <li><a class="esn-acc-go" href="https://enstacked.com/shopify-theme-development-services/"><span>Shopify
+                      Theme Development</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right"
+                      width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true" focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+                <li><a class="esn-acc-go" href="https://enstacked.com/shopify-app-development-services/"><span>Shopify
+                      App Development</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right" width="16"
+                      height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+              </ul>
+
+            </details>
+
+            <details class="esn-acc esn-acc--nested" name="esn-shopify">
+
+              <summary>
+
+                Scale <svg class="esn-acc-caret esn-acc-caret--sub" data-icon="caret" width="12" height="12"
+                  viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  focusable="false">
+                  <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg> </summary>
+
+              <ul>
+
+                <li><a class="esn-acc-go" href="https://enstacked.com/shopify-plus-service/"><span>Shopify
+                      Plus</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right" width="16" height="14"
+                      viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+                <li><a class="esn-acc-go" href="https://enstacked.com/shopify-migration-services/"><span>Shopify
+                      Migration</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right" width="16"
+                      height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+              </ul>
+
+            </details>
+
+            <details class="esn-acc esn-acc--nested" name="esn-shopify">
+
+              <summary>
+
+                Grow <svg class="esn-acc-caret esn-acc-caret--sub" data-icon="caret" width="12" height="12"
+                  viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  focusable="false">
+                  <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg> </summary>
+
+              <ul>
+
+                <li><a class="esn-acc-go" href="https://enstacked.com/shopify-seo-services/"><span>Shopify
+                      SEO</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right" width="16" height="14"
+                      viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+                <li><a class="esn-acc-go"
+                    href="https://enstacked.com/shopify-conversion-rate-optimization-services/"><span>Shopify
+                      CRO</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right" width="16" height="14"
+                      viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+              </ul>
+
+            </details>
+
+            <details class="esn-acc esn-acc--nested" name="esn-shopify">
+
+              <summary>
+
+                Run <svg class="esn-acc-caret esn-acc-caret--sub" data-icon="caret" width="12" height="12"
+                  viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  focusable="false">
+                  <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg> </summary>
+
+              <ul>
+
+                <li><a class="esn-acc-go" href="https://enstacked.com/shopify-support-and-maintenance/"><span>Shopify
+                      Support and Maintenance</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right"
+                      width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true" focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+                <li><a class="esn-acc-go" href="https://enstacked.com/hire-shopify-developer/"><span>Hire a Shopify
+                      Developer</span><svg class="esn-arrow esn-acc-go__arrow" data-icon="arrow-right" width="16"
+                      height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg></a></li>
+              </ul>
+
+            </details>
+
+            <div class="esn-acc-feature">
+
+              <div class="esn-feature es-bg-dark esn-feature--drawer">
+
+                <span class="esn-feature__head">
+
+                  <span class="esn-label esn-label--on-dark">Case studies</span>
+
+                  <a class="esn-ghost" href="javascript:;">View all<svg class="arrow-icon esn-link__icon"
+                      data-icon="arrow" width="17" height="16" viewBox="0 0 25 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                      <path opacity="0.6"
+                        d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                        fill="currentColor" />
+                      <path opacity="0.8"
+                        d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                        fill="currentColor" />
+                      <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                        fill="currentColor" />
+                    </svg></a>
+
+                </span>
+
+                <p class="esn-feature__title">See the work behind the services.</p>
+
+                <a class="esn-feature__study" href="https://enstacked.com/case-study/nuclia-case-study/"
+                  aria-label="Nuclia: Building a High-Trust, Agentic RAG Platform for Enterprise">
+
+                  <span class="esn-feature__shot">
+
+                    <picture>
+                      <source
+                        srcset="https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-300x263.webp 300w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-768x673.webp 768w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1024x897.webp 1024w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1536x1346.webp 1536w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured.webp 1920w"
+                        sizes='auto, (max-width: 767px) calc(100vw - 88px), 640px' type="image/webp"><img width="300"
+                        height="263" src="images/nuclia-deployment-options-featured-300x263.png"
+                        class="attachment-medium size-medium wp-post-image" alt=""
+                        sizes="auto, (max-width: 767px) calc(100vw - 88px), 640px" loading="lazy" decoding="async"
+                        srcset="https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-300x263.png 300w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-768x673.png 768w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1024x897.png 1024w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1536x1346.png 1536w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured.png 1920w"
+                        data-eio="p" />
+                    </picture>
+                  </span>
+
+                </a>
+
+              </div>
+
+            </div>
+
+            <ul>
+
+              <li>
+
+                <a class="esn-acc-cta" href="https://enstacked.com/shopify-development-services/">
+
+                  All Shopify services <span class="esn-acc-cta__arrow" aria-hidden="true">&#8599;</span>
+
+                </a>
+
+              </li>
+
+            </ul>
+
+          </details>
+
+          <details class="esn-acc" name="esn-nav">
+
+            <summary>White-Label<svg class="esn-acc-caret" data-icon="caret" width="12" height="12" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></summary>
+
+            <ul>
+
+              <li><a href="https://enstacked.com/white-label-shopify-services/"><svg class="esn-acc__icon"
+                    data-icon="bag" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path d="M4.7 8.3h14.6l-1.1 11.2a1.7 1.7 0 0 1-1.7 1.5H7.5a1.7 1.7 0 0 1-1.7-1.5L4.7 8.3Z"
+                      fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                    <path d="M9.1 10.5V7.2a2.9 2.9 0 0 1 5.8 0v3.3" fill="none" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="round" />
+                  </svg>White-Label Shopify</a></li>
+              <li><a href="https://enstacked.com/white-label-wordpress-services/"><svg class="esn-acc__icon"
+                    data-icon="pen" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path d="M12 2.9 17.7 13.6 12 19.9 6.3 13.6 12 2.9Z" fill="none" stroke="currentColor"
+                      stroke-width="1.6" stroke-linejoin="round" />
+                    <path d="M12 8.7v6.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                    <circle cx="12" cy="16.4" r="1.15" fill="currentColor" />
+                  </svg>White-Label WordPress</a></li>
+              <li>
+
+                <a class="esn-acc-cta" href="javascript:;">
+
+                  Become a partner <span class="esn-acc-cta__arrow" aria-hidden="true">&#8599;</span>
+
+                </a>
+
+              </li>
+
+            </ul>
+
+          </details>
+
+          <details class="esn-acc" name="esn-nav">
+
+            <summary>Products<svg class="esn-acc-caret" data-icon="caret" width="12" height="12" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></summary>
+
+            <ul class="esn-acc-list--products">
+
+              <li><a class="esn-acc-product" href="javascript:;"><img class="esn-acc-logo" src="images/Varn_mark.svg"
+                    alt="" width="42" height="42" /><span class="esn-acc-prod"><b>Varn</b><span>Shopify
+                      App</span></span></a></li>
+              <li><span class="esn-acc-soon esn-acc-soon--product"><span
+                    class="esn-acc-mono esn-acc-mono--alt">C</span><span
+                    class="esn-acc-prod"><b>Caffenza</b><span>Shopify Theme · Soon</span></span></span></li>
+              <li>
+
+                <a class="esn-acc-cta" href="javascript:;">
+
+                  Ask about early access <span class="esn-acc-cta__arrow" aria-hidden="true">&#8599;</span>
+
+                </a>
+
+              </li>
+
+            </ul>
+
+          </details>
+
+          <details class="esn-acc" name="esn-nav">
+
+            <summary>Insights<svg class="esn-acc-caret" data-icon="caret" width="12" height="12" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></summary>
+
+            <ul>
+
+              <li><a href="https://enstacked.com/blogs/"><svg class="esn-acc__icon" data-icon="sparkle" width="18"
+                    height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <path
+                      d="M14 5.5C14 9.4 10.1 13 6.5 13C10.1 13 14 16.6 14 20.5C14 16.6 17.9 13 21.5 13C17.9 13 14 9.4 14 5.5Z"
+                      fill="currentColor" />
+                    <path d="M6 2.8C6 4.5 4.3 6 2.8 6C4.3 6 6 7.5 6 9.2C6 7.5 7.7 6 9.2 6C7.7 6 6 4.5 6 2.8Z"
+                      fill="currentColor" />
+                  </svg>Blogs</a></li>
+              <li><a href="javascript:;"><svg class="esn-acc__icon" data-icon="trend-up" width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <path d="M3 16.2 8.6 10.6l3.3 3.3L20 5.8" fill="none" stroke="currentColor" stroke-width="1.7"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.6 5.8H20v5.4" fill="none" stroke="currentColor" stroke-width="1.7"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>Case Studies</a></li>
+            </ul>
+
+          </details>
+
+          <details class="esn-acc" name="esn-nav">
+
+            <summary>Company<svg class="esn-acc-caret" data-icon="caret" width="12" height="12" viewBox="0 0 10 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></summary>
+
+            <ul>
+
+              <li><a href="https://enstacked.com/about-us/"><svg class="esn-acc__icon" data-icon="users" width="18"
+                    height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <circle cx="9" cy="8" r="3.1" fill="none" stroke="currentColor" stroke-width="1.6" />
+                    <path d="M3.4 19.2c0-3 2.5-5.1 5.6-5.1s5.6 2.1 5.6 5.1" fill="none" stroke="currentColor"
+                      stroke-width="1.6" stroke-linecap="round" />
+                    <path opacity="0.55" d="M16.1 5.3a3.1 3.1 0 0 1 0 5.5M17.4 14.6c2.1.5 3.5 2.2 3.5 4.6" fill="none"
+                      stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                  </svg>About</a></li>
+              <li><a href="https://enstacked.com/how-we-work/"><svg class="esn-acc__icon" data-icon="gauge" width="18"
+                    height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <path d="M3.8 17.2a9 9 0 1 1 16.4 0" fill="none" stroke="currentColor" stroke-width="1.7"
+                      stroke-linecap="round" />
+                    <path d="M12 13.6 16.1 8.9" fill="none" stroke="currentColor" stroke-width="1.7"
+                      stroke-linecap="round" />
+                    <circle cx="12" cy="14.4" r="1.5" fill="currentColor" />
+                  </svg>How We Work</a></li>
+              <li><a href="https://enstacked.com/industries/"><svg class="esn-acc__icon" data-icon="bag" width="18"
+                    height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <path d="M4.7 8.3h14.6l-1.1 11.2a1.7 1.7 0 0 1-1.7 1.5H7.5a1.7 1.7 0 0 1-1.7-1.5L4.7 8.3Z"
+                      fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                    <path d="M9.1 10.5V7.2a2.9 2.9 0 0 1 5.8 0v3.3" fill="none" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="round" />
+                  </svg>Industries</a></li>
+              <li><a href="https://enstacked.com/careers/"><svg class="esn-acc__icon" data-icon="rocket" width="18"
+                    height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <path
+                      d="M11.1 15.2 8.8 12.9c.4-3.4 2-6.1 4.4-7.8a7.7 7.7 0 0 1 4.9-1.4 7.7 7.7 0 0 1-1.4 4.9c-1.7 2.4-4.4 4-7.6 4.6Z"
+                      fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                    <circle cx="14.9" cy="9.1" r="1.4" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M8.9 13.1 6.2 13.6l-.9 3.3 3.2-.9.5-2.7Z" fill="none" stroke="currentColor"
+                      stroke-width="1.6" stroke-linejoin="round" />
+                    <path opacity="0.55" d="M7.4 16.6 4.6 19.4M6.2 18.2l-1.6 1.6M9 18.6l-1.5 1.5" stroke="currentColor"
+                      stroke-width="1.6" stroke-linecap="round" />
+                  </svg>Careers</a></li>
+              <li>
+
+                <a class="esn-acc-cta" href="https://enstacked.com/about-us/">
+
+                  Read our story <span class="esn-acc-cta__arrow" aria-hidden="true">&#8599;</span>
+
+                </a>
+
+              </li>
+
+            </ul>
+
+          </details>
+
+        </div>
+
+        <div class="esn-drawer__footer">
+
+          <a href="javascript:;" class="esn-cta esn-cta--block">
+
+            <span>Contact Us</span>
+
+          </a>
+
+          <div class="esn-contact">
+
+            <p class="esn-drawer__label">Get in touch</p>
+
+            <a href="tel:+919712413434">
+
+              <svg class="esn-contact__icon" data-icon="mobile" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <rect x="7" y="2.6" width="10" height="18.8" rx="2.2" fill="none" stroke="currentColor"
+                  stroke-width="1.7" />
+                <path opacity="0.55" d="M10.7 18.3h2.6" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" />
+              </svg> <span>+91 97124 13434</span>
+
+            </a>
+
+            <a href="mailto:solutions@enstacked.com">
+
+              <svg class="esn-contact__icon" data-icon="mail" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <rect x="2.8" y="5" width="18.4" height="14" rx="2.2" fill="none" stroke="currentColor"
+                  stroke-width="1.6" />
+                <path d="M3.6 6.6 12 13l8.4-6.4" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg> <span>solutions@enstacked.com</span>
+
+            </a>
+
+          </div>
+
+          <div class="esn-social">
+
+            <p class="esn-drawer__label">Follow us</p>
+
+            <ul>
+
+              <li><a href="https://www.facebook.com/enstacked" aria-label="Facebook"><img src="images/facebook-icon.svg"
+                    alt="Facebook" width="22" height="22" /></a></li>
+
+              <li><a href="https://x.com/enstacked" aria-label="X"><img src="images/x-icon.svg" alt="X" width="22"
+                    height="22" /></a></li>
+
+              <li><a href="https://www.instagram.com/enstacked" aria-label="Instagram"><img
+                    src="images/instagram-icon.svg" alt="Instagram" width="22" height="22" /></a></li>
+
+              <li><a href="https://www.linkedin.com/company/enstacked" aria-label="LinkedIn"><img
+                    src="images/linkedin-icon.svg" alt="LinkedIn" width="22" height="22" /></a></li>
+
+              <li><a href="https://www.behance.net/enstacked" aria-label="Behance"><img src="images/behance-icon.svg"
+                    alt="Behance" width="22" height="22" /></a></li>
+
+              <li><a href="https://dribbble.com/enstacked" aria-label="Dribbble"><img src="images/dribbble-icon.svg"
+                    alt="Dribbble" width="22" height="22" /></a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- Header End -->
+
+    <main id="main" class="site-main">
+
+      <!-- ==========================================
+     2. CURTAIN HERO OVERLAY (#es-curtain)
+     ========================================== -->
+      <div class="es-curtain-spacer" id="es-curtain-spacer" aria-hidden="true"></div>
+      <section class="es-curtain" id="es-curtain" data-active="0" aria-roledescription="carousel"
+        aria-label="Enstacked, Varn and Caffenza">
+        <div class="band">
+          <canvas id="es-curtain-burn" aria-hidden="true"></canvas>
+          <div class="grid">
+
+            <div class="stack">
+              <div class="pane lead on" id="es-curtain-p0" role="tabpanel" aria-labelledby="es-curtain-t0">
+                <p class="eyebrow">Shopify and eCommerce experts</p>
+                <p class="title">We grow eCommerce brands, <span class="hot">conversion-first</span></p>
+                <p class="lede">Services and products for Shopify brands, and for the agencies that build them.</p>
+                <div class="actions">
+                  <a class="btn btn-a" href="javascript:;">Hire Developers</a>
+                </div>
+              </div>
+              <div class="pane lead" id="es-curtain-p1" role="tabpanel" aria-labelledby="es-curtain-t1"
+                aria-hidden="true" inert>
+                <p class="eyebrow">New Shopify app &middot; Varn</p>
+                <p class="title">Every variant, <span class="hot">in living color.</span></p>
+                <p class="lede">Varn reads your option names in ten languages, matches them to your product photos and
+                  sets up your theme's swatches. It only fills in what it's confident about.</p>
+                <div class="actions">
+                  <a class="btn btn-a" href="javascript:;" target="_blank" rel="noopener noreferrer">Install Varn
+                    free</a>
+                  <a class="btn btn-b" href="javascript:;"><i>&rarr;</i> See how Varn works</a>
+                </div>
+              </div>
+              <div class="pane lead" id="es-curtain-p2" role="tabpanel" aria-labelledby="es-curtain-t2"
+                aria-hidden="true" inert>
+                <p class="eyebrow">Coming soon &middot; Shopify theme</p>
+                <p class="title">A Shopify theme for food brands, <span class="hot">coming soon.</span></p>
+                <p class="lede">We're packing what we've learned building client stores into a theme you can install
+                  yourself.</p>
+                <div class="actions">
+                  <a class="btn btn-a" href="javascript:;">Get launch updates</a>
+                  <a class="btn btn-b" href="javascript:;"><i>&rarr;</i> See stores we've built</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slot" id="es-curtain-slot" role="img" aria-label="Enstacked logo"></div>
+
+            <div class="stack pointsWrap">
+              <ul class="pane points on" data-for="0">
+                <li>Build stores that convert</li>
+                <li>Optimize what is already live</li>
+                <li>Outsource the whole backlog</li>
+              </ul>
+              <ul class="pane points" data-for="1" aria-hidden="true" inert>
+                <li>Zero theme files edited</li>
+                <li>Under 10 KB</li>
+                <li>Starter plan free forever</li>
+              </ul>
+              <ul class="pane points" data-for="2" aria-hidden="true" inert>
+                <li>Made by the Enstacked team</li>
+                <li>Built for food and drink stores</li>
+                <li>Install and run it yourself</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Choose a slide">
+          <span class="ink" id="es-curtain-ink" aria-hidden="true"></span>
+          <button class="tab" id="es-curtain-t0" role="tab" aria-selected="true" aria-controls="es-curtain-p0"
+            type="button">
+            <span class="tab-logo" aria-hidden="true"><svg viewBox="0 0 30 30">
+                <rect x=".5" y=".5" width="29" height="29" rx="8" fill="#F4F6F8" />
+                <g transform="translate(5.2 4) scale(.9)">
+                  <path fill-rule="evenodd"
+                    d="M11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"
+                    fill="#95BF47" />
+                  <path
+                    d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023z"
+                    fill="#5E8E3E" />
+                  <path
+                    d="M11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01z"
+                    fill="#fff" />
+                </g>
+              </svg></span>
+            <span class="tab-txt"><b>Shopify Development</b><small>Enstacked</small></span>
+          </button>
+          <button class="tab" id="es-curtain-t1" role="tab" aria-selected="false" aria-controls="es-curtain-p1"
+            type="button" tabindex="-1">
+            <span class="tab-logo" aria-hidden="true"><svg viewBox="0 0 30 30">
+                <rect x=".5" y=".5" width="29" height="29" rx="8" fill="#FFFFFF" />
+                <g transform="translate(5.2 4) scale(.9)">
+                  <path fill-rule="evenodd"
+                    d="M11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"
+                    fill="#161616" />
+                  <path
+                    d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023z"
+                    fill="#000" />
+                  <path
+                    d="M11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01z"
+                    fill="#fff" />
+                </g>
+              </svg></span>
+            <span class="tab-txt"><b>Shopify App</b><small>Varn</small></span>
+          </button>
+          <button class="tab" id="es-curtain-t2" role="tab" aria-selected="false" aria-controls="es-curtain-p2"
+            type="button" tabindex="-1">
+            <span class="tab-logo" aria-hidden="true"><svg viewBox="0 0 30 30">
+                <rect x=".5" y=".5" width="29" height="29" rx="8" fill="#131111" stroke="rgba(243,224,210,.16)"
+                  stroke-width="1" />
+                <g transform="translate(5.2 4) scale(.9)">
+                  <path fill-rule="evenodd"
+                    d="M11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"
+                    fill="#FFFFFF" />
+                  <path
+                    d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023z"
+                    fill="#C5C5C5" />
+                  <path
+                    d="M11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01z"
+                    fill="#131111" />
+                </g>
+              </svg></span>
+            <span class="tab-txt"><b>Shopify Theme</b><small>Caffenza</small></span>
+          </button>
+        </div>
+
+      </section>
+      <button class="more" id="es-curtain-more" type="button" aria-label="Scroll down">
+        <svg class="scroll-icon" viewBox="0 0 28 46" aria-hidden="true">
+          <rect x="1.4" y="1.4" width="25.2" height="43.2" rx="12.6" fill="none" stroke="currentColor"
+            stroke-width="1.6" />
+          <circle class="scroll-dot" cx="14" cy="12" r="2.1" fill="currentColor" />
+        </svg>
+      </button>
+      <script>
+        (function () {
+          var root = document.getElementById('es-curtain');
+          if (!root) return;
+
+          document.documentElement.classList.add('es-curtain-lock');
+          if (!location.hash) window.scrollTo(0, 0);
+
+          var finished = false;
+          var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+          function unlock() {
+            var header = document.querySelector('.esn-header');
+            var drawer = document.querySelector('.esn-drawer');
+            var backdrop = document.querySelector('.esn-backdrop');
+            var footer = document.querySelector('footer');
+            var under = document.getElementById('es-under');
+            if (header) header.inert = false;
+            if (drawer) drawer.inert = false;
+            if (backdrop) backdrop.inert = false;
+            if (footer) footer.inert = false;
+            if (under) under.inert = false;
+          }
+
+          function cover() {
+            if (!('inert' in root)) return;
+            var header = document.querySelector('.esn-header');
+            var drawer = document.querySelector('.esn-drawer');
+            var backdrop = document.querySelector('.esn-backdrop');
+            var footer = document.querySelector('footer');
+            var under = document.getElementById('es-under');
+            if (header) header.inert = true;
+            if (drawer) drawer.inert = true;
+            if (backdrop) backdrop.inert = true;
+            if (footer) footer.inert = true;
+            if (under) under.inert = true;
+          }
+
+          function finish() {
+            if (finished) return;
+            finished = true;
+            root.classList.add('is-gone');
+            root.inert = true;
+            document.documentElement.classList.remove('es-curtain-lock');
+            unlock();
+          }
+
+          function leave() {
+            if (finished || root.classList.contains('is-leaving')) return;
+            root.classList.add('is-leaving');
+            if (more) more.classList.add('is-leaving');
+            if (reduce) finish();
+            else window.setTimeout(finish, 2700);
+          }
+
+          root.addEventListener('transitionend', function (e) {
+            if (e.target === root && e.propertyName === 'transform') finish();
+          });
+
+          var more = document.getElementById('es-curtain-more');
+          if (more) more.addEventListener('click', leave);
+
+          window.addEventListener('wheel', function (e) {
+            if (finished) return;
+            e.preventDefault();
+            if (e.deltaY > 8) leave();
+          }, { passive: false });
+
+          var touchY = null;
+          window.addEventListener('touchstart', function (e) {
+            if (finished || !e.touches[0]) return;
+            touchY = e.touches[0].clientY;
+          }, { passive: true });
+          window.addEventListener('touchmove', function (e) {
+            if (finished || touchY === null || !e.touches[0]) return;
+            if (touchY - e.touches[0].clientY > 28) {
+              e.preventDefault();
+              leave();
+            }
+          }, { passive: false });
+
+          window.addEventListener('keydown', function (e) {
+            if (finished) return;
+            if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
+              e.preventDefault();
+              leave();
+            }
+          });
+
+          cover();
+          if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', cover);
+          window.esCurtainPlace = function () { };
+        })();
+      </script>
+
+      <div id="es-under">
+
+        <div id="home-start">
+
+          <!-- ==========================================
+
+     SECTION 1: HERO SECTION (Centered + Proof Strip)
+
+     ========================================== -->
+
+
+          <!-- ==========================================
+     3. HERO SECTION (.revamp-hero)
+     ========================================== -->
+          <section class="revamp-hero">
+
+            <div class="container">
+
+              <div class="revamp-hero-inner">
+
+                <p class="revamp-eyebrow">Shopify &amp; eCommerce Experts</p>
+
+                <div class="hs-title-wrap" data-hs-parallax data-hs-edges>
+
+                  <span class="hs-mark hs-mark--shopify" data-hs-line="0" data-hs-side="left" aria-hidden="true">
+
+                    <img src="images/shopify-icon.svg" alt="" width="30" height="34" decoding="async">
+
+                  </span>
+
+                  <h1>We grow eCommerce brands through <span class="hero-highlight">conversion&#8209;first</span>
+                    services and products.</h1>
+
+                  <span class="hs-mark hs-mark--grow" data-hs-line="1" data-hs-side="right" aria-hidden="true">
+
+                    <svg class="hs-mark__icon" data-icon="trend-up" width="28" height="28" viewBox="0 0 24 24"
+                      fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                      <path d="M3 16.2 8.6 10.6l3.3 3.3L20 5.8" fill="none" stroke="currentColor" stroke-width="1.7"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M14.6 5.8H20v5.4" fill="none" stroke="currentColor" stroke-width="1.7"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg> </span>
+
+                </div>
+
+                <p class="revamp-hero-sub">
+
+                  Build. Optimize. Outsource. White-Label. Enstacked is built for all of it.
+
+                </p>
+
+                <div class="revamp-audience-paths">
+
+                  <a href="#our-work" class="es-btn es-btn--primary">
+
+                    For Brands &middot; Our Work<svg class="arrow-icon" data-icon="arrow" width="25" height="24"
+                      viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path opacity="0.6"
+                        d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                        fill="currentColor" />
+                      <path opacity="0.8"
+                        d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                        fill="currentColor" />
+                      <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                        fill="currentColor" />
+                    </svg> </a>
+
+                  <a href="#white-label" class="es-btn es-btn--secondary">
+
+                    For Agencies &middot; White-Label<svg class="arrow-icon" data-icon="arrow" width="25" height="24"
+                      viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      focusable="false">
+                      <path opacity="0.6"
+                        d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                        fill="currentColor" />
+                      <path opacity="0.8"
+                        d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                        fill="currentColor" />
+                      <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                        fill="currentColor" />
+                    </svg> </a>
+
+                </div>
+
+              </div>
+
+              <div class="revamp-proof-strip">
+
+                <div class="marquee-container">
+
+                  <div class="marquee-track">
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/logo-2.svg"
+                        alt="Client logo" width="160" height="66" /></div>
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/pulence.svg"
+                        alt="Client logo" width="134" height="29" /></div>
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/rox-capital.svg"
+                        alt="Client logo" width="128" height="45" /></div>
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/ankpal.svg"
+                        alt="Client logo" width="146" height="35" /></div>
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/firm360.svg"
+                        alt="Client logo" width="84" height="47" /></div>
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/lugelo.svg"
+                        alt="Client logo" width="87" height="42" /></div>
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/onexcell.svg"
+                        alt="Client logo" width="130" height="47" /></div>
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/lifestyle.svg"
+                        alt="Client logo" width="83" height="45" /></div>
+
+                    <div class="marquee-logo"><img loading="lazy" decoding="async" src="images/iconflux.svg"
+                        alt="Client logo" width="125" height="37" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/logo-2.svg" alt="" width="160" height="66" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/pulence.svg" alt="" width="134" height="29" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/rox-capital.svg" alt="" width="128" height="45" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/ankpal.svg" alt="" width="146" height="35" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/firm360.svg" alt="" width="84" height="47" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/lugelo.svg" alt="" width="87" height="42" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/onexcell.svg" alt="" width="130" height="47" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/lifestyle.svg" alt="" width="83" height="45" /></div>
+
+                    <div class="marquee-logo" aria-hidden="true"><img loading="lazy" decoding="async"
+                        src="images/iconflux.svg" alt="" width="125" height="37" /></div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <!-- ==========================================
+
+     SECTION 2: MORE ABOUT US
+
+     ========================================== -->
+
+
+        <!-- ==========================================
+     4. ABOUT US & LIVE CRO CALCULATOR (#about)
+     ========================================== -->
+        <section class="rv-section rv-bg-white" id="about">
+
+          <div class="container">
+
+            <div class="rv-about-grid">
+
+              <div class="reveal-up">
+
+                <div class="rv-section-head es-section-head--flush">
+
+                  <p class="rv-eyebrow">More About Us</p>
+
+                  <h2>eCommerce is all we do. We build stores, <span class="rv-hl">convert more visitors,</span> and
+                    scale faster.</h2>
+
+                  <p class="rv-lede">
+
+                    Enstacked is a full-scale eCommerce development and Shopify product company, partnering with
+                    growth-focused brands and agencies who want more from their eCommerce stores and the team to make it
+                    happen.
+
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="rv-stats-grid">
+
+                <div class="rv-stat-card reveal-up" style="--rv-delay: 0.05s;">
+
+                  <div class="rv-stat-value"><span class="rv-counter" data-target="17">0</span><span
+                      class="rv-stat-suffix">+</span></div>
+
+                  <p class="rv-stat-label">Team Members</p>
+
+                </div>
+
+                <div class="rv-stat-card reveal-up" style="--rv-delay: 0.12s;">
+
+                  <div class="rv-stat-value"><span class="rv-counter" data-target="250">0</span><span
+                      class="rv-stat-suffix">+</span></div>
+
+                  <p class="rv-stat-label">Projects Delivered</p>
+
+                </div>
+
+                <div class="rv-stat-card reveal-up" style="--rv-delay: 0.19s;">
+
+                  <div class="rv-stat-value"><span class="rv-counter" data-target="98">0</span><span
+                      class="rv-stat-suffix">%</span></div>
+
+                  <p class="rv-stat-label">Client Retention Rate</p>
+
+                </div>
+
+                <div class="rv-stat-card reveal-up" style="--rv-delay: 0.26s;">
+
+                  <div class="rv-stat-value"><span class="rv-counter" data-target="50">0</span><span
+                      class="rv-stat-suffix">+</span></div>
+
+                  <p class="rv-stat-label">Clients</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==========================================
+
+     SECTION 3: OUR WORK
+
+     ========================================== -->
+
+
+        <!-- ==========================================
+     5. OUR WORK / CASE STUDIES SLIDER (#our-work)
+     ========================================== -->
+        <section class="rv-section rv-bg-gray" id="our-work">
+
+          <div class="container">
+
+            <div class="rv-section-head text-center reveal-up">
+
+              <p class="rv-eyebrow">Our Work</p>
+
+              <h2>Here's the work we've done for leading eCommerce brands <span class="rv-hl">and the impact it
+                  had.</span></h2>
+
+            </div>
+
+            <div class="rv-work-slider-wrap reveal-up">
+
+              <div class="owl-carousel rv-work-slider" id="rv-work-slider">
+
+                <div class="item">
+
+                  <article class="rv-work-card">
+
+                    <div class="rv-work-media">
+
+                      <picture>
+                        <source
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1-1024x895.webp 1024w, https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1-300x262.webp 300w, https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1-768x672.webp 768w, https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1-1536x1343.webp 1536w, https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1.webp 1920w"
+                          sizes='auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw' type="image/webp"><img
+                          width="1024" height="895" src="images/zilk-sleep-luxury-silk-bedding-homepage-1-1024x895.png"
+                          class="attachment-large size-large"
+                          alt="ZILK Sleep – The Science of Silk Meets the Art of Shopify" loading="lazy"
+                          decoding="async" sizes="auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw"
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1-1024x895.png 1024w, https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1-300x262.png 300w, https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1-768x672.png 768w, https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1-1536x1343.png 1536w, https://enstacked.com/wp-content/uploads/2025/11/zilk-sleep-luxury-silk-bedding-homepage-1.png 1920w"
+                          data-eio="p" />
+                      </picture>
+                    </div>
+
+                    <div class="rv-work-body">
+
+                      <div class="rv-work-logo"><img src="images/ZILK-LOGO.svg"
+                          alt="ZILK Sleep – The Science of Silk Meets the Art of Shopify" width="134" height="38"
+                          loading="lazy" decoding="async"></div>
+
+                      <p class="rv-work-excerpt">Our client is looking for a sleek and modern website for their
+                        one-of-a-kind product that matches their product requirements and attracts a high-end
+                        audience.&hellip;</p>
+
+                      <a href="https://enstacked.com/case-study/zilk-sleep-case-study/" class="rv-work-link">Read the
+                        full case study
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.1251 13.0342L8.1897 12.0542L12.3522 7.69339L0.0511184 7.69339L0.0510717 6.30745L12.3522 6.30745L8.1897 1.9467L9.1251 0.966709L14.8846 7.00047L9.1251 13.0342Z"
+                            fill="currentColor" />
+                        </svg>
+
+                      </a>
+
+                    </div>
+
+                  </article>
+
+                </div>
+
+                <div class="item">
+
+                  <article class="rv-work-card">
+
+                    <div class="rv-work-media">
+
+                      <picture>
+                        <source
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/grumpi2-1024x897.webp 1024w, https://enstacked.com/wp-content/uploads/2025/11/grumpi2-300x263.webp 300w, https://enstacked.com/wp-content/uploads/2025/11/grumpi2-768x672.webp 768w, https://enstacked.com/wp-content/uploads/2025/11/grumpi2-1536x1345.webp 1536w, https://enstacked.com/wp-content/uploads/2025/11/grumpi2.webp 1920w"
+                          sizes='auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw' type="image/webp"><img
+                          width="1024" height="897" src="images/grumpi2-1024x897.png"
+                          class="attachment-large size-large" alt="A Custom Shopify Website for Grumpi Furniture"
+                          loading="lazy" decoding="async"
+                          sizes="auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw"
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/grumpi2-1024x897.png 1024w, https://enstacked.com/wp-content/uploads/2025/11/grumpi2-300x263.png 300w, https://enstacked.com/wp-content/uploads/2025/11/grumpi2-768x672.png 768w, https://enstacked.com/wp-content/uploads/2025/11/grumpi2-1536x1345.png 1536w, https://enstacked.com/wp-content/uploads/2025/11/grumpi2.png 1920w"
+                          data-eio="p" />
+                      </picture> <span class="rv-work-industry">eCommerce</span>
+
+                    </div>
+
+                    <div class="rv-work-body">
+
+                      <div class="rv-work-logo"><img src="images/grumpi-furniture-logo-1.svg"
+                          alt="A Custom Shopify Website for Grumpi Furniture" width="187" height="58" loading="lazy"
+                          decoding="async"></div>
+
+                      <p class="rv-work-excerpt">Our client is looking for a sleek and modern website for their
+                        one-of-a-kind product that matches their product requirements and attracts a high-end
+                        audience.&hellip;</p>
+
+                      <div class="rv-kpi-row">
+
+                        <div class="rv-kpi">
+
+                          <div class="rv-kpi-value">100%</div>
+
+                          <div class="rv-kpi-label">Revenue Growth</div>
+
+                        </div>
+
+                        <div class="rv-kpi">
+
+                          <div class="rv-kpi-value">2%</div>
+
+                          <div class="rv-kpi-label">CRO </div>
+
+                        </div>
+
+                      </div>
+
+                      <a href="https://enstacked.com/case-study/custom-shopify-website-for-grumpi-furniture/"
+                        class="rv-work-link">Read the full case study
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.1251 13.0342L8.1897 12.0542L12.3522 7.69339L0.0511184 7.69339L0.0510717 6.30745L12.3522 6.30745L8.1897 1.9467L9.1251 0.966709L14.8846 7.00047L9.1251 13.0342Z"
+                            fill="currentColor" />
+                        </svg>
+
+                      </a>
+
+                    </div>
+
+                  </article>
+
+                </div>
+
+                <div class="item">
+
+                  <article class="rv-work-card">
+
+                    <div class="rv-work-media">
+
+                      <picture>
+                        <source
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-1024x896.webp 1024w, https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-300x263.webp 300w, https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-768x672.webp 768w, https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-1536x1344.webp 1536w, https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner.webp 1920w"
+                          sizes='auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw' type="image/webp"><img
+                          width="1024" height="896"
+                          src="images/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-1024x896.png"
+                          class="attachment-large size-large" alt="Transforming LUTEKOFTA Into a High-End Shopify Store"
+                          loading="lazy" decoding="async"
+                          sizes="auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw"
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-1024x896.png 1024w, https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-300x263.png 300w, https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-768x672.png 768w, https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner-1536x1344.png 1536w, https://enstacked.com/wp-content/uploads/2025/11/lutekofta-iconic-norwegian-wool-sweaters-hero-banner.png 1920w"
+                          data-eio="p" />
+                      </picture>
+                    </div>
+
+                    <div class="rv-work-body">
+
+                      <div class="rv-work-logo"><img src="images/lutekofta-orange-logo.svg"
+                          alt="Transforming LUTEKOFTA Into a High-End Shopify Store" width="288" height="217"
+                          loading="lazy" decoding="async"></div>
+
+                      <p class="rv-work-excerpt">Our client is looking for a sleek and modern website for their
+                        one-of-a-kind product that matches their product requirements and attracts a high-end
+                        audience.&hellip;</p>
+
+                      <a href="https://enstacked.com/case-study/lutekofta-case-study/" class="rv-work-link">Read the
+                        full case study
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.1251 13.0342L8.1897 12.0542L12.3522 7.69339L0.0511184 7.69339L0.0510717 6.30745L12.3522 6.30745L8.1897 1.9467L9.1251 0.966709L14.8846 7.00047L9.1251 13.0342Z"
+                            fill="currentColor" />
+                        </svg>
+
+                      </a>
+
+                    </div>
+
+                  </article>
+
+                </div>
+
+                <div class="item">
+
+                  <article class="rv-work-card">
+
+                    <div class="rv-work-media">
+
+                      <picture>
+                        <source
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured-1024x897.webp 1024w, https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured-300x263.webp 300w, https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured-768x672.webp 768w, https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured-1536x1345.webp 1536w, https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured.webp 1920w"
+                          sizes='auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw' type="image/webp"><img
+                          width="1024" height="897" src="images/true-skincare-featured-1024x897.png"
+                          class="attachment-large size-large" alt="TrueDerm &#8211; Ecommerce Shopify Store"
+                          loading="lazy" decoding="async"
+                          sizes="auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw"
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured-1024x897.png 1024w, https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured-300x263.png 300w, https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured-768x672.png 768w, https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured-1536x1345.png 1536w, https://enstacked.com/wp-content/uploads/2025/11/true-skincare-featured.png 1920w"
+                          data-eio="p" />
+                      </picture>
+                    </div>
+
+                    <div class="rv-work-body">
+
+                      <div class="rv-work-logo"><img src="images/True_logo_almost_black_medium.svg"
+                          alt="TrueDerm &#8211; Ecommerce Shopify Store" width="417" height="152" loading="lazy"
+                          decoding="async"></div>
+
+                      <p class="rv-work-excerpt">Our client is looking for a sleek and modern website for their
+                        one-of-a-kind product that matches their product requirements and attracts a high-end
+                        audience.&hellip;</p>
+
+                      <a href="https://enstacked.com/case-study/truederm-case-study/" class="rv-work-link">Read the full
+                        case study
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.1251 13.0342L8.1897 12.0542L12.3522 7.69339L0.0511184 7.69339L0.0510717 6.30745L12.3522 6.30745L8.1897 1.9467L9.1251 0.966709L14.8846 7.00047L9.1251 13.0342Z"
+                            fill="currentColor" />
+                        </svg>
+
+                      </a>
+
+                    </div>
+
+                  </article>
+
+                </div>
+
+                <div class="item">
+
+                  <article class="rv-work-card">
+
+                    <div class="rv-work-media">
+
+                      <picture>
+                        <source
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1024x897.webp 1024w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-300x263.webp 300w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-768x673.webp 768w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1536x1346.webp 1536w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured.webp 1920w"
+                          sizes='auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw' type="image/webp"><img
+                          width="1024" height="897" src="images/nuclia-deployment-options-featured-1024x897.png"
+                          class="attachment-large size-large"
+                          alt="Nuclia: Building a High-Trust, Agentic RAG Platform for Enterprise" loading="lazy"
+                          decoding="async" sizes="auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw"
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1024x897.png 1024w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-300x263.png 300w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-768x673.png 768w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured-1536x1346.png 1536w, https://enstacked.com/wp-content/uploads/2025/11/nuclia-deployment-options-featured.png 1920w"
+                          data-eio="p" />
+                      </picture>
+                    </div>
+
+                    <div class="rv-work-body">
+
+                      <div class="rv-work-logo"><img src="images/nuclia.avif"
+                          alt="Nuclia: Building a High-Trust, Agentic RAG Platform for Enterprise" width="651"
+                          height="251" loading="lazy" decoding="async"></div>
+
+                      <p class="rv-work-excerpt">Our client is looking for a sleek and modern website for their
+                        one-of-a-kind product that matches their product requirements and attracts a high-end
+                        audience.&hellip;</p>
+
+                      <a href="https://enstacked.com/case-study/nuclia-case-study/" class="rv-work-link">Read the full
+                        case study
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.1251 13.0342L8.1897 12.0542L12.3522 7.69339L0.0511184 7.69339L0.0510717 6.30745L12.3522 6.30745L8.1897 1.9467L9.1251 0.966709L14.8846 7.00047L9.1251 13.0342Z"
+                            fill="currentColor" />
+                        </svg>
+
+                      </a>
+
+                    </div>
+
+                  </article>
+
+                </div>
+
+                <div class="item">
+
+                  <article class="rv-work-card">
+
+                    <div class="rv-work-media">
+
+                      <picture>
+                        <source
+                          srcset="https://enstacked.com/wp-content/uploads/2025/11/featured-image-1024x897.webp 1024w, https://enstacked.com/wp-content/uploads/2025/11/featured-image-300x263.webp 300w, https://enstacked.com/wp-content/uploads/2025/11/featured-image-768x673.webp 768w, https://enstacked.com/wp-content/uploads/2025/11/featured-image-1536x1346.webp 1536w, https://enstacked.com/wp-content/uploads/2025/11/featured-image.webp 1920w"
+                          sizes='auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw' type="image/webp"><img
+                          width="1024" height="897" src="images/featured-image-1024x897.png"
+                          class="attachment-large size-large"
+                          alt="SalesStar Case Study : Sales Coaching &#038; Training Website" loading="lazy"
+                          decoding="async" sizes="auto, (min-width: 1200px) 560px, (min-width: 768px) 55vw, 92vw"
+                          srcset="images/featured-image-1024x897.png 1024w, https://enstacked.com/wp-content/uploads/2025/11/featured-image-300x263.png 300w, https://enstacked.com/wp-content/uploads/2025/11/featured-image-768x673.png 768w, https://enstacked.com/wp-content/uploads/2025/11/featured-image-1536x1346.png 1536w, https://enstacked.com/wp-content/uploads/2025/11/featured-image.png 1920w"
+                          data-eio="p" />
+                      </picture>
+                    </div>
+
+                    <div class="rv-work-body">
+
+                      <div class="rv-work-logo"><img src="images/salesstar-1.svg"
+                          alt="SalesStar Case Study : Sales Coaching &#038; Training Website" width="590" height="139"
+                          loading="lazy" decoding="async"></div>
+
+                      <p class="rv-work-excerpt">Our client is looking for a sleek and modern website for their
+                        one-of-a-kind product that matches their product requirements and attracts a high-end
+                        audience.&hellip;</p>
+
+                      <a href="https://enstacked.com/case-study/salesstar-case-study/" class="rv-work-link">Read the
+                        full case study
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.1251 13.0342L8.1897 12.0542L12.3522 7.69339L0.0511184 7.69339L0.0510717 6.30745L12.3522 6.30745L8.1897 1.9467L9.1251 0.966709L14.8846 7.00047L9.1251 13.0342Z"
+                            fill="currentColor" />
+                        </svg>
+
+                      </a>
+
+                    </div>
+
+                  </article>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="text-center u-mt-fluid-lg reveal-up">
+
+              <a href="javascript:;" class="es-btn es-btn--primary">Check All Case Studies<svg class="arrow-icon"
+                  data-icon="arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                  <path opacity="0.6"
+                    d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                    fill="currentColor" />
+                  <path opacity="0.8"
+                    d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                    fill="currentColor" />
+                  <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                    fill="currentColor" />
+                </svg></a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==========================================
+
+     SECTION 4: WHAT WE OFFER
+
+     ========================================== -->
+
+
+        <!-- ==========================================
+     6. WHAT WE OFFER / SERVICES GRID (#services)
+     ========================================== -->
+        <section class="rv-section rv-bg-white" id="services">
+
+          <div class="container">
+
+            <div class="rv-section-head text-center reveal-up">
+
+              <p class="rv-eyebrow">What We Offer</p>
+
+              <h2>Everything your eCommerce store needs. <span class="rv-hl">Handled.</span></h2>
+
+            </div>
+
+            <div class="rv-offer-grid">
+
+              <a href="https://enstacked.com/shopify-development-services/"
+                class="rv-offer-card rv-offer-card--featured reveal-up">
+
+                <div class="rv-offer-num">01 / SHOPIFY <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>Shopify Development</h3>
+
+                <p>Shopify stores are designed and built to convert, from first visit to checkout.</p>
+
+              </a>
+
+              <a href="https://enstacked.com/shopify-theme-development-services/" class="rv-offer-card reveal-up"
+                style="--rv-delay: .07s;">
+
+                <div class="rv-offer-num">02 / THEMES <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>Shopify Theme Development</h3>
+
+                <p>Custom Shopify themes built from your design and engineered to stay fast as your catalogue grows.</p>
+
+              </a>
+
+              <a href="https://enstacked.com/shopify-app-development-services/" class="rv-offer-card reveal-up"
+                style="--rv-delay: .14s;">
+
+                <div class="rv-offer-num">03 / APPS <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>Shopify App Development</h3>
+
+                <p>Public and private Shopify apps built around how your store and your team actually work.</p>
+
+              </a>
+
+              <a href="https://enstacked.com/shopify-migration-services/" class="rv-offer-card reveal-up">
+
+                <div class="rv-offer-num">04 / MIGRATION <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>Shopify Migration</h3>
+
+                <p>Replatform to Shopify with your products, customers and orders carried across and your traffic
+                  protected.</p>
+
+              </a>
+
+              <a href="https://enstacked.com/shopify-plus-service/" class="rv-offer-card reveal-up"
+                style="--rv-delay: .07s;">
+
+                <div class="rv-offer-num">05 / PLUS <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>Shopify Plus Development</h3>
+
+                <p>Enterprise builds for high-volume Shopify Plus stores, from checkout customisation to automation.</p>
+
+              </a>
+
+              <a href="https://enstacked.com/shopify-conversion-rate-optimization-services/"
+                class="rv-offer-card reveal-up" style="--rv-delay: .14s;">
+
+                <div class="rv-offer-num">06 / CRO <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>Shopify CRO</h3>
+
+                <p>Data-driven audit and optimization to boost conversions and make the most out of your current traffic
+                  into measurable revenue.</p>
+
+              </a>
+
+              <a href="https://enstacked.com/hire-shopify-developer/" class="rv-offer-card reveal-up">
+
+                <div class="rv-offer-num">07 / HIRE <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>Hire Shopify Developer</h3>
+
+                <p>Dedicated Shopify developers who work inside your team, on your roadmap and your schedule.</p>
+
+              </a>
+
+              <a href="https://enstacked.com/hire-dedicated-developers/" class="rv-offer-card reveal-up"
+                style="--rv-delay: .07s;">
+
+                <div class="rv-offer-num">08 / TALENT <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>Hire Dedicated Developer</h3>
+
+                <p>Dedicated developers, designers, and marketers embedded in your team, without the full-time
+                  commitment. Scale up and down anytime.</p>
+
+              </a>
+
+              <a href="https://enstacked.com/hire-dedicated-wordpress-developers/" class="rv-offer-card reveal-up"
+                style="--rv-delay: .14s;">
+
+                <div class="rv-offer-num">09 / WORDPRESS <span class="rv-offer-arrow" aria-hidden="true">
+
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                </div>
+
+                <h3>WordPress Development</h3>
+
+                <p>Custom WordPress and WooCommerce stores built for eCommerce, fast, flexible, and engineered to sell.
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==========================================
+
+     SECTION 5: WHITE-LABEL SERVICES (dark break)
+
+     ========================================== -->
+
+        <link rel="stylesheet" href="css/section-cta.css">
+        <noscript>
+          <link rel="stylesheet" href="css/section-cta.css">
+        </noscript>
+
+
+        <!-- ==========================================
+     7. WHITE-LABEL AGENCY PARTNERSHIP (#white-label)
+     ========================================== -->
+        <section class="es-section es-bg-white" id="white-label">
+
+          <div class="es-container">
+
+            <div class="es-cta__panel reveal-up es-cta__panel--split">
+
+              <span class="es-cta__deco" aria-hidden="true">
+
+                <span class="es-cta__arc es-cta__arc--bl-1"></span>
+
+                <span class="es-cta__arc es-cta__arc--bl-2"></span>
+
+                <span class="es-cta__arc es-cta__arc--tr-1"></span>
+
+                <span class="es-cta__arc es-cta__arc--tr-2"></span>
+
+                <span class="es-cta__dots es-cta__dots--left"></span>
+
+                <span class="es-cta__dots es-cta__dots--right"></span>
+
+              </span>
+
+              <div class="es-cta__split">
+                <div class="es-cta__main">
+
+                  <p class="es-cta__eyebrow">
+
+                    <svg class="es-cta__eyebrow-icon" data-icon="shield" width="16" height="16" viewBox="0 0 24 24"
+                      fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                      <path d="M12 2.5 4.75 5.5V11c0 4.55 3.1 7.85 7.25 9.5 4.15-1.65 7.25-4.95 7.25-9.5V5.5L12 2.5Z"
+                        fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                      <path d="M8.9 11.7 11 13.8 15.3 9.4" fill="none" stroke="currentColor" stroke-width="1.6"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg> White-Label Services
+                  </p>
+
+                  <h2 class="es-cta__title">We <span class="es-hl">White-Label</span> as well.</h2>
+
+                  <p class="es-cta__lede">You have more projects than your team can handle, or skill gaps you can't fill
+                    in-house? Enstacked is built for both. We operate as your fully confidential delivery partner,
+                    covering every eCommerce service under your brand.</p>
+
+                </div>
+                <div class="es-cta__side">
+
+                  <ul class="es-cta__points">
+
+                    <li class="es-cta__point">
+
+                      <span class="es-cta__point-mark" aria-hidden="true">
+
+                        <svg class="es-cta__point-icon" data-icon="check" width="13" height="8" viewBox="0 0 25 14"
+                          fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                          <path
+                            d="M12.75 13.125C12.375 13.125 12.125 13 11.875 12.75L6.625 7.5C6.125 7 6.125 6.25 6.625 5.75C7.125 5.25 7.875 5.25 8.375 5.75L12.75 10.125L22.5 0.375C23 -0.125 23.75 -0.125 24.25 0.375C24.75 0.875 24.75 1.625 24.25 2.125L13.625 12.75C13.5 13 13.125 13.125 12.75 13.125Z"
+                            fill="currentColor" />
+                          <path opacity="0.4"
+                            d="M6.5 13.125C6.125 13.125 5.875 13 5.625 12.75L0.375 7.5C-0.125 7 -0.125 6.25 0.375 5.75C0.875 5.25 1.625 5.25 2.125 5.75L7.375 11C7.875 11.5 7.875 12.25 7.375 12.75C7.25 13 6.875 13.125 6.5 13.125ZM13.125 6.625C12.75 6.625 12.5 6.5 12.25 6.25C11.75 5.75 11.75 5 12.25 4.5L16.25 0.375C16.75 -0.125 17.5 -0.125 18 0.375C18.5 0.875 18.5 1.625 18 2.125L14 6.25C13.75 6.5 13.5 6.625 13.125 6.625Z"
+                            fill="currentColor" />
+                        </svg> </span>
+
+                      <span>
+
+                        <strong class="es-cta__point-title">Full NDA.</strong>
+
+                      </span>
+
+                    </li>
+
+                    <li class="es-cta__point">
+
+                      <span class="es-cta__point-mark" aria-hidden="true">
+
+                        <svg class="es-cta__point-icon" data-icon="check" width="13" height="8" viewBox="0 0 25 14"
+                          fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                          <path
+                            d="M12.75 13.125C12.375 13.125 12.125 13 11.875 12.75L6.625 7.5C6.125 7 6.125 6.25 6.625 5.75C7.125 5.25 7.875 5.25 8.375 5.75L12.75 10.125L22.5 0.375C23 -0.125 23.75 -0.125 24.25 0.375C24.75 0.875 24.75 1.625 24.25 2.125L13.625 12.75C13.5 13 13.125 13.125 12.75 13.125Z"
+                            fill="currentColor" />
+                          <path opacity="0.4"
+                            d="M6.5 13.125C6.125 13.125 5.875 13 5.625 12.75L0.375 7.5C-0.125 7 -0.125 6.25 0.375 5.75C0.875 5.25 1.625 5.25 2.125 5.75L7.375 11C7.875 11.5 7.875 12.25 7.375 12.75C7.25 13 6.875 13.125 6.5 13.125ZM13.125 6.625C12.75 6.625 12.5 6.5 12.25 6.25C11.75 5.75 11.75 5 12.25 4.5L16.25 0.375C16.75 -0.125 17.5 -0.125 18 0.375C18.5 0.875 18.5 1.625 18 2.125L14 6.25C13.75 6.5 13.5 6.625 13.125 6.625Z"
+                            fill="currentColor" />
+                        </svg> </span>
+
+                      <span>
+
+                        <strong class="es-cta__point-title">All services.</strong>
+
+                      </span>
+
+                    </li>
+
+                    <li class="es-cta__point">
+
+                      <span class="es-cta__point-mark" aria-hidden="true">
+
+                        <svg class="es-cta__point-icon" data-icon="check" width="13" height="8" viewBox="0 0 25 14"
+                          fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                          <path
+                            d="M12.75 13.125C12.375 13.125 12.125 13 11.875 12.75L6.625 7.5C6.125 7 6.125 6.25 6.625 5.75C7.125 5.25 7.875 5.25 8.375 5.75L12.75 10.125L22.5 0.375C23 -0.125 23.75 -0.125 24.25 0.375C24.75 0.875 24.75 1.625 24.25 2.125L13.625 12.75C13.5 13 13.125 13.125 12.75 13.125Z"
+                            fill="currentColor" />
+                          <path opacity="0.4"
+                            d="M6.5 13.125C6.125 13.125 5.875 13 5.625 12.75L0.375 7.5C-0.125 7 -0.125 6.25 0.375 5.75C0.875 5.25 1.625 5.25 2.125 5.75L7.375 11C7.875 11.5 7.875 12.25 7.375 12.75C7.25 13 6.875 13.125 6.5 13.125ZM13.125 6.625C12.75 6.625 12.5 6.5 12.25 6.25C11.75 5.75 11.75 5 12.25 4.5L16.25 0.375C16.75 -0.125 17.5 -0.125 18 0.375C18.5 0.875 18.5 1.625 18 2.125L14 6.25C13.75 6.5 13.5 6.625 13.125 6.625Z"
+                            fill="currentColor" />
+                        </svg> </span>
+
+                      <span>
+
+                        <strong class="es-cta__point-title">Under your brand.</strong>
+
+                      </span>
+
+                    </li>
+
+                    <li class="es-cta__point">
+
+                      <span class="es-cta__point-mark" aria-hidden="true">
+
+                        <svg class="es-cta__point-icon" data-icon="check" width="13" height="8" viewBox="0 0 25 14"
+                          fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                          <path
+                            d="M12.75 13.125C12.375 13.125 12.125 13 11.875 12.75L6.625 7.5C6.125 7 6.125 6.25 6.625 5.75C7.125 5.25 7.875 5.25 8.375 5.75L12.75 10.125L22.5 0.375C23 -0.125 23.75 -0.125 24.25 0.375C24.75 0.875 24.75 1.625 24.25 2.125L13.625 12.75C13.5 13 13.125 13.125 12.75 13.125Z"
+                            fill="currentColor" />
+                          <path opacity="0.4"
+                            d="M6.5 13.125C6.125 13.125 5.875 13 5.625 12.75L0.375 7.5C-0.125 7 -0.125 6.25 0.375 5.75C0.875 5.25 1.625 5.25 2.125 5.75L7.375 11C7.875 11.5 7.875 12.25 7.375 12.75C7.25 13 6.875 13.125 6.5 13.125ZM13.125 6.625C12.75 6.625 12.5 6.5 12.25 6.25C11.75 5.75 11.75 5 12.25 4.5L16.25 0.375C16.75 -0.125 17.5 -0.125 18 0.375C18.5 0.875 18.5 1.625 18 2.125L14 6.25C13.75 6.5 13.5 6.625 13.125 6.625Z"
+                            fill="currentColor" />
+                        </svg> </span>
+
+                      <span>
+
+                        <strong class="es-cta__point-title">Your clients never know we exist.</strong>
+
+                      </span>
+
+                    </li>
+
+                  </ul>
+
+                  <div class="es-cta__actions es-cta__actions--multi">
+
+                    <a class="es-btn es-btn--secondary" href="https://enstacked.com/white-label-shopify-services/">
+
+                      White Label Shopify Service <svg class="arrow-icon" data-icon="arrow" width="25" height="24"
+                        viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        focusable="false">
+                        <path opacity="0.6"
+                          d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                          fill="currentColor" />
+                        <path opacity="0.8"
+                          d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                          fill="currentColor" />
+                        <path
+                          d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                          fill="currentColor" />
+                      </svg> </a>
+
+                    <a class="es-btn es-btn--secondary" href="https://enstacked.com/white-label-wordpress-services/">
+
+                      White Label WordPress Service <svg class="arrow-icon" data-icon="arrow" width="25" height="24"
+                        viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        focusable="false">
+                        <path opacity="0.6"
+                          d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                          fill="currentColor" />
+                        <path opacity="0.8"
+                          d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                          fill="currentColor" />
+                        <path
+                          d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                          fill="currentColor" />
+                      </svg> </a>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==========================================
+
+     SECTION 6: WHY WORK WITH US
+
+     ========================================== -->
+
+
+        <!-- ==========================================
+     8. WHY US / NUMBERED ADVANTAGES (#why-us)
+     ========================================== -->
+        <section class="rv-section rv-bg-white" id="why-us">
+
+          <div class="container">
+
+            <div class="rv-section-head reveal-up">
+
+              <p class="rv-eyebrow">Why Us</p>
+
+              <h2>What makes us different <span class="rv-hl">and why it matters for your store?</span></h2>
+
+            </div>
+
+            <div class="rv-why-list">
+
+              <div class="rv-why-row reveal-up">
+
+                <div class="rv-why-num">/ 01</div>
+
+                <h3>Conversion baked in, not added on.</h3>
+
+                <p>Most agencies build stores and think about conversions later. At Enstacked, conversion is the
+                  standard; every layout, every CTA, every checkout flow is built with user behavior and conversion in
+                  mind.</p>
+
+              </div>
+
+              <div class="rv-why-row reveal-up" style="--rv-delay: .06s;">
+
+                <div class="rv-why-num">/ 02</div>
+
+                <h3>Delivered fast, without cutting corners.</h3>
+
+                <p>We're built for speed: dedicated teams, clear processes, and a workflow that eliminates
+                  back-and-forth without sacrificing quality.</p>
+
+              </div>
+
+              <div class="rv-why-row reveal-up" style="--rv-delay: .12s;">
+
+                <div class="rv-why-num">/ 03</div>
+
+                <h3>One team. Everything eCommerce.</h3>
+
+                <p>From eCommerce development and CRO to digital marketing, UX design, white-label delivery, and our own
+                  Shopify products, everything your eCommerce brand needs lives under one roof.</p>
+
+              </div>
+
+              <div class="rv-why-row reveal-up" style="--rv-delay: .18s;">
+
+                <div class="rv-why-num">/ 04</div>
+
+                <h3>100% Transparency, No surprises. Ever.</h3>
+
+                <p>Clear timelines, proactive updates, and a team that communicates. You always know where your project
+                  stands, what's next, and who to reach.</p>
+
+              </div>
+
+            </div>
+
+            <div class="text-center u-mt-fluid-lg reveal-up">
+
+              <a href="javascript:;" class="es-btn es-btn--primary">Ready to Get Started?<svg class="arrow-icon"
+                  data-icon="arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                  <path opacity="0.6"
+                    d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                    fill="currentColor" />
+                  <path opacity="0.8"
+                    d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                    fill="currentColor" />
+                  <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                    fill="currentColor" />
+                </svg></a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==========================================
+
+     SECTION 7: CLIENT TESTIMONIALS (reusable component)
+
+     ========================================== -->
+
+        <noscript>
+        </noscript>
+
+
+        <!-- ==========================================
+     9. CLIENT TESTIMONIALS & RATINGS (.rv-testi)
+     ========================================== -->
+        <section class="es-section rv-testi rv-testi--tint">
+
+          <div class="container">
+
+            <div class="rv-section-head text-center">
+
+              <p class="rv-eyebrow">Client Testimonials</p>
+
+              <h2>Straight from the brands we've worked with.</h2>
+
+            </div>
+
+            <div class="rv-review-strip reveal-up">
+
+              <p class="rv-review-strip-label">Rated by clients on</p>
+
+              <div class="rv-review-badges">
+
+                <a class="rv-review-badge" href="https://clutch.co/profile/enstacked-technologies" target="_blank"
+                  rel="noopener nofollow" aria-label="Clutch: 5 out of 5">
+
+                  <img class="rv-rb-logo" src="images/clutch.svg" alt="Clutch" loading="lazy" width="120" height="26">
+
+                  <span class="rv-rb-stars" aria-hidden="true"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></span>
+
+                  <span class="rv-rb-score"><strong>5.0</strong>/5.0</span>
+
+                </a>
+
+                <a class="rv-review-badge" href="https://www.trustpilot.com/review/enstacked.com" target="_blank"
+                  rel="noopener nofollow" aria-label="Trustpilot: 4 out of 5">
+
+                  <img class="rv-rb-logo" src="images/trustpilot.svg" alt="Trustpilot" loading="lazy" width="120"
+                    height="26">
+
+                  <span class="rv-rb-stars" aria-hidden="true"><span class="es-stars"
+                      style="--stars-fill: 80%"></span></span>
+
+                  <span class="rv-rb-score"><strong>4.0</strong>/5.0</span>
+
+                </a>
+
+                <a class="rv-review-badge" href="https://share.google/URhv77rbXcKSSAjZx" target="_blank"
+                  rel="noopener nofollow" aria-label="Google: 5 out of 5">
+
+                  <img class="rv-rb-logo" src="images/google.svg" alt="Google" loading="lazy" width="120" height="26">
+
+                  <span class="rv-rb-stars" aria-hidden="true"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></span>
+
+                  <span class="rv-rb-score"><strong>5.0</strong>/5.0</span>
+
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="rv-testi-marquee reveal-up">
+
+              <div class="rv-testi-track">
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>Give them a Try without a Doubt</h3>
+                  <p>When we were looking to hire developers, we anticipated that it would be challenging to find the
+                    ideal developers for our team. Then we partnered with Enstacked and we are impressed by their
+                    expertise in hiring remote developers and their services.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-3.webp"
+                        type="image/webp"><img src="images/client-image-3.png" alt="Jordan Reynolds" width="50"
+                        height="50" loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Jordan Reynolds</strong>
+
+                      <span>Olivia Carter</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>Top-Notch Custom Software Development</h3>
+                  <p>We turned to this IT development company for custom software development, and they delivered beyond
+                    our expectations. Their ability to understand our unique business needs and provide tailored
+                    solutions has been invaluable to our growth and efficiency.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-2.webp"
+                        type="image/webp"><img src="images/client-image-2.png" alt="Liam Anderson" width="50"
+                        height="50" loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Liam Anderson</strong>
+
+                      <span>Riverview, New York</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>The time zone is Not a Boundary</h3>
+                  <p>Enstakced has been doing an excellent job with the software and helping the client transform it
+                    into a SaaS platform. A responsive and organized team, their communication is awesome, with daily
+                    reports and regular calls for project updates. The team&#039;s availability has secured an ongoing
+                    partnership.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-1.webp"
+                        type="image/webp"><img src="images/client-image-1.png" alt="Ethan Brooks" width="50" height="50"
+                        loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Ethan Brooks</strong>
+
+                      <span>Riverview, New York</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>Give them a Try without a Doubt</h3>
+                  <p>When we were looking to hire developers, we anticipated that it would be challenging to find the
+                    ideal developers for our team. Then we partnered with Enstacked and we are impressed by their
+                    expertise in hiring remote developers and their services.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-3.webp"
+                        type="image/webp"><img src="images/client-image-3.png" alt="Jordan Reynolds" width="50"
+                        height="50" loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Jordan Reynolds</strong>
+
+                      <span>Olivia Carter</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>Top-Notch Custom Software Development</h3>
+                  <p>We turned to this IT development company for custom software development, and they delivered beyond
+                    our expectations. Their ability to understand our unique business needs and provide tailored
+                    solutions has been invaluable to our growth and efficiency.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-2.webp"
+                        type="image/webp"><img src="images/client-image-2.png" alt="Liam Anderson" width="50"
+                        height="50" loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Liam Anderson</strong>
+
+                      <span>Riverview, New York</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>The time zone is Not a Boundary</h3>
+                  <p>Enstakced has been doing an excellent job with the software and helping the client transform it
+                    into a SaaS platform. A responsive and organized team, their communication is awesome, with daily
+                    reports and regular calls for project updates. The team&#039;s availability has secured an ongoing
+                    partnership.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-1.webp"
+                        type="image/webp"><img src="images/client-image-1.png" alt="Ethan Brooks" width="50" height="50"
+                        loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Ethan Brooks</strong>
+
+                      <span>Riverview, New York</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>Give them a Try without a Doubt</h3>
+                  <p>When we were looking to hire developers, we anticipated that it would be challenging to find the
+                    ideal developers for our team. Then we partnered with Enstacked and we are impressed by their
+                    expertise in hiring remote developers and their services.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-3.webp"
+                        type="image/webp"><img src="images/client-image-3.png" alt="Jordan Reynolds" width="50"
+                        height="50" loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Jordan Reynolds</strong>
+
+                      <span>Olivia Carter</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>Top-Notch Custom Software Development</h3>
+                  <p>We turned to this IT development company for custom software development, and they delivered beyond
+                    our expectations. Their ability to understand our unique business needs and provide tailored
+                    solutions has been invaluable to our growth and efficiency.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-2.webp"
+                        type="image/webp"><img src="images/client-image-2.png" alt="Liam Anderson" width="50"
+                        height="50" loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Liam Anderson</strong>
+
+                      <span>Riverview, New York</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>The time zone is Not a Boundary</h3>
+                  <p>Enstakced has been doing an excellent job with the software and helping the client transform it
+                    into a SaaS platform. A responsive and organized team, their communication is awesome, with daily
+                    reports and regular calls for project updates. The team&#039;s availability has secured an ongoing
+                    partnership.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-1.webp"
+                        type="image/webp"><img src="images/client-image-1.png" alt="Ethan Brooks" width="50" height="50"
+                        loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Ethan Brooks</strong>
+
+                      <span>Riverview, New York</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>Give them a Try without a Doubt</h3>
+                  <p>When we were looking to hire developers, we anticipated that it would be challenging to find the
+                    ideal developers for our team. Then we partnered with Enstacked and we are impressed by their
+                    expertise in hiring remote developers and their services.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-3.webp"
+                        type="image/webp"><img src="images/client-image-3.png" alt="Jordan Reynolds" width="50"
+                        height="50" loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Jordan Reynolds</strong>
+
+                      <span>Olivia Carter</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>Top-Notch Custom Software Development</h3>
+                  <p>We turned to this IT development company for custom software development, and they delivered beyond
+                    our expectations. Their ability to understand our unique business needs and provide tailored
+                    solutions has been invaluable to our growth and efficiency.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-2.webp"
+                        type="image/webp"><img src="images/client-image-2.png" alt="Liam Anderson" width="50"
+                        height="50" loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Liam Anderson</strong>
+
+                      <span>Riverview, New York</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="rv-testi-card">
+
+                  <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
+                      style="--stars-fill: 100%"></span></div>
+
+                  <h3>The time zone is Not a Boundary</h3>
+                  <p>Enstakced has been doing an excellent job with the software and helping the client transform it
+                    into a SaaS platform. A responsive and organized team, their communication is awesome, with daily
+                    reports and regular calls for project updates. The team&#039;s availability has secured an ongoing
+                    partnership.</p>
+
+                  <div class="rv-testi-author">
+
+                    <picture>
+                      <source srcset="https://enstacked.com/wp-content/uploads/2024/10/client-image-1.webp"
+                        type="image/webp"><img src="images/client-image-1.png" alt="Ethan Brooks" width="50" height="50"
+                        loading="lazy" decoding="async" data-eio="p">
+                    </picture>
+
+                    <div class="rv-testi-author-meta">
+
+                      <strong>Ethan Brooks</strong>
+
+                      <span>Riverview, New York</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==========================================
+
+     SECTION 8: PEOPLE FIRST COMPANY
+
+     ========================================== -->
+
+
+        <!-- ==========================================
+     10. PEOPLE FIRST & CULTURE (#people-first)
+     ========================================== -->
+        <section class="rv-section rv-bg-white" id="people-first">
+
+          <div class="container">
+
+            <div class="rv-people-grid">
+
+              <div class="rv-people-media reveal-up">
+
+                <img src="images/our-culture-img.webp" alt="The Enstacked team" width="1140" height="468" loading="lazy"
+                  decoding="async">
+
+              </div>
+
+              <div class="reveal-up" style="--rv-delay: .1s;">
+
+                <div class="rv-section-head es-section-head--flush">
+
+                  <p class="rv-eyebrow">People First Company</p>
+
+                  <h2>Behind every great store is a team that <span class="rv-hl">gives a damn.</span></h2>
+
+                  <p class="rv-lede">
+
+                    Behind Enstacked are developers, designers, and marketers who genuinely obsess over eCommerce, every
+                    button, every campaign, every build. Because they know those details are what make a meaningful
+                    difference. Every time.
+
+                  </p>
+
+                </div>
+
+                <a href="https://enstacked.com/about-us/" class="es-btn es-btn--primary u-mt-fluid-md">About Us<svg
+                    class="arrow-icon" data-icon="arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path opacity="0.6"
+                      d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                      fill="currentColor" />
+                    <path opacity="0.8"
+                      d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                      fill="currentColor" />
+                    <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                      fill="currentColor" />
+                  </svg></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==========================================
+
+     SECTION 9: SCHEDULE A CALL
+
+     ==========================================
+
+     Rebuilt on template-parts/sections/section-scheduler.php, 2 Sep 2026, on
+
+     the owner's instruction to give the home page the layout the service
+
+     pages use: the numbered path to a call with the phone tile under it on
+
+     the left, the dark panel holding the booker on the right. What it
+
+     replaces was a bespoke `.rv-call-wrap` card, a second scheduler design
+
+     carrying its own eyebrow repaint, its own spinner and its own fallback.
+
+     The id, the heading and the lede are unchanged. Nothing in the theme
+
+     links to #schedule-call today, checked across every file, but the id
+
+     costs nothing and an external link may still use it.
+
+     Since 11 Sep 2026 this band IS the site-wide scheduler: its steps, its
+
+     phone tile, its booking URL, its compact density and its lazy Calendly
+
+     loader are the partial's defaults, and every other page that books a
+
+     call renders the same partial. This page passes only its own copy. The
+
+     lazy loader and the no-JS fallback that used to live in this file moved
+
+     into the partial with it.
+
+     ========================================== -->
+
+        <link rel="stylesheet" href="css/section-scheduler.css">
+        <noscript>
+          <link rel="stylesheet" href="css/section-scheduler.css">
+        </noscript>
+
+
+        <!-- ==========================================
+     11. SCHEDULE A CALL CONSULTATION (#schedule-call)
+     ========================================== -->
+        <section class="es-section es-sched es-bg-gray es-section--sm es-sched--compact" id="schedule-call">
+          <div class="es-container">
+            <div class="es-sched__grid">
+
+              <div class="es-sched__copy reveal-up">
+
+                <div class="es-section-head">
+                  <p class="es-eyebrow">Schedule a Call</p>
+
+                  <h2>Book a call.</h2>
+
+                  <p class="es-lede">No lengthy forms, no back-and-forth emails, just a straightforward conversation
+                    about your requirements and how Enstacked can help you get started.</p>
+                </div>
+
+                <ol class="es-sched__steps">
+                  <li class="es-sched__step">
+                    <span class="es-sched__badge" aria-hidden="true">01</span>
+                    <span class="es-sched__step-text">Schedule a Consultation</span>
+                  </li>
+                  <li class="es-sched__step">
+                    <span class="es-sched__badge" aria-hidden="true">02</span>
+                    <span class="es-sched__step-text">30-min Intro Call</span>
+                  </li>
+                  <li class="es-sched__step">
+                    <span class="es-sched__badge" aria-hidden="true">03</span>
+                    <span class="es-sched__step-text">Strategy Meeting + Proposal</span>
+                  </li>
+                </ol>
+
+                <hr class="es-sched__rule">
+
+                <h3 class="es-sched__aside-title">Have a Question? Reach Out</h3>
+
+                <a class="es-sched__contact" href="tel:+919712413434">
+                  <span class="es-sched__contact-icon">
+                    <img src="images/phone-icon.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
+                  </span>
+
+                  <span class="es-sched__contact-text">
+                    <span class="es-sched__contact-value">+91 97124 13434</span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="es-sched__panel reveal-up" style="--rv-delay: 0.08s;">
+                <div class="es-sched__embed" style="--es-sched-embed-h: 700px;">
+                  <div class="calendly-inline-widget"
+                    data-url="https://calendly.com/enstackedtech/30min?hide_gdpr_banner=1&#038;primary_color=e85d20">
+                  </div>
+
+                  <div class="es-sched__fallback" hidden>
+                    <a class="es-btn es-btn--primary" href="https://calendly.com/enstackedtech/30min" target="_blank"
+                      rel="noopener noreferrer">Open the Booking Calendar<svg class="arrow-icon" data-icon="arrow"
+                        width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" focusable="false">
+                        <path opacity="0.6"
+                          d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                          fill="currentColor" />
+                        <path opacity="0.8"
+                          d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                          fill="currentColor" />
+                        <path
+                          d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                          fill="currentColor" />
+                      </svg></a>
+                  </div>
+
+                  <noscript>
+                    <style>
+                      .es-sched .calendly-inline-widget {
+                        display: none;
+                      }
+                    </style>
+                    <div class="es-sched__fallback">
+                      <a class="es-btn es-btn--primary" href="https://calendly.com/enstackedtech/30min" target="_blank"
+                        rel="noopener noreferrer">Open the Booking Calendar<svg class="arrow-icon" data-icon="arrow"
+                          width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true" focusable="false">
+                          <path opacity="0.6"
+                            d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                            fill="currentColor" />
+                          <path opacity="0.8"
+                            d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                            fill="currentColor" />
+                          <path
+                            d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                            fill="currentColor" />
+                        </svg></a>
+                    </div>
+                  </noscript>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <script>
+          /* Lazy Calendly loader for every .es-sched booker on the page. Printed once,
+             run after DOMContentLoaded so a second scheduler further down is found too.
+             See section-scheduler.php for why it is lazy and why there are two
+             triggers. */
+          (function () {
+            function init() {
+              var widgets = document.querySelectorAll('.es-sched .calendly-inline-widget');
+              if (!widgets.length) return;
+
+              var loaded = false;
+
+              function load() {
+                if (loaded) return;
+                loaded = true;
+                window.removeEventListener('scroll', check);
+                window.removeEventListener('resize', check);
+
+                var script = document.createElement('script');
+                script.src = 'https://assets.calendly.com/assets/external/widget.js';
+                script.async = true;
+                script.onerror = function () {
+                  Array.prototype.forEach.call(widgets, function (w) {
+                    var fallback = w.parentNode.querySelector('.es-sched__fallback[hidden]');
+                    if (!fallback) return;
+                    w.hidden = true;
+                    fallback.hidden = false;
+                  });
+                };
+                document.body.appendChild(script);
+              }
+
+              function near(w) {
+                var r = w.getBoundingClientRect();
+                return r.top - window.innerHeight < 600 && r.bottom > -600;
+              }
+
+              function check() {
+                if (Array.prototype.some.call(widgets, near)) load();
+              }
+
+              if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                  if (entries.some(function (e) { return e.isIntersecting; })) {
+                    io.disconnect();
+                    load();
+                  }
+                }, { rootMargin: '600px 0px' });
+                Array.prototype.forEach.call(widgets, function (w) { io.observe(w); });
+              }
+
+              window.addEventListener('scroll', check, { passive: true });
+              window.addEventListener('resize', check, { passive: true });
+              check();
+            }
+
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', init);
+            } else {
+              init();
+            }
+          })();
+        </script>
+
+        <!-- ==========================================
+
+     SECTION 10: FREQUENTLY ASKED QUESTIONS
+
+     ========================================== -->
+
+
+        <!-- ==========================================
+     12. FREQUENTLY ASKED QUESTIONS (#faq)
+     ========================================== -->
+        <section class="rv-section rv-bg-white" id="faq">
+
+          <div class="container">
+
+            <div class="rv-faq-grid">
+
+              <div class="rv-faq-aside reveal-up">
+
+                <div class="rv-section-head es-section-head--flush">
+
+                  <p class="rv-eyebrow">FAQs</p>
+
+                  <h2>Frequently Asked <span class="rv-hl">Questions</span></h2>
+
+                </div>
+
+                <div class="rv-faq-ask mt-4">
+
+                  <p>Have a question that's not covered here?</p>
+
+                  <a href="javascript:;">Get in touch
+
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 1L13 6M13 6L8 11M13 6H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="reveal-up" style="--rv-delay: .1s;">
+
+                <div class="accordion" id="accordionHomeFAQ">
+
+                  <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="faqHeading1">
+
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+
+                        How quickly can we get started?
+
+                      </button>
+
+                    </h3>
+
+                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1"
+                      data-bs-parent="#accordionHomeFAQ">
+
+                      <div class="accordion-body">
+
+                        Most projects kick off within a week. Book a call, and we'll scope it out together.
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="faqHeading2">
+
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+
+                        What does a typical engagement look like?
+
+                      </button>
+
+                    </h3>
+
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                      data-bs-parent="#accordionHomeFAQ">
+
+                      <div class="accordion-body">
+
+                        It depends on what you need: project-based, retainer, or dedicated resource. We'll recommend the
+                        right model.
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="faqHeading3">
+
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+
+                        What's your pricing like?
+
+                      </button>
+
+                    </h3>
+
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                      data-bs-parent="#accordionHomeFAQ">
+
+                      <div class="accordion-body">
+
+                        It varies by scope. Get in touch with us, and we'll give you a clear picture - no vague
+                        estimates.
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="faqHeading4">
+
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+
+                        How long does it take to build a custom Shopify store?
+
+                      </button>
+
+                    </h3>
+
+                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+                      data-bs-parent="#accordionHomeFAQ">
+
+                      <div class="accordion-body">
+
+                        Most custom builds take 4–8 weeks. Smaller projects or theme customizations can take 1–2 weeks.
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="faqHeading5">
+
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+
+                        Should I migrate from WooCommerce to Shopify?
+
+                      </button>
+
+                    </h3>
+
+                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5"
+                      data-bs-parent="#accordionHomeFAQ">
+
+                      <div class="accordion-body">
+
+                        If you're dealing with slow load times, plugin conflicts, or scaling issues, yes. Shopify is
+                        faster, more secure, and easier to manage at scale. And if you need assistance, we can help
+                        ensure a smooth migration.
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="faqHeading6">
+
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+
+                        What is a Shopify Partner?
+
+                      </button>
+
+                    </h3>
+
+                    <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6"
+                      data-bs-parent="#accordionHomeFAQ">
+
+                      <div class="accordion-body">
+
+                        An agency or developer officially vetted by Shopify. It means your store is built to Shopify's
+                        standards, not just by someone who's used the platform a few times.
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- FAQ structured data for rich results -->
+
+        <script type="application/ld+json">
+
+{
+
+  "@context": "https://schema.org",
+
+  "@type": "FAQPage",
+
+  "mainEntity": [
+
+    { "@type": "Question", "name": "How quickly can we get started?", "acceptedAnswer": { "@type": "Answer", "text": "Most projects kick off within a week. Book a call, and we'll scope it out together." } },
+
+    { "@type": "Question", "name": "What does a typical engagement look like?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you need: project-based, retainer, or dedicated resource. We'll recommend the right model." } },
+
+    { "@type": "Question", "name": "What's your pricing like?", "acceptedAnswer": { "@type": "Answer", "text": "It varies by scope. Get in touch with us, and we'll give you a clear picture - no vague estimates." } },
+
+    { "@type": "Question", "name": "How long does it take to build a custom Shopify store?", "acceptedAnswer": { "@type": "Answer", "text": "Most custom builds take 4–8 weeks. Smaller projects or theme customizations can take 1–2 weeks." } },
+
+    { "@type": "Question", "name": "Should I migrate from WooCommerce to Shopify?", "acceptedAnswer": { "@type": "Answer", "text": "If you're dealing with slow load times, plugin conflicts, or scaling issues, yes. Shopify is faster, more secure, and easier to manage at scale. And if you need assistance, we can help ensure a smooth migration." } },
+
+    { "@type": "Question", "name": "What is a Shopify Partner?", "acceptedAnswer": { "@type": "Answer", "text": "An agency or developer officially vetted by Shopify. It means your store is built to Shopify's standards, not just by someone who's used the platform a few times." } }
+
+  ]
+
+}
+
+</script>
+
+        <script id="rv-home-scripts">
+
+          (function () {
+
+            'use strict';
+
+            var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            /* ---------- Scroll reveal ---------- */
+
+            var revealEls = document.querySelectorAll('.reveal-up');
+
+            if ('IntersectionObserver' in window && !reducedMotion) {
+
+              var revealObserver = new IntersectionObserver(function (entries) {
+
+                entries.forEach(function (entry) {
+
+                  if (entry.isIntersecting) {
+
+                    entry.target.classList.add('is-visible');
+
+                    revealObserver.unobserve(entry.target);
+
+                  }
+
+                });
+
+              }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+              revealEls.forEach(function (el) { revealObserver.observe(el); });
+
+            } else {
+
+              revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+
+            }
+
+            /* ---------- Animated counters ---------- */
+
+            function animateCounter(el) {
+
+              var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+
+              if (reducedMotion) { el.textContent = target; return; }
+
+              var duration = 1400;
+
+              var start = null;
+
+              function step(ts) {
+
+                if (!start) start = ts;
+
+                var progress = Math.min((ts - start) / duration, 1);
+
+                var eased = 1 - Math.pow(1 - progress, 3);
+
+                el.textContent = Math.round(eased * target);
+
+                if (progress < 1) requestAnimationFrame(step);
+
+              }
+
+              requestAnimationFrame(step);
+
+            }
+
+            var counters = document.querySelectorAll('.rv-counter');
+
+            if ('IntersectionObserver' in window) {
+
+              var counterObserver = new IntersectionObserver(function (entries) {
+
+                entries.forEach(function (entry) {
+
+                  if (entry.isIntersecting) {
+
+                    animateCounter(entry.target);
+
+                    counterObserver.unobserve(entry.target);
+
+                  }
+
+                });
+
+              }, { threshold: 0.5 });
+
+              counters.forEach(function (el) { counterObserver.observe(el); });
+
+            } else {
+
+              counters.forEach(function (el) { el.textContent = el.getAttribute('data-target'); });
+
+            }
+
+            /* ---------- Our Work carousel ---------- */
+
+            document.addEventListener('DOMContentLoaded', function () {
+
+              if (!window.jQuery || !jQuery.fn.owlCarousel) return;
+
+              var $slider = jQuery('#rv-work-slider');
+
+              if (!$slider.length) return;
+
+              function labelSliderControls() {
+
+                $slider.find('.owl-dot').each(function (i) {
+
+                  jQuery(this).attr('aria-label', 'Go to slide ' + (i + 1));
+
+                });
+
+                $slider.find('.owl-prev').attr('aria-label', 'Previous slide');
+
+                $slider.find('.owl-next').attr('aria-label', 'Next slide');
+
+              }
+
+              $slider.on('initialized.owl.carousel refreshed.owl.carousel changed.owl.carousel', function () {
+
+                setTimeout(labelSliderControls, 0);
+
+              });
+
+              $slider.owlCarousel({
+
+                loop: $slider.children().length > 2,
+
+                margin: 24,
+
+                nav: true,
+
+                dots: false,
+
+                autoplay: !reducedMotion,
+
+                autoplayTimeout: 5500,
+
+                autoplayHoverPause: true,
+
+                navText: [
+
+                  '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.29963 10.0001C4.29963 10.3585 4.43649 10.7169 4.70964 10.9902L13.3093 19.5897C13.8563 20.1368 14.7433 20.1368 15.2901 19.5897C15.8369 19.0429 15.8369 18.1561 15.2901 17.609L7.68064 10.0001L15.2898 2.39102C15.8366 1.84398 15.8366 0.957304 15.2898 0.410524C14.743 -0.136784 13.8561 -0.136784 13.309 0.410524L4.70937 9.00994C4.43618 9.28335 4.29963 9.64175 4.29963 10.0001Z"/></svg>',
+
+                  '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M15.7004 10.0001C15.7004 10.3585 15.5635 10.7169 15.2904 10.9902L6.69072 19.5897C6.14368 20.1368 5.25674 20.1368 4.70992 19.5897C4.1631 19.0429 4.1631 18.1561 4.70992 17.609L12.3194 10.0001L4.71019 2.39102C4.16336 1.84397 4.16336 0.957303 4.71019 0.410525C5.25701 -0.136784 6.14395 -0.136784 6.69099 0.410525L15.2906 9.00994C15.5638 9.28335 15.7004 9.64175 15.7004 10.0001Z"/></svg>'
+
+                ],
+
+                responsive: {
+
+                  0: { items: 1 },
+
+                  992: { items: 2 }
+
+                }
+
+              });
+
+            });
+
+            /* The lazy Calendly loader that lived here moved into
+          
+               section-scheduler.php on 11 Sep 2026, when that partial became the
+          
+               site-wide scheduler. Keeping a copy here would inject widget.js twice. */
+
+          })();
+
+        </script>
+
+      </div>
+
+    </main>
+    <!-- Footer Start -->
+
+  </main>
+
+  <!-- Site Footer -->
+
+  <!-- ==========================================
+     13. SITE FOOTER (.es-footer)
+     ========================================== -->
+  <footer class="es-footer es-footer--nested">
+    <div class="es-container">
+
+      <div class="es-footer__promo es-bg-dark">
+        <p class="es-eyebrow">We Have Got You Covered!</p>
+        <h2>Take your Business Vision to New Heights with a Trusted IT Company!</h2>
+        <p class="es-footer__promo-cta">
+          <a href="https://enstacked.com/hire-dedicated-developers/"
+            class="es-btn es-btn--secondary es-btn--block-mobile">
+            Hire Dedicated Developers <svg class="arrow-icon" data-icon="arrow" width="25" height="24"
+              viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path opacity="0.6"
+                d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                fill="currentColor" />
+              <path opacity="0.8"
+                d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                fill="currentColor" />
+              <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                fill="currentColor" />
+            </svg> </a>
+        </p>
+      </div>
+
+      <div class="es-footer__card">
+
+        <div class="es-footer__top">
+
+          <div class="es-footer__brand">
+            <a class="es-footer__logo" href="https://enstacked.com/" aria-label="Enstacked, home">
+              <img loading="lazy" src="images/logo.svg" alt="Enstacked" width="231" height="60" />
+            </a>
+
+            <p class="es-footer__blurb">
+              Enstacked is a team of dedicated experts, selected to deliver
+              outstanding software solutions, enabling businesses to
+              flourish in the digital environment.
+            </p>
+
+            <ul class="es-footer__social">
+              <li>
+                <a href="https://www.instagram.com/enstacked" target="_blank" rel="noopener noreferrer">
+                  <span class="es-sr-only">Instagram</span>
+                  <img loading="lazy" src="images/instagram-icon.svg" alt="" width="24" height="24"
+                    aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/enstacked" target="_blank" rel="noopener noreferrer">
+                  <span class="es-sr-only">LinkedIn</span>
+                  <img loading="lazy" src="images/linkedin-icon.svg" alt="" width="24" height="24" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/enstacked" target="_blank" rel="noopener noreferrer">
+                  <span class="es-sr-only">Behance</span>
+                  <img loading="lazy" src="images/behance-icon.svg" alt="" width="24" height="24" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="https://dribbble.com/enstacked" target="_blank" rel="noopener noreferrer">
+                  <span class="es-sr-only">Dribbble</span>
+                  <img loading="lazy" src="images/dribbble-icon.svg" alt="" width="24" height="24" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@enstacked" target="_blank" rel="noopener noreferrer">
+                  <span class="es-sr-only">YouTube</span>
+                  <img loading="lazy" src="images/youtube-icon.svg" alt="" width="24" height="24" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
+
+            <div class="es-footer__marks es-footer__marks--lockup" aria-label="Shopify Partner status and Clutch rating"
+              role="group">
+
+              <noscript>
+              </noscript>
+
+              <div class="es-trust es-trust--light es-trust--sm">
+                <a class="es-trust__partner-link"
+                  href="https://apps.shopify.com/partners/enstacked-technologies-private-limited" target="_blank"
+                  rel="noopener noreferrer" style="display: flex; min-width: 0;">
+                  <img class="es-trust__partner" src="images/ShopifyPlus.png" alt="Shopify Partners" width="1057"
+                    height="176" loading="lazy" decoding="async">
+                  <span class="es-sr-only"> (opens in a new tab)</span>
+                </a>
+
+                <span class="es-trust__rule" aria-hidden="true"></span>
+
+                <a class="es-trust__clutch" href="https://clutch.co/profile/enstacked-technologies" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="es-trust__clutch-logo" src="images/clutch.svg" alt="Clutch" width="96" height="26"
+                    loading="lazy" decoding="async">
+                  <span class="es-trust__score-row">
+                    <span class="es-trust__score">5.0</span>
+                    <span class="es-trust__stars" aria-hidden="true">
+                      <svg class="es-trust__star" data-icon="star" width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                          fill="currentColor" />
+                      </svg> <svg class="es-trust__star" data-icon="star" width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                          fill="currentColor" />
+                      </svg> <svg class="es-trust__star" data-icon="star" width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                          fill="currentColor" />
+                      </svg> <svg class="es-trust__star" data-icon="star" width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                          fill="currentColor" />
+                      </svg> <svg class="es-trust__star" data-icon="star" width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12 2.9l2.86 5.79 6.39.93-4.62 4.51 1.09 6.37L12 17.49l-5.72 3.01 1.09-6.37L2.75 9.62l6.39-.93L12 2.9Z"
+                          fill="currentColor" />
+                      </svg> </span>
+                  </span>
+                  <span class="es-sr-only"> out of 5 on Clutch (opens in a new tab)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="es-footer__nav">
+
+            <div class="es-footer__cols" data-es-accordion="(max-width: 767px)">
+
+              <div class="es-footer__col" data-es-accordion-item>
+                <span hidden data-es-accordion-caret><svg class="es-footer__caret" data-icon="caret" width="14"
+                    height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <h3 class="es-footer__heading" data-es-accordion-heading>Useful Links</h3>
+                <div class="es-footer__panel" data-es-accordion-panel>
+                  <ul class="es-footer__list">
+                    <li><a href="https://enstacked.com/">Home</a></li>
+                    <li><a href="https://enstacked.com/about-us/">About Us</a></li>
+                    <li><a href="https://enstacked.com/hire-dedicated-developers/">Hire Dedicated Developers</a></li>
+                    <li><a href="https://enstacked.com/blogs/">Blog</a></li>
+                    <li><a href="javascript:;">Case Study</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="es-footer__col" data-es-accordion-item>
+                <span hidden data-es-accordion-caret><svg class="es-footer__caret" data-icon="caret" width="14"
+                    height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <h3 class="es-footer__heading" data-es-accordion-heading>Legal</h3>
+                <div class="es-footer__panel" data-es-accordion-panel>
+                  <ul class="es-footer__list">
+                    <li><a href="https://enstacked.com/terms-of-service/">Terms of Use</a></li>
+                    <li><a href="https://enstacked.com/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://enstacked.com/enstacked-confidentiality/">Confidentiality</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="es-footer__col" data-es-accordion-item>
+                <span hidden data-es-accordion-caret><svg class="es-footer__caret" data-icon="caret" width="14"
+                    height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    focusable="false">
+                    <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <h3 class="es-footer__heading" data-es-accordion-heading>Get in Touch</h3>
+                <div class="es-footer__panel" data-es-accordion-panel>
+                  <ul class="es-footer__list es-footer__list--contact">
+                    <li>
+                      <a href="mailto:solutions@enstacked.com">
+                        <svg class="es-footer__list-icon" data-icon="mail" width="17" height="17" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                          <rect x="2.8" y="5" width="18.4" height="14" rx="2.2" fill="none" stroke="currentColor"
+                            stroke-width="1.6" />
+                          <path d="M3.6 6.6 12 13l8.4-6.4" fill="none" stroke="currentColor" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> solutions@enstacked.com
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:+13026183557">
+                        <svg class="es-footer__list-icon" data-icon="phone" width="17" height="17" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                          <path
+                            d="M7.1 3.6 9.4 3.9a1.4 1.4 0 0 1 1.2 1.1l.5 2.4a1.4 1.4 0 0 1-.5 1.4L9 10a12 12 0 0 0 5 5l1.2-1.6a1.4 1.4 0 0 1 1.4-.5l2.4.5a1.4 1.4 0 0 1 1.1 1.2l.3 2.3a1.6 1.6 0 0 1-1.7 1.8A15.7 15.7 0 0 1 5.3 5.3a1.6 1.6 0 0 1 1.8-1.7Z"
+                            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg> +1 302 618 3557
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:+919712413434">
+                        <svg class="es-footer__list-icon" data-icon="phone" width="17" height="17" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                          <path
+                            d="M7.1 3.6 9.4 3.9a1.4 1.4 0 0 1 1.2 1.1l.5 2.4a1.4 1.4 0 0 1-.5 1.4L9 10a12 12 0 0 0 5 5l1.2-1.6a1.4 1.4 0 0 1 1.4-.5l2.4.5a1.4 1.4 0 0 1 1.1 1.2l.3 2.3a1.6 1.6 0 0 1-1.7 1.8A15.7 15.7 0 0 1 5.3 5.3a1.6 1.6 0 0 1 1.8-1.7Z"
+                            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg> +91 97124 13434
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="es-footer__subscribe">
+              <a class="es-footer__news"
+                href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7262810138439208960"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="es-footer__news-icon" data-icon="linkedin" width="18" height="18" viewBox="0 0 24 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                  <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.9 21.5h4.2V9.6H2.9v11.9Z"
+                    fill="currentColor" />
+                  <path
+                    d="M9.6 9.6h4v1.63h.06c.56-1.02 1.93-2.1 3.97-2.1 4.25 0 5.03 2.66 5.03 6.12v6.25h-4.19v-5.54c0-1.39-.03-3.18-1.98-3.18-1.98 0-2.28 1.5-2.28 3.08v5.64H9.6V9.6Z"
+                    fill="currentColor" />
+                </svg> Subscribe on Our Linkedin Newsletter
+                <span class="es-sr-only"> (opens in a new tab)</span>
+              </a>
+            </div>
+
+            <div class="es-footer__offices es-footer__rule">
+
+              <div class="es-footer__office">
+                <h3 class="es-footer__heading">
+                  <img loading="lazy" class="es-footer__flag" src="images/usa-flag.svg" alt="" width="18" height="12"
+                    aria-hidden="true" />
+                  USA
+                </h3>
+                <a href="https://maps.app.goo.gl/dRZyqNYZkVvZk6Ht6" target="_blank" rel="noopener noreferrer">
+                  <svg class="es-footer__list-icon" data-icon="pin" width="17" height="17" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path d="M12 21.4s7-5.4 7-10.4a7 7 0 1 0-14 0c0 5 7 10.4 7 10.4Z" fill="none" stroke="currentColor"
+                      stroke-width="1.6" stroke-linejoin="round" />
+                    <circle cx="12" cy="10.6" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  </svg> <span>2810 N Church St, Wilmington, Delaware, 19802 USA</span>
+                </a>
+              </div>
+
+              <div class="es-footer__office">
+                <h3 class="es-footer__heading">
+                  <img loading="lazy" class="es-footer__flag" src="images/india-flag.svg" alt="" width="18" height="12"
+                    aria-hidden="true" />
+                  India
+                </h3>
+                <a href="https://maps.app.goo.gl/mdMuPnYuazrMs4NG9" target="_blank" rel="noopener noreferrer">
+                  <svg class="es-footer__list-icon" data-icon="pin" width="17" height="17" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path d="M12 21.4s7-5.4 7-10.4a7 7 0 1 0-14 0c0 5 7 10.4 7 10.4Z" fill="none" stroke="currentColor"
+                      stroke-width="1.6" stroke-linejoin="round" />
+                    <circle cx="12" cy="10.6" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  </svg> <span>B-207, Shilp Aaron, SindhuBhavan road, Ahmedabad - 380059</span>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="es-footer__bottom">
+          <p class="es-footer__copyright">&copy; Copyright 2026 Enstacked Technologies Pvt Ltd</p>
+          <p class="es-footer__tagline">
+            <span>Build</span><span>Scale</span><span>Grow Together</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <span class="es-footer__wordmark" aria-hidden="true">enstacked</span>
+  </footer>
+
+  <!-- Interactive Product Launch Modal -->
+
+  <!-- ==========================================
+     14. PRODUCT LAUNCH MODAL (#varn-launch-modal)
+     ========================================== -->
+  <div class="varn-modal" id="varn-launch-modal" hidden aria-hidden="true">
+    <div class="varn-modal__backdrop" data-varn-close></div>
+
+    <div class="varn-modal__dialog" role="dialog" aria-labelledby="varn-modal-title" aria-describedby="varn-modal-desc">
+
+      <button type="button" class="varn-modal__close" data-varn-close aria-label="Close">
+        <svg class="varn-modal__close-icon" data-icon="close" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path d="M5.6 5.6 18.4 18.4M18.4 5.6 5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" />
+        </svg> </button>
+
+      <div class="varn-modal__visual" aria-hidden="true">
+        <img class="varn-modal__logo" src="images/Varn_logo.svg" alt="" width="230" height="93" loading="lazy"
+          decoding="async">
+        <span class="varn-modal__rating">Shopify App Store</span>
+      </div>
+
+      <div class="varn-modal__body">
+        <p class="varn-modal__eyebrow"><span class="varn-modal__live" aria-hidden="true"></span>Now live</p>
+        <h2 class="varn-modal__title" id="varn-modal-title">Meet <span>Varn</span></h2>
+        <p class="varn-modal__kind">Variants &amp; Swatches for Shopify</p>
+
+        <p class="varn-modal__desc" id="varn-modal-desc">
+          The colour swatches, size grids and combined options your product
+          pages deserve. Now on the App Store.
+        </p>
+
+        <div class="varn-modal__actions">
+          <a class="varn-modal__cta" href="javascript:;" target="_blank" rel="noopener" data-varn-cta>
+            <span class="varn-modal__cta-label">View on the App Store</span>
+            <svg class="varn-modal__cta-icon" data-icon="arrow-right" width="16" height="14" viewBox="0 0 16 14"
+              fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" fill="none" />
+            </svg> <span class="es-sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <!-- ==========================================
+     15. SCRIPTS & INITIALIZATION
+     ========================================== -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/curtain.js"></script>
+    <script src="js/es-home-hero.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/es-footer.js"></script>
+    <script src="js/varn-launch.js"></script>
+</body>
+
+</html>
