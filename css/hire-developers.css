@@ -1,0 +1,223 @@
+/* ========================================================
+   Cypherox - Hire Dedicated Developers Page Styles
+   ======================================================== */
+
+/* Dedicated Page Hero Alignment */
+#hire-hero {
+  padding-top: calc(var(--header-height, 80px) + 40px);
+  background-color: var(--bg-surface, #FAF9F6);
+}
+
+.es-hero__grid {
+  align-items: center;
+}
+
+.es-hero__form {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+}
+
+.es-hmf__tile {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.es-hmf__option input:checked + .es-hmf__tile {
+  background-color: #f26e65 !important;
+  color: #ffffff !important;
+  border-color: #f26e65 !important;
+}
+
+.es-form__field input:focus {
+  border-color: #f26e65 !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(242, 110, 101, 0.15);
+}
+
+/* Breadcrumb bar */
+.page-breadcrumb {
+  background: #FAF9F6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 12px 0;
+  margin-top: var(--header-height, 80px);
+}
+
+.page-breadcrumb nav {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.page-breadcrumb a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.page-breadcrumb a:hover {
+  color: #f26e65;
+}
+
+.page-breadcrumb .current {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* ========================================================
+   SCROLL REVEAL & HOVER TRANSFORM ENHANCEMENTS
+   ======================================================== */
+/* Ensure elements with reveal-up transition smoothly */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--rv-delay, 0s);
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cancel reveal delay on hover so hover response is immediate */
+.reveal-up.is-visible:hover,
+.reveal-up.is-visible:hover * {
+  transition-delay: 0s !important;
+}
+
+/* Card Hover Lift & Glow (Why Cypherox & Roles grids) */
+.es-fgrid__card {
+  will-change: transform, box-shadow;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease !important;
+}
+
+.es-fgrid__card:hover,
+.es-fgrid__card--glow:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(242, 110, 101, 0.08) !important;
+  border-color: rgba(242, 110, 101, 0.45) !important;
+  transition-delay: 0s !important;
+}
+
+.es-fgrid__card--link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.es-fgrid__card:hover h3,
+.es-fgrid__card--link:hover h3 {
+  color: #f26e65 !important;
+  transition: color 0.2s ease;
+}
+
+.es-fgrid__card:hover .es-fgrid__icon,
+.es-fgrid__card--glow:hover .es-fgrid__icon {
+  transform: scale(1.08) !important;
+  border-color: rgba(242, 110, 101, 0.35) !important;
+  background: rgba(242, 110, 101, 0.1) !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, border-color 0.25s ease !important;
+  transition-delay: 0s !important;
+}
+
+/* Process Section (How It Works) Hover Effects */
+.es-proc__card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease !important;
+  will-change: transform, box-shadow;
+}
+
+.es-proc__item:hover .es-proc__card {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(242, 110, 101, 0.08) !important;
+  border-color: rgba(242, 110, 101, 0.45) !important;
+}
+
+.es-proc__item:hover .es-proc__card h3 {
+  color: #f26e65 !important;
+  transition: color 0.2s ease;
+}
+
+.es-proc__badge {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease !important;
+}
+
+.es-proc__item:hover .es-proc__badge {
+  transform: scale(1.08) !important;
+  border-color: #f26e65 !important;
+  background-color: #f26e65 !important;
+  color: #ffffff !important;
+}
+
+/* Testimonials Section Hover Effects */
+.rv-review-badge {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease !important;
+  will-change: transform, box-shadow;
+}
+
+.rv-review-badge:hover {
+  transform: translateY(-4px) !important;
+  border-color: rgba(242, 110, 101, 0.45) !important;
+  box-shadow: 0 10px 24px rgba(242, 110, 101, 0.12) !important;
+}
+
+.rv-testi-marquee {
+  padding: 12px 0 16px;
+}
+
+.rv-testi-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease !important;
+  will-change: transform, box-shadow;
+}
+
+.rv-testi-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: rgba(242, 110, 101, 0.45) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(242, 110, 101, 0.08) !important;
+}
+
+/* Scheduler Section Hover Effects */
+.es-sched__contact {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.es-sched__contact:hover {
+  transform: translateX(6px) !important;
+}
+
+.es-sched__contact:hover .es-sched__contact-icon {
+  border-color: #f26e65 !important;
+  color: #f26e65 !important;
+}
+
+.es-sched__contact:hover .es-sched__contact-value {
+  color: #f26e65 !important;
+}
+
+.es-sched__badge {
+  transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease !important;
+}
+
+.es-sched__step:hover .es-sched__badge {
+  transform: scale(1.08) !important;
+  border-color: #f26e65 !important;
+  background-color: #f26e65 !important;
+  color: #ffffff !important;
+}
+
+/* FAQ summary indicator */
+.es-faq__q {
+  cursor: pointer;
+  user-select: none;
+}
+
+.es-faq__item {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.es-faq__item:hover {
+  border-color: rgba(242, 110, 101, 0.35) !important;
+}

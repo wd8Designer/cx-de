@@ -122,9 +122,14 @@
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAccordions);
-  } else {
+  function run() {
+    if (window.__headerFooterLoaded) return;
     initAccordions();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
   }
 })();

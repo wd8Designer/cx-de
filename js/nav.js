@@ -158,6 +158,7 @@
   }
 
   function init() {
+    if (window.__headerFooterLoaded) return;
     initStickyHeader();
     initMegaMenus();
     initMobileDrawer();

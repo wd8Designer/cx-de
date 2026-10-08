@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Text Gradient Highlights */
+.es-hl,
 .rv-hl,
 .text-gradient,
 .hot,
@@ -264,3 +265,170 @@ input[type="range"]::-moz-range-thumb {
 #es-curtain-more:hover {
   color: #f26e65 !important;
 }
+
+/* ========================================================
+   AI Enterprise Hero Section Enhancements
+   ======================================================== */
+.revamp-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ambient Neural Aura Glow behind Hero */
+.revamp-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1120px, 94vw);
+  height: 560px;
+  background: radial-gradient(
+    ellipse 62% 48% at 50% 30%,
+    rgba(242, 110, 101, 0.13) 0%,
+    rgba(127, 119, 221, 0.08) 45%,
+    transparent 72%
+  );
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(28px);
+}
+
+.revamp-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Live AI Status Pulse in Eyebrow */
+.ai-live-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  display: inline-block;
+  margin-right: 8px;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: aiPulse 2.2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+  vertical-align: middle;
+}
+
+@keyframes aiPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.75);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 7px rgba(34, 197, 94, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+/* AI Floating Marks beside Headline */
+.hs-mark--ai {
+  top: 0.1em;
+  right: 100%;
+  margin-right: var(--space-4);
+  background: linear-gradient(135deg, #ffffff 0%, #faf8ff 100%) !important;
+  border: 1px solid rgba(127, 119, 221, 0.32) !important;
+  box-shadow: 0 14px 30px -10px rgba(127, 119, 221, 0.28), 0 0 16px -4px rgba(242, 110, 101, 0.18) !important;
+  transform: translate3d(calc(var(--hs-mx) * -10px), 0, 0) rotate(-8deg);
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+}
+
+.hs-mark--ai::before {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(127, 119, 221, 0.22), transparent 70%);
+}
+
+.hs-mark--agent {
+  top: 34%;
+  left: 100%;
+  margin-left: var(--space-4);
+  border: 1px solid rgba(242, 110, 101, 0.4) !important;
+  background: linear-gradient(145deg, #fef5f4 0%, #fee6e4 100%) !important;
+  box-shadow: 0 14px 30px -10px rgba(242, 110, 101, 0.32) !important;
+  color: var(--brand-500);
+  transform: translate3d(calc(var(--hs-mx) * 10px), 0, 0) rotate(8deg);
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+}
+
+.hs-mark--agent::before {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(242, 110, 101, 0.22), transparent 70%);
+}
+
+.hs-mark svg {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .hs-mark--ai,
+  .hs-mark--agent {
+    display: none !important;
+  }
+}
+
+/* AI Highlight Animated Text Sheen */
+.revamp-hero .hero-highlight {
+  background: linear-gradient(120deg, #dc544b 0%, #f26e65 35%, #7f77dd 65%, #f26e65 100%) !important;
+  background-size: 240% 100% !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: aiHighlightSheen 4.5s ease-in-out infinite alternate;
+  display: inline-block;
+}
+
+@keyframes aiHighlightSheen {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Proof Metrics Row Enhancements */
+.revamp-proof-strip .proof-meta {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  margin: 0 auto var(--space-5);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+.revamp-proof-strip {
+  text-align: center;
+}
+
+/* Guarantee Exactly 2-Line Hero Title on Desktops & Tablets */
+.revamp-hero-inner {
+  max-width: 1060px !important;
+}
+
+@media (min-width: 768px) {
+  .hero-title-line {
+    white-space: nowrap;
+    display: inline;
+  }
+}
+
+
+
