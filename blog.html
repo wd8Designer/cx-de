@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Engineering Insights &amp; Tech Blog | Cypherox Technologies</title>
+  <meta name="description"
+    content="Explore technical insights, architectural blueprints, AI implementation guides, and modern software engineering strategies from the senior architects at Cypherox Technologies.">
+
+  <!-- Vendor Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- Header & Footer Stylesheets -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Main Unified Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CX DE" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+</head>
+
+<body class="page-blog-listing">
+
+  <!-- ==========================================
+     1. DYNAMIC HEADER CONTAINER
+     ========================================== -->
+  <div id="site-header"></div>
+
+  <!-- Redesigned Modern Breadcrumbs -->
+  <div class="page-breadcrumb">
+    <div class="es-container">
+      <div class="breadcrumb-container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb-trail" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="index.html" class="breadcrumb-link breadcrumb-link--home" itemprop="item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span itemprop="name">Home</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+
+            <li class="breadcrumb-sep" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </li>
+
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="about-us.html" class="breadcrumb-link" itemprop="item">
+                <span itemprop="name">Company</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </li>
+
+            <li class="breadcrumb-sep" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </li>
+
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span class="breadcrumb-current" aria-current="page" itemprop="item">
+                <span class="breadcrumb-current__dot"></span>
+                <span itemprop="name">Blog &amp; Insights</span>
+              </span>
+              <meta itemprop="position" content="3" />
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ==========================================
+       SECTION 1: BLOG HERO & FEATURED ARTICLE
+       ========================================== -->
+    <section class="blog-hero-sec">
+      <div class="es-container">
+
+        <div class="blog-hero-header reveal-up">
+          <div class="blog-hero-badge">
+            <span class="blog-hero-badge__dot"></span>
+            <span>Insights &amp; Engineering Perspectives</span>
+          </div>
+          <h1 class="blog-hero-title">
+            Architecting the Next Wave of <span class="es-hl">Digital &amp; AI Systems</span>
+          </h1>
+          <p class="blog-hero-desc">
+            Deep architectural blueprints, production telemetry, and tactical playbooks from our senior tech directors, cloud architects, and full-stack software engineers.
+          </p>
+        </div>
+
+        <!-- Featured Article Showcase -->
+        <a href="blog-details.html" class="blog-featured-card reveal-up" aria-label="Read featured article: Building Resilient Enterprise RAG Pipelines">
+          <div class="blog-featured-card__media">
+            <span class="blog-featured-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              Featured Story
+            </span>
+            <img src="images/nuclia-deployment-options-featured-1024x897.png" alt="Enterprise RAG Architecture Architecture Diagram" loading="lazy">
+          </div>
+
+          <div class="blog-featured-card__content">
+            <div class="blog-meta-row">
+              <span class="blog-cat-pill">Generative AI</span>
+              <span class="blog-read-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                9 min read
+              </span>
+              <span class="blog-date">Oct 8, 2026</span>
+            </div>
+
+            <h2 class="blog-featured-card__title">
+              Building Resilient Enterprise RAG Pipelines: Architectural Patterns, Vector Search &amp; Production Lessons
+            </h2>
+
+            <p class="blog-featured-card__excerpt">
+              A comprehensive field guide to tackling retrieval degradation, hallucination containment, and low-latency chunk re-ranking in high-concurrency enterprise document ecosystems.
+            </p>
+
+            <div class="blog-author-row">
+              <div class="blog-author-info">
+                <img src="images/brian.png" alt="Alex Morgan" class="blog-author-avatar">
+                <div>
+                  <h3 class="blog-author-name">Alex Morgan</h3>
+                  <p class="blog-author-role">Chief AI Architect</p>
+                </div>
+              </div>
+
+              <span class="blog-cta-arrow">
+                Read Article
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+       SECTION 2: CONTROLS (CATEGORY TABS & SEARCH)
+       ========================================== -->
+    <section class="blog-controls-sec">
+      <div class="es-container">
+        <div class="blog-controls-bar">
+
+          <!-- Category Filter Pills -->
+          <div class="blog-filter-pills" id="blog-category-filters" role="tablist">
+            <button class="blog-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Articles</button>
+            <button class="blog-filter-btn" data-filter="generative-ai" role="tab" aria-selected="false">Generative AI</button>
+            <button class="blog-filter-btn" data-filter="mobile-web" role="tab" aria-selected="false">Mobile &amp; Web</button>
+            <button class="blog-filter-btn" data-filter="cloud" role="tab" aria-selected="false">Cloud Architecture</button>
+            <button class="blog-filter-btn" data-filter="ecommerce" role="tab" aria-selected="false">E-Commerce</button>
+            <button class="blog-filter-btn" data-filter="leadership" role="tab" aria-selected="false">Engineering Leadership</button>
+          </div>
+
+          <!-- Search Box -->
+          <div class="blog-search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="blog-search-input" class="blog-search-input" placeholder="Search insights &amp; topics..." aria-label="Search articles">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       SECTION 3: ARTICLES GRID & RADAR BANNER
+       ========================================== -->
+    <section class="blog-grid-sec">
+      <div class="es-container">
+
+        <div class="blog-grid" id="blog-posts-grid">
+
+          <!-- Post 1: Gen AI -->
+          <article class="blog-card reveal-up" data-category="generative-ai" data-keywords="fine-tuning rag llm enterprise machine learning ai cost">
+            <a href="blog-details.html" class="blog-card__media">
+              <span class="blog-card__badge-overlay">Generative AI</span>
+              <img src="images/services.jpg" alt="Fine-Tuning vs RAG architecture" loading="lazy">
+            </a>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-date">Oct 5, 2026</span>
+                <span class="blog-read-time">7 min read</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog-details.html">Fine-Tuning vs. RAG: Cost-Benefit Modeling for Multi-Tenant Software</a>
+              </h3>
+              <p class="blog-card__excerpt">
+                When does domain-specific parameter adaptation justify the GPU overhead compared to hybrid vector retrieval? Real telemetry across 40+ production systems.
+              </p>
+              <div class="blog-card__footer">
+                <div class="blog-card__author">
+                  <img src="images/lauren.png" alt="Elena Rostova" class="blog-card__author-avatar">
+                  <div class="blog-card__author-meta">
+                    <span class="blog-card__author-name">Elena Rostova</span>
+                    <span class="blog-card__author-role">Principal ML Lead</span>
+                  </div>
+                </div>
+                <a href="blog-details.html" class="blog-card__read-link" aria-label="Read more about Fine-Tuning vs. RAG">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 2: Mobile & Web -->
+          <article class="blog-card reveal-up" data-category="mobile-web" data-keywords="flutter react native mobile performance cold starts benchmark ios android">
+            <a href="blog-details.html" class="blog-card__media">
+              <span class="blog-card__badge-overlay">Mobile &amp; Web</span>
+              <img src="images/technology.webp" alt="Mobile app performance benchmark code" loading="lazy">
+            </a>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-date">Sep 29, 2026</span>
+                <span class="blog-read-time">8 min read</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog-details.html">Flutter vs. React Native in 2026: Profiling Memory, Cold Starts &amp; JIT</a>
+              </h3>
+              <p class="blog-card__excerpt">
+                Benchmarking cross-platform performance across 12 high-traffic production apps to establish clear technical decision boundaries for enterprise mobile stacks.
+              </p>
+              <div class="blog-card__footer">
+                <div class="blog-card__author">
+                  <img src="images/britney.png" alt="David Vance" class="blog-card__author-avatar">
+                  <div class="blog-card__author-meta">
+                    <span class="blog-card__author-name">David Vance</span>
+                    <span class="blog-card__author-role">Mobile Architect</span>
+                  </div>
+                </div>
+                <a href="blog-details.html" class="blog-card__read-link" aria-label="Read more about Flutter vs React Native">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 3: Cloud & Distributed Systems -->
+          <article class="blog-card reveal-up" data-category="cloud" data-keywords="kafka go kubernetes event-driven microservices cloud architecture devops">
+            <a href="blog-details.html" class="blog-card__media">
+              <span class="blog-card__badge-overlay">Cloud Architecture</span>
+              <img src="images/automation.webp" alt="Cloud distributed systems network" loading="lazy">
+            </a>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-date">Sep 21, 2026</span>
+                <span class="blog-read-time">11 min read</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog-details.html">Event-Driven Architectures with Kafka, Go, and Kubernetes Service Mesh</a>
+              </h3>
+              <p class="blog-card__excerpt">
+                Solving idempotency, out-of-order execution, and dead-letter queue backpressure in distributed transaction backends processing 50k+ requests per second.
+              </p>
+              <div class="blog-card__footer">
+                <div class="blog-card__author">
+                  <img src="images/becke.png" alt="Marcus Sterling" class="blog-card__author-avatar">
+                  <div class="blog-card__author-meta">
+                    <span class="blog-card__author-name">Marcus Sterling</span>
+                    <span class="blog-card__author-role">VP of Cloud Infrastructure</span>
+                  </div>
+                </div>
+                <a href="blog-details.html" class="blog-card__read-link" aria-label="Read more about Event-Driven Architectures">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 4: E-Commerce -->
+          <article class="blog-card reveal-up" data-category="ecommerce" data-keywords="headless commerce shopify next.js e-commerce edge rendering caching">
+            <a href="blog-details.html" class="blog-card__media">
+              <span class="blog-card__badge-overlay">E-Commerce</span>
+              <img src="images/zilk-sleep-luxury-silk-bedding-homepage-1-1024x895.png" alt="Headless Shopify Plus store mockup" loading="lazy">
+            </a>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-date">Sep 14, 2026</span>
+                <span class="blog-read-time">6 min read</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog-details.html">Headless Shopify Plus with Next.js: Scaling Under 10,000 Flash RPS</a>
+              </h3>
+              <p class="blog-card__excerpt">
+                Deconstructing edge caching, dynamic cart synchronization, and sub-100ms checkout response times for omnichannel direct-to-consumer luxury brands.
+              </p>
+              <div class="blog-card__footer">
+                <div class="blog-card__author">
+                  <img src="images/gabrielle.png" alt="Sophie Chen" class="blog-card__author-avatar">
+                  <div class="blog-card__author-meta">
+                    <span class="blog-card__author-name">Sophie Chen</span>
+                    <span class="blog-card__author-role">E-Commerce Lead</span>
+                  </div>
+                </div>
+                <a href="blog-details.html" class="blog-card__read-link" aria-label="Read more about Headless Shopify Plus">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 5: Autonomous AI -->
+          <article class="blog-card reveal-up" data-category="generative-ai" data-keywords="autonomous ai agents guardrails auditing compliance human in the loop workflows">
+            <a href="blog-details.html" class="blog-card__media">
+              <span class="blog-card__badge-overlay">Generative AI</span>
+              <img src="images/our-culture-img.webp" alt="Cypherox AI engineers working on agent orchestration" loading="lazy">
+            </a>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-date">Sep 08, 2026</span>
+                <span class="blog-read-time">9 min read</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog-details.html">Autonomous AI Agents in Enterprise Operations: Guardrails &amp; Auditing</a>
+              </h3>
+              <p class="blog-card__excerpt">
+                Implementing determinism, human-in-the-loop intervention thresholds, and strict compliance logs when deploying reasoning agents across ERP workflows.
+              </p>
+              <div class="blog-card__footer">
+                <div class="blog-card__author">
+                  <img src="images/brian.png" alt="Alex Morgan" class="blog-card__author-avatar">
+                  <div class="blog-card__author-meta">
+                    <span class="blog-card__author-name">Alex Morgan</span>
+                    <span class="blog-card__author-role">Chief AI Architect</span>
+                  </div>
+                </div>
+                <a href="blog-details.html" class="blog-card__read-link" aria-label="Read more about Autonomous AI Agents">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 6: Leadership & Pods -->
+          <article class="blog-card reveal-up" data-category="leadership" data-keywords="dedicated developers offshore nearshore engineering management pods team velocity">
+            <a href="blog-details.html" class="blog-card__media">
+              <span class="blog-card__badge-overlay">Engineering Leadership</span>
+              <img src="images/featured-image-1024x897.png" alt="Engineering leadership and remote pod scaling" loading="lazy">
+            </a>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-date">Aug 30, 2026</span>
+                <span class="blog-read-time">8 min read</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog-details.html">Scaling Dedicated Engineering Pods: Overcoming Timezones &amp; Velocity Leaks</a>
+              </h3>
+              <p class="blog-card__excerpt">
+                Practical blueprints for embedding pre-vetted senior software pods into western tech organizations without bureaucratic drag or quality dilution.
+              </p>
+              <div class="blog-card__footer">
+                <div class="blog-card__author">
+                  <img src="images/becke.png" alt="Marcus Sterling" class="blog-card__author-avatar">
+                  <div class="blog-card__author-meta">
+                    <span class="blog-card__author-name">Marcus Sterling</span>
+                    <span class="blog-card__author-role">VP of Cloud Infrastructure</span>
+                  </div>
+                </div>
+                <a href="blog-details.html" class="blog-card__read-link" aria-label="Read more about Scaling Dedicated Engineering Pods">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- No Results Fallback (hidden by default) -->
+        <div id="blog-no-results" style="display: none; text-align: center; padding: 48px 20px; background: var(--bg-surface); border-radius: var(--radius-lg); margin-bottom: 40px;">
+          <h3 style="font-size: 20px; font-weight: var(--font-bold); color: var(--text-heading); margin-bottom: 8px;">No matching articles found</h3>
+          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;">Try adjusting your search query or selecting a different category filter.</p>
+          <button type="button" id="blog-reset-filter" class="es-btn es-btn--secondary" style="padding: 8px 18px; font-size: 13px;">Clear All Filters</button>
+        </div>
+
+        <!-- ==========================================
+           SECTION 4: IN-GRID TECH RADAR NEWSLETTER
+           ========================================== -->
+        <div class="blog-radar-banner reveal-up">
+          <div class="blog-radar-banner__text">
+            <span class="blog-radar-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Cypherox Engineering Radar
+            </span>
+            <h3 class="blog-radar-banner__title">Stay Ahead of Modern Software &amp; AI Evolution</h3>
+            <p class="blog-radar-banner__desc">
+              A monthly curation of production architecture breakdowns, AI benchmarking, and senior engineering playbooks. Zero spam. Unsubscribe anytime.
+            </p>
+          </div>
+
+          <form class="blog-radar-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Cypherox Tech Radar!');">
+            <input type="email" class="blog-radar-input" placeholder="Enter your work email address" required aria-label="Work Email Address">
+            <button type="submit" class="blog-radar-btn">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- ==========================================
+           SECTION 5: PAGINATION
+           ========================================== -->
+        <div class="blog-pagination-wrap">
+          <span class="blog-page-btn disabled" aria-disabled="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </span>
+          <a href="#" class="blog-page-btn active" aria-current="page">1</a>
+          <a href="#" class="blog-page-btn">2</a>
+          <a href="#" class="blog-page-btn">3</a>
+          <a href="#" class="blog-page-btn" aria-label="Next Page">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+       SECTION 6: BOTTOM PROMO CTA STRIP
+       ========================================== -->
+    <section class="cta-main-sec">
+      <div class="container">
+        <div class="es-footer__promo es-bg-dark">
+          <p class="es-eyebrow">We Have Got You Covered!</p>
+          <h2>Have an Engineering Challenge or Custom AI Project?</h2>
+          <p class="es-lede" style="max-width: 80%; margin: 20px auto 0 auto; color: #fff;">
+            Connect with our technical architects to explore custom development, cloud modernization, or dedicated developer pods.
+          </p>
+          <p class="es-footer__promo-cta">
+            <a href="contact-us.html" class="es-btn es-btn--secondary es-btn--block-mobile">
+              Schedule A Technical Consultation
+              <svg class="arrow-icon" data-icon="arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path opacity="0.6"
+                  d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
+                  fill="currentColor" />
+                <path opacity="0.8"
+                  d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z"
+                  fill="currentColor" />
+                <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+     DYNAMIC FOOTER CONTAINER
+     ========================================== -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/custom.js"></script>
+
+  <!-- Blog Filter & Search Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterBtns = document.querySelectorAll('.blog-filter-btn');
+      const searchInput = document.getElementById('blog-search-input');
+      const articles = document.querySelectorAll('.blog-card');
+      const noResults = document.getElementById('blog-no-results');
+      const resetBtn = document.getElementById('blog-reset-filter');
+
+      let currentFilter = 'all';
+      let searchQuery = '';
+
+      function filterArticles() {
+        let visibleCount = 0;
+        articles.forEach(function (article) {
+          const category = article.getAttribute('data-category');
+          const keywords = (article.getAttribute('data-keywords') || '') + ' ' + article.textContent.toLowerCase();
+
+          const matchesCategory = (currentFilter === 'all') || (category === currentFilter);
+          const matchesSearch = !searchQuery || keywords.includes(searchQuery);
+
+          if (matchesCategory && matchesSearch) {
+            article.style.display = 'flex';
+            visibleCount++;
+          } else {
+            article.style.display = 'none';
+          }
+        });
+
+        if (noResults) {
+          noResults.style.display = (visibleCount === 0) ? 'block' : 'none';
+        }
+      }
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentFilter = this.getAttribute('data-filter');
+          filterArticles();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', function () {
+          searchQuery = this.value.trim().toLowerCase();
+          filterArticles();
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', function () {
+          currentFilter = 'all';
+          searchQuery = '';
+          if (searchInput) searchInput.value = '';
+          filterBtns.forEach(b => {
+            if (b.getAttribute('data-filter') === 'all') {
+              b.classList.add('active');
+            } else {
+              b.classList.remove('active');
+            }
+          });
+          filterArticles();
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>

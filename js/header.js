@@ -9,7 +9,7 @@
     <header class="header" id="header">
       <div class="header__container container-fluid">
         <a href="#" class="header__logo" aria-label="Cypherox Home">
-          <img src="images/cypherox-logo.png" alt="Cypherox Logo" width="228" height="20"
+          <img src="/images/cypherox-logo.png" alt="Cypherox Logo" width="228" height="20"
             style="height: 20px; width: 228px; filter: invert(1) brightness(2);">
         </a>
         <nav class="header__nav" aria-label="Main navigation" id="main-nav">
@@ -33,7 +33,7 @@
                   <div class="featured-dropdown__content">
                     <h3 class="featured-dropdown__title">Services</h3>
                     <div class="featured-dropdown__grid">
-                      <a href="#" class="featured-dropdown__link">Generative AI Solutions</a>
+                      <a href="generative-ai-development.html" class="featured-dropdown__link">Generative AI Solutions</a>
                       <a href="#" class="featured-dropdown__link">AI &amp; ML Development</a>
                       <a href="#" class="featured-dropdown__link">Consulting Services</a>
                       <a href="#" class="featured-dropdown__link">UI/UX Design Services</a>
@@ -41,7 +41,7 @@
                   </div>
 
                   <div class="featured-dropdown__graphic">
-                    <img src="images/services.jpg" alt="Services" class="featured-dropdown__graphic-img">
+                    <img src="/images/services.jpg" alt="Services" class="featured-dropdown__graphic-img">
                   </div>
                 </div>
 
@@ -214,7 +214,7 @@
                   <div class="featured-dropdown__content">
                     <h3 class="featured-dropdown__title">Company</h3>
                     <div class="featured-dropdown__grid">
-                      <a href="#" class="featured-dropdown__link">About Us</a>
+                      <a href="about-us.html" class="featured-dropdown__link">About Us</a>
                       <a href="#" class="featured-dropdown__link">Contact Us</a>
                       <a href="#" class="featured-dropdown__link">Case Studies</a>
                       <a href="#" class="featured-dropdown__link">Blog</a>
@@ -222,7 +222,7 @@
                   </div>
 
                   <div class="featured-dropdown__graphic">
-                    <img src="images/company.webp" alt="Company" class="featured-dropdown__graphic-img">
+                    <img src="/images/company.webp" alt="Company" class="featured-dropdown__graphic-img">
                   </div>
                 </div>
 
@@ -257,7 +257,7 @@
         <div class="mobile-drawer" id="mobile-drawer">
           <div class="mobile-drawer__header">
             <a href="#" class="header__logo">
-              <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto;">
+              <img src="/images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto;">
             </a>
             <button class="mobile-drawer__close" aria-label="Close menu"
               style="background: none; border: none; cursor: pointer;">
@@ -379,7 +379,7 @@
               </div>
               <div class="mobile-drawer__subnav" id="subnav-6">
                 <div style="padding-bottom: 16px;">
-                  <a href="#" class="mobile-drawer__link">About Us</a>
+                  <a href="about-us.html" class="mobile-drawer__link">About Us</a>
                   <a href="#" class="mobile-drawer__link">Contact Us</a>
                   <a href="#" class="mobile-drawer__link">Case Studies</a>
                   <a href="#" class="mobile-drawer__link">Blog</a>

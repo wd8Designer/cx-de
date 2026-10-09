@@ -248,7 +248,13 @@
 
 .es-footer__social img {
   width: 20px;
-  height: 20px
+  height: 20px;
+  filter: brightness(0) invert(0);
+  transition: filter var(--duration-fast) var(--ease-out)
+}
+
+.es-footer__social a:hover img {
+  filter: none;
 }
 
 .es-footer__subscribe {
