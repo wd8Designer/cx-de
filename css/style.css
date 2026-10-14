@@ -34261,6 +34261,24 @@ svg[data-icon="play"] {
   animation-delay: var(--rv-delay, 0s)
 }
 
+.hero-banner-image {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+#our-story .rv-people-media img {
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.hero-banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 @keyframes esHeroTileIn {
   from {
     opacity: 0;
@@ -48206,7 +48224,7 @@ h2 {
   color: var(--brand-600);
   background: var(--brand-50);
   border-left-color: var(--brand-500);
-  font-weight: 600;
+  font-weight: 500 !important;
 }
 
 .legal-sidebar__help {

@@ -82,8 +82,17 @@
     }
 
     @keyframes pulseDot {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.25); opacity: 0.7; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.25);
+        opacity: 0.7;
+      }
     }
 
     .about-hero-stats-grid {
@@ -331,7 +340,7 @@
       box-shadow: var(--shadow-sm);
     }
 
-    .about-cap-card h4 {
+    .about-cap-card h3 {
       font-size: 17px;
       font-weight: var(--font-bold);
       color: var(--text-heading);
@@ -345,14 +354,28 @@
       margin: 0;
     }
 
+    .es-faq__qtext {
+      flex: 1;
+      min-width: 0;
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: var(--fs-body-sm);
+      font-weight: var(--font-bold) !important;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--text-heading);
+    }
+
     @media (max-width: 991px) {
       .about-values-grid {
         grid-template-columns: 1fr;
       }
+
       .about-hubs-grid {
         grid-template-columns: 1fr;
         gap: 20px;
       }
+
       .about-caps-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -362,9 +385,11 @@
       .about-hero-stats-grid {
         grid-template-columns: 1fr 1fr;
       }
+
       .about-caps-grid {
         grid-template-columns: 1fr;
       }
+
       .about-value-card {
         padding: 26px 20px;
       }
@@ -387,27 +412,10 @@
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb-trail" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <a href="index.html" class="breadcrumb-link breadcrumb-link--home" itemprop="item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                  <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
+              <a href="/" class="breadcrumb-link breadcrumb-link--home" itemprop="item">
                 <span itemprop="name">Home</span>
               </a>
               <meta itemprop="position" content="1" />
-            </li>
-
-            <li class="breadcrumb-sep" aria-hidden="true">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6" />
-              </svg>
-            </li>
-
-            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <span class="breadcrumb-link" itemprop="name">Company</span>
-              <meta itemprop="position" content="2" />
             </li>
 
             <li class="breadcrumb-sep" aria-hidden="true">
@@ -446,23 +454,21 @@
 
             <div class="es-hero__stage">
               <h1 class="es-hero__title es-hero__enter" style="--rv-delay: 0.06s;">
-                Engineering dependable software &amp; <span class="es-hl">enterprise AI at global scale</span>
+                Engineering dependable software & <span class="es-hl">production AI for German businesses</span>
               </h1>
             </div>
 
             <p class="es-hero__sub es-hero__enter" style="--rv-delay: 0.12s;">
-              We are a high-velocity technology partner bridging the gap between strategic vision and robust
-              production execution. For over 11 years, our 130+ specialized engineers have helped forward-looking
-              enterprises, high-growth startups, and global digital agencies build, modernize, and scale
-              mission-critical digital systems.
+              Cypherox Technologies is an AI-native software and product engineering company. We help German businesses
+              build AI agents, generative AI systems and digital products, and take them from pilot to dependable,
+              governed production.
             </p>
 
             <!-- Hero Action Buttons -->
             <div class="es-hero__ctas es-hero__enter" style="--rv-delay: 0.20s; margin-top: 32px;">
-              <a class="es-btn es-btn--primary" href="#schedule-call">
-                Talk to Our Leadership <svg class="arrow-icon" data-icon="arrow" width="25" height="24"
-                  viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                  focusable="false">
+              <a class="es-btn es-btn--primary" href="/schedule-call">
+                Talk to Our Team <svg class="arrow-icon" data-icon="arrow" width="25" height="24" viewBox="0 0 25 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                   <path opacity="0.6"
                     d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
                     fill="currentColor" />
@@ -474,8 +480,8 @@
                 </svg>
               </a>
 
-              <a class="es-btn es-btn--secondary" href="#our-story">
-                Our Story &amp; Mission
+              <a class="es-btn es-btn--secondary" href="#engineering-disciplines">
+                Explore Our Capabilities
               </a>
             </div>
 
@@ -488,7 +494,7 @@
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                   </svg>
                 </span>
-                <span class="es-hero__feature-label">100% In-house senior engineers</span>
+                <span class="es-hero__feature-label">130+ engineers across AI and software</span>
               </li>
 
               <li class="es-hero__feature">
@@ -499,7 +505,7 @@
                     <polyline points="12 6 12 12 16 14" />
                   </svg>
                 </span>
-                <span class="es-hero__feature-label">Dedicated pods onboarded in 48 hours</span>
+                <span class="es-hero__feature-label">Production AI with governance built in</span>
               </li>
 
               <li class="es-hero__feature">
@@ -509,7 +515,7 @@
                     <path d="M20 6L9 17l-5-5" />
                   </svg>
                 </span>
-                <span class="es-hero__feature-label">Complete IP &amp; code ownership guaranteed</span>
+                <span class="es-hero__feature-label">Project teams or dedicated engineers</span>
               </li>
             </ul>
 
@@ -517,45 +523,8 @@
 
           <!-- Hero Right: Interactive Capability & Metrics Showcase -->
           <div class="es-hero__stage-panel es-hero__enter" style="--rv-delay: 0.24s;">
-            <div class="about-hero-showcase">
-              <div class="about-hero-showcase__head">
-                <div class="about-status-pill">
-                  <span class="about-status-dot"></span> Global Hubs: UK &bull; USA &bull; India
-                </div>
-                <span style="font-family: var(--font-label); font-size: 11px; color: var(--text-muted); font-weight: 600;">EST. 2015</span>
-              </div>
-
-              <div class="about-hero-stats-grid">
-                <div class="about-hero-stat-box">
-                  <div class="stat-num">11<span class="accent">+</span></div>
-                  <p class="stat-lbl">Years Experience</p>
-                </div>
-                <div class="about-hero-stat-box">
-                  <div class="stat-num">130<span class="accent">+</span></div>
-                  <p class="stat-lbl">Senior Engineers</p>
-                </div>
-                <div class="about-hero-stat-box">
-                  <div class="stat-num">1,500<span class="accent">+</span></div>
-                  <p class="stat-lbl">Projects Delivered</p>
-                </div>
-                <div class="about-hero-stat-box">
-                  <div class="stat-num">300<span class="accent">+</span></div>
-                  <p class="stat-lbl">AI Systems Built</p>
-                </div>
-              </div>
-
-              <div style="font-size: 13px; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
-                <strong>Engineering Practices:</strong> ISO-compliant development, automated CI/CD pipelines, strict code reviews, and enterprise data security protocols.
-              </div>
-
-              <div class="about-tech-stack-pills">
-                <span class="about-tech-pill">Generative AI</span>
-                <span class="about-tech-pill">Autonomous Agents</span>
-                <span class="about-tech-pill">Cloud &amp; DevOps</span>
-                <span class="about-tech-pill">Mobile &amp; Web</span>
-                <span class="about-tech-pill">Dedicated Teams</span>
-                <span class="about-tech-pill">Headless eCommerce</span>
-              </div>
+            <div class="hero-banner-image">
+              <img src="images/about-team-img.webp" alt="about-team-img">
             </div>
           </div>
 
@@ -572,11 +541,11 @@
 
           <div class="reveal-up">
             <div class="rv-section-head es-section-head--flush">
-              <p class="rv-eyebrow">Measurable Impact</p>
+              <p class="rv-eyebrow">Engineering Track Record</p>
               <h2>Proven Engineering Scale <span class="rv-hl">by the Numbers</span></h2>
               <p class="rv-lede">
-                Over a decade of consistent delivery has shaped our agile workflows, engineering standards,
-                and ability to solve complex technical challenges across diverse industries.
+                More than a decade of delivery, a 130+ strong engineering team and hundreds of AI projects give German
+                companies a partner with the depth to take on complex software and AI engineering.
               </p>
             </div>
           </div>
@@ -593,21 +562,21 @@
               <div class="rv-stat-value">
                 <span class="rv-counter" data-target="130">0</span><span class="rv-stat-suffix">+</span>
               </div>
-              <p class="rv-stat-label">Full-Time Specialists</p>
+              <p class="rv-stat-label">Engineers</p>
             </div>
 
             <div class="rv-stat-card reveal-up" style="--rv-delay: 0.19s;">
               <div class="rv-stat-value">
                 <span class="rv-counter" data-target="1500">0</span><span class="rv-stat-suffix">+</span>
               </div>
-              <p class="rv-stat-label">Delivered Deployments</p>
+              <p class="rv-stat-label">Projects Delivered</p>
             </div>
 
             <div class="rv-stat-card reveal-up" style="--rv-delay: 0.26s;">
               <div class="rv-stat-value">
-                <span class="rv-counter" data-target="98">0</span><span class="rv-stat-suffix">%</span>
+                <span class="rv-counter" data-target="95">0</span><span class="rv-stat-suffix">%</span>
               </div>
-              <p class="rv-stat-label">Client Retention Rate</p>
+              <p class="rv-stat-label">Client Retention Ratio</p>
             </div>
           </div>
 
@@ -623,44 +592,39 @@
         <div class="rv-people-grid">
 
           <div class="rv-people-media reveal-up">
-            <img src="images/our-culture-img.webp" alt="Cypherox Engineering Culture" width="1140" height="468"
+            <img src="images/about-developer-img.webp" alt="about-developer-img" width="1140" height="468"
               loading="lazy" decoding="async">
             <div class="rv-people-chip rv-people-chip--1">
-              <strong>130+</strong> Full-Time Engineers
+              <strong>130+</strong> Engineers
             </div>
             <div class="rv-people-chip rv-people-chip--2">
-              <strong>11+</strong> Years in Tech
+              Building Since 2015
             </div>
           </div>
 
           <div class="reveal-up" style="--rv-delay: .1s;">
             <div class="rv-section-head es-section-head--flush">
-              <p class="rv-eyebrow">Our Story &amp; Purpose</p>
-              <h2>Built by engineers, <span class="rv-hl">guided by technical integrity</span></h2>
+              <p class="rv-eyebrow">Our Story & Purpose</p>
+              <h2>Built by engineers, guided <span class="rv-hl">by technical integrity</span></h2>
               <p class="rv-lede">
-                Cypherox was founded on a simple realization: businesses don't need another generic digital vendor;
-                they need a true technical ally. They need partners who read architectural blueprints, understand
-                database concurrency, care about maintainability, and write code that stands the test of time.
-              </p>
-              <p class="rv-lede" style="margin-top: 14px;">
-                Starting from our development centers in India and expanding to client hubs in the UK and USA, we have
-                grown into a global engineering firm. Today, we empower startups and Fortune-tier organizations alike
-                with custom AI agents, automated workflow pipelines, and resilient cloud architectures.
+                Cypherox was founded in 2015 by Vipinraj Nair as a software engineering company. Our teams in India and
+                the United Kingdom work from the same standards: understand the business problem, make technical
+                decisions explicit, and build systems that can be maintained once they are live. For businesses in
+                Germany, that means precise requirements, documented decisions and engineering work that holds up after
+                handover.
               </p>
             </div>
 
             <ul class="rv-people-values">
-              <li>Engineering-Led Culture</li>
-              <li>Continuous Learning</li>
-              <li>Enterprise AI Focus</li>
-              <li>Zero Bureaucracy</li>
-              <li>Transparent Collaboration</li>
+              <li>Production AI</li>
+              <li>Software Engineering</li>
+              <li>Digital Product Engineering</li>
+              <li>Technical Partnership</li>
             </ul>
 
             <a href="#schedule-call" class="es-btn es-btn--primary u-mt-fluid-md">
-              Partner With Us <svg class="arrow-icon" data-icon="arrow" width="25" height="24"
-                viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                focusable="false">
+              Partner With Us <svg class="arrow-icon" data-icon="arrow" width="25" height="24" viewBox="0 0 25 24"
+                fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path opacity="0.6"
                   d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z"
                   fill="currentColor" />
@@ -687,8 +651,8 @@
           <p class="rv-eyebrow">Guiding Values</p>
           <h2>The Principles That Govern <span class="rv-hl">Every Line of Code</span></h2>
           <p class="rv-lede" style="max-width: 780px; margin-inline: auto;">
-            Our operating philosophy is centered on engineering excellence, radical ownership, and ethical delivery.
-            These four principles shape how we collaborate and deliver value every day.
+            German businesses expect precision, documentation and accountability from technology partners. These
+            principles shape how we design, build, communicate and support every system we deliver.
           </p>
         </div>
 
@@ -703,11 +667,11 @@
                 <polyline points="8 6 2 12 8 18" />
               </svg>
             </div>
-            <h3>1. Engineering Rigor Over Hype</h3>
+            <h3>Engineering Best Practices</h3>
             <p>
-              We don't build throwaway prototypes or chase transient hype. Every solution is architected with
-              scalability, fault-tolerance, and enterprise maintainability in mind from day one. We write clean,
-              testable, self-documenting code that your team can run with confidence for years to come.
+              We build with maintainable architecture, code review, testing and clear documentation so software stays
+              reliable as requirements change. Practices are matched to each project's scale and risk, not applied as a
+              fixed template.
             </p>
           </div>
 
@@ -720,11 +684,10 @@
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-            <h3>2. Radical Transparency &amp; Ownership</h3>
+            <h3>Radical Transparency & Ownership</h3>
             <p>
-              You speak directly with the engineers, architects, and product leads building your product.
-              No layers of non-technical middlemen, no obscure reporting. Daily standups, transparent git repositories,
-              shared communication channels, and clear burndown metrics keep everyone fully aligned.
+              Clients see progress as it happens. We explain technical trade-offs, flag delivery risks early and name
+              who is responsible for each decision, so problems are raised while they are still easy to resolve.
             </p>
           </div>
 
@@ -734,14 +697,15 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="3" />
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
               </svg>
             </div>
-            <h3>3. Production-Ready AI &amp; Governance</h3>
+            <h3>Production-Ready AI & Governance</h3>
             <p>
-              We specialize in taking AI from experimental lab notebooks into hardened, production-grade business
-              systems. We engineer deterministic guardrails, structured evaluation harnesses, context-grounded RAG
-              pipelines, and strict data confidentiality frameworks so your business operates safely.
+              A working demo is not a production system. We design AI to fit real data, integrations and workflows, with
+              evaluation, monitoring, access controls and governance scaled to each use case and its data protection
+              requirements.
             </p>
           </div>
 
@@ -756,11 +720,10 @@
                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
             </div>
-            <h3>4. Long-Term Technical Partnership</h3>
+            <h3>Long-Term Technical Partnership</h3>
             <p>
-              Delivery doesn't stop at deployment. We view software as an evolving digital asset that requires
-              ongoing performance tuning, architectural evolution, and modern security patches. Our 98% client
-              retention rate reflects our dedication to long-term collaborative success.
+              Software outlives its first release. We make decisions with maintainability, integration and future
+              development in mind, so clients can extend, operate or hand over their systems as business needs evolve.
             </p>
           </div>
 
@@ -776,11 +739,11 @@
       <div class="container">
 
         <div class="rv-section-head text-center reveal-up">
-          <p class="rv-eyebrow">Global Reach</p>
+          <p class="rv-eyebrow">Global Presence</p>
           <h2>Worldwide Engineering with <span class="rv-hl">Dedicated Delivery Centers</span></h2>
           <p class="rv-lede" style="max-width: 820px; margin-inline: auto;">
-            Headquartered in India with strategic presences in the UK and USA, Cypherox provides seamless time-zone
-            overlap, 24/7 continuous development cycles, and local strategic accountability.
+            Cypherox serves businesses in Germany by coordinating engineering delivery between India and the United
+            Kingdom, with connected teams that share the same engineering standards, tools and ways of working.
           </p>
         </div>
 
@@ -790,19 +753,14 @@
           <div class="about-hub-card">
             <div class="about-hub-flag-row">
               <img src="images/india-flag.svg" alt="India Flag" class="about-hub-flag">
-              <span class="about-hub-badge">Headquarters &amp; R&amp;D</span>
+              <span class="about-hub-badge">Engineering Base</span>
             </div>
-            <h3>India (Rajkot &amp; Ahmedabad)</h3>
-            <p class="about-hub-role">Global Engineering Hub &amp; AI Center</p>
+            <h3>India</h3>
+            <p class="about-hub-role">Software, AI and Product Engineering</p>
             <p class="about-hub-desc">
-              Home to 130+ full-time senior developers, AI researchers, system architects, and QA engineers.
-              Our state-of-the-art facility conducts custom LLM fine-tuning, automated test execution, and end-to-end
-              product engineering.
+              Our engineering teams in India deliver software, AI and product engineering work, collaborating closely
+              with colleagues in the United Kingdom on client projects.
             </p>
-            <div class="about-hub-meta">
-              <div><strong>Core Strengths:</strong> Full-Stack, AI/ML, DevOps, Mobile Apps</div>
-              <div><strong>Coverage:</strong> 24/7 continuous engineering cycles</div>
-            </div>
           </div>
 
           <!-- Hub 2: United Kingdom -->
@@ -820,34 +778,12 @@
               </svg>
               <span class="about-hub-badge">Client Engagement</span>
             </div>
-            <h3>United Kingdom (London)</h3>
-            <p class="about-hub-role">Consulting &amp; Solutions Architecture</p>
+            <h3>United Kingdom</h3>
+            <p class="about-hub-role">Client Collaboration and Delivery Coordination</p>
             <p class="about-hub-desc">
-              Strategic discovery sessions, technical architecture consulting, and project oversight for our UK
-              and European enterprise clients. Providing seamless GMT/BST alignment and executive governance.
+              Our United Kingdom presence connects Cypherox with clients across Europe and coordinates closely with the
+              engineering teams in India throughout delivery.
             </p>
-            <div class="about-hub-meta">
-              <div><strong>Core Strengths:</strong> Architecture, Discovery, Agile Scoping</div>
-              <div><strong>Coverage:</strong> UK &amp; European business hours</div>
-            </div>
-          </div>
-
-          <!-- Hub 3: United States -->
-          <div class="about-hub-card">
-            <div class="about-hub-flag-row">
-              <img src="images/usa-flag.svg" alt="USA Flag" class="about-hub-flag">
-              <span class="about-hub-badge">Partnership Hub</span>
-            </div>
-            <h3>United States (North America)</h3>
-            <p class="about-hub-role">Enterprise Partnerships &amp; Client Success</p>
-            <p class="about-hub-desc">
-              Dedicated client consultation, account management, and strategic roadmapping for North American
-              startups, digital agencies, and enterprise clients with real-time overlap across US time zones.
-            </p>
-            <div class="about-hub-meta">
-              <div><strong>Direct Line:</strong> +1 302 618 3557</div>
-              <div><strong>Coverage:</strong> EST &amp; PST active collaboration</div>
-            </div>
           </div>
 
         </div>
@@ -869,38 +805,42 @@
         <div class="rv-why-list">
 
           <div class="rv-why-row reveal-up">
-            <div class="rv-why-num">/ 01</div>
+            <div class="rv-why-num">01</div>
             <h3>Engineering-Led Delivery Process</h3>
             <p>
-              Engineers take part in planning, architecture, and delivery decisions from day one. We identify technical
-              trade-offs early and translate them into maintainable code and realistic milestones without sales puffery.
+              Work begins with requirements and technical constraints, then moves through planning, implementation,
+              testing and delivery. Engineers stay involved at each stage, so design decisions and delivery risks are
+              visible before they affect a release.
             </p>
           </div>
 
           <div class="rv-why-row reveal-up" style="--rv-delay: .06s;">
-            <div class="rv-why-num">/ 02</div>
+            <div class="rv-why-num">02</div>
             <h3>AI Built for Production Use</h3>
             <p>
-              AI solutions are designed around strict data quality, integration, security, and operational constraints so
-              that they run inside real business workflows reliably after the prototype stage.
+              AI has to work inside real systems, data environments and workflows. We design for integration,
+              evaluation, data handling and operational limits from the start, so a solution can be deployed and run
+              rather than only demonstrated.
             </p>
           </div>
 
           <div class="rv-why-row reveal-up" style="--rv-delay: .12s;">
-            <div class="rv-why-num">/ 03</div>
+            <div class="rv-why-num">03</div>
             <h3>Flexible Engineering Capacity</h3>
             <p>
-              Start with a defined turnkey project or embed dedicated developers and technical specialists directly into
-              your in-house team. Adjust capacity up or down as your roadmap, priorities, and budgets evolve.
+              Teams are shaped around the project. German companies can engage AI, software, cloud or design
+              specialists, or dedicated engineers, as delivery needs change, with engineering ownership rather than
+              simple headcount.
             </p>
           </div>
 
           <div class="rv-why-row reveal-up" style="--rv-delay: .18s;">
-            <div class="rv-why-num">/ 04</div>
+            <div class="rv-why-num">04</div>
             <h3>Long-Term Technical Ownership</h3>
             <p>
-              Delivery continues long after launch with proactive monitoring, performance enhancements, and maintenance,
-              so your digital systems remain performant, secure, and ready to scale.
+              Maintainability is planned during delivery, not after it. Documentation, knowledge transfer and
+              integration are considered throughout, so clients can operate, extend or continue development with
+              confidence.
             </p>
           </div>
 
@@ -919,51 +859,59 @@
           <p class="rv-eyebrow">Comprehensive Capabilities</p>
           <h2>End-to-End Engineering Disciplines <span class="rv-hl">Under One Roof</span></h2>
           <p class="rv-lede" style="max-width: 800px; margin-inline: auto;">
-            Whether you need modern AI agent architectures, complex full-stack web platforms, or mobile ecosystems,
-            our teams provide cross-functional excellence across the complete technology lifecycle.
+            Connected disciplines reduce hand-offs between teams. From AI models to the interfaces, infrastructure and
+            data around them, each capability supports the same goal of software that works in production.
           </p>
         </div>
 
         <div class="about-caps-grid reveal-up" style="margin-top: 48px;">
 
           <div class="about-cap-card">
-            <h4>Generative AI &amp; Agents</h4>
-            <p>Custom LLM fine-tuning, RAG semantic search, autonomous agent workflows, and AI chatbots with deterministic business guardrails.</p>
+            <h3>AI Agent Development</h3>
+            <p>Agents that plan, call tools and act within defined limits, connected to your systems and data, with
+              evaluation and oversight designed in from the first iteration.</p>
           </div>
 
           <div class="about-cap-card">
-            <h4>Full-Stack Web Development</h4>
-            <p>Scalable web applications built on React, Angular, Vue, Node.js, Python, PHP, and modern microservice architectures.</p>
+            <h3>Generative AI Development</h3>
+            <p>Language and generative models applied to content, search, assistants and workflows, grounded in your own
+              data and tested against the outputs your teams actually need.</p>
           </div>
 
           <div class="about-cap-card">
-            <h4>Mobile App Engineering</h4>
-            <p>High-performance iOS, Android, Flutter, and React Native mobile apps designed for seamless offline-first user experiences.</p>
+            <h3>AI and Machine Learning Development</h3>
+            <p>Predictive and analytical models built on sound data pipelines, from problem framing and training through
+              deployment, so results can be monitored and retrained as data changes.</p>
           </div>
 
           <div class="about-cap-card">
-            <h4>Cloud &amp; DevOps Pipelines</h4>
-            <p>AWS, GCP, and Azure cloud infrastructure, Docker containerization, Kubernetes orchestration, and automated CI/CD pipelines.</p>
+            <h3>Software and Product Engineering</h3>
+            <p>Architecture, backend services and APIs for products that must scale and integrate with existing
+              enterprise systems, from first release through ongoing development.</p>
           </div>
 
           <div class="about-cap-card">
-            <h4>Dedicated Developer Staffing</h4>
-            <p>Pre-vetted senior developers and specialized engineering pods ready to onboard and commit code to your repos within 48 hours.</p>
+            <h3>Web and Mobile App Development</h3>
+            <p>Responsive web platforms and native or cross-platform mobile apps, built on maintainable codebases and
+              designed around how users really work.</p>
           </div>
 
           <div class="about-cap-card">
-            <h4>eCommerce &amp; Headless CMS</h4>
-            <p>Custom Shopify Plus themes, Magento, WooCommerce, BigCommerce, and headless CMS platforms engineered for conversion velocity.</p>
+            <h3>Cloud and DevOps</h3>
+            <p>Cloud infrastructure, CI/CD pipelines and containerised environments that make releases repeatable,
+              observable and easier to operate as systems grow.</p>
           </div>
 
           <div class="about-cap-card">
-            <h4>UI/UX &amp; Product Design</h4>
-            <p>User research, interactive Figma prototypes, design systems, and responsive user interfaces optimized for high engagement.</p>
+            <h3>UI/UX and Digital Product Design</h3>
+            <p>Research-informed interfaces and design systems that turn requirements into usable products, with design
+              and engineering aligned before development begins.</p>
           </div>
 
           <div class="about-cap-card">
-            <h4>Process &amp; Workflow Automation</h4>
-            <p>Automating repetitive data pipelines, CRM synchronizations, invoice workflows, and third-party API orchestrations.</p>
+            <h3>Data Analytics</h3>
+            <p>Data foundations, reporting and analysis that turn operational data into information teams can act on,
+              and supply reliable inputs to AI and machine learning work.</p>
           </div>
 
         </div>
@@ -978,10 +926,11 @@
       <div class="container">
 
         <div class="rv-section-head text-center" style="max-width: 100%;">
-          <p class="rv-eyebrow">Client Feedback</p>
-          <h2>Trusted by CTOs, Product Leaders, and <span class="rv-hl">Agencies Worldwide</span></h2>
+          <p class="rv-eyebrow">Client Testimonials</p>
+          <h2>Trusted by CTOs, Product Leaders, <span class="rv-hl">and Agencies Worldwide</span></h2>
           <p class="rv-lede">
-            Discover what our long-term partners say about our technical execution, communication, and engineering ownership.
+            Hear from the technology and product leaders who have worked with Cypherox on their software and AI
+            engineering.
           </p>
         </div>
 
@@ -1062,8 +1011,10 @@
             <div class="rv-testi-card">
               <div class="rv-testi-stars" role="img" aria-label="5 out of 5 stars"><span class="es-stars"
                   style="--stars-fill: 100%"></span></div>
-              <p>"I would highly recommend working with Cypherox Technologies if you need a custom CRM or web platform. They
-                always exceed their clients' expectations at every stage of the project, approaching every build with remarkable skill
+              <p>"I would highly recommend working with Cypherox Technologies if you need a custom CRM or web platform.
+                They
+                always exceed their clients' expectations at every stage of the project, approaching every build with
+                remarkable skill
                 and technical dedication."</p>
               <div class="rv-testi-author">
                 <picture>
@@ -1113,116 +1064,62 @@
               <p class="rv-eyebrow">Common Questions</p>
               <h2>Frequently Asked <span class="rv-hl">Questions</span></h2>
               <p class="rv-lead">
-                Got questions about Cypherox Technologies, how our teams operate, engagement models, or technical standards?
-                Here are answers to the questions we receive most often.
+                Answers to the questions German businesses ask most often when considering Cypherox for software, AI or dedicated engineering work.
               </p>
             </div>
 
-            <div class="rv-faq-ask">
-              <p>Have a question that is not covered here? Reach out to our engineering directors directly.</p>
+            <div class="es-faq__ask">
+              <h3 class="es-faq__ask-title">Have a question we have not covered?</h3>
+
+              <p>Speak with the Cypherox team about your project, your technical constraints or how we work with companies in Germany.</p>
+
               <a href="#schedule-call">
-                Ask an Engineer
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
+                Talk to Our Team <svg class="arrow-icon" data-icon="arrow-right" width="14" height="12" viewBox="0 0 16 14"
+                  fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                  <path d="M9 1l5 6-5 6M14 7H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg> </a>
             </div>
+
           </div>
 
-          <div class="reveal-up" style="--rv-delay: .1s;">
-            <div class="accordion" id="accordionAboutFAQ">
+          <div class="es-faq__list reveal-up" style="--rv-delay: .1s;">
+            <details class="es-faq__item" name="es-faq-faq" open>
+              <summary class="es-faq__q">
+                <h3 class="es-faq__qtext">How does Cypherox work with businesses in Germany?</h3>
+              </summary>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingAboutOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseAboutOne" aria-expanded="true" aria-controls="collapseAboutOne">
-                    Where is Cypherox Technologies based and how are your teams structured?
-                  </button>
-                </h3>
-                <div id="collapseAboutOne" class="accordion-collapse collapse show" aria-labelledby="headingAboutOne"
-                  data-bs-parent="#accordionAboutFAQ">
-                  <div class="accordion-body">
-                    Cypherox Technologies has its primary engineering and R&amp;D centers in Rajkot and Ahmedabad, India,
-                    comprising 130+ full-time engineers, researchers, and technical architects. We also operate client
-                    consulting and strategic engagement hubs in London, UK, and the USA. This gives our clients local
-                    accountability paired with 24/7 global delivery agility.
-                  </div>
-                </div>
+              <div class="es-faq__a">
+                <p>Cypherox serves German businesses remotely from its teams in India and the United Kingdom. Engagements are planned around each client's requirements, stakeholders and communication preferences, which are agreed during discovery so collaboration runs smoothly from the start.</p>
               </div>
+            </details>
+            <details class="es-faq__item" name="es-faq-faq">
+              <summary class="es-faq__q">
+                <h3 class="es-faq__qtext">What types of projects does Cypherox support?</h3>
+              </summary>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingAboutTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseAboutTwo" aria-expanded="false" aria-controls="collapseAboutTwo">
-                    What differentiates Cypherox from traditional IT outsourcing agencies?
-                  </button>
-                </h3>
-                <div id="collapseAboutTwo" class="accordion-collapse collapse" aria-labelledby="headingAboutTwo"
-                  data-bs-parent="#accordionAboutFAQ">
-                  <div class="accordion-body">
-                    We are an engineering-led consultancy rather than a sales brokerage. All our developers are 100% full-time
-                    in-house employees who have passed rigorous technical evaluations. We emphasize direct collaboration: your team
-                    communicates directly with our engineers, attends daily standups, and reviews commits in real time without
-                    intermediary account managers.
-                  </div>
-                </div>
+              <div class="es-faq__a">
+                <p>Cypherox builds AI agents, generative AI systems, machine learning products and software, including web, mobile, cloud and data work. Projects range from new digital products to adding AI to existing systems, and can be delivered by a project team or dedicated engineers.</p>
               </div>
+            </details>
+            <details class="es-faq__item" name="es-faq-faq">
+              <summary class="es-faq__q">
+                <h3 class="es-faq__qtext">How does Cypherox approach AI projects intended for production?</h3>
+              </summary>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingAboutThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseAboutThree" aria-expanded="false" aria-controls="collapseAboutThree">
-                    How do you protect intellectual property and ensure data security?
-                  </button>
-                </h3>
-                <div id="collapseAboutThree" class="accordion-collapse collapse" aria-labelledby="headingAboutThree"
-                  data-bs-parent="#accordionAboutFAQ">
-                  <div class="accordion-body">
-                    You own 100% of all intellectual property, source code, data sets, and deployment infrastructure from day one.
-                    We sign comprehensive non-disclosure agreements (NDAs) and IP assignment contracts before any work begins.
-                    Furthermore, all development workstations adhere to enterprise security policies, VPN-gated repos, and strict
-                    data isolation standards.
-                  </div>
-                </div>
+              <div class="es-faq__a">
+                <p>We start with the system the AI must work in, including its data, integrations, users and operational limits. From there we plan evaluation, monitoring, data handling and governance in proportion to the use case, so the solution can run reliably beyond a pilot.</p>
               </div>
+            </details>
+            <details class="es-faq__item" name="es-faq-faq">
+              <summary class="es-faq__q">
+                <h3 class="es-faq__qtext">How do Cypherox teams collaborate with clients?</h3>
+              </summary>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingAboutFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseAboutFour" aria-expanded="false" aria-controls="collapseAboutFour">
-                    How quickly can we onboard a dedicated team or start a project?
-                  </button>
-                </h3>
-                <div id="collapseAboutFour" class="accordion-collapse collapse" aria-labelledby="headingAboutFour"
-                  data-bs-parent="#accordionAboutFAQ">
-                  <div class="accordion-body">
-                    Because we maintain an active bench of senior software engineers across AI, frontend, backend, and mobile
-                    disciplines, we can typically mobilize pre-vetted engineers or complete agile pods within 48 to 72 hours.
-                    For bespoke turnkey projects, discovery and scoping begin within 24 hours of our initial technical call.
-                  </div>
-                </div>
+              <div class="es-faq__a">
+                <p>Teams work closely with client stakeholders, sharing progress, technical decisions and risks as the work develops. Engagements can be a defined project or dedicated engineers extending an existing team, with the working rhythm and communication channels agreed at the start.</p>
               </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingAboutFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseAboutFive" aria-expanded="false" aria-controls="collapseAboutFive">
-                    What communication tools and agile ceremonies do you use?
-                  </button>
-                </h3>
-                <div id="collapseAboutFive" class="accordion-collapse collapse" aria-labelledby="headingAboutFive"
-                  data-bs-parent="#accordionAboutFAQ">
-                  <div class="accordion-body">
-                    We adapt directly to your preferred stack. Our teams work comfortably in Slack, Microsoft Teams, Jira,
-                    ClickUp, Linear, GitHub, and GitLab. We hold regular sprint planning sessions, daily 15-minute async or live standups,
-                    bi-weekly sprint reviews, and comprehensive demo presentations.
-                  </div>
-                </div>
-              </div>
-
-            </div>
+            </details>
           </div>
 
         </div>
@@ -1241,67 +1138,78 @@
               <p class="es-eyebrow">Start a Conversation</p>
               <h2>Book an Engineering Discovery Session</h2>
               <p class="es-lede">
-                Tell us about your technical roadmap, upcoming software build, or the dedicated engineers you are looking
-                to hire. Our senior technical leads will help you evaluate feasibility, architecture, and next steps.
+                The session gives your team a chance to talk through requirements, constraints and goals with Cypherox engineers before committing to a project. It helps clarify scope, architecture options and how a team could work with you.
               </p>
             </div>
 
             <ol class="es-sched__steps">
               <li class="es-sched__step">
                 <span class="es-sched__badge" aria-hidden="true">01</span>
-                <span class="es-sched__step-text">Share Your Technical Requirements</span>
+                <h3 class="es-sched__step-text">Show Your Technical Requirements</h3>
               </li>
               <li class="es-sched__step">
                 <span class="es-sched__badge" aria-hidden="true">02</span>
-                <span class="es-sched__step-text">Review Architecture &amp; Team Fit</span>
+                <h3 class="es-sched__step-text">Review Architecture & Team Fit</h3>
               </li>
               <li class="es-sched__step">
                 <span class="es-sched__badge" aria-hidden="true">03</span>
-                <span class="es-sched__step-text">Define SOW or Onboard Dedicated Pods</span>
+                <h3 class="es-sched__step-text">Define Scope & Onboarding Roadmap</h3>
               </li>
               <li class="es-sched__step">
                 <span class="es-sched__badge" aria-hidden="true">04</span>
-                <span class="es-sched__step-text">Kick Off Sprint Zero with Full IP Control</span>
+                <h3 class="es-sched__step-text">Kick Off Sprint Zero with Clear Priorities</h3>
               </li>
             </ol>
           </div>
 
           <div class="es-sched__panel reveal-up" style="--rv-delay: 0.08s;">
-            <div class="es-sched__embed" style="--es-sched-embed-h: 560px; display: flex; flex-direction: column; justify-content: center; background: #fff; padding: clamp(24px, 4vw, 36px); border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+            <div class="es-sched__embed"
+              style="--es-sched-embed-h: 560px; display: flex; flex-direction: column; justify-content: center; background: #fff; padding: clamp(24px, 4vw, 36px); border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
 
-              <h3 style="font-size: 22px; font-weight: var(--font-extrabold); color: var(--text-heading); margin-bottom: 10px;">
+              <h3
+                style="font-size: 22px; font-weight: var(--font-extrabold); color: var(--text-heading); margin-bottom: 10px;">
                 Direct Leadership Access
               </h3>
               <p style="font-size: var(--fs-caption); color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">
-                Connect directly with our solutions architecture team to discuss timelines, technical budgets, and team allocations.
+                Connect directly with our solutions architecture team to discuss timelines, technical budgets, and team
+                allocations.
               </p>
 
               <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px;">
-                <a href="mailto:solutions@cypherox.com" style="display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text-heading); text-decoration: none; font-weight: var(--font-medium); padding: 12px 16px; background: var(--gray-50); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); transition: border-color 0.2s;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <a href="mailto:solutions@cypherox.com"
+                  style="display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text-heading); text-decoration: none; font-weight: var(--font-medium); padding: 12px 16px; background: var(--gray-50); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); transition: border-color 0.2s;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="4" width="20" height="16" rx="2" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
                   solutions@cypherox.com
                 </a>
 
-                <a href="tel:+13026183557" style="display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text-heading); text-decoration: none; font-weight: var(--font-medium); padding: 12px 16px; background: var(--gray-50); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); transition: border-color 0.2s;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                <a href="tel:+13026183557"
+                  style="display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text-heading); text-decoration: none; font-weight: var(--font-medium); padding: 12px 16px; background: var(--gray-50); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); transition: border-color 0.2s;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
                   +1 302 618 3557 (USA)
                 </a>
 
-                <a href="tel:+919712413434" style="display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text-heading); text-decoration: none; font-weight: var(--font-medium); padding: 12px 16px; background: var(--gray-50); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); transition: border-color 0.2s;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                <a href="tel:+919712413434"
+                  style="display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text-heading); text-decoration: none; font-weight: var(--font-medium); padding: 12px 16px; background: var(--gray-50); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); transition: border-color 0.2s;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
                   +91 97124 13434 (India)
                 </a>
               </div>
 
               <div>
-                <a class="es-btn es-btn--primary" href="mailto:solutions@cypherox.com" style="width: 100%; justify-content: center;">
+                <a class="es-btn es-btn--primary" href="mailto:solutions@cypherox.com"
+                  style="width: 100%; justify-content: center;">
                   Schedule a Consultation <svg class="arrow-icon" data-icon="arrow" width="25" height="24"
                     viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                     focusable="false">
