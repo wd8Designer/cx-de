@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="noindex, nofollow">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact Us | Talk to Engineering &amp; Solutions | Cypherox Technologies</title>
   <meta name="description"
@@ -43,29 +45,10 @@
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb-trail" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <a href="index.html" class="breadcrumb-link breadcrumb-link--home" itemprop="item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                  <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
+              <a href="/" class="breadcrumb-link breadcrumb-link--home" itemprop="item">
                 <span itemprop="name">Home</span>
               </a>
               <meta itemprop="position" content="1" />
-            </li>
-
-            <li class="breadcrumb-sep" aria-hidden="true">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6" />
-              </svg>
-            </li>
-
-            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <a href="about-us.html" class="breadcrumb-link" itemprop="item">
-                <span itemprop="name">Company</span>
-              </a>
-              <meta itemprop="position" content="2" />
             </li>
 
             <li class="breadcrumb-sep" aria-hidden="true">
@@ -107,8 +90,8 @@
 
           <p class="contact-hero-desc">
             Whether you want to build an enterprise AI solution, modernize an existing platform, or scale your
-            engineering team with dedicated developers—our technical directors and solution architects are ready to
-            collaborate.
+            engineering team with dedicated developers, our technical directors and solution architects are ready to
+            collaborate and help define the right criteria for your project.
           </p>
 
           <div class="contact-trust-bar">
@@ -159,7 +142,8 @@
                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <circle cx="12" cy="12" r="10" />
                   <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                 </svg>
               </div>
               <div class="contact-trust-text">
@@ -202,10 +186,10 @@
 
                 <div class="contact-form-group">
                   <label class="contact-form-label" for="contact-email">
-                    Business Email<span class="req">*</span>
+                    Work Email<span class="req">*</span>
                   </label>
                   <input type="email" id="contact-email" name="email" class="contact-input"
-                    placeholder="sarah@company.com" required autocomplete="email">
+                    placeholder="alex@company.com" required autocomplete="email">
                 </div>
               </div>
 
@@ -227,52 +211,38 @@
                 </div>
               </div>
 
-              <!-- Service Type Selector (Radio Pills) -->
-              <div class="contact-form-group">
-                <label class="contact-form-label">
-                  What are you looking to build?<span class="req">*</span>
-                </label>
-                <div class="contact-service-pills">
-                  <label class="contact-service-pill">
-                    <input type="radio" name="service_type" value="enterprise-ai" checked>
-                    <span class="contact-service-pill__label">Generative AI &amp; Agents</span>
-                  </label>
-
-                  <label class="contact-service-pill">
-                    <input type="radio" name="service_type" value="dedicated-developers">
-                    <span class="contact-service-pill__label">Hire Dedicated Developers</span>
-                  </label>
-
-                  <label class="contact-service-pill">
-                    <input type="radio" name="service_type" value="custom-software">
-                    <span class="contact-service-pill__label">Custom Web &amp; Mobile</span>
-                  </label>
-
-                  <label class="contact-service-pill">
-                    <input type="radio" name="service_type" value="cloud-devops">
-                    <span class="contact-service-pill__label">Cloud &amp; DevOps</span>
-                  </label>
-
-                  <label class="contact-service-pill">
-                    <input type="radio" name="service_type" value="ui-ux">
-                    <span class="contact-service-pill__label">UI/UX Design</span>
-                  </label>
-                </div>
-              </div>
-
               <!-- Budget Range Select -->
-              <div class="contact-form-group">
-                <label class="contact-form-label" for="contact-budget">
-                  Estimated Project Budget
-                </label>
-                <select id="contact-budget" name="budget" class="contact-select">
-                  <option value="" disabled selected>Select an approximate budget range</option>
-                  <option value="10k-25k">$10,000 &ndash; $25,000</option>
-                  <option value="25k-50k">$25,000 &ndash; $50,000</option>
-                  <option value="50k-100k">$50,000 &ndash; $100,000</option>
-                  <option value="100k-plus">$100,000+</option>
-                  <option value="flexible">Flexible / Exploring Feasibility</option>
-                </select>
+              <div class="contact-form-row">
+                <div class="contact-form-group">
+                  <label class="contact-form-label" for="contact-budget">
+                    Core Service Needed
+                  </label>
+                  <select id="services" name="budget" class="contact-select">
+                    <option value="" disabled selected>Select service domain</option>
+                    <option value="ai-automation">AI & Machine Learning Systems</option>
+                    <option value="custom-software">Custom Software Engineering</option>
+                    <option value="cloud-devops">Cloud Architecture & DevOps</option>
+                    <option value="data-analytics">Data Platform & Analytics</option>
+                    <option value="dedicated-team">Dedicated Engineering Team</option>
+                    <option value="modernization">Legacy Modernization</option>
+                    <option value="security-audit">Architecture Audit & Security</option>
+                    <option value="other">Other Technical Scope</option>
+                  </select>
+                </div>
+
+                <div class="contact-form-group">
+                  <label class="contact-form-label" for="contact-budget">
+                    Estimated Project Budget
+                  </label>
+                  <select id="contact-budget" name="budget" class="contact-select">
+                    <option value="" disabled selected>Estimated Budget Range</option>
+                    <option value="10k-25k">$10,000 &ndash; $25,000</option>
+                    <option value="25k-50k">$25,000 &ndash; $50,000</option>
+                    <option value="50k-100k">$50,000 &ndash; $100,000</option>
+                    <option value="100k-plus">$100,000+</option>
+                    <option value="flexible">Flexible / Exploring Feasibility</option>
+                  </select>
+                </div>
               </div>
 
               <!-- Message / Requirements -->
@@ -343,8 +313,7 @@
                 Skip the email back-and-forth. Select an available time slot directly on our engineering calendar for an
                 introductory discovery discussion.
               </p>
-              <a href="about-us.html#schedule-call" class="es-btn es-btn--secondary"
-                style="width: 100%; justify-content: center;">
+              <a href="/schedule-call" class="es-btn es-btn--secondary" style="width: 100%; justify-content: center;">
                 Select a Time Slot on Calendar
               </a>
             </div>
@@ -364,36 +333,12 @@
               <p>Reach out to our leadership and solutions architecture teams directly via email or telephone:</p>
 
               <div class="contact-direct-links">
-                <a href="mailto:solutions@cypherox.com" class="contact-direct-link">
+                <a href="mailto:info@cypherox.de" class="contact-direct-link">
                   <span>
                     <span
                       style="display:block; font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-family: var(--font-label);">Email
                       Us</span>
-                    solutions@cypherox.com
-                  </span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6" />
-                  </svg>
-                </a>
-
-                <a href="tel:+13026183557" class="contact-direct-link">
-                  <span>
-                    <span
-                      style="display:block; font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-family: var(--font-label);">North
-                      America</span>
-                    +1 302 618 3557
-                  </span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6" />
-                  </svg>
-                </a>
-
-                <a href="tel:+919712413434" class="contact-direct-link">
-                  <span>
-                    <span
-                      style="display:block; font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-family: var(--font-label);">Global
-                      / India HQ</span>
-                    +91 97124 13434
+                    info@cypherox.de
                   </span>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9 18 15 12 9 6" />
@@ -430,94 +375,6 @@
           </div>
 
         </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-       SECTION 3: GLOBAL LOCATIONS & HUBS
-       ========================================== -->
-    <section class="contact-hubs-sec" id="global-hubs">
-      <div class="container">
-
-        <div class="rv-section-head text-center reveal-up">
-          <p class="rv-eyebrow">Global Reach</p>
-          <h2>Our Engineering &amp; Client Hubs <span class="es-hl">Worldwide</span></h2>
-          <p class="rv-lede" style="max-width: 800px; margin-inline: auto;">
-            With delivery centers in India and client engagement hubs in London and the United States, we provide
-            seamless cross-timezone collaboration.
-          </p>
-        </div>
-
-        <div class="contact-hubs-grid reveal-up">
-
-          <!-- Hub 1: United Kingdom -->
-          <div class="contact-hub-card">
-            <div class="contact-hub-flag-row">
-              <svg width="44" height="32" viewBox="0 0 60 30" class="contact-hub-flag">
-                <clipPath id="uk-flag-contact">
-                  <path d="M0 0v30h60V0z" />
-                </clipPath>
-                <path d="M0 0v30h60V0z" fill="#012169" />
-                <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6" />
-                <path d="M0 0l60 30m0-30L0 30" clip-path="url(#uk-flag-contact)" stroke="#C8102E" stroke-width="4" />
-                <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10" />
-                <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6" />
-              </svg>
-              <span class="contact-hub-badge">Consulting Hub</span>
-            </div>
-            <h3>United Kingdom</h3>
-            <p class="contact-hub-role">London Strategic Services</p>
-            <p class="contact-hub-desc">
-              Solution architecture consulting, agile project scoping, and enterprise relationship management for our
-              European and UK partners.
-            </p>
-            <div class="contact-hub-meta">
-              <div><strong>Time Zone:</strong> GMT / BST Business Hours</div>
-              <div><strong>Email:</strong> <a href="mailto:solutions@cypherox.com"
-                  style="color: inherit;">solutions@cypherox.com</a></div>
-            </div>
-          </div>
-
-          <!-- Hub 2: United States -->
-          <div class="contact-hub-card">
-            <div class="contact-hub-flag-row">
-              <img src="images/usa-flag.svg" alt="United States Flag" class="contact-hub-flag">
-              <span class="contact-hub-badge">Partnership Hub</span>
-            </div>
-            <h3>United States</h3>
-            <p class="contact-hub-role">North America Operations</p>
-            <p class="contact-hub-desc">
-              Dedicated enterprise client partnerships, technical discovery workshops, and direct account coordination
-              across US time zones.
-            </p>
-            <div class="contact-hub-meta">
-              <div><strong>Direct Line:</strong> <a href="tel:+13026183557" style="color: inherit;">+1 302 618 3557</a>
-              </div>
-              <div><strong>Time Zone:</strong> EST &amp; PST Real-Time Overlap</div>
-            </div>
-          </div>
-
-          <!-- Hub 3: India Headquarters -->
-          <div class="contact-hub-card">
-            <div class="contact-hub-flag-row">
-              <img src="images/india-flag.svg" alt="India Flag" class="contact-hub-flag">
-              <span class="contact-hub-badge">Global HQ &amp; R&amp;D</span>
-            </div>
-            <h3>India (HQ &amp; R&amp;D)</h3>
-            <p class="contact-hub-role">Rajkot &amp; Ahmedabad Delivery Centers</p>
-            <p class="contact-hub-desc">
-              Home to 130+ full-time senior developers, AI researchers, cloud DevOps architects, and QA engineers
-              powering 24/7 continuous engineering.
-            </p>
-            <div class="contact-hub-meta">
-              <div><strong>Direct Line:</strong> <a href="tel:+919712413434" style="color: inherit;">+91 97124 13434</a>
-              </div>
-              <div><strong>Operations:</strong> 24/7 Engineering Workflows</div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
     </section>
 
@@ -581,7 +438,7 @@
             Let our senior software engineers and AI specialists accelerate your product roadmap today.
           </p>
           <p class="es-footer__promo-cta">
-            <a href="#contact-page-form" class="es-btn es-btn--secondary es-btn--block-mobile">
+            <a href="/hire-developers" class="es-btn es-btn--secondary es-btn--block-mobile">
               Hire Dedicated Developers
               <svg class="arrow-icon" data-icon="arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
