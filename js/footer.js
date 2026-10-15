@@ -24,8 +24,8 @@
           <div class="es-footer__top">
 
             <div class="es-footer__brand">
-              <a class="es-footer__logo" href="${base}index.html" aria-label="Cypherox, home">
-                <img loading="lazy" src="${base}images/logo-main.svg" alt="Cypherox" width="231" height="60" />
+              <a class="es-footer__logo" href="${base}" aria-label="Cypherox, home">
+                <img loading="lazy" src="/${base}images/logo-main.svg" alt="Cypherox" width="231" height="60" />
               </a>
 
               <p class="es-footer__blurb">
@@ -38,28 +38,28 @@
                 <li>
                   <a href="https://www.facebook.com/CypheroxTechnologies" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">Instagram</span>
-                    <img loading="lazy" src="${base}images/facebook-icon.svg" alt="" width="24" height="24"
+                    <img loading="lazy" src="/${base}images/facebook-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/cypheroxtechnologies/" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">Instagram</span>
-                    <img loading="lazy" src="${base}images/instagram-icon.svg" alt="" width="24" height="24"
+                    <img loading="lazy" src="/${base}images/instagram-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/company/cypherox-technologies" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">LinkedIn</span>
-                    <img loading="lazy" src="${base}images/linkedin-icon.svg" alt="" width="24" height="24"
+                    <img loading="lazy" src="/${base}images/linkedin-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com/@cypheroxtechnologies" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">YouTube</span>
-                    <img loading="lazy" src="${base}images/youtube-icon.svg" alt="" width="24" height="24"
+                    <img loading="lazy" src="/${base}images/youtube-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
                   </a>
                 </li>
@@ -109,23 +109,6 @@
                       <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg></span>
-                  <h3 class="es-footer__heading" data-es-accordion-heading>Company</h3>
-                  <div class="es-footer__panel" data-es-accordion-panel>
-                    <ul class="es-footer__list">
-                      <li><a href="${base}about-us">About Us</a></li>
-                      <li><a href="${base}blog">Blog</a></li>
-                      <li><a href="${base}contact-us">Contact US</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="es-footer__col" data-es-accordion-item>
-                  <span hidden data-es-accordion-caret><svg class="es-footer__caret" data-icon="caret" width="14"
-                      height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true" focusable="false">
-                      <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></span>
                   <h3 class="es-footer__heading" data-es-accordion-heading>Hire Developers</h3>
                   <div class="es-footer__panel" data-es-accordion-panel>
                     <ul class="es-footer__list es-footer__list--contact">
@@ -138,12 +121,29 @@
                   </div>
                 </div>
 
+                <div class="es-footer__col" data-es-accordion-item>
+                  <span hidden data-es-accordion-caret><svg class="es-footer__caret" data-icon="caret" width="14"
+                      height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true" focusable="false">
+                      <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span>
+                  <h3 class="es-footer__heading" data-es-accordion-heading>Company</h3>
+                  <div class="es-footer__panel" data-es-accordion-panel>
+                    <ul class="es-footer__list">
+                      <li><a href="${base}about-us">About Us</a></li>
+                      <li><a href="${base}blog">Blog</a></li>
+                      <li><a href="${base}contact-us">Contact US</a></li>
+                    </ul>
+                  </div>
+                </div>
+
               </div>
 
             </div>
           </div>
           <div class="es-footer__bottom">
-            <p class="es-footer__copyright">&copy; Copyright 2026 Cypherox Technologies Pvt Ltd</p>
+            <p class="es-footer__copyright">&copy; Copyright 2026 <a href="${base}">Cypherox Technologies Pvt. Ltd.</a></p>
             <p class="es-footer__tagline">
               <ul class="es-footer__list es-footer__list--contact">
                 <li><a href="${base}privacy-policy">Privacy Policy</a></li>

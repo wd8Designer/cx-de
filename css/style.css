@@ -39162,19 +39162,19 @@ a.es-hero__rating:focus-visible .es-hero__rating-source {
   padding: 26px;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  background: var(--gray-50)
+  background: rgba(242, 110, 101, 100%);
 }
 
 .es-faq__ask p {
   margin: 0 0 var(--space-4);
   font-size: var(--fs-caption);
-  color: var(--text-body)
+  color: #fff;
 }
 
 .es-faq__ask .es-faq__ask-title {
   margin-bottom: var(--space-2);
   font-weight: var(--font-bold);
-  color: var(--text-heading)
+  color: #fff;
 }
 
 .es-faq__ask> :last-child {
@@ -39187,8 +39187,8 @@ a.es-hero__rating:focus-visible .es-hero__rating-source {
   gap: var(--space-2);
   font-size: var(--fs-caption);
   font-weight: var(--font-bold);
-  color: var(--brand-500);
-  text-decoration: none
+  color: #fff;
+  text-decoration: none;
 }
 
 .es-faq__ask a:hover {
@@ -47284,6 +47284,26 @@ h2 {
   font-size: 13px;
   font-weight: 600;
   color: var(--brand-600);
+}
+
+#targeted-sub-services .genai-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand-600);
+  padding: 14px 20px;
+  background-color: #f26e65;
+  color: #fff;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+#targeted-sub-services .genai-card__footer .genai-card__arrow {
+  display: none;
 }
 
 .genai-card__arrow {

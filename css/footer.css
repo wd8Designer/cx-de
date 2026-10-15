@@ -144,7 +144,7 @@
 
 .es-footer__list a:hover,
 .es-footer__list a:focus-visible {
-  color: var(--footer-accent);
+  color: #f26e65;
   transform: translateX(2px)
 }
 
@@ -204,7 +204,7 @@
 
 .es-footer__office a:hover,
 .es-footer__office a:focus-visible {
-  color: var(--footer-accent)
+  color: #f26e65
 }
 
 .es-footer__office svg {
@@ -243,7 +243,7 @@
 
 .es-footer__social a:hover,
 .es-footer__social a:focus-visible {
-  border-color: var(--footer-accent);
+  border-color: #f26e65;
   background-color: var(--accent-subtle)
 }
 
@@ -297,8 +297,8 @@
 
 .es-footer__news:hover,
 .es-footer__news:focus-visible {
-  border-color: var(--footer-accent);
-  color: var(--footer-accent)
+  border-color: #f26e65;
+  color: #f26e65
 }
 
 .es-footer__marks {
