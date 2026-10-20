@@ -28164,49 +28164,72 @@ input[type="range"]::-moz-range-thumb {
   border: 0;
   border-bottom: 1px solid var(--border-subtle);
   background: transparent;
-  border-radius: 0
+  border-radius: 0;
 }
 
 #accordionHomeFAQ .accordion-item:first-of-type {
-  border-top: 1px solid var(--border-subtle)
+  border-top: 1px solid var(--border-subtle);
 }
 
 #accordionHomeFAQ .accordion-button {
   background: transparent;
-  box-shadow: none;
+  box-shadow: none !important;
   font-size: var(--fs-body-sm);
   font-weight: var(--font-bold);
   color: var(--text-heading);
   padding: var(--space-5) var(--space-2);
-  letter-spacing: -0.01em
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  border: 0 !important;
+  outline: none !important;
+}
+
+#accordionHomeFAQ .accordion-button:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: none !important;
 }
 
 #accordionHomeFAQ .accordion-button::after {
-  background-image: none;
+  background-image: none !important;
   content: "+";
   font-family: var(--font-label);
-  font-size: 22px;
-  font-weight: var(--font-regular);
+  font-size: 24px;
+  font-weight: 300;
   line-height: 1;
   color: var(--brand-500);
-  width: auto;
-  height: auto;
-  transition: transform 0.3s var(--ease-out)
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  transition: transform 0.3s var(--ease-out), color 0.3s var(--ease-out);
 }
 
 #accordionHomeFAQ .accordion-button:not(.collapsed) {
-  color: var(--brand-600)
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--brand-600);
 }
 
 #accordionHomeFAQ .accordion-button:not(.collapsed)::after {
-  transform: rotate(45deg)
+  transform: rotate(45deg);
+  color: var(--brand-600);
 }
 
 #accordionHomeFAQ .accordion-body {
   font-size: var(--fs-small);
   line-height: var(--lh-body);
   color: var(--text-body);
-  padding: 0 var(--space-2) 26px
+  padding: 0 var(--space-2) 26px;
 }
 
 @media (max-width: 991px) {
