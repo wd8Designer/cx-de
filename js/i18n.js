@@ -283,12 +283,6 @@
         el._cxOrigText = el.textContent;
       }
 
-      if (lang === 'en') {
-        // Restore exact original English content
-        el.innerHTML = el._cxOrigHTML;
-        continue;
-      }
-
       var val = resolveKey(translations, key);
       if (val !== undefined && val !== null && val !== '') {
         if (isHtml || (typeof val === 'string' && val.indexOf('<') !== -1)) {
@@ -296,6 +290,9 @@
         } else {
           el.textContent = val;
         }
+      } else if (lang === 'en') {
+        // Fallback to exact original HTML for English
+        el.innerHTML = el._cxOrigHTML;
       } else if (translationsCache['en']) {
         // Fallback to English translation key if German is missing
         var fallbackVal = resolveKey(translationsCache['en'], key);
@@ -314,11 +311,11 @@
       if (pel._cxOrigPlaceholder === undefined) {
         pel._cxOrigPlaceholder = pel.getAttribute('placeholder') || '';
       }
-      if (lang === 'en') {
+      var pval = resolveKey(translations, pkey);
+      if (pval) {
+        pel.setAttribute('placeholder', pval);
+      } else if (lang === 'en' && pel._cxOrigPlaceholder !== undefined) {
         pel.setAttribute('placeholder', pel._cxOrigPlaceholder);
-      } else {
-        var pval = resolveKey(translations, pkey);
-        if (pval) pel.setAttribute('placeholder', pval);
       }
     }
 
@@ -330,11 +327,11 @@
       if (ael._cxOrigAlt === undefined) {
         ael._cxOrigAlt = ael.getAttribute('alt') || '';
       }
-      if (lang === 'en') {
+      var aval = resolveKey(translations, akey);
+      if (aval) {
+        ael.setAttribute('alt', aval);
+      } else if (lang === 'en' && ael._cxOrigAlt !== undefined) {
         ael.setAttribute('alt', ael._cxOrigAlt);
-      } else {
-        var aval = resolveKey(translations, akey);
-        if (aval) ael.setAttribute('alt', aval);
       }
     }
 
@@ -346,11 +343,11 @@
       if (tel._cxOrigTitle === undefined) {
         tel._cxOrigTitle = tel.getAttribute('title') || '';
       }
-      if (lang === 'en') {
+      var tval = resolveKey(translations, tkey);
+      if (tval) {
+        tel.setAttribute('title', tval);
+      } else if (lang === 'en' && tel._cxOrigTitle !== undefined) {
         tel.setAttribute('title', tel._cxOrigTitle);
-      } else {
-        var tval = resolveKey(translations, tkey);
-        if (tval) tel.setAttribute('title', tval);
       }
     }
 
@@ -362,11 +359,11 @@
       if (arel._cxOrigAria === undefined) {
         arel._cxOrigAria = arel.getAttribute('aria-label') || '';
       }
-      if (lang === 'en') {
+      var arval = resolveKey(translations, arkey);
+      if (arval) {
+        arel.setAttribute('aria-label', arval);
+      } else if (lang === 'en' && arel._cxOrigAria !== undefined) {
         arel.setAttribute('aria-label', arel._cxOrigAria);
-      } else {
-        var arval = resolveKey(translations, arkey);
-        if (arval) arel.setAttribute('aria-label', arval);
       }
     }
 
@@ -495,6 +492,10 @@
     var urlCountry = getUrlOverride();
     if (urlCountry) {
       detectedCountry = urlCountry;
+      try {
+        localStorage.setItem(STORAGE_KEY_COUNTRY, urlCountry);
+        localStorage.setItem(STORAGE_KEY_GEO_TIME, Date.now().toString());
+      } catch (e) {}
       var targetLang = (urlCountry === 'DE') ? 'de' : 'en';
       setLanguage(targetLang);
       return;
@@ -512,9 +513,7 @@
     if (isCacheValid) {
       detectedCountry = cachedCountry.toUpperCase();
       var targetLang = (detectedCountry === 'DE') ? 'de' : 'en';
-      if (targetLang === 'de') {
-        setLanguage('de');
-      }
+      setLanguage(targetLang);
       return;
     }
 
@@ -607,23 +606,28 @@
 
   // Hook into dynamic element injection
   function registerDynamicComponentHooks() {
-    document.addEventListener('headerLoaded', function () {
-      if (currentLang !== 'en') {
-        applyTranslationsToContainer(document.getElementById('site-header'), currentLang, translationsCache[currentLang]);
+    function reapplyContainer(el) {
+      if (!el) return;
+      var activeData = translationsCache[currentLang];
+      if (activeData) {
+        applyTranslationsToContainer(el, currentLang, activeData);
+      } else {
+        fetchTranslationFile(currentLang, function (_, data) {
+          if (data) applyTranslationsToContainer(el, currentLang, data);
+        });
       }
+    }
+
+    document.addEventListener('headerLoaded', function () {
+      reapplyContainer(document.getElementById('site-header'));
     });
 
     document.addEventListener('footerLoaded', function () {
-      if (currentLang !== 'en') {
-        applyTranslationsToContainer(document.getElementById('site-footer'), currentLang, translationsCache[currentLang]);
-      }
+      reapplyContainer(document.getElementById('site-footer'));
     });
 
     document.addEventListener('hireFormLoaded', function () {
-      var hireFormContainer = document.querySelector('[data-hire-form]');
-      if (hireFormContainer && currentLang !== 'en') {
-        applyTranslationsToContainer(hireFormContainer, currentLang, translationsCache[currentLang]);
-      }
+      reapplyContainer(document.querySelector('[data-hire-form]'));
     });
   }
 
