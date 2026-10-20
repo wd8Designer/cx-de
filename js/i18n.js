@@ -1,5 +1,5 @@
 /**
- * Cypherox Multilingual Engine - Automatic IP-Based Language Support
+ * Cypherox Multilingual Engine - Automatic IP-Based Language Support (v2.2)
  * Supports: English (en) [Default] & German (de)
  *
  * Rules:
@@ -8,6 +8,7 @@
  * - Zero blocking during page load; country detection runs asynchronously.
  * - Country detection result is cached in localStorage for 24 hours.
  * - No manual header dropdown or UI clutter.
+ * - Complete automatic translation coverage for dynamic elements (Header, Footer, Sliders, Modals).
  */
 (function (window, document) {
   'use strict';
@@ -29,6 +30,9 @@
   var translationsCache = {};
   var isSwitching = false;
   var pendingSwitch = null;
+  var observer = null;
+  var comprehensiveDictCache = {};
+
   var originalPageMeta = {
     title: document.title,
     description: '',
@@ -57,7 +61,7 @@
     return '/translations/';
   }
 
-  // Helper: Deep property lookup (e.g. "nav.services_genai")
+  // Helper: Deep property lookup (e.g. "pages.home.hero_title")
   function resolveKey(obj, keyPath) {
     if (!obj || typeof obj !== 'object' || !keyPath) return undefined;
     if (obj[keyPath] !== undefined) return obj[keyPath];
@@ -112,14 +116,13 @@
     return filename.replace('.html', '').replace(/-/g, '_');
   }
 
-  // Helper: Safely sanitize and set HTML content without unsafe innerHTML
+  // Helper: Safely sanitize and set HTML content
   function setSafeHTML(element, htmlString) {
     if (!htmlString || typeof htmlString !== 'string') {
       element.textContent = '';
       return;
     }
 
-    // Fast path: if no HTML tags present, use textContent (100% safe)
     if (htmlString.indexOf('<') === -1 || htmlString.indexOf('>') === -1) {
       element.textContent = htmlString;
       return;
@@ -130,7 +133,6 @@
       var doc = parser.parseFromString('<div>' + htmlString + '</div>', 'text/html');
       var parsedRoot = doc.body.firstElementChild || doc.body;
 
-      // Sanitize nodes
       function cleanNode(node) {
         if (!node) return;
         var children = Array.prototype.slice.call(node.childNodes);
@@ -142,7 +144,6 @@
               var textNode = document.createTextNode(child.textContent || '');
               node.replaceChild(textNode, child);
             } else {
-              // Strip disallowed attributes
               var attrs = Array.prototype.slice.call(child.attributes);
               for (var a = 0; a < attrs.length; a++) {
                 var attrName = attrs[a].name.toLowerCase();
@@ -157,13 +158,19 @@
       }
 
       cleanNode(parsedRoot);
-      element.innerHTML = parsedRoot.innerHTML;
+
+      while (element.firstChild) {
+        element.removeChild(element.firstChild);
+      }
+      while (parsedRoot.firstChild) {
+        element.appendChild(parsedRoot.firstChild);
+      }
     } catch (e) {
-      element.textContent = htmlString;
+      element.innerHTML = htmlString;
     }
   }
 
-  // Load translation JSON file for given language with fallback paths
+  // Fetch translation JSON file
   function fetchTranslationFile(lang, callback) {
     if (translationsCache[lang]) {
       if (typeof callback === 'function') callback(null, translationsCache[lang]);
@@ -172,27 +179,32 @@
 
     var basePath = getTranslationsBasePath();
     var primaryUrl = basePath + lang + '.json';
-    var fallbackUrl = (basePath !== '/translations/') ? ('/translations/' + lang + '.json') : ('./translations/' + lang + '.json');
+    var fallbackUrl = '/translations/' + lang + '.json';
+    if (primaryUrl === fallbackUrl) {
+      fallbackUrl = './translations/' + lang + '.json';
+    }
 
     function tryLoad(targetUrl, nextUrl) {
       var xhr = new XMLHttpRequest();
       xhr.open('GET', targetUrl, true);
-      xhr.timeout = 8000;
+      xhr.timeout = 5000;
       xhr.onload = function () {
         if (xhr.status >= 200 && xhr.status < 300) {
           try {
             var data = JSON.parse(xhr.responseText);
             translationsCache[lang] = data;
             if (typeof callback === 'function') callback(null, data);
-          } catch (err) {
-            console.warn('[i18n] Failed to parse translation JSON for ' + lang, err);
-            if (typeof callback === 'function') callback(err, null);
+          } catch (parseErr) {
+            console.error('[i18n] Failed to parse JSON from ' + targetUrl, parseErr);
+            if (nextUrl) tryLoad(nextUrl, null);
+            else if (typeof callback === 'function') callback(parseErr, null);
           }
-        } else if (nextUrl) {
-          tryLoad(nextUrl, null);
         } else {
-          console.warn('[i18n] Failed to load ' + targetUrl + ' (status ' + xhr.status + ')');
-          if (typeof callback === 'function') callback(new Error('HTTP ' + xhr.status), null);
+          if (nextUrl) tryLoad(nextUrl, null);
+          else {
+            console.warn('[i18n] Failed to load ' + targetUrl + ' (status ' + xhr.status + ')');
+            if (typeof callback === 'function') callback(new Error('Status ' + xhr.status), null);
+          }
         }
       };
       xhr.ontimeout = function () {
@@ -264,6 +276,107 @@
     }
     var ogL = document.querySelector('meta[property="og:locale"]');
     if (ogL) ogL.setAttribute('content', 'de_DE');
+  }
+
+  // Compile a comprehensive phrase dictionary from translations tree
+  function getComprehensiveDictionary(lang) {
+    if (comprehensiveDictCache[lang]) return comprehensiveDictCache[lang];
+    var dict = {};
+    var enTree = translationsCache['en'] || {};
+    var targetTree = translationsCache[lang] || {};
+
+    function walk(enNode, targetNode) {
+      if (!enNode || !targetNode) return;
+      if (typeof enNode === 'string' && typeof targetNode === 'string') {
+        var cleanEn = enNode.trim().replace(/\s+/g, ' ');
+        var cleanEnPlain = cleanEn.replace(/<[^>]+>/g, '').trim().replace(/\s+/g, ' ');
+        var cleanTarget = targetNode.trim();
+        dict[cleanEn] = cleanTarget;
+        if (cleanEnPlain && cleanEnPlain !== cleanEn) {
+          dict[cleanEnPlain] = cleanTarget.replace(/<[^>]+>/g, '').trim().replace(/\s+/g, ' ');
+        }
+      } else if (typeof enNode === 'object' && typeof targetNode === 'object') {
+        for (var k in enNode) {
+          if (targetNode[k] !== undefined) {
+            walk(enNode[k], targetNode[k]);
+          }
+        }
+      }
+    }
+
+    walk(enTree, targetTree);
+
+    if (targetTree.phrases) {
+      for (var p in targetTree.phrases) {
+        var cleanP = p.trim().replace(/\s+/g, ' ');
+        dict[cleanP] = targetTree.phrases[p];
+      }
+    }
+
+    comprehensiveDictCache[lang] = dict;
+    return dict;
+  }
+
+  // Phrase dictionary mapper for unannotated shared text blocks
+  function applyPhraseDictionary(root, phrases) {
+    if (!phrases || typeof phrases !== 'object') return;
+
+    // 1. Element-level exact matches
+    var candidates = root.querySelectorAll('h1, h2, h3, h4, h5, h6, p, button, .btn, .es-btn, a, li, span, small, strong, em');
+    for (var i = 0; i < candidates.length; i++) {
+      var node = candidates[i];
+      if (node.hasAttribute('data-i18n') || node.hasAttribute('data-i18n-html')) continue;
+      if (node.closest('script, style, noscript, svg')) continue;
+
+      var rawText = node.textContent.trim().replace(/\s+/g, ' ');
+      if (!rawText || rawText.length < 3 || rawText.length > 2500) continue;
+
+      var trans = phrases[rawText];
+      if (!trans) {
+        var htmlTrimmed = node.innerHTML.trim().replace(/\s+/g, ' ');
+        if (phrases[htmlTrimmed]) trans = phrases[htmlTrimmed];
+      }
+
+      if (trans) {
+        if (node._cxOrigHTML === undefined) {
+          node._cxOrigHTML = node.innerHTML;
+          node._cxOrigText = node.textContent;
+        }
+        node.setAttribute('data-cx-phrase', 'true');
+        if (trans.indexOf('<') !== -1) {
+          setSafeHTML(node, trans);
+        } else {
+          node.textContent = trans;
+        }
+      }
+    }
+
+    // 2. TreeWalker for leaf text nodes
+    try {
+      if (typeof document.createTreeWalker === 'function') {
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+          acceptNode: function (n) {
+            if (!n || !n.nodeValue) return NodeFilter.FILTER_REJECT;
+            var parent = n.parentElement;
+            if (!parent) return NodeFilter.FILTER_REJECT;
+            if (parent.closest('script, style, noscript, svg, [data-i18n], [data-i18n-html]')) {
+              return NodeFilter.FILTER_REJECT;
+            }
+            var val = n.nodeValue.trim().replace(/\s+/g, ' ');
+            if (val.length < 3) return NodeFilter.FILTER_REJECT;
+            return NodeFilter.FILTER_ACCEPT;
+          }
+        }, false);
+
+        var textNode;
+        while ((textNode = walker.nextNode())) {
+          var val = textNode.nodeValue.trim().replace(/\s+/g, ' ');
+          if (phrases[val]) {
+            textNode.nodeValue = textNode.nodeValue.replace(val, phrases[val]);
+          }
+        }
+      }
+    } catch (e) {}
   }
 
   // Translate a specific container or the full document
@@ -367,7 +480,7 @@
       }
     }
 
-    // 6. Optional phrase map for common recurring phrases across static pages
+    // 6. Comprehensive phrase map for unannotated shared text blocks
     if (lang === 'en') {
       var phraseElements = root.querySelectorAll('[data-cx-phrase]');
       for (var ph = 0; ph < phraseElements.length; ph++) {
@@ -376,41 +489,13 @@
           phel.innerHTML = phel._cxOrigHTML;
         }
       }
-    } else if (translations && translations.phrases) {
-      applyPhraseDictionary(root, translations.phrases);
+    } else {
+      var fullDict = getComprehensiveDictionary(lang);
+      applyPhraseDictionary(root, fullDict);
     }
   }
 
-  // Phrase dictionary mapper for unannotated shared text blocks
-  function applyPhraseDictionary(root, phrases) {
-    if (!phrases || typeof phrases !== 'object') return;
-    var candidates = root.querySelectorAll('h1, h2, h3, h4, h5, h6, p, .btn, .es-btn, span, li, a');
-    for (var i = 0; i < candidates.length; i++) {
-      var node = candidates[i];
-      if (node.hasAttribute('data-i18n') || node.hasAttribute('data-i18n-html')) continue;
-      if (node.closest('script, style')) continue;
-      if (node.children.length > 2) continue;
-
-      var rawText = node.textContent.trim().replace(/\s+/g, ' ');
-      if (!rawText || rawText.length < 3 || rawText.length > 300) continue;
-
-      if (phrases[rawText]) {
-        if (node._cxOrigHTML === undefined) {
-          node._cxOrigHTML = node.innerHTML;
-          node._cxOrigText = node.textContent;
-        }
-        node.setAttribute('data-cx-phrase', 'true');
-        var trans = phrases[rawText];
-        if (trans.indexOf('<') !== -1) {
-          setSafeHTML(node, trans);
-        } else {
-          node.textContent = trans;
-        }
-      }
-    }
-  }
-
-  // Core language switcher function with concurrency locking
+  // Switch active language and update DOM
   function setLanguage(lang, callback) {
     if (SUPPORTED_LANGS.indexOf(lang) === -1) {
       lang = DEFAULT_LANG;
@@ -465,7 +550,13 @@
           finalize({});
           return;
         }
-        finalize(data);
+        if (!translationsCache['en']) {
+          fetchTranslationFile('en', function () {
+            finalize(data);
+          });
+        } else {
+          finalize(data);
+        }
       });
     }
   }
@@ -618,6 +709,16 @@
       }
     }
 
+    // Check if header or footer were already rendered
+    var headerEl = document.getElementById('site-header');
+    if (headerEl && headerEl.querySelector('.header')) {
+      reapplyContainer(headerEl);
+    }
+    var footerEl = document.getElementById('site-footer');
+    if (footerEl && footerEl.querySelector('footer')) {
+      reapplyContainer(footerEl);
+    }
+
     document.addEventListener('headerLoaded', function () {
       reapplyContainer(document.getElementById('site-header'));
     });
@@ -629,6 +730,47 @@
     document.addEventListener('hireFormLoaded', function () {
       reapplyContainer(document.querySelector('[data-hire-form]'));
     });
+  }
+
+  // MutationObserver to automatically translate newly added DOM elements (Owl Carousel clones, modals, popups)
+  function startObserver() {
+    if (observer || typeof MutationObserver === 'undefined') return;
+    observer = new MutationObserver(function (mutations) {
+      if (isSwitching) return;
+      var activeData = translationsCache[currentLang];
+      if (!activeData && currentLang !== 'en') return;
+
+      var addedNodes = [];
+      for (var i = 0; i < mutations.length; i++) {
+        var m = mutations[i];
+        if (m.type === 'childList') {
+          for (var j = 0; j < m.addedNodes.length; j++) {
+            var n = m.addedNodes[j];
+            if (n.nodeType === 1) { // ELEMENT_NODE
+              if (n.hasAttribute && (n.hasAttribute('data-i18n') || n.hasAttribute('data-i18n-html') || n.querySelector('[data-i18n], [data-i18n-html]'))) {
+                addedNodes.push(n);
+              } else if (n.classList && (n.classList.contains('owl-item') || n.classList.contains('item') || n.id === 'site-header' || n.id === 'site-footer')) {
+                addedNodes.push(n);
+              }
+            }
+          }
+        }
+      }
+
+      if (addedNodes.length > 0) {
+        observer.disconnect();
+        for (var k = 0; k < addedNodes.length; k++) {
+          applyTranslationsToContainer(addedNodes[k], currentLang, activeData || translationsCache['en'] || {});
+        }
+        if (document.body) {
+          observer.observe(document.body, { childList: true, subtree: true });
+        }
+      }
+    });
+
+    if (document.body) {
+      observer.observe(document.body, { childList: true, subtree: true });
+    }
   }
 
   // Public Translation Helper (t) for JavaScript code
@@ -669,6 +811,7 @@
   function init() {
     captureOriginalMetadata();
     registerDynamicComponentHooks();
+    startObserver();
 
     // Clean up any legacy manual preference key
     try {

@@ -485,7 +485,7 @@
     }
     if (!window.CypheroxI18n && !document.querySelector('script[src*="i18n.js"]')) {
       var script = document.createElement('script');
-      script.src = '/js/i18n.js';
+      script.src = '/js/i18n.js?v=2.2';
       script.async = false;
       document.body.appendChild(script);
     }
