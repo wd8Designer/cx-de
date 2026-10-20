@@ -43,20 +43,10 @@
 
   // Helper: Resolve translations directory base path
   function getTranslationsBasePath() {
-    var scripts = document.getElementsByTagName('script');
-    for (var i = 0; i < scripts.length; i++) {
-      var src = scripts[i].getAttribute('src') || scripts[i].src || '';
-      if (src.indexOf('i18n.js') !== -1) {
-        var base = src.substring(0, src.lastIndexOf('js/i18n.js'));
-        if (base) return base + 'translations/';
-      }
-    }
     var path = window.location.pathname.replace(/\\/g, '/');
+    var isSubdir = (path.indexOf('/blogs/') !== -1 || path.indexOf('/hire-developers/') !== -1);
     if (window.location.protocol === 'file:') {
-      if (path.indexOf('/blogs/') !== -1 || path.indexOf('/hire-developers/') !== -1) {
-        return '../translations/';
-      }
-      return './translations/';
+      return isSubdir ? '../translations/' : './translations/';
     }
     return '/translations/';
   }
@@ -111,8 +101,8 @@
     };
 
     if (map[filename]) return map[filename];
-    if (path.indexOf('/blogs/') !== -1) return 'blog_article';
-    if (path.indexOf('/hire-developers/') !== -1) return 'hire_role';
+    if (path.indexOf('/blogs/') !== -1) return 'blog_' + filename.replace('.html', '').replace(/-/g, '_');
+    if (path.indexOf('/hire-developers/') !== -1) return 'hire_' + filename.replace('.html', '').replace(/-/g, '_');
     return filename.replace('.html', '').replace(/-/g, '_');
   }
 
@@ -177,12 +167,10 @@
       return;
     }
 
-    var basePath = getTranslationsBasePath();
-    var primaryUrl = basePath + lang + '.json';
-    var fallbackUrl = '/translations/' + lang + '.json';
-    if (primaryUrl === fallbackUrl) {
-      fallbackUrl = './translations/' + lang + '.json';
-    }
+    var path = window.location.pathname.replace(/\\/g, '/');
+    var isSubdir = (path.indexOf('/blogs/') !== -1 || path.indexOf('/hire-developers/') !== -1);
+    var primaryUrl = '/translations/' + lang + '.json';
+    var fallbackUrl = isSubdir ? '../translations/' + lang + '.json' : './translations/' + lang + '.json';
 
     function tryLoad(targetUrl, nextUrl) {
       var xhr = new XMLHttpRequest();
@@ -322,22 +310,36 @@
     if (!phrases || typeof phrases !== 'object') return;
 
     // 1. Element-level exact matches
-    var candidates = root.querySelectorAll('h1, h2, h3, h4, h5, h6, p, button, .btn, .es-btn, a, li, span, small, strong, em');
+    var candidates = root.querySelectorAll('h1, h2, h3, h4, h5, h6, p, button, .btn, .es-btn, a, span, small, strong, em, b, i, summary, .es-faq__qtext');
     for (var i = 0; i < candidates.length; i++) {
       var node = candidates[i];
       if (node.hasAttribute('data-i18n') || node.hasAttribute('data-i18n-html')) continue;
       if (node.closest('script, style, noscript, svg')) continue;
+      // Skip if inside an ancestor that has data-i18n or data-i18n-html
+      if (node.parentElement && node.parentElement.closest('[data-i18n], [data-i18n-html]')) continue;
+      // Never overwrite elements that contain interactive child elements (like links or form fields)
+      if (node.querySelector && node.querySelector('a, button, input, select, textarea')) continue;
 
-      var rawText = node.textContent.trim().replace(/\s+/g, ' ');
-      if (!rawText || rawText.length < 3 || rawText.length > 2500) continue;
-
-      var trans = phrases[rawText];
-      if (!trans) {
-        var htmlTrimmed = node.innerHTML.trim().replace(/\s+/g, ' ');
-        if (phrases[htmlTrimmed]) trans = phrases[htmlTrimmed];
+      // Check 1: exact innerHTML match (for headings/paragraphs with <span class="es-hl">, <strong>, etc.)
+      var htmlTrimmed = node.innerHTML.trim().replace(/\s+/g, ' ');
+      if (phrases[htmlTrimmed] && phrases[htmlTrimmed] !== htmlTrimmed) {
+        if (node._cxOrigHTML === undefined) {
+          node._cxOrigHTML = node.innerHTML;
+          node._cxOrigText = node.textContent;
+        }
+        node.setAttribute('data-cx-phrase', 'true');
+        setSafeHTML(node, phrases[htmlTrimmed]);
+        continue;
       }
 
-      if (trans) {
+      // Check 2: leaf element exact text match (only if no child HTML elements)
+      if (node.children && node.children.length > 0) continue;
+
+      var rawText = node.textContent.trim().replace(/\s+/g, ' ');
+      if (!rawText || rawText.length < 2 || rawText.length > 2500) continue;
+
+      var trans = phrases[rawText];
+      if (trans && trans !== rawText) {
         if (node._cxOrigHTML === undefined) {
           node._cxOrigHTML = node.innerHTML;
           node._cxOrigText = node.textContent;
@@ -351,7 +353,7 @@
       }
     }
 
-    // 2. TreeWalker for leaf text nodes
+    // 2. TreeWalker for leaf text nodes (buttons, links, pills, nested text)
     try {
       if (typeof document.createTreeWalker === 'function') {
         var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
@@ -359,11 +361,11 @@
             if (!n || !n.nodeValue) return NodeFilter.FILTER_REJECT;
             var parent = n.parentElement;
             if (!parent) return NodeFilter.FILTER_REJECT;
-            if (parent.closest('script, style, noscript, svg, [data-i18n], [data-i18n-html]')) {
+            if (parent.closest('script, style, noscript, svg, [data-i18n], [data-i18n-html], [data-cx-phrase]')) {
               return NodeFilter.FILTER_REJECT;
             }
             var val = n.nodeValue.trim().replace(/\s+/g, ' ');
-            if (val.length < 3) return NodeFilter.FILTER_REJECT;
+            if (val.length < 2) return NodeFilter.FILTER_REJECT;
             return NodeFilter.FILTER_ACCEPT;
           }
         }, false);
@@ -371,7 +373,12 @@
         var textNode;
         while ((textNode = walker.nextNode())) {
           var val = textNode.nodeValue.trim().replace(/\s+/g, ' ');
-          if (phrases[val]) {
+          if (phrases[val] && phrases[val] !== val) {
+            var parent = textNode.parentElement;
+            if (parent && parent._cxOrigHTML === undefined) {
+              parent._cxOrigHTML = parent.innerHTML;
+              parent.setAttribute('data-cx-phrase', 'true');
+            }
             textNode.nodeValue = textNode.nodeValue.replace(val, phrases[val]);
           }
         }
