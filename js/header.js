@@ -15,12 +15,12 @@
 
           <!-- 1. AI Agent -->
           <div class="nav-item">
-            <a href="ai-agent-development" class="nav-item__link">AI Agent</a>
+            <a href="/ai-agent-development" class="nav-item__link" data-i18n="nav.ai_agent">AI Agent</a>
           </div>
 
           <!-- 2. Services -->
           <div class="nav-item">
-            <a href="javascript:void(0)" class="nav-item__link">Services<svg class="chevron" width="16" height="16"
+            <a href="javascript:void(0)" class="nav-item__link"><span data-i18n="nav.services">Services</span><svg class="chevron" width="16" height="16"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
                 <polyline points="6 9 12 15 18 9"></polyline>
@@ -30,12 +30,12 @@
               <div class="featured-dropdown__inner container">
                 <div class="featured-dropdown__top">
                   <div class="featured-dropdown__content">
-                    <h3 class="featured-dropdown__title">Services</h3>
+                    <h3 class="featured-dropdown__title" data-i18n="nav.services">Services</h3>
                     <div class="featured-dropdown__grid">
-                      <a href="/generative-ai-development" class="featured-dropdown__link">Generative AI Solutions</a>
-                      <a href="/ai-ml-development" class="featured-dropdown__link">AI &amp; ML Development</a>
-                      <a href="/consulting-services" class="featured-dropdown__link">Consulting Services</a>
-                      <a href="/ui-ux-design-services" class="featured-dropdown__link">UI/UX Design Services</a>
+                      <a href="/generative-ai-development" class="featured-dropdown__link" data-i18n="nav.services_genai">Generative AI Solutions</a>
+                      <a href="/ai-ml-development" class="featured-dropdown__link" data-i18n="nav.services_aiml">AI &amp; ML Development</a>
+                      <a href="/it-consulting-services" class="featured-dropdown__link" data-i18n="nav.services_consulting">Consulting Services</a>
+                      <a href="/ui-ux-design-services" class="featured-dropdown__link" data-i18n="nav.services_uiux">UI/UX Design Services</a>
                     </div>
                   </div>
 
@@ -46,11 +46,11 @@
 
                 <div class="featured-dropdown__bottom">
                   <div class="featured-dropdown__bottom-text">
-                    <h4>Build Enterprise AI &amp; Custom Software</h4>
-                    <p>Schedule a discovery session with our engineering team to explore custom solutions tailored to
+                    <h4 data-i18n="nav.services_cta_title">Build Enterprise AI &amp; Custom Software</h4>
+                    <p data-i18n="nav.services_cta_desc">Schedule a discovery session with our engineering team to explore custom solutions tailored to
                       your business.</p>
                   </div>
-                  <a href="/schedule-a-call" class="btn btn--dark">SCHEDULE A CALL</a>
+                  <a href="/schedule-a-call" class="btn btn--dark" data-i18n="nav.services_cta_btn">SCHEDULE A CALL</a>
                 </div>
               </div>
             </div>
@@ -58,12 +58,12 @@
 
           <!-- 3. Automation -->
           <div class="nav-item">
-            <a href="/business-automation-services" class="nav-item__link">Automation</a>
+            <a href="/business-automation-services" class="nav-item__link" data-i18n="nav.automation">Automation</a>
           </div>
 
           <!-- 4. Technology -->
           <div class="nav-item">
-            <a href="javascript:;" class="nav-item__link">Technology<svg class="chevron" width="16" height="16"
+            <a href="javascript:;" class="nav-item__link"><span data-i18n="nav.technology">Technology</span><svg class="chevron" width="16" height="16"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
                 <polyline points="6 9 12 15 18 9"></polyline>
@@ -73,12 +73,12 @@
               <div class="featured-dropdown__inner container">
                 <div class="featured-dropdown__top">
                   <div class="featured-dropdown__content">
-                    <h3 class="featured-dropdown__title">Technology</h3>
+                    <h3 class="featured-dropdown__title" data-i18n="nav.technology">Technology</h3>
                     <div class="featured-dropdown__grid">
-                      <a href="/web-development" class="featured-dropdown__link">Web Development</a><a
-                        href="/app-development" class="featured-dropdown__link">App Development</a><a
-                        href="/ecommerce-development" class="featured-dropdown__link">E-Commerce</a><a
-                        href="/cms-development" class="featured-dropdown__link">CMS (WordPress, Drupal)</a>
+                      <a href="/web-development" class="featured-dropdown__link" data-i18n="nav.tech_web">Web Development</a><a
+                        href="/app-development" class="featured-dropdown__link" data-i18n="nav.tech_app">App Development</a><a
+                        href="/ecommerce-development" class="featured-dropdown__link" data-i18n="nav.tech_ecommerce">E-Commerce</a><a
+                        href="/cms-development" class="featured-dropdown__link" data-i18n="nav.tech_cms">CMS (WordPress, Drupal)</a>
                     </div>
                   </div>
 
@@ -89,10 +89,10 @@
                 </div>
                 <div class="featured-dropdown__bottom">
                   <div class="featured-dropdown__bottom-text">
-                    <h4>Build Scalable Software</h4>
-                    <p>Let's discuss your tech stack and engineer a robust architecture for your next big product.</p>
+                    <h4 data-i18n="nav.tech_cta_title">Modern Tech Stack Solutions</h4>
+                    <p data-i18n="nav.tech_cta_desc">From robust cloud backends to modern cross-platform interfaces, build software that scales with your business.</p>
                   </div>
-                  <a href="/schedule-a-call" class="btn btn--dark">SCHEDULE A CALL</a>
+                  <a href="/schedule-a-call" class="btn btn--dark" data-i18n="nav.tech_cta_btn">DISCUSS YOUR ARCHITECTURE</a>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
 
           <!-- 5. Hire Developers (Tabbed Mega Menu) -->
           <div class="nav-item">
-            <a href="/hire-developers" class="nav-item__link">Hire Developers<svg class="chevron" width="16" height="16"
+            <a href="/hire-developers" class="nav-item__link"><span data-i18n="nav.hire_developers">Hire Developers</span><svg class="chevron" width="16" height="16"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
                 <polyline points="6 9 12 15 18 9"></polyline>
@@ -114,7 +114,7 @@
                     <div class="mega-tab">
                       <ul class="mega-tab__sidebar">
                         <li class="mega-tab__item active" data-tab-idx="0" role="button" tabindex="0">
-                          <a href="/mobile-app-developers">
+                          <a href="/hire-developers/mobile-app-developers">
                             <span>Mobile App Developers</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                               stroke-width="2">
@@ -176,7 +176,7 @@
                         <div class="mega-tab__panel" data-tab-panel="1" style="display:none">
                           <p class="mega-tab__panel-title">Front-End Web Developers</p>
                           <div class="mega-tab__panel-links">
-                            <a href="/hire-developers/angularjs-developers" class="mega-menu__link">Hire AngularJS Developers</a>
+                            <a href="/hire-developers/angular-developers" class="mega-menu__link">Hire AngularJS Developers</a>
                             <a href="/hire-developers/reactjs-developers" class="mega-menu__link">Hire ReactJS Developers</a>
                             <a href="/hire-developers/vuejs-developers" class="mega-menu__link">Hire VueJS Developers</a>
                             <a href="/hire-developers/graphic-designers" class="mega-menu__link">Hire Graphic Designers</a>
@@ -237,13 +237,14 @@
           </div>
 
           <!-- 6. Industries -->
+          <!-- 6. Industries -->
           <div class="nav-item">
-            <a href="/industries" class="nav-item__link">Industries</a>
+            <a href="/industries" class="nav-item__link" data-i18n="nav.industries">Industries</a>
           </div>
 
           <!-- 7. Company -->
           <div class="nav-item">
-            <a href="javascript:void(0)" class="nav-item__link">Company<svg class="chevron" width="16" height="16"
+            <a href="javascript:void(0)" class="nav-item__link"><span data-i18n="nav.company">Company</span><svg class="chevron" width="16" height="16"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
                 <polyline points="6 9 12 15 18 9"></polyline>
@@ -253,11 +254,11 @@
               <div class="featured-dropdown__inner container">
                 <div class="featured-dropdown__top">
                   <div class="featured-dropdown__content">
-                    <h3 class="featured-dropdown__title">Company</h3>
+                    <h3 class="featured-dropdown__title" data-i18n="nav.company">Company</h3>
                     <div class="featured-dropdown__grid">
-                      <a href="/about-us" class="featured-dropdown__link">About Us</a>
-                      <a href="/contact-us" class="featured-dropdown__link">Contact Us</a>
-                      <a href="/blog" class="featured-dropdown__link">Blog</a>
+                      <a href="/about-us" class="featured-dropdown__link" data-i18n="nav.company_about">About Us</a>
+                      <a href="/contact-us" class="featured-dropdown__link" data-i18n="nav.company_contact">Contact Us</a>
+                      <a href="/blogs" class="featured-dropdown__link" data-i18n="nav.company_blog">Blog</a>
                     </div>
                   </div>
 
@@ -268,10 +269,10 @@
 
                 <div class="featured-dropdown__bottom">
                   <div class="featured-dropdown__bottom-text">
-                    <h4>Partner with Cypherox</h4>
-                    <p>Reach out to our leadership team and discover how we can drive your digital transformation.</p>
+                    <h4 data-i18n="nav.company_cta_title">Partner with Cypherox</h4>
+                    <p data-i18n="nav.company_cta_desc">Reach out to our leadership team and discover how we can drive your digital transformation.</p>
                   </div>
-                  <a href="/schedule-a-call" class="btn btn--dark">SCHEDULE A CALL</a>
+                  <a href="/schedule-a-call" class="btn btn--dark" data-i18n="nav.company_cta_btn">SCHEDULE A CALL</a>
                 </div>
               </div>
             </div>
@@ -279,8 +280,21 @@
 
         </nav>
         <div class="header__actions">
-          <a href="/contact-us" class="header__cta btn btn--pill-outline">Let's Talk</a>
-          <a href="/schedule-a-call" class="header__cta btn btn--pill-primary">Book A 15 Min Call</a>
+          <a class="es-btn es-btn--secondary" href="/contact-us" style="">
+            <span data-i18n="nav.lets_talk">Let's Talk</span> <svg class="arrow-icon" data-icon="arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path opacity="0.6" d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z" fill="currentColor"></path>
+              <path opacity="0.8" d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z" fill="currentColor"></path>
+              <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z" fill="currentColor"></path>
+            </svg> </a>
+            
+            <a href="/schedule-a-call" class="es-btn es-btn--primary">
+              <span data-i18n="nav.book_call">Book A 15 Min Call</span>
+              <svg class="arrow-icon" data-icon="arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path opacity="0.6" d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z" fill="currentColor"></path>
+                <path opacity="0.8" d="M12.2289 18.7534L16.9148 12L12.2289 5.24664H8.08521L12.7711 12L8.08521 18.7534H12.2289Z" fill="currentColor"></path>
+                <path d="M19.9188 18.7534L24.6044 12L19.9188 5.24664H15.7751L20.4608 12L15.7751 18.7534H19.9188Z" fill="currentColor"></path>
+              </svg>
+            </a>
         </div>
         <button class="mobile-toggle" aria-label="Open navigation menu" aria-expanded="false" id="mobile-menu-btn">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -291,10 +305,11 @@
           </svg>
         </button>
       </div>
+    </header>
 
-      <!-- Mobile Navigation Drawer Container -->
-      <div id="mobile-drawer-container">
-        <div class="mobile-drawer" id="mobile-drawer">
+    <!-- Mobile Navigation Drawer Container -->
+    <div id="mobile-drawer-container">
+      <div class="mobile-drawer" id="mobile-drawer">
           <div class="mobile-drawer__header">
             <a href="/" class="header__logo">
               <img src="/images/logo-main.svg" alt="Cypherox Logo" style="height: 20px; width: auto;">
@@ -327,9 +342,9 @@
               </div>
               <div class="mobile-drawer__subnav" id="subnav-1">
                 <div style="padding-bottom: 16px;">
-                  <a href="/generative-ai-solutions" class="mobile-drawer__link">Generative AI Solutions</a>
+                  <a href="/generative-ai-development" class="mobile-drawer__link">Generative AI Solutions</a>
                   <a href="/ai-ml-development" class="mobile-drawer__link">AI &amp; ML Development</a>
-                  <a href="/consulting-services" class="mobile-drawer__link">Consulting Services</a>
+                  <a href="/it-consulting-services" class="mobile-drawer__link">Consulting Services</a>
                   <a href="/ui-ux-design-services" class="mobile-drawer__link">UI/UX Design Services</a>
                 </div>
               </div>
@@ -337,42 +352,27 @@
 
             <!-- Mobile Item 3: Automation -->
             <div class="mobile-drawer__item">
-              <a href="javascript:void(0)" class="mobile-drawer__item-header"
+              <a href="/business-automation-services" class="mobile-drawer__item-header"
                 style="display: block; text-decoration: none; color: inherit;">Automation</a>
             </div>
 
             <!-- Mobile Item 4: Technology -->
             <div class="mobile-drawer__item">
-              <a href="javascript:void(0)" class="mobile-drawer__item-header"
-                style="display: block; text-decoration: none; color: inherit;">Technology</a>
-            </div>
-
-            <div class="mobile-drawer__item">
-              <a href="javascript:;" class="mobile-drawer__item-header">Technology
+              <div class="mobile-drawer__item-header" data-index="3">
+                Technology
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
-              </a>
-
-              <div class="mobile-drawer__item">
-                <div class="mobile-drawer__item-header" data-index="1">
-                  Technology
-                  <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </div>
-                <div class="mobile-drawer__subnav" id="subnav-1">
-                  <div style="padding-bottom: 16px;">
-                    <a href="/web-development" class="featured-dropdown__link">Web Development</a>
-                    <a href="/app-development" class="featured-dropdown__link">App Development</a>
-                    <a href="/ecommerce-development" class="featured-dropdown__link">E-Commerce</a>
-                    <a href="/cms-development" class="featured-dropdown__link">CMS (WordPress, Drupal)</a>
-                  </div>
+              </div>
+              <div class="mobile-drawer__subnav" id="subnav-3">
+                <div style="padding-bottom: 16px;">
+                  <a href="/web-development" class="mobile-drawer__link">Web Development</a>
+                  <a href="/app-development" class="mobile-drawer__link">App Development</a>
+                  <a href="/ecommerce-development" class="mobile-drawer__link">E-Commerce</a>
+                  <a href="/cms-development" class="mobile-drawer__link">CMS (WordPress, Drupal)</a>
                 </div>
               </div>
-
             </div>
 
             <!-- Mobile Item 5: Hire Developers -->
@@ -386,54 +386,57 @@
               </div>
               <div class="mobile-drawer__subnav" id="subnav-4">
                 <div style="padding-bottom: 16px;">
+                  <a href="/hire-developers" class="mobile-drawer__link">All Hire Developers</a>
+
                   <div class="mobile-drawer__subheading">
                     <a href="/hire-developers/mobile-app-developers" class="mobile-drawer__link">Mobile App Developers</a>
                   </div>
-                  <a href="/hire-developers/hire-ios-developers" class="mobile-drawer__link">Hire iOS Developers</a>
-                  <a href="/hire-developers/hire-android-developers" class="mobile-drawer__link">Hire Android Developers</a>
-                  <a href="/hire-developers/hire-swift-developers" class="mobile-drawer__link">Hire Swift Developers</a>
-                  <a href="/hire-developers/hire-kotlin-developers" class="mobile-drawer__link">Hire Kotlin Developers</a>
-                  <a href="/hire-developers/hire-flutter-developers" class="mobile-drawer__link">Hire Flutter Developers</a>
-                  <a href="/hire-developers/hire-react-native-developers" class="mobile-drawer__link">Hire React Native Developers</a>
+                  <a href="/hire-developers/ios-developers" class="mobile-drawer__link">Hire iOS Developers</a>
+                  <a href="/hire-developers/android-developers" class="mobile-drawer__link">Hire Android Developers</a>
+                  <a href="/hire-developers/swift-developers" class="mobile-drawer__link">Hire Swift Developers</a>
+                  <a href="/hire-developers/kotlin-developers" class="mobile-drawer__link">Hire Kotlin Developers</a>
+                  <a href="/hire-developers/flutter-developers" class="mobile-drawer__link">Hire Flutter Developers</a>
+                  <a href="/hire-developers/react-native-developers" class="mobile-drawer__link">Hire React Native Developers</a>
 
                   <div class="mobile-drawer__subheading">
                     <a href="/hire-developers/front-end-developers" class="mobile-drawer__link">Front-End Web Developers</a>
                   </div>
-                  <a href="/hire-developers/hire-angularjs-developers" class="mobile-drawer__link">Hire AngularJS Developers</a>
-                  <a href="/hire-developers/hire-reactjs-developers" class="mobile-drawer__link">Hire ReactJS Developers</a>
-                  <a href="/hire-developers/hire-vuejs-developers" class="mobile-drawer__link">Hire VueJS Developers</a>
-                  <a href="/hire-developers/hire-graphic-designers" class="mobile-drawer__link">Hire Graphic Designers</a>
-                  <a href="/hire-developers/hire-ui-ux-designers" class="mobile-drawer__link">Hire UI/UX Designers</a>
+                  <a href="/hire-developers/angular-developers" class="mobile-drawer__link">Hire AngularJS Developers</a>
+                  <a href="/hire-developers/reactjs-developers" class="mobile-drawer__link">Hire ReactJS Developers</a>
+                  <a href="/hire-developers/vuejs-developers" class="mobile-drawer__link">Hire VueJS Developers</a>
+                  <a href="/hire-developers/graphic-designers" class="mobile-drawer__link">Hire Graphic Designers</a>
+                  <a href="/hire-developers/ui-ux-designers" class="mobile-drawer__link">Hire UI/UX Designers</a>
 
                   <div class="mobile-drawer__subheading">
                     <a href="/hire-developers/back-end-developers" class="mobile-drawer__link">Back-End Web Developers</a>
                   </div>
-                  <a href="/hire-developers/hire-nodejs-developers" class="mobile-drawer__link">Hire NodeJS Developers</a>
-                  <a href="/hire-developers/hire-laravel-developers" class="mobile-drawer__link">Hire Laravel Developers</a>
-                  <a href="/hire-developers/hire-python-developers" class="mobile-drawer__link">Hire Python Developers</a>
-                  <a href="/hire-developers/hire-php-developers" class="mobile-drawer__link">Hire PHP Developers</a>
+                  <a href="/hire-developers/nodejs-developers" class="mobile-drawer__link">Hire NodeJS Developers</a>
+                  <a href="/hire-developers/laravel-developers" class="mobile-drawer__link">Hire Laravel Developers</a>
+                  <a href="/hire-developers/python-developers" class="mobile-drawer__link">Hire Python Developers</a>
+                  <a href="/hire-developers/php-developers" class="mobile-drawer__link">Hire PHP Developers</a>
 
                   <div class="mobile-drawer__subheading">
-                    <a href="/hire-developers/e-commerce-developers" class="mobile-drawer__link">E-Commerce Developers</a>
+                    <a href="/hire-developers/ecommerce-developers" class="mobile-drawer__link">E-Commerce Developers</a>
                   </div>
-                  <a href="/hire-developers/hire-wordpress-developers" class="mobile-drawer__link">Hire WordPress Developers</a>
-                  <a href="/hire-developers/hire-shopify-developers" class="mobile-drawer__link">Hire Shopify Developers</a>
-                  <a href="/hire-developers/hire-magento-developers" class="mobile-drawer__link">Hire Magento Developers</a>
-                  <a href="/hire-developers/hire-bigcommerce-developers" class="mobile-drawer__link">Hire BigCommerce Developers</a>
-                  <a href="/hire-developers/hire-woocommerce-developers" class="mobile-drawer__link">Hire WooCommerce Developers</a>
-                  <a href="/hire-developers/hire-digital-marketers" class="mobile-drawer__link">Hire Digital Marketers</a>
+                  <a href="/hire-developers/wordpress-developers" class="mobile-drawer__link">Hire WordPress Developers</a>
+                  <a href="/hire-developers/shopify-developers" class="mobile-drawer__link">Hire Shopify Developers</a>
+                  <a href="/hire-developers/magento-developers" class="mobile-drawer__link">Hire Magento Developers</a>
+                  <a href="/hire-developers/bigcommerce-developers" class="mobile-drawer__link">Hire BigCommerce Developers</a>
+                  <a href="/hire-developers/woocommerce-developers" class="mobile-drawer__link">Hire WooCommerce Developers</a>
+                  <a href="/hire-developers/digital-marketers" class="mobile-drawer__link">Hire Digital Marketers</a>
 
-                  <div class="mobile-drawer__subheading">Trending Developers</div>
-                  <a href="/hire-developers/hire-devops-developers" class="mobile-drawer__link">Hire DevOps Developers</a>
-                  <a href="/hire-developers/hire-aws-developers" class="mobile-drawer__link">Hire AWS Developers</a>
-                  <a href="/hire-developers/hire-ai-developers" class="mobile-drawer__link">Hire AI Developers</a>
-                  <a href="/hire-developers/hire-ml-developers" class="mobile-drawer__link">Hire ML Developers</a>
-                  <a href="/hire-developers/hire-blockchain-developers" class="mobile-drawer__link">Hire Blockchain Developers</a>
-                  <a href="/hire-developers/hire-ar-developers" class="mobile-drawer__link">Hire AR Developers</a>
-                  <a href="/hire-developers/hire-vr-developers" class="mobile-drawer__link">Hire VR Developers</a>
-                  <a href="/hire-developers/hire-data-analytics-experts" class="mobile-drawer__link">Hire Data Analytics Experts</a>
-                  <a href="/hire-developers/hire-full-stack-developers" class="mobile-drawer__link">Hire Full Stack Developers</a>
-                  <a href="/hire-developers/hire-chatbot-developers" class="mobile-drawer__link">Hire Chatbot Developers</a>
+                  <div class="mobile-drawer__subheading">
+                    <a href="/hire-developers/trending-developers" class="mobile-drawer__link">Trending Developers</a>
+                  </div>
+                  <a href="/hire-developers/devops-developers" class="mobile-drawer__link">Hire DevOps Developers</a>
+                  <a href="/hire-developers/aws-developers" class="mobile-drawer__link">Hire AWS Developers</a>
+                  <a href="/hire-developers/ai-developers" class="mobile-drawer__link">Hire AI Developers</a>
+                  <a href="/hire-developers/ml-developers" class="mobile-drawer__link">Hire ML Developers</a>
+                  <a href="/hire-developers/blockchain-developers" class="mobile-drawer__link">Hire Blockchain Developers</a>
+                  <a href="/hire-developers/ar-developers" class="mobile-drawer__link">Hire AR Developers</a>
+                  <a href="/hire-developers/vr-developers" class="mobile-drawer__link">Hire VR Developers</a>
+                  <a href="/hire-developers/data-analytics-experts" class="mobile-drawer__link">Hire Data Analytics Experts</a>
+                  <a href="/hire-developers/full-stack-developers" class="mobile-drawer__link">Hire Full Stack Developers</a>
                 </div>
               </div>
             </div>
@@ -457,7 +460,7 @@
                 <div style="padding-bottom: 16px;">
                   <a href="/about-us" class="mobile-drawer__link">About Us</a>
                   <a href="/contact-us" class="mobile-drawer__link">Contact Us</a>
-                  <a href="/blog" class="mobile-drawer__link">Blog</a>
+                  <a href="/blogs" class="mobile-drawer__link">Blog</a>
                 </div>
               </div>
             </div>
@@ -465,23 +468,42 @@
           </div>
           <div class="mobile-drawer__footer" style="display: flex; flex-direction: column; gap: 12px;">
             <a href="/contact-us" class="btn btn--outline"
-              style="width: 100%; text-align: center; justify-content: center;">Let's Talk</a>
+              style="width: 100%; text-align: center; justify-content: center;" data-i18n="nav.lets_talk">Let's Talk</a>
             <a href="/schedule-a-call" class="btn btn--dark"
-              style="width: 100%; text-align: center; justify-content: center;">Book A 15 Min Call</a>
+              style="width: 100%; text-align: center; justify-content: center;" data-i18n="nav.book_call">Book A 15 Min Call</a>
           </div>
         </div>
         <div class="mobile-drawer__overlay" style="display: none;"></div>
       </div>
-    </header>
   `;
 
 
+  // Ensure i18n stylesheet and engine are active across all pages
+  function ensureI18n() {
+    if (!document.querySelector('link[href*="i18n.css"]')) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/css/i18n.css';
+      document.head.appendChild(link);
+    }
+    if (!window.CypheroxI18n && !document.querySelector('script[src*="i18n.js"]')) {
+      var script = document.createElement('script');
+      script.src = '/js/i18n.js';
+      script.async = false;
+      document.body.appendChild(script);
+    }
+  }
+
   // 2. DOM INJECTION
   function renderHeader() {
+    ensureI18n();
     const headerContainer = document.getElementById('site-header');
     if (!headerContainer) return;
     if (!headerContainer.innerHTML.trim() || !headerContainer.querySelector('.header')) {
       headerContainer.innerHTML = siteHeaderHTML;
+      if (window.i18n && typeof window.i18n.applyTranslations === 'function') {
+        window.i18n.applyTranslations(headerContainer);
+      }
     }
   }
 
@@ -574,9 +596,10 @@
   // ==========================================
 
   function initMobileDrawer(header) {
-    const toggle = header.querySelector('.mobile-toggle') || document.querySelector('.mobile-toggle');
-    const drawer = header.querySelector('.mobile-drawer') || document.querySelector('.mobile-drawer');
-    const overlay = header.querySelector('.mobile-drawer__overlay') || document.querySelector('.mobile-drawer__overlay');
+    const root = header.closest('#site-header') || document;
+    const toggle = root.querySelector('.mobile-toggle') || document.querySelector('.mobile-toggle');
+    const drawer = root.querySelector('.mobile-drawer') || document.querySelector('.mobile-drawer');
+    const overlay = root.querySelector('.mobile-drawer__overlay') || document.querySelector('.mobile-drawer__overlay');
     const closeBtn = drawer ? drawer.querySelector('.mobile-drawer__close') : null;
 
     if (!toggle || !drawer) return;
@@ -615,10 +638,17 @@
     });
 
     // Close drawer when clicking any link inside
-    drawer.querySelectorAll('.mobile-drawer__link, .mobile-drawer__footer a').forEach(link => {
+    drawer.querySelectorAll('.mobile-drawer__link, .mobile-drawer__footer a, .mobile-drawer__item-header[href]').forEach(link => {
       link.addEventListener('click', () => {
         closeDrawer();
       });
+    });
+
+    // Close drawer when resizing to desktop view (>= 1200px)
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1200 && drawer.classList.contains('open')) {
+        closeDrawer();
+      }
     });
 
     // Accordions for Mobile Drawer Items (Services, Hire Developers, Company)

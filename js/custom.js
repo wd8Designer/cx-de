@@ -1,4 +1,4 @@
-﻿/* =============================================================
+/* =============================================================
 
    custom.js â€” Core shared scripts for Enstacked theme
 
@@ -1427,56 +1427,122 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* ========================================================
-   LAZY CALENDLY WIDGET LOADER FOR SCHEDULER SECTION
+   CALENDLY SCHEDULER PRELOADER
+   The scheduler sits near the bottom of most pages. A native lazy iframe only
+   starts loading once the visitor is close to it, so they arrive to Calendly's
+   spinner. Instead, warm up the connection immediately, load the iframe as soon
+   as the page is idle (or earlier if the visitor scrolls towards it), and keep
+   it behind a branded placeholder until Calendly has rendered.
    ======================================================== */
 (function () {
+  // Browsers pause rendering inside off-screen cross-origin iframes, so Calendly finishes drawing only
+  // once it is on screen. The fallback therefore counts from when the visitor can see the embed.
+  var VISIBLE_FALLBACK_MS = 4000;
+  var READY_EVENTS = ['calendly.event_type_viewed', 'calendly.profile_page_viewed', 'calendly.date_and_time_selected'];
+
+  function addPreconnect(href) {
+    if (document.querySelector('link[rel="preconnect"][href="' + href + '"]')) return;
+    var link = document.createElement('link');
+    link.rel = 'preconnect';
+    link.href = href;
+    link.crossOrigin = 'anonymous';
+    document.head.appendChild(link);
+  }
+
+  function withEmbedParams(src) {
+    try {
+      var url = new URL(src, window.location.href);
+      if (!url.searchParams.has('embed_type')) {
+        url.searchParams.set('embed_domain', window.location.hostname || 'cypherox.de');
+        url.searchParams.set('embed_type', 'Inline');
+      }
+      return url.toString();
+    } catch (e) {
+      return src;
+    }
+  }
+
   function initCalendly() {
-    var widgets = document.querySelectorAll('.es-sched .calendly-inline-widget');
-    if (!widgets.length) return;
+    var frames = document.querySelectorAll('.es-sched__embed iframe[src*="calendly.com"], .em-consult__embed iframe[src*="calendly.com"]');
+    if (!frames.length) return;
 
-    var loaded = false;
-    function loadScript() {
-      if (loaded) return;
-      loaded = true;
-      window.removeEventListener('scroll', checkNear);
-      window.removeEventListener('resize', checkNear);
+    addPreconnect('https://calendly.com');
+    addPreconnect('https://assets.calendly.com');
 
-      var script = document.createElement('script');
-      script.src = 'https://assets.calendly.com/assets/external/widget.js';
-      script.async = true;
-      script.onerror = function () {
-        Array.prototype.forEach.call(widgets, function (w) {
-          var fallback = w.parentNode.querySelector('.es-sched__fallback[hidden]');
-          if (!fallback) return;
-          w.hidden = true;
-          fallback.hidden = false;
-        });
-      };
-      document.body.appendChild(script);
+    var started = false;
+
+    function reveal(frame) {
+      var embed = frame.parentNode;
+      if (!embed.classList.contains('is-loading')) return;
+      embed.classList.remove('is-loading');
+      embed.classList.add('is-ready');
     }
 
-    function checkNear() {
-      for (var i = 0; i < widgets.length; i++) {
-        var r = widgets[i].getBoundingClientRect();
-        if (r.top - window.innerHeight < 600 && r.bottom > -600) {
-          loadScript();
-          break;
-        }
+    Array.prototype.forEach.call(frames, function (frame) {
+      // Still lazy and off-screen here, so changing the URL does not trigger a fetch yet.
+      frame.src = withEmbedParams(frame.getAttribute('src'));
+      frame.parentNode.classList.add('cal-embed', 'is-loading');
+    });
+
+    // Calendly reports when the booking page has rendered (embed_type=Inline enables these messages).
+    // calendly.page_height arrives earlier, while its own spinner is still showing, so it is ignored.
+    window.addEventListener('message', function (event) {
+      if (!/^https:\/\/([a-z0-9-]+\.)?calendly\.com$/.test(event.origin)) return;
+      var name = event.data && event.data.event;
+      if (READY_EVENTS.indexOf(name) === -1) return;
+      Array.prototype.forEach.call(frames, function (frame) {
+        if (frame.contentWindow === event.source) reveal(frame);
+      });
+    });
+
+    function startLoading() {
+      if (started) return;
+      started = true;
+      Array.prototype.forEach.call(frames, function (frame) {
+        frame.loading = 'eager';
+        frame.setAttribute('loading', 'eager');
+      });
+    }
+
+    function scheduleIdleLoad() {
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(startLoading, { timeout: 2500 });
+      } else {
+        setTimeout(startLoading, 800);
       }
     }
 
+    if (document.readyState === 'complete') {
+      scheduleIdleLoad();
+    } else {
+      window.addEventListener('load', scheduleIdleLoad, { once: true });
+    }
+
+    // Visitor heading towards the scheduler before the page went idle: load right away.
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) {
         if (entries.some(function (e) { return e.isIntersecting; })) {
           io.disconnect();
-          loadScript();
+          startLoading();
         }
-      }, { rootMargin: '600px 0px' });
-      Array.prototype.forEach.call(widgets, function (w) { io.observe(w); });
+      }, { rootMargin: '2000px 0px' });
+      Array.prototype.forEach.call(frames, function (frame) { io.observe(frame); });
+
+      var visibleIo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          visibleIo.unobserve(entry.target);
+          startLoading();
+          setTimeout(function () { reveal(entry.target); }, VISIBLE_FALLBACK_MS);
+        });
+      });
+      Array.prototype.forEach.call(frames, function (frame) { visibleIo.observe(frame); });
     } else {
-      window.addEventListener('scroll', checkNear, { passive: true });
-      window.addEventListener('resize', checkNear, { passive: true });
-      checkNear();
+      Array.prototype.forEach.call(frames, function (frame) {
+        frame.addEventListener('load', function () {
+          setTimeout(function () { reveal(frame); }, VISIBLE_FALLBACK_MS);
+        });
+      });
     }
   }
 
@@ -1486,36 +1552,6 @@ document.addEventListener('DOMContentLoaded', function () {
     initCalendly();
   }
 })();
-
-/* ========================================================
-   CONSULTATION FORM SUBMISSION FEEDBACK (#hiring-model-form)
-   ======================================================== */
-document.addEventListener('DOMContentLoaded', function () {
-  const hireForm = document.getElementById('hiring-model-form');
-  if (hireForm) {
-    hireForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const submitBtn = hireForm.querySelector('.es-form__submit');
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = 'Submitting...';
-      }
-
-      setTimeout(() => {
-        hireForm.innerHTML = `
-          <div style="padding: 32px 16px; text-align: center;">
-            <div style="width: 56px; height: 56px; margin: 0 auto 16px; border-radius: 50%; background: rgba(242, 110, 101, 0.12); display: flex; align-items: center; justify-content: center; color: #f26e65;">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a;">Consultation Request Received!</h3>
-            <p style="font-size: 14px; color: #666666; line-height: 1.5;">Thank you! Our engineering director will review your requirements and reach out within 24 hours.</p>
-          </div>
-        `;
-      }, 800);
-    });
-  }
-});
-
 
 /* ==========================================
    MODULE: js/curtain.js
@@ -1611,57 +1647,35 @@ document.addEventListener('DOMContentLoaded', function () {
       ramp: { e: [0.95, 0.43, 0.40], m: [1.0, 0.58, 0.52], c: [1.0, 0.88, 0.86] }
     },
     {
-      label: 'Caffenza logo',
-      box: null,
-      fitW: 1.3,
-      fitH: 0.42,
-      gain: 1,
-      font: '800 200px Fraunces, Georgia, serif',
+      label: 'Cypherox logo',
+      box: [0.5, 0.5, 215, 79],
+      fitW: 1.15,
+      fitH: 0.65,
       draw: function (c) {
-        c.font = this.font;
         c.fillStyle = '#fff';
-        c.textBaseline = 'alphabetic';
-        c.fillText('CYPHEROX', 0, 0);
+        c.fill(CX_PATH);
       },
-      track: null,
-      ramp: { e: [0.55, 0.26, 0.10], m: [0.88, 0.56, 0.28], c: [1, 0.9, 0.74] }
+      track: [
+        [-20, -20],
+        [108, -30],
+        [236, -20],
+        [246, 40],
+        [236, 100],
+        [108, 110],
+        [-20, 100],
+        [-30, 40]
+      ],
+      ramp: { e: [0.95, 0.43, 0.40], m: [1.0, 0.58, 0.52], c: [1.0, 0.88, 0.86] }
     }
   ];
 
-  var fontsReady = false;
-  var frauncesPromise = null;
+  var fontsReady = true;
+  var frauncesPromise = Promise.resolve();
 
-  function measureCaffenza() {
-    var s = SLIDES[2];
-    var m = document.createElement('canvas').getContext('2d');
-    m.font = s.font;
-    var t = m.measureText('CYPHEROX');
-    var asc = t.actualBoundingBoxAscent || 150;
-    var desc = t.actualBoundingBoxDescent || 10;
-    var x0 = -(t.actualBoundingBoxLeft || 0);
-    var x1 = t.actualBoundingBoxRight || t.width;
-    s.box = [x0, -asc, x1 - x0, asc + desc];
-    var p = 70;
-    s.track = [[x0 - p, -asc - p], [x1 + p, -asc - p], [x1 + p, desc + p], [x0 - p, desc + p]];
-  }
+  function measureCaffenza() {}
 
   function ensureFraunces() {
-    if (frauncesPromise) return frauncesPromise;
-    frauncesPromise = new Promise(function (resolve) {
-      var link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&display=swap';
-      link.media = 'print';
-      link.onload = function () { link.media = 'all'; };
-      document.head.appendChild(link);
-      var fonts = (document.fonts && document.fonts.load) ? document.fonts.load('800 200px Fraunces') : Promise.resolve();
-      Promise.race([fonts, new Promise(function (r) { setTimeout(r, 2500); })]).then(function () {
-        fontsReady = true;
-        measureCaffenza();
-        resolve();
-      });
-    });
-    return frauncesPromise;
+    return Promise.resolve();
   }
 
   var R = 1, W = 0, H = 0, slot = { cx: 0, cy: 0, s: 1 };

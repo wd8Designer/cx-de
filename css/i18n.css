@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Cypherox Multilingual (i18n) Engine Styles
+   Smooth non-blocking transitions for localized content
+   ========================================================================== */
+
+[data-i18n],
+[data-i18n-html] {
+  transition: opacity 0.15s ease;
+}
+
+body.cx-lang-switching [data-i18n],
+body.cx-lang-switching [data-i18n-html] {
+  opacity: 0.88;
+}

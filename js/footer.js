@@ -24,11 +24,11 @@
           <div class="es-footer__top">
 
             <div class="es-footer__brand">
-              <a class="es-footer__logo" href="${base}" aria-label="Cypherox, home">
-                <img loading="lazy" src="/${base}images/logo-main.svg" alt="Cypherox" width="231" height="60" />
+              <a class="es-footer__logo" href="/" aria-label="Cypherox, home">
+                <img loading="lazy" src="/images/logo-main.svg" alt="Cypherox" width="231" height="60" />
               </a>
 
-              <p class="es-footer__blurb">
+              <p class="es-footer__blurb" data-i18n="footer.blurb">
                 Cypherox is a team of dedicated experts, selected to deliver
                 outstanding software solutions, enabling businesses to
                 flourish in the digital environment.
@@ -38,28 +38,28 @@
                 <li>
                   <a href="https://www.facebook.com/CypheroxTechnologies" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">Instagram</span>
-                    <img loading="lazy" src="/${base}images/facebook-icon.svg" alt="" width="24" height="24"
+                    <img loading="lazy" src="/images/facebook-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/cypheroxtechnologies/" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">Instagram</span>
-                    <img loading="lazy" src="/${base}images/instagram-icon.svg" alt="" width="24" height="24"
+                    <img loading="lazy" src="/images/instagram-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/company/cypherox-technologies" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">LinkedIn</span>
-                    <img loading="lazy" src="/${base}images/linkedin-icon.svg" alt="" width="24" height="24"
+                    <img loading="lazy" src="/images/linkedin-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com/@cypheroxtechnologies" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">YouTube</span>
-                    <img loading="lazy" src="/${base}images/youtube-icon.svg" alt="" width="24" height="24"
+                    <img loading="lazy" src="/images/youtube-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
                   </a>
                 </li>
@@ -90,14 +90,14 @@
                       <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg></span>
-                  <h3 class="es-footer__heading" data-es-accordion-heading>Services</h3>
+                  <h3 class="es-footer__heading" data-es-accordion-heading data-i18n="footer.services_title">Services</h3>
                   <div class="es-footer__panel" data-es-accordion-panel>
                     <ul class="es-footer__list">
-                      <li><a href="${base}ai-agent-development">AI Agent Development</a></li>
-                      <li><a href="${base}generative-ai-development">Generative AI Development</a></li>
-                      <li><a href="${base}ai-ml-development">AI/ML Development</a></li>
-                      <li><a href="${base}it-consulting-services">IT Consulting Services</a></li>
-                      <li><a href="${base}ui-ux-design-services">UI/UX Design Services</a></li>
+                      <li><a href="/ai-agent-development" data-i18n="nav.ai_agent">AI Agent Development</a></li>
+                      <li><a href="/generative-ai-development" data-i18n="nav.services_genai">Generative AI Development</a></li>
+                      <li><a href="/ai-ml-development" data-i18n="nav.services_aiml">AI/ML Development</a></li>
+                      <li><a href="/it-consulting-services" data-i18n="nav.services_consulting">IT Consulting Services</a></li>
+                      <li><a href="/ui-ux-design-services" data-i18n="nav.services_uiux">UI/UX Design Services</a></li>
                     </ul>
                   </div>
                 </div>
@@ -109,14 +109,14 @@
                       <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg></span>
-                  <h3 class="es-footer__heading" data-es-accordion-heading>Hire Developers</h3>
+                  <h3 class="es-footer__heading" data-es-accordion-heading data-i18n="footer.hire_title">Hire Developers</h3>
                   <div class="es-footer__panel" data-es-accordion-panel>
                     <ul class="es-footer__list es-footer__list--contact">
-                      <li><a href="${base}mobile-app-developers">Mobile App Developers</a></li>
-                      <li><a href="${base}front-end-developers">Front-End Developers</a></li>
-                      <li><a href="${base}back-end-developers">Back-End Developers</a></li>
-                      <li><a href="${base}ecommerce-developers">E-Commerce Developers</a></li>
-                      <li><a href="${base}trending-developers">Trending Developers</a></li>
+                      <li><a href="/hire-developers/mobile-app-developers" data-i18n="nav.hire_mobile_app">Mobile App Developers</a></li>
+                      <li><a href="/hire-developers/front-end-developers" data-i18n="nav.hire_frontend">Front-End Developers</a></li>
+                      <li><a href="/hire-developers/back-end-developers" data-i18n="nav.hire_backend">Back-End Developers</a></li>
+                      <li><a href="/hire-developers/ecommerce-developers" data-i18n="nav.hire_ecommerce_dev">E-Commerce Developers</a></li>
+                      <li><a href="/hire-developers/trending-developers" data-i18n="nav.hire_trending">Trending Developers</a></li>
                     </ul>
                   </div>
                 </div>
@@ -128,12 +128,13 @@
                       <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg></span>
-                  <h3 class="es-footer__heading" data-es-accordion-heading>Company</h3>
+                  <h3 class="es-footer__heading" data-es-accordion-heading data-i18n="footer.company_title">Company</h3>
                   <div class="es-footer__panel" data-es-accordion-panel>
                     <ul class="es-footer__list">
-                      <li><a href="${base}about-us">About Us</a></li>
-                      <li><a href="${base}blog">Blog</a></li>
-                      <li><a href="${base}contact-us">Contact US</a></li>
+                      <li><a href="/about-us" data-i18n="nav.company_about">About Us</a></li>
+                      <li><a href="/blogs" data-i18n="nav.company_blog">Blog</a></li>
+                      <li><a href="/engagement-models" data-i18n="phrases.Engagement Models">Engagement Models</a></li>
+                      <li><a href="/contact-us" data-i18n="nav.company_contact">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>
@@ -143,11 +144,11 @@
             </div>
           </div>
           <div class="es-footer__bottom">
-            <p class="es-footer__copyright">&copy; Copyright 2026 <a href="${base}">Cypherox Technologies Pvt. Ltd.</a></p>
+            <p class="es-footer__copyright">&copy; Copyright 2026 <a href="/">Cypherox Technologies Pvt. Ltd.</a></p>
             <p class="es-footer__tagline">
               <ul class="es-footer__list es-footer__list--contact">
-                <li><a href="${base}privacy-policy">Privacy Policy</a></li>
-                <li><a href="${base}terms-and-conditions">Terms and Conditions</a></li>
+                <li><a href="/privacy-policy" data-i18n="footer.privacy_policy">Privacy Policy</a></li>
+                <li><a href="/terms-and-policy" data-i18n="footer.terms_policy">Terms &amp; Policy</a></li>
               </ul>
             </p>
           </div>
@@ -205,6 +206,9 @@
 
     if (!footerContainer.innerHTML.trim() || !footerContainer.querySelector('.es-footer')) {
       footerContainer.innerHTML = getFooterHTML();
+      if (window.i18n && typeof window.i18n.applyTranslations === 'function') {
+        window.i18n.applyTranslations(footerContainer);
+      }
     }
   }
 
@@ -249,6 +253,9 @@
           button.setAttribute('aria-controls', panelId);
 
           label.textContent = heading.textContent;
+          if (heading.getAttribute('data-i18n')) {
+            label.setAttribute('data-i18n', heading.getAttribute('data-i18n'));
+          }
           button.appendChild(label);
 
           if (caret) {
