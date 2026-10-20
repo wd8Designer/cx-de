@@ -16,6 +16,8 @@
   // Configuration
   var SUPPORTED_LANGS = ['en', 'de'];
   var DEFAULT_LANG = 'en';
+  var STORAGE_KEY_MANUAL = 'cypherox_language_preference';
+  var STORAGE_KEY_MANUAL_ALT = 'cypherox_lang_manual';
   var STORAGE_KEY_COUNTRY = 'cypherox_detected_country';
   var STORAGE_KEY_GEO_TIME = 'cypherox_geo_cached_at';
   var GEO_CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
@@ -27,6 +29,7 @@
   // State
   var currentLang = DEFAULT_LANG;
   var detectedCountry = null;
+  var isManualSelection = false;
   var translationsCache = {};
   var isSwitching = false;
   var pendingSwitch = null;
@@ -551,14 +554,30 @@
     }
   }
 
+  // Language switcher UI update stub (switcher removed for automatic IP-based localization)
+  function updateLanguageSwitcherUI() {}
+
   // Switch active language and update DOM
-  function setLanguage(lang, callback) {
+  function setLanguage(lang, isManual, callback) {
+    if (typeof isManual === 'function') {
+      callback = isManual;
+      isManual = false;
+    }
+
     if (SUPPORTED_LANGS.indexOf(lang) === -1) {
       lang = DEFAULT_LANG;
     }
 
+    if (isManual) {
+      isManualSelection = true;
+      try {
+        localStorage.setItem(STORAGE_KEY_MANUAL, lang);
+        localStorage.setItem(STORAGE_KEY_MANUAL_ALT, lang);
+      } catch (e) {}
+    }
+
     if (isSwitching) {
-      pendingSwitch = { lang: lang, callback: callback };
+      pendingSwitch = { lang: lang, isManual: isManual, callback: callback };
       return;
     }
 
@@ -571,6 +590,7 @@
 
       applyTranslationsToContainer(document, lang, data);
       updateMetadata(lang, data);
+      updateLanguageSwitcherUI();
 
       document.body.classList.remove('cx-lang-switching');
       isSwitching = false;
@@ -578,7 +598,7 @@
       // Dispatch public event
       try {
         document.dispatchEvent(new CustomEvent('cxLanguageChanged', {
-          detail: { lang: lang, country: detectedCountry }
+          detail: { lang: lang, country: detectedCountry, isManual: isManual }
         }));
       } catch (evErr) {}
 
@@ -587,7 +607,7 @@
       if (pendingSwitch) {
         var next = pendingSwitch;
         pendingSwitch = null;
-        setLanguage(next.lang, next.callback);
+        setLanguage(next.lang, next.isManual, next.callback);
       }
     }
 
@@ -617,6 +637,16 @@
     }
   }
 
+  // Reset manual preference back to automatic detection
+  function resetPreference() {
+    try {
+      localStorage.removeItem(STORAGE_KEY_MANUAL);
+      localStorage.removeItem(STORAGE_KEY_MANUAL_ALT);
+    } catch (e) {}
+    isManualSelection = false;
+    detectCountryAndApply(true);
+  }
+
   // Check URL query parameters for country/language testing override
   function getUrlOverride() {
     try {
@@ -633,9 +663,9 @@
     return null;
   }
 
-  // Automatic IP Geolocation Detection
-  function detectCountryAndApply() {
-    // 1. Check URL override (e.g. ?country=DE or ?lang=de for testing)
+  // Automatic IP Geolocation Detection (Non-blocking)
+  function detectCountryAndApply(forceRecheck) {
+    // 1. Check URL override (e.g. ?country=DE or ?lang=de for testing/debugging)
     var urlCountry = getUrlOverride();
     if (urlCountry) {
       detectedCountry = urlCountry;
@@ -644,11 +674,11 @@
         localStorage.setItem(STORAGE_KEY_GEO_TIME, Date.now().toString());
       } catch (e) {}
       var targetLang = (urlCountry === 'DE') ? 'de' : 'en';
-      setLanguage(targetLang);
+      setLanguage(targetLang, false);
       return;
     }
 
-    // 2. Check cached country detection result in localStorage
+    // 2. Check cached country detection result in localStorage (24h TTL)
     var cachedCountry = null;
     var cachedTime = 0;
     try {
@@ -657,10 +687,10 @@
     } catch (e) {}
 
     var isCacheValid = cachedCountry && (Date.now() - cachedTime < GEO_CACHE_TTL_MS);
-    if (isCacheValid) {
+    if (isCacheValid && !forceRecheck) {
       detectedCountry = cachedCountry.toUpperCase();
-      var targetLang = (detectedCountry === 'DE') ? 'de' : 'en';
-      setLanguage(targetLang);
+      var cachedLang = (detectedCountry === 'DE') ? 'de' : 'en';
+      setLanguage(cachedLang, false);
       return;
     }
 
@@ -677,40 +707,10 @@
 
       // Rule: German IP -> German content; All other countries -> English content
       var targetLang = (countryCode === 'DE') ? 'de' : 'en';
-      if (targetLang === 'de') {
-        setLanguage('de');
-      } else if (currentLang !== 'en') {
-        setLanguage('en');
-      }
+      setLanguage(targetLang, false);
     }
 
-    // Primary service: ipapi.co (3.5s timeout)
-    function tryIpApiCo(success, failure) {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://ipapi.co/json/', true);
-      xhr.timeout = 3500;
-      xhr.onload = function () {
-        if (xhr.status >= 200 && xhr.status < 300) {
-          try {
-            var data = JSON.parse(xhr.responseText);
-            if (data && !data.error && data.country_code) {
-              success(data.country_code);
-              return;
-            }
-          } catch (e) {}
-        }
-        failure();
-      };
-      xhr.ontimeout = failure;
-      xhr.onerror = failure;
-      try {
-        xhr.send();
-      } catch (e) {
-        failure();
-      }
-    }
-
-    // Secondary fallback service: api.country.is (2.5s timeout)
+    // Provider 1: api.country.is (fastest, lightweight)
     function tryCountryIs(success, failure) {
       var xhr = new XMLHttpRequest();
       xhr.open('GET', 'https://api.country.is/', true);
@@ -736,20 +736,80 @@
       }
     }
 
+    // Provider 2: ipapi.co
+    function tryIpApiCo(success, failure) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://ipapi.co/json/', true);
+      xhr.timeout = 2500;
+      xhr.onload = function () {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          try {
+            var data = JSON.parse(xhr.responseText);
+            if (data && !data.error && data.country_code) {
+              success(data.country_code);
+              return;
+            }
+          } catch (e) {}
+        }
+        failure();
+      };
+      xhr.ontimeout = failure;
+      xhr.onerror = failure;
+      try {
+        xhr.send();
+      } catch (e) {
+        failure();
+      }
+    }
+
+    // Provider 3: ipwho.is
+    function tryIpWhoIs(success, failure) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://ipwho.is/', true);
+      xhr.timeout = 2500;
+      xhr.onload = function () {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          try {
+            var data = JSON.parse(xhr.responseText);
+            if (data && data.country_code) {
+              success(data.country_code);
+              return;
+            }
+          } catch (e) {}
+        }
+        failure();
+      };
+      xhr.ontimeout = failure;
+      xhr.onerror = failure;
+      try {
+        xhr.send();
+      } catch (e) {
+        failure();
+      }
+    }
+
     // Execute cascade
-    tryIpApiCo(
+    tryCountryIs(
       function (code) { onCountryResolved(code); },
       function () {
-        tryCountryIs(
+        tryIpApiCo(
           function (code) { onCountryResolved(code); },
           function () {
-            // Both failed, fallback gracefully to English
-            onCountryResolved('FALLBACK_EN');
+            tryIpWhoIs(
+              function (code) { onCountryResolved(code); },
+              function () {
+                // All failed, fallback gracefully to English
+                onCountryResolved('FALLBACK_EN');
+              }
+            );
           }
         );
       }
     );
   }
+
+  // Interactive UI Event Binding for Language Switchers (Stub - switcher removed)
+  function bindSwitcherEvents() {}
 
   // Hook into dynamic element injection
   function registerDynamicComponentHooks() {
@@ -777,6 +837,7 @@
 
     document.addEventListener('headerLoaded', function () {
       reapplyContainer(document.getElementById('site-header'));
+      updateLanguageSwitcherUI();
     });
 
     document.addEventListener('footerLoaded', function () {
@@ -818,6 +879,7 @@
         for (var k = 0; k < addedNodes.length; k++) {
           applyTranslationsToContainer(addedNodes[k], currentLang, activeData || translationsCache['en'] || {});
         }
+        updateLanguageSwitcherUI();
         if (document.body) {
           observer.observe(document.body, { childList: true, subtree: true });
         }
@@ -860,22 +922,24 @@
       localStorage.setItem(STORAGE_KEY_GEO_TIME, Date.now().toString());
     } catch (e) {}
     var targetLang = (countryCode === 'DE') ? 'de' : 'en';
-    setLanguage(targetLang);
+    setLanguage(targetLang, false);
   }
 
   // Initialization
   function init() {
     captureOriginalMetadata();
+    bindSwitcherEvents();
     registerDynamicComponentHooks();
     startObserver();
 
-    // Clean up any legacy manual preference key
+    // Clear legacy manual preferences to ensure pure IP-based automatic localization
     try {
-      localStorage.removeItem('cypherox_lang_manual');
+      localStorage.removeItem(STORAGE_KEY_MANUAL);
+      localStorage.removeItem(STORAGE_KEY_MANUAL_ALT);
     } catch (e) {}
 
-    // Run automatic country detection
-    detectCountryAndApply();
+    // Run automatic country detection based on visitor IP address
+    detectCountryAndApply(false);
   }
 
   if (document.readyState === 'loading') {
@@ -889,12 +953,22 @@
     setLanguage: setLanguage,
     getLanguage: function () { return currentLang; },
     getCountry: function () { return detectedCountry; },
+    isManual: function () {
+      try {
+        return isManualSelection || !!(localStorage.getItem(STORAGE_KEY_MANUAL) || localStorage.getItem(STORAGE_KEY_MANUAL_ALT));
+      } catch (e) {
+        return isManualSelection;
+      }
+    },
+    resetPreference: resetPreference,
     simulateCountry: simulateCountry,
     t: t,
     applyTranslations: function (container) {
       applyTranslationsToContainer(container || document, currentLang, translationsCache[currentLang]);
+      updateLanguageSwitcherUI();
     },
-    detectCountry: detectCountryAndApply
+    detectCountry: function () { detectCountryAndApply(true); },
+    updateUI: updateLanguageSwitcherUI
   };
   window.i18n = window.CypheroxI18n;
 
