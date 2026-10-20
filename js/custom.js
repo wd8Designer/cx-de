@@ -948,62 +948,37 @@ jQuery(document).ready(function ($) {
 
 
 
-    $submitBtn.prop('disabled', true).text('Sending...');
-
-
+    var sendingTxt = (window.i18n && window.i18n.getLanguage() === 'de') ? 'Wird gesendet...' : 'Sending...';
+    $submitBtn.prop('disabled', true).text(sendingTxt);
 
     const formData = new FormData(this);
-
     formData.append('action', 'gfs_ajax_submit');
-
     formData.append('submit_consultation', '1');
 
-
-
     $.ajax({
-
       url: '/wp-admin/admin-ajax.php',
-
       type: 'POST',
-
       data: formData,
-
       processData: false,
-
       contentType: false,
-
       success: function (response) {
-
         if (response.success) {
-
-          $form.html('<div class="success-message" style="padding: 20px; background: #d4edda; color: #155724; border-radius: 4px; margin-top: 20px; text-align: center;"><h3>Success!</h3><p>' + response.data + '</p></div>');
-
-
-
+          var successTitle = (window.i18n && window.i18n.getLanguage() === 'de') ? 'Erfolgreich!' : 'Success!';
+          $form.html('<div class="success-message" style="padding: 20px; background: #d4edda; color: #155724; border-radius: 4px; margin-top: 20px; text-align: center;"><h3>' + successTitle + '</h3><p>' + response.data + '</p></div>');
           $('html, body').animate({
-
             scrollTop: $form.offset().top - 100
-
           }, 500);
-
         } else {
-
-          alert(response.data || 'Something went wrong. Please try again.');
-
+          var errGeneric = (window.i18n && window.i18n.getLanguage() === 'de') ? 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.' : 'Something went wrong. Please try again.';
+          alert(response.data || errGeneric);
           $submitBtn.prop('disabled', false).text(originalBtnText);
-
         }
-
       },
-
       error: function () {
-
-        alert('Could not connect to the server. Please try again.');
-
+        var errConnect = (window.i18n && window.i18n.getLanguage() === 'de') ? 'Verbindung zum Server fehlgeschlagen. Bitte versuchen Sie es erneut.' : 'Could not connect to the server. Please try again.';
+        alert(errConnect);
         $submitBtn.prop('disabled', false).text(originalBtnText);
-
       }
-
     });
 
   });

@@ -95,18 +95,19 @@
     }, function (params, element) {
       var iti = instanceFor(element);
       var country = countryName(iti);
+      var isDe = window.i18n && window.i18n.getLanguage() === 'de';
       if (!iti || !window.intlTelInput.utils) {
-        return 'Enter a valid phone number containing 7 to 15 digits.';
+        return isDe ? 'Bitte geben Sie eine gültige Telefonnummer mit 7 bis 15 Ziffern ein.' : 'Enter a valid phone number containing 7 to 15 digits.';
       }
       switch (iti.getValidationError()) {
         case 'TOO_SHORT':
-          return 'This number is too short for ' + country + '.';
+          return isDe ? ('Diese Telefonnummer ist zu kurz für ' + country + '.') : ('This number is too short for ' + country + '.');
         case 'TOO_LONG':
-          return 'This number is too long for ' + country + '.';
+          return isDe ? ('Diese Telefonnummer ist zu lang für ' + country + '.') : ('This number is too long for ' + country + '.');
         case 'INVALID_COUNTRY_CODE':
-          return 'Select a valid country for this number.';
+          return isDe ? 'Bitte wählen Sie ein gültiges Land für diese Telefonnummer aus.' : 'Select a valid country for this number.';
         default:
-          return 'Enter a valid phone number for ' + country + '.';
+          return isDe ? ('Bitte geben Sie eine gültige Telefonnummer für ' + country + ' ein.') : ('Enter a valid phone number for ' + country + '.');
       }
     });
   }

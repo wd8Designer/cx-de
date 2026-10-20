@@ -133,7 +133,7 @@
                     <ul class="es-footer__list">
                       <li><a href="/about-us" data-i18n="nav.company_about">About Us</a></li>
                       <li><a href="/blogs" data-i18n="nav.company_blog">Blog</a></li>
-                      <li><a href="/engagement-models" data-i18n="phrases.Engagement Models">Engagement Models</a></li>
+                      <li><a href="/engagement-models" data-i18n="nav.company_engagement">Engagement Models</a></li>
                       <li><a href="/contact-us" data-i18n="nav.company_contact">Contact Us</a></li>
                     </ul>
                   </div>

@@ -75,7 +75,18 @@
     "lets_talk": "Kontakt aufnehmen",
     "book_call": "15-Min.-Gespräch buchen",
     "open_menu": "Navigationsmenü öffnen",
-    "close_menu": "Navigationsmenü schließen"
+    "close_menu": "Navigationsmenü schließen",
+    "hire_angularjs": "AngularJS-Entwickler mieten",
+    "hire_graphic_designers": "Grafikdesigner mieten",
+    "hire_wordpress": "WordPress-Entwickler mieten",
+    "hire_digital_marketers": "Digital-Marketing-Experten mieten",
+    "company_engagement": "Zusammenarbeitsmodelle",
+    "hire_all": "Alle Entwickler anzeigen",
+    "tech_cta_alt_title": "Skalierbare Software entwickeln",
+    "tech_cta_alt_desc": "Lassen Sie uns Ihren Tech-Stack besprechen und eine robuste Architektur für Ihr nächstes großes Produkt entwickeln.",
+    "hire_nodejs": "NodeJS-Entwickler mieten",
+    "hire_laravel": "Laravel-Entwickler mieten",
+    "hire_php": "PHP-Entwickler mieten"
   },
   "footer": {
     "blurb": "Cypherox ist ein Team engagierter Experten für erstklassige Softwarelösungen, die Unternehmen im digitalen Raum nachhaltig erfolgreich machen.",
@@ -118,10 +129,19 @@
     "privacy_badge": "Ihre Daten bleiben streng vertraulich. Unverbindlich.",
     "success_title": "Vielen Dank!",
     "success_text": "Ihre Anfrage ist eingegangen. Unser Team setzt sich innerhalb eines Werktages mit Ihnen in Verbindung.",
-    "reset_btn": "Weitere Anfrage senden"
+    "reset_btn": "Weitere Anfrage senden",
+    "val_first_name_required": "Bitte geben Sie Ihren Vornamen ein.",
+    "val_first_name_format": "Nutzen Sie 2 bis 60 Zeichen mit mindestens einem Buchstaben.",
+    "val_email_required": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+    "val_email_format": "Bitte geben Sie eine gültige E-Mail-Adresse ein (z. B. name@unternehmen.de).",
+    "val_phone_required": "Bitte geben Sie Ihre Telefonnummer ein.",
+    "val_model_required": "Bitte wählen Sie ein Zusammenarbeitsmodell aus.",
+    "val_captcha_required": "Bitte geben Sie die 5 Ziffern aus der Sicherheitsgrafik ein.",
+    "error_failed": "Ihre Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
   },
   "contact_form": {
     "title": "Kontakt aufnehmen",
+    "subtitle": "Füllen Sie das folgende Formular aus. Unser technisches Team prüft Ihre Anforderungen und liefert Ihnen eine erste Architektureinschätzung.",
     "full_name_label": "Vollständiger Name*",
     "full_name_placeholder": "Ihr vollständiger Name",
     "work_email_label": "Geschäftliche E-Mail*",

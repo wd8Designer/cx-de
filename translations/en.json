@@ -75,7 +75,18 @@
     "lets_talk": "Let's Talk",
     "book_call": "Book A 15 Min Call",
     "open_menu": "Open navigation menu",
-    "close_menu": "Close navigation menu"
+    "close_menu": "Close navigation menu",
+    "hire_angularjs": "Hire AngularJS Developers",
+    "hire_graphic_designers": "Hire Graphic Designers",
+    "hire_wordpress": "Hire WordPress Developers",
+    "hire_digital_marketers": "Hire Digital Marketers",
+    "company_engagement": "Engagement Models",
+    "hire_all": "All Hire Developers",
+    "tech_cta_alt_title": "Build Scalable Software",
+    "tech_cta_alt_desc": "Let's discuss your tech stack and engineer a robust architecture for your next big product.",
+    "hire_nodejs": "Hire NodeJS Developers",
+    "hire_laravel": "Hire Laravel Developers",
+    "hire_php": "Hire PHP Developers"
   },
   "footer": {
     "blurb": "Cypherox is a team of dedicated experts, selected to deliver outstanding software solutions, enabling businesses to flourish in the digital environment.",
@@ -118,10 +129,19 @@
     "privacy_badge": "Your details stay private. No obligation.",
     "success_title": "Thank you!",
     "success_text": "Your request has been received. Our team will be in touch within one business day.",
-    "reset_btn": "Send another request"
+    "reset_btn": "Send another request",
+    "val_first_name_required": "Enter your first name.",
+    "val_first_name_format": "Use 2 to 60 characters and include at least one letter.",
+    "val_email_required": "Enter your email address.",
+    "val_email_format": "Enter a valid email address, such as name@company.com.",
+    "val_phone_required": "Enter your phone number.",
+    "val_model_required": "Choose a hiring model.",
+    "val_captcha_required": "Enter the five digits shown in the security image.",
+    "error_failed": "Your request could not be sent. Please try again."
   },
   "contact_form": {
     "title": "Get in Touch",
+    "subtitle": "Fill in your details below. Our technical team will review your requirements and provide an initial architectural evaluation.",
     "full_name_label": "Full Name*",
     "full_name_placeholder": "Your full name",
     "work_email_label": "Work Email*",

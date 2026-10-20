@@ -12,6 +12,13 @@
   var endpoint = new URL('../submit-hire-inquiry.php', currentScript ? currentScript.src : window.location.href).toString();
   var hiringModels = ['Full Time', 'Hourly', 'Fixed Cost'];
 
+  function t(key, fallback) {
+    if (window.i18n && typeof window.i18n.t === 'function') {
+      return window.i18n.t('hire_form.' + key, fallback);
+    }
+    return fallback;
+  }
+
   var arrowIcon = '<svg class="arrow-icon" data-icon="arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"'
     + ' xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">'
     + '<path opacity="0.6" d="M4.53927 18.7534L9.22489 12L4.53927 5.24664H0.39563L5.08125 12L0.39563 18.7534H4.53927Z" fill="currentColor" />'
@@ -179,6 +186,9 @@
 
   function initForm($container) {
     $container.html(formMarkup());
+    if (window.i18n && typeof window.i18n.applyTranslations === 'function') {
+      window.i18n.applyTranslations($container[0]);
+    }
 
     var $form = $container.find('#hiring-model-form');
     var $head = $container.find('.es-hero__form-head');
@@ -203,7 +213,7 @@
 
     function setSubmitting(isSubmitting) {
       $submitButton.prop('disabled', isSubmitting);
-      $submitLabel.text(isSubmitting ? 'Sending...' : 'Send');
+      $submitLabel.text(isSubmitting ? t('submitting', 'Sending...') : t('submit', 'Send'));
     }
 
     function createCaptchaId() {
@@ -265,22 +275,22 @@
       },
       messages: {
         first_name: {
-          required: 'Enter your first name.',
-          hireFirstName: 'Use 2 to 60 characters and include at least one letter.'
+          required: function () { return t('val_first_name_required', 'Enter your first name.'); },
+          hireFirstName: function () { return t('val_first_name_format', 'Use 2 to 60 characters and include at least one letter.'); }
         },
         email: {
-          required: 'Enter your email address.',
-          hireEmail: 'Enter a valid email address, such as name@company.com.'
+          required: function () { return t('val_email_required', 'Enter your email address.'); },
+          hireEmail: function () { return t('val_email_format', 'Enter a valid email address, such as name@company.com.'); }
         },
         phone: {
-          required: 'Enter your phone number.'
+          required: function () { return t('val_phone_required', 'Enter your phone number.'); }
         },
         hiring_model: {
-          required: 'Choose a hiring model.'
+          required: function () { return t('val_model_required', 'Choose a hiring model.'); }
         },
         captcha_answer: {
-          required: 'Enter the five digits shown in the security image.',
-          hireCaptcha: 'Enter the five digits shown in the security image.'
+          required: function () { return t('val_captcha_required', 'Enter the five digits shown in the security image.'); },
+          hireCaptcha: function () { return t('val_captcha_required', 'Enter the five digits shown in the security image.'); }
         }
       },
       errorPlacement: function (error, element) {
@@ -326,7 +336,7 @@
           processData: false
         }).done(function (data) {
           if (!data || data.success !== true) {
-            setStatus((data && data.message) || 'Your request could not be sent. Please try again.');
+            setStatus((data && data.message) || t('error_failed', 'Your request could not be sent. Please try again.'));
             return;
           }
 
@@ -353,7 +363,7 @@
             validator.showErrors(errors);
             validator.focusInvalid();
           } else {
-            setStatus(data.message || 'Your request could not be sent. Please try again.');
+            setStatus(data.message || t('error_failed', 'Your request could not be sent. Please try again.'));
           }
           if (xhr.status === 403) {
             loadToken();

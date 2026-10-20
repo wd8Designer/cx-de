@@ -115,7 +115,7 @@
                       <ul class="mega-tab__sidebar">
                         <li class="mega-tab__item active" data-tab-idx="0" role="button" tabindex="0">
                           <a href="/hire-developers/mobile-app-developers">
-                            <span>Mobile App Developers</span>
+                            <span data-i18n="nav.hire_mobile_app">Mobile App Developers</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                               stroke-width="2">
                               <polyline points="9 6 15 12 9 18" />
@@ -124,7 +124,7 @@
                         </li>
                         <li class="mega-tab__item" data-tab-idx="1" role="button" tabindex="0">
                           <a href="/hire-developers/front-end-developers">
-                            <span>Front-End Web Developers</span>
+                            <span data-i18n="nav.hire_frontend">Front-End Web Developers</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                               stroke-width="2">
                               <polyline points="9 6 15 12 9 18" />
@@ -133,7 +133,7 @@
                         </li>
                         <li class="mega-tab__item" data-tab-idx="2" role="button" tabindex="0">
                           <a href="/hire-developers/back-end-developers">
-                            <span>Back-End Web Developers</span>
+                            <span data-i18n="nav.hire_backend">Back-End Web Developers</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                               stroke-width="2">
                               <polyline points="9 6 15 12 9 18" />
@@ -142,7 +142,7 @@
                         </li>
                         <li class="mega-tab__item" data-tab-idx="3" role="button" tabindex="0">
                           <a href="/hire-developers/ecommerce-developers">
-                            <span>E-Commerce Developers</span>
+                            <span data-i18n="nav.hire_ecommerce_dev">E-Commerce Developers</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                               stroke-width="2">
                               <polyline points="9 6 15 12 9 18" />
@@ -151,7 +151,7 @@
                         </li>
                         <li class="mega-tab__item" data-tab-idx="4" role="button" tabindex="0">
                           <a href="/hire-developers/trending-developers">
-                            <span>Trending Developers</span>
+                            <span data-i18n="nav.hire_trending">Trending Developers</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                               stroke-width="2">
                               <polyline points="9 6 15 12 9 18" />
@@ -162,62 +162,62 @@
                       <div class="mega-tab__content">
                         <!-- Tab 0: Mobile App Developers -->
                         <div class="mega-tab__panel active" data-tab-panel="0" style="display:block">
-                          <p class="mega-tab__panel-title">Mobile App Developers</p>
+                          <p class="mega-tab__panel-title" data-i18n="nav.hire_mobile_app">Mobile App Developers</p>
                           <div class="mega-tab__panel-links">
-                            <a href="/hire-developers/ios-developers" class="mega-menu__link">Hire iOS Developers</a>
-                            <a href="/hire-developers/android-developers" class="mega-menu__link">Hire Android Developers</a>
-                            <a href="/hire-developers/swift-developers" class="mega-menu__link">Hire Swift Developers</a>
-                            <a href="/hire-developers/kotlin-developers" class="mega-menu__link">Hire Kotlin Developers</a>
-                            <a href="/hire-developers/flutter-developers" class="mega-menu__link">Hire Flutter Developers</a>
-                            <a href="/hire-developers/react-native-developers" class="mega-menu__link">Hire React Native Developers</a>
+                            <a href="/hire-developers/ios-developers" class="mega-menu__link" data-i18n="nav.hire_ios">Hire iOS Developers</a>
+                            <a href="/hire-developers/android-developers" class="mega-menu__link" data-i18n="nav.hire_android">Hire Android Developers</a>
+                            <a href="/hire-developers/swift-developers" class="mega-menu__link" data-i18n="nav.hire_swift">Hire Swift Developers</a>
+                            <a href="/hire-developers/kotlin-developers" class="mega-menu__link" data-i18n="nav.hire_kotlin">Hire Kotlin Developers</a>
+                            <a href="/hire-developers/flutter-developers" class="mega-menu__link" data-i18n="nav.hire_flutter">Hire Flutter Developers</a>
+                            <a href="/hire-developers/react-native-developers" class="mega-menu__link" data-i18n="nav.hire_react_native">Hire React Native Developers</a>
                           </div>
                         </div>
                         <!-- Tab 1: Front-End Web Developers -->
                         <div class="mega-tab__panel" data-tab-panel="1" style="display:none">
-                          <p class="mega-tab__panel-title">Front-End Web Developers</p>
+                          <p class="mega-tab__panel-title" data-i18n="nav.hire_frontend">Front-End Web Developers</p>
                           <div class="mega-tab__panel-links">
-                            <a href="/hire-developers/angular-developers" class="mega-menu__link">Hire AngularJS Developers</a>
-                            <a href="/hire-developers/reactjs-developers" class="mega-menu__link">Hire ReactJS Developers</a>
-                            <a href="/hire-developers/vuejs-developers" class="mega-menu__link">Hire VueJS Developers</a>
-                            <a href="/hire-developers/graphic-designers" class="mega-menu__link">Hire Graphic Designers</a>
-                            <a href="/hire-developers/ui-ux-designers" class="mega-menu__link">Hire UI/UX Designers</a>
+                            <a href="/hire-developers/angular-developers" class="mega-menu__link" data-i18n="nav.hire_angularjs">Hire AngularJS Developers</a>
+                            <a href="/hire-developers/reactjs-developers" class="mega-menu__link" data-i18n="nav.hire_reactjs">Hire ReactJS Developers</a>
+                            <a href="/hire-developers/vuejs-developers" class="mega-menu__link" data-i18n="nav.hire_vuejs">Hire VueJS Developers</a>
+                            <a href="/hire-developers/graphic-designers" class="mega-menu__link" data-i18n="nav.hire_graphic_designers">Hire Graphic Designers</a>
+                            <a href="/hire-developers/ui-ux-designers" class="mega-menu__link" data-i18n="nav.hire_uiux">Hire UI/UX Designers</a>
                           </div>
                         </div>
                         <!-- Tab 2: Back-End Web Developers -->
                         <div class="mega-tab__panel" data-tab-panel="2" style="display:none">
-                          <p class="mega-tab__panel-title">Back-End Web Developers</p>
+                          <p class="mega-tab__panel-title" data-i18n="nav.hire_backend">Back-End Web Developers</p>
                           <div class="mega-tab__panel-links">
-                            <a href="/hire-developers/nodejs-developers" class="mega-menu__link">Hire NodeJS Developers</a>
-                            <a href="/hire-developers/laravel-developers" class="mega-menu__link">Hire Laravel Developers</a>
-                            <a href="/hire-developers/python-developers" class="mega-menu__link">Hire Python Developers</a>
-                            <a href="/hire-developers/php-developers" class="mega-menu__link">Hire PHP Developers</a>
+                            <a href="/hire-developers/nodejs-developers" class="mega-menu__link" data-i18n="nav.hire_nodejs">Hire NodeJS Developers</a>
+                            <a href="/hire-developers/laravel-developers" class="mega-menu__link" data-i18n="nav.hire_laravel">Hire Laravel Developers</a>
+                            <a href="/hire-developers/python-developers" class="mega-menu__link" data-i18n="nav.hire_python">Hire Python Developers</a>
+                            <a href="/hire-developers/php-developers" class="mega-menu__link" data-i18n="nav.hire_php">Hire PHP Developers</a>
                           </div>
                         </div>
                         <!-- Tab 3: E-Commerce Developers -->
                         <div class="mega-tab__panel" data-tab-panel="3" style="display:none">
-                          <p class="mega-tab__panel-title">E-Commerce Developers</p>
+                          <p class="mega-tab__panel-title" data-i18n="nav.hire_ecommerce_dev">E-Commerce Developers</p>
                           <div class="mega-tab__panel-links">
-                            <a href="/hire-developers/wordpress-developers" class="mega-menu__link">Hire WordPress Developers</a>
-                            <a href="/hire-developers/shopify-developers" class="mega-menu__link">Hire Shopify Developers</a>
-                            <a href="/hire-developers/magento-developers" class="mega-menu__link">Hire Magento Developers</a>
-                            <a href="/hire-developers/bigcommerce-developers" class="mega-menu__link">Hire BigCommerce Developers</a>
-                            <a href="/hire-developers/woocommerce-developers" class="mega-menu__link">Hire WooCommerce Developers</a>
-                            <a href="/hire-developers/digital-marketers" class="mega-menu__link">Hire Digital Marketers</a>
+                            <a href="/hire-developers/wordpress-developers" class="mega-menu__link" data-i18n="nav.hire_wordpress">Hire WordPress Developers</a>
+                            <a href="/hire-developers/shopify-developers" class="mega-menu__link" data-i18n="nav.hire_shopify">Hire Shopify Developers</a>
+                            <a href="/hire-developers/magento-developers" class="mega-menu__link" data-i18n="nav.hire_magento">Hire Magento Developers</a>
+                            <a href="/hire-developers/bigcommerce-developers" class="mega-menu__link" data-i18n="nav.hire_bigcommerce">Hire BigCommerce Developers</a>
+                            <a href="/hire-developers/woocommerce-developers" class="mega-menu__link" data-i18n="nav.hire_woocommerce">Hire WooCommerce Developers</a>
+                            <a href="/hire-developers/digital-marketers" class="mega-menu__link" data-i18n="nav.hire_digital_marketers">Hire Digital Marketers</a>
                           </div>
                         </div>
                         <!-- Tab 4: Trending Developers -->
                         <div class="mega-tab__panel" data-tab-panel="4" style="display:none">
-                          <p class="mega-tab__panel-title">Trending Developers</p>
+                          <p class="mega-tab__panel-title" data-i18n="nav.hire_trending">Trending Developers</p>
                           <div class="mega-tab__panel-links">
-                            <a href="/hire-developers/devops-developers" class="mega-menu__link">Hire DevOps Developers</a>
-                            <a href="/hire-developers/aws-developers" class="mega-menu__link">Hire AWS Developers</a>
-                            <a href="/hire-developers/ai-developers" class="mega-menu__link">Hire AI Developers</a>
-                            <a href="/hire-developers/ml-developers" class="mega-menu__link">Hire ML Developers</a>
-                            <a href="/hire-developers/blockchain-developers" class="mega-menu__link">Hire Blockchain Developers</a>
-                            <a href="/hire-developers/ar-developers" class="mega-menu__link">Hire AR Developers</a>
-                            <a href="/hire-developers/vr-developers" class="mega-menu__link">Hire VR Developers</a>
-                            <a href="/hire-developers/data-analytics-experts" class="mega-menu__link">Hire Data Analytics Experts</a>
-                            <a href="/hire-developers/full-stack-developers" class="mega-menu__link">Hire Full Stack Developers</a>
+                            <a href="/hire-developers/devops-developers" class="mega-menu__link" data-i18n="nav.hire_devops">Hire DevOps Developers</a>
+                            <a href="/hire-developers/aws-developers" class="mega-menu__link" data-i18n="nav.hire_aws">Hire AWS Developers</a>
+                            <a href="/hire-developers/ai-developers" class="mega-menu__link" data-i18n="nav.hire_ai">Hire AI Developers</a>
+                            <a href="/hire-developers/ml-developers" class="mega-menu__link" data-i18n="nav.hire_ml">Hire ML Developers</a>
+                            <a href="/hire-developers/blockchain-developers" class="mega-menu__link" data-i18n="nav.hire_blockchain">Hire Blockchain Developers</a>
+                            <a href="/hire-developers/ar-developers" class="mega-menu__link" data-i18n="nav.hire_ar">Hire AR Developers</a>
+                            <a href="/hire-developers/vr-developers" class="mega-menu__link" data-i18n="nav.hire_vr">Hire VR Developers</a>
+                            <a href="/hire-developers/data-analytics-experts" class="mega-menu__link" data-i18n="nav.hire_data_analytics">Hire Data Analytics Experts</a>
+                            <a href="/hire-developers/full-stack-developers" class="mega-menu__link" data-i18n="nav.hire_fullstack">Hire Full Stack Developers</a>
                           </div>
                         </div>
                       </div>
@@ -227,10 +227,10 @@
 
                 <div class="featured-dropdown__bottom">
                   <div class="featured-dropdown__bottom-text">
-                    <h4>Hire Vetted Dedicated Developers</h4>
-                    <p>Scale your engineering team with pre-vetted senior developers ready to onboard in 48 hours.</p>
+                    <h4 data-i18n="nav.hire_cta_title">Hire Vetted Dedicated Developers</h4>
+                    <p data-i18n="nav.hire_cta_desc">Scale your engineering team with pre-vetted senior developers ready to onboard in 48 hours.</p>
                   </div>
-                  <a href="/schedule-a-call" class="btn btn--dark">SCHEDULE A CALL</a>
+                  <a href="/schedule-a-call" class="btn btn--dark" data-i18n="nav.hire_cta_btn">SCHEDULE A CALL</a>
                 </div>
               </div>
             </div>
@@ -327,14 +327,13 @@
 
             <!-- Mobile Item 1: AI Agent -->
             <div class="mobile-drawer__item">
-              <a href="/ai-agent-development" class="mobile-drawer__item-header"
-                style="display: block; text-decoration: none; color: inherit;">AI Agent</a>
+              <a href="/ai-agent-development" class="mobile-drawer__item-header" style="display: block; text-decoration: none; color: inherit;" data-i18n="nav.ai_agent">AI Agent</a>
             </div>
 
             <!-- Mobile Item 2: Services -->
             <div class="mobile-drawer__item">
               <div class="mobile-drawer__item-header" data-index="1">
-                Services
+                <span data-i18n="nav.services">Services</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -342,24 +341,23 @@
               </div>
               <div class="mobile-drawer__subnav" id="subnav-1">
                 <div style="padding-bottom: 16px;">
-                  <a href="/generative-ai-development" class="mobile-drawer__link">Generative AI Solutions</a>
-                  <a href="/ai-ml-development" class="mobile-drawer__link">AI &amp; ML Development</a>
-                  <a href="/it-consulting-services" class="mobile-drawer__link">Consulting Services</a>
-                  <a href="/ui-ux-design-services" class="mobile-drawer__link">UI/UX Design Services</a>
+                  <a href="/generative-ai-development" class="mobile-drawer__link" data-i18n="nav.services_genai">Generative AI Solutions</a>
+                  <a href="/ai-ml-development" class="mobile-drawer__link" data-i18n="nav.services_aiml">AI &amp; ML Development</a>
+                  <a href="/it-consulting-services" class="mobile-drawer__link" data-i18n="nav.services_consulting">Consulting Services</a>
+                  <a href="/ui-ux-design-services" class="mobile-drawer__link" data-i18n="nav.services_uiux">UI/UX Design Services</a>
                 </div>
               </div>
             </div>
 
             <!-- Mobile Item 3: Automation -->
             <div class="mobile-drawer__item">
-              <a href="/business-automation-services" class="mobile-drawer__item-header"
-                style="display: block; text-decoration: none; color: inherit;">Automation</a>
+              <a href="/business-automation-services" class="mobile-drawer__item-header" style="display: block; text-decoration: none; color: inherit;" data-i18n="nav.automation">Automation</a>
             </div>
 
             <!-- Mobile Item 4: Technology -->
             <div class="mobile-drawer__item">
               <div class="mobile-drawer__item-header" data-index="3">
-                Technology
+                <span data-i18n="nav.technology">Technology</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -367,10 +365,10 @@
               </div>
               <div class="mobile-drawer__subnav" id="subnav-3">
                 <div style="padding-bottom: 16px;">
-                  <a href="/web-development" class="mobile-drawer__link">Web Development</a>
-                  <a href="/app-development" class="mobile-drawer__link">App Development</a>
-                  <a href="/ecommerce-development" class="mobile-drawer__link">E-Commerce</a>
-                  <a href="/cms-development" class="mobile-drawer__link">CMS (WordPress, Drupal)</a>
+                  <a href="/web-development" class="mobile-drawer__link" data-i18n="nav.tech_web">Web Development</a>
+                  <a href="/app-development" class="mobile-drawer__link" data-i18n="nav.tech_app">App Development</a>
+                  <a href="/ecommerce-development" class="mobile-drawer__link" data-i18n="nav.tech_ecommerce">E-Commerce</a>
+                  <a href="/cms-development" class="mobile-drawer__link" data-i18n="nav.tech_cms">CMS (WordPress, Drupal)</a>
                 </div>
               </div>
             </div>
@@ -378,7 +376,7 @@
             <!-- Mobile Item 5: Hire Developers -->
             <div class="mobile-drawer__item">
               <div class="mobile-drawer__item-header" data-index="4">
-                Hire Developers
+                <span data-i18n="nav.hire_developers">Hire Developers</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -386,71 +384,70 @@
               </div>
               <div class="mobile-drawer__subnav" id="subnav-4">
                 <div style="padding-bottom: 16px;">
-                  <a href="/hire-developers" class="mobile-drawer__link">All Hire Developers</a>
+                  <a href="/hire-developers" class="mobile-drawer__link" data-i18n="nav.hire_all">All Hire Developers</a>
 
                   <div class="mobile-drawer__subheading">
-                    <a href="/hire-developers/mobile-app-developers" class="mobile-drawer__link">Mobile App Developers</a>
+                    <a href="/hire-developers/mobile-app-developers" class="mobile-drawer__link" data-i18n="nav.hire_mobile_app">Mobile App Developers</a>
                   </div>
-                  <a href="/hire-developers/ios-developers" class="mobile-drawer__link">Hire iOS Developers</a>
-                  <a href="/hire-developers/android-developers" class="mobile-drawer__link">Hire Android Developers</a>
-                  <a href="/hire-developers/swift-developers" class="mobile-drawer__link">Hire Swift Developers</a>
-                  <a href="/hire-developers/kotlin-developers" class="mobile-drawer__link">Hire Kotlin Developers</a>
-                  <a href="/hire-developers/flutter-developers" class="mobile-drawer__link">Hire Flutter Developers</a>
-                  <a href="/hire-developers/react-native-developers" class="mobile-drawer__link">Hire React Native Developers</a>
+                  <a href="/hire-developers/ios-developers" class="mobile-drawer__link" data-i18n="nav.hire_ios">Hire iOS Developers</a>
+                  <a href="/hire-developers/android-developers" class="mobile-drawer__link" data-i18n="nav.hire_android">Hire Android Developers</a>
+                  <a href="/hire-developers/swift-developers" class="mobile-drawer__link" data-i18n="nav.hire_swift">Hire Swift Developers</a>
+                  <a href="/hire-developers/kotlin-developers" class="mobile-drawer__link" data-i18n="nav.hire_kotlin">Hire Kotlin Developers</a>
+                  <a href="/hire-developers/flutter-developers" class="mobile-drawer__link" data-i18n="nav.hire_flutter">Hire Flutter Developers</a>
+                  <a href="/hire-developers/react-native-developers" class="mobile-drawer__link" data-i18n="nav.hire_react_native">Hire React Native Developers</a>
 
                   <div class="mobile-drawer__subheading">
-                    <a href="/hire-developers/front-end-developers" class="mobile-drawer__link">Front-End Web Developers</a>
+                    <a href="/hire-developers/front-end-developers" class="mobile-drawer__link" data-i18n="nav.hire_frontend">Front-End Web Developers</a>
                   </div>
-                  <a href="/hire-developers/angular-developers" class="mobile-drawer__link">Hire AngularJS Developers</a>
-                  <a href="/hire-developers/reactjs-developers" class="mobile-drawer__link">Hire ReactJS Developers</a>
-                  <a href="/hire-developers/vuejs-developers" class="mobile-drawer__link">Hire VueJS Developers</a>
-                  <a href="/hire-developers/graphic-designers" class="mobile-drawer__link">Hire Graphic Designers</a>
-                  <a href="/hire-developers/ui-ux-designers" class="mobile-drawer__link">Hire UI/UX Designers</a>
+                  <a href="/hire-developers/angular-developers" class="mobile-drawer__link" data-i18n="nav.hire_angularjs">Hire AngularJS Developers</a>
+                  <a href="/hire-developers/reactjs-developers" class="mobile-drawer__link" data-i18n="nav.hire_reactjs">Hire ReactJS Developers</a>
+                  <a href="/hire-developers/vuejs-developers" class="mobile-drawer__link" data-i18n="nav.hire_vuejs">Hire VueJS Developers</a>
+                  <a href="/hire-developers/graphic-designers" class="mobile-drawer__link" data-i18n="nav.hire_graphic_designers">Hire Graphic Designers</a>
+                  <a href="/hire-developers/ui-ux-designers" class="mobile-drawer__link" data-i18n="nav.hire_uiux">Hire UI/UX Designers</a>
 
                   <div class="mobile-drawer__subheading">
-                    <a href="/hire-developers/back-end-developers" class="mobile-drawer__link">Back-End Web Developers</a>
+                    <a href="/hire-developers/back-end-developers" class="mobile-drawer__link" data-i18n="nav.hire_backend">Back-End Web Developers</a>
                   </div>
-                  <a href="/hire-developers/nodejs-developers" class="mobile-drawer__link">Hire NodeJS Developers</a>
-                  <a href="/hire-developers/laravel-developers" class="mobile-drawer__link">Hire Laravel Developers</a>
-                  <a href="/hire-developers/python-developers" class="mobile-drawer__link">Hire Python Developers</a>
-                  <a href="/hire-developers/php-developers" class="mobile-drawer__link">Hire PHP Developers</a>
+                  <a href="/hire-developers/nodejs-developers" class="mobile-drawer__link" data-i18n="nav.hire_nodejs">Hire NodeJS Developers</a>
+                  <a href="/hire-developers/laravel-developers" class="mobile-drawer__link" data-i18n="nav.hire_laravel">Hire Laravel Developers</a>
+                  <a href="/hire-developers/python-developers" class="mobile-drawer__link" data-i18n="nav.hire_python">Hire Python Developers</a>
+                  <a href="/hire-developers/php-developers" class="mobile-drawer__link" data-i18n="nav.hire_php">Hire PHP Developers</a>
 
                   <div class="mobile-drawer__subheading">
-                    <a href="/hire-developers/ecommerce-developers" class="mobile-drawer__link">E-Commerce Developers</a>
+                    <a href="/hire-developers/ecommerce-developers" class="mobile-drawer__link" data-i18n="nav.hire_ecommerce_dev">E-Commerce Developers</a>
                   </div>
-                  <a href="/hire-developers/wordpress-developers" class="mobile-drawer__link">Hire WordPress Developers</a>
-                  <a href="/hire-developers/shopify-developers" class="mobile-drawer__link">Hire Shopify Developers</a>
-                  <a href="/hire-developers/magento-developers" class="mobile-drawer__link">Hire Magento Developers</a>
-                  <a href="/hire-developers/bigcommerce-developers" class="mobile-drawer__link">Hire BigCommerce Developers</a>
-                  <a href="/hire-developers/woocommerce-developers" class="mobile-drawer__link">Hire WooCommerce Developers</a>
-                  <a href="/hire-developers/digital-marketers" class="mobile-drawer__link">Hire Digital Marketers</a>
+                  <a href="/hire-developers/wordpress-developers" class="mobile-drawer__link" data-i18n="nav.hire_wordpress">Hire WordPress Developers</a>
+                  <a href="/hire-developers/shopify-developers" class="mobile-drawer__link" data-i18n="nav.hire_shopify">Hire Shopify Developers</a>
+                  <a href="/hire-developers/magento-developers" class="mobile-drawer__link" data-i18n="nav.hire_magento">Hire Magento Developers</a>
+                  <a href="/hire-developers/bigcommerce-developers" class="mobile-drawer__link" data-i18n="nav.hire_bigcommerce">Hire BigCommerce Developers</a>
+                  <a href="/hire-developers/woocommerce-developers" class="mobile-drawer__link" data-i18n="nav.hire_woocommerce">Hire WooCommerce Developers</a>
+                  <a href="/hire-developers/digital-marketers" class="mobile-drawer__link" data-i18n="nav.hire_digital_marketers">Hire Digital Marketers</a>
 
                   <div class="mobile-drawer__subheading">
-                    <a href="/hire-developers/trending-developers" class="mobile-drawer__link">Trending Developers</a>
+                    <a href="/hire-developers/trending-developers" class="mobile-drawer__link" data-i18n="nav.hire_trending">Trending Developers</a>
                   </div>
-                  <a href="/hire-developers/devops-developers" class="mobile-drawer__link">Hire DevOps Developers</a>
-                  <a href="/hire-developers/aws-developers" class="mobile-drawer__link">Hire AWS Developers</a>
-                  <a href="/hire-developers/ai-developers" class="mobile-drawer__link">Hire AI Developers</a>
-                  <a href="/hire-developers/ml-developers" class="mobile-drawer__link">Hire ML Developers</a>
-                  <a href="/hire-developers/blockchain-developers" class="mobile-drawer__link">Hire Blockchain Developers</a>
-                  <a href="/hire-developers/ar-developers" class="mobile-drawer__link">Hire AR Developers</a>
-                  <a href="/hire-developers/vr-developers" class="mobile-drawer__link">Hire VR Developers</a>
-                  <a href="/hire-developers/data-analytics-experts" class="mobile-drawer__link">Hire Data Analytics Experts</a>
-                  <a href="/hire-developers/full-stack-developers" class="mobile-drawer__link">Hire Full Stack Developers</a>
+                  <a href="/hire-developers/devops-developers" class="mobile-drawer__link" data-i18n="nav.hire_devops">Hire DevOps Developers</a>
+                  <a href="/hire-developers/aws-developers" class="mobile-drawer__link" data-i18n="nav.hire_aws">Hire AWS Developers</a>
+                  <a href="/hire-developers/ai-developers" class="mobile-drawer__link" data-i18n="nav.hire_ai">Hire AI Developers</a>
+                  <a href="/hire-developers/ml-developers" class="mobile-drawer__link" data-i18n="nav.hire_ml">Hire ML Developers</a>
+                  <a href="/hire-developers/blockchain-developers" class="mobile-drawer__link" data-i18n="nav.hire_blockchain">Hire Blockchain Developers</a>
+                  <a href="/hire-developers/ar-developers" class="mobile-drawer__link" data-i18n="nav.hire_ar">Hire AR Developers</a>
+                  <a href="/hire-developers/vr-developers" class="mobile-drawer__link" data-i18n="nav.hire_vr">Hire VR Developers</a>
+                  <a href="/hire-developers/data-analytics-experts" class="mobile-drawer__link" data-i18n="nav.hire_data_analytics">Hire Data Analytics Experts</a>
+                  <a href="/hire-developers/full-stack-developers" class="mobile-drawer__link" data-i18n="nav.hire_fullstack">Hire Full Stack Developers</a>
                 </div>
               </div>
             </div>
 
             <!-- Mobile Item 6: Industries -->
             <div class="mobile-drawer__item">
-              <a href="/industries" class="mobile-drawer__item-header"
-                style="display: block; text-decoration: none; color: inherit;">Industries</a>
+              <a href="/industries" class="mobile-drawer__item-header" style="display: block; text-decoration: none; color: inherit;" data-i18n="nav.industries">Industries</a>
             </div>
 
             <!-- Mobile Item 7: Company -->
             <div class="mobile-drawer__item">
               <div class="mobile-drawer__item-header" data-index="6">
-                Company
+                <span data-i18n="nav.company">Company</span>
                 <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -458,9 +455,9 @@
               </div>
               <div class="mobile-drawer__subnav" id="subnav-6">
                 <div style="padding-bottom: 16px;">
-                  <a href="/about-us" class="mobile-drawer__link">About Us</a>
-                  <a href="/contact-us" class="mobile-drawer__link">Contact Us</a>
-                  <a href="/blogs" class="mobile-drawer__link">Blog</a>
+                  <a href="/about-us" class="mobile-drawer__link" data-i18n="nav.company_about">About Us</a>
+                  <a href="/contact-us" class="mobile-drawer__link" data-i18n="nav.company_contact">Contact Us</a>
+                  <a href="/blogs" class="mobile-drawer__link" data-i18n="nav.company_blog">Blog</a>
                 </div>
               </div>
             </div>
