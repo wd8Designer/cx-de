@@ -557,6 +557,14 @@
   // Language switcher UI update stub (switcher removed for automatic IP-based localization)
   function updateLanguageSwitcherUI() {}
 
+  function revealPage() {
+    document.documentElement.classList.remove('cx-lang-pending');
+    document.documentElement.classList.add('cx-lang-ready');
+    if (document.body) {
+      document.body.classList.remove('cx-lang-switching');
+    }
+  }
+
   // Switch active language and update DOM
   function setLanguage(lang, isManual, callback) {
     if (typeof isManual === 'function') {
@@ -582,32 +590,43 @@
     }
 
     isSwitching = true;
-    document.body.classList.add('cx-lang-switching');
+    if (document.body) {
+      document.body.classList.add('cx-lang-switching');
+    }
 
     function finalize(data) {
-      currentLang = lang;
-      document.documentElement.lang = lang;
+      function doApply() {
+        currentLang = lang;
+        document.documentElement.lang = lang;
 
-      applyTranslationsToContainer(document, lang, data);
-      updateMetadata(lang, data);
-      updateLanguageSwitcherUI();
+        applyTranslationsToContainer(document, lang, data);
+        updateMetadata(lang, data);
+        updateLanguageSwitcherUI();
 
-      document.body.classList.remove('cx-lang-switching');
-      isSwitching = false;
+        revealPage();
 
-      // Dispatch public event
-      try {
-        document.dispatchEvent(new CustomEvent('cxLanguageChanged', {
-          detail: { lang: lang, country: detectedCountry, isManual: isManual }
-        }));
-      } catch (evErr) {}
+        isSwitching = false;
 
-      if (typeof callback === 'function') callback(null, lang);
+        // Dispatch public event
+        try {
+          document.dispatchEvent(new CustomEvent('cxLanguageChanged', {
+            detail: { lang: lang, country: detectedCountry, isManual: isManual }
+          }));
+        } catch (evErr) {}
 
-      if (pendingSwitch) {
-        var next = pendingSwitch;
-        pendingSwitch = null;
-        setLanguage(next.lang, next.isManual, next.callback);
+        if (typeof callback === 'function') callback(null, lang);
+
+        if (pendingSwitch) {
+          var next = pendingSwitch;
+          pendingSwitch = null;
+          setLanguage(next.lang, next.isManual, next.callback);
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', doApply);
+      } else {
+        doApply();
       }
     }
 
@@ -925,6 +944,35 @@
     setLanguage(targetLang, false);
   }
 
+  // Early Anti-FOUC (Flash of Unlocalized Content) Handler
+  // Determines if user is likely German or country is pending, preventing English flash
+  (function earlyAntiFOUC() {
+    var urlCountry = getUrlOverride();
+    var cachedCountry = null;
+    var cachedTime = 0;
+    try {
+      cachedCountry = localStorage.getItem(STORAGE_KEY_COUNTRY);
+      cachedTime = parseInt(localStorage.getItem(STORAGE_KEY_GEO_TIME), 10) || 0;
+    } catch (e) {}
+
+    var isCacheValid = cachedCountry && (Date.now() - cachedTime < GEO_CACHE_TTL_MS);
+    var isGerman = (urlCountry === 'DE') || (isCacheValid && cachedCountry.toUpperCase() === 'DE');
+    var isUnknown = !urlCountry && !isCacheValid;
+
+    if (isGerman || isUnknown) {
+      document.documentElement.classList.add('cx-lang-pending');
+      if (isGerman) {
+        document.documentElement.lang = 'de';
+        document.documentElement.classList.add('cx-lang-de');
+      }
+      // Immediately prefetch de.json from <head>
+      fetchTranslationFile('de');
+
+      // Safety fallback timer (max 1000ms): never keep screen hidden if network stalls
+      setTimeout(revealPage, 1000);
+    }
+  })();
+
   // Initialization
   function init() {
     captureOriginalMetadata();
@@ -938,9 +986,19 @@
       localStorage.removeItem(STORAGE_KEY_MANUAL_ALT);
     } catch (e) {}
 
-    // Run automatic country detection based on visitor IP address
-    detectCountryAndApply(false);
+    // If German was already chosen and de.json is cached, apply immediately
+    if (currentLang === 'de') {
+      var deData = translationsCache['de'];
+      if (deData) {
+        applyTranslationsToContainer(document, 'de', deData);
+        updateMetadata('de', deData);
+        revealPage();
+      }
+    }
   }
+
+  // Start IP geolocation detection immediately (runs from <head> in parallel with HTML downloading)
+  detectCountryAndApply(false);
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

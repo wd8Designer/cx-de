@@ -1,7 +1,20 @@
 /* ==========================================================================
    Cypherox Multilingual (i18n) Engine Styles
-   Smooth non-blocking transitions for localized content
+   Anti-FOUC: Instant German display based on IP / Geo location
    ========================================================================== */
+
+/* While resolving IP or applying German translation, keep English content completely hidden */
+html.cx-lang-pending body {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+html.cx-lang-ready body {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 [data-i18n],
 [data-i18n-html] {

@@ -483,11 +483,11 @@
       link.href = '/css/i18n.css';
       document.head.appendChild(link);
     }
-    if (!window.CypheroxI18n && !document.querySelector('script[src*="i18n.js?v=2.5"]')) {
+    if (!window.CypheroxI18n && !document.querySelector('script[src*="i18n.js"]')) {
       var script = document.createElement('script');
-      script.src = '/js/i18n.js?v=2.5';
+      script.src = '/js/i18n.js?v=2.6';
       script.async = false;
-      document.body.appendChild(script);
+      document.head.appendChild(script);
     }
   }
 
