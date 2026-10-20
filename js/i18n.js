@@ -169,8 +169,9 @@
 
     var path = window.location.pathname.replace(/\\/g, '/');
     var isSubdir = (path.indexOf('/blogs/') !== -1 || path.indexOf('/hire-developers/') !== -1);
-    var primaryUrl = '/translations/' + lang + '.json';
-    var fallbackUrl = isSubdir ? '../translations/' + lang + '.json' : './translations/' + lang + '.json';
+    var cacheBuster = '?v=2.5_' + Date.now();
+    var primaryUrl = '/translations/' + lang + '.json' + cacheBuster;
+    var fallbackUrl = (isSubdir ? '../translations/' + lang + '.json' : './translations/' + lang + '.json') + cacheBuster;
 
     function tryLoad(targetUrl, nextUrl) {
       var xhr = new XMLHttpRequest();
@@ -310,7 +311,7 @@
     if (!phrases || typeof phrases !== 'object') return;
 
     // 1. Element-level exact matches
-    var candidates = root.querySelectorAll('h1, h2, h3, h4, h5, h6, p, button, .btn, .es-btn, a, span, small, strong, em, b, i, summary, .es-faq__qtext');
+    var candidates = root.querySelectorAll('h1, h2, h3, h4, h5, h6, p, button, .btn, .es-btn, a, span, small, strong, em, b, i, summary, th, td, li, dt, dd, label, figcaption, .es-faq__qtext');
     for (var i = 0; i < candidates.length; i++) {
       var node = candidates[i];
       if (node.hasAttribute('data-i18n') || node.hasAttribute('data-i18n-html')) continue;
@@ -322,18 +323,55 @@
 
       // Check 1: exact innerHTML match (for headings/paragraphs with <span class="es-hl">, <strong>, etc.)
       var htmlTrimmed = node.innerHTML.trim().replace(/\s+/g, ' ');
-      if (phrases[htmlTrimmed] && phrases[htmlTrimmed] !== htmlTrimmed) {
+      var matchedTrans = phrases[htmlTrimmed];
+      if (!matchedTrans) {
+        // Try spacing variants around tags
+        var htmlSpaced = htmlTrimmed.replace(/<span\b/g, ' <span').replace(/\s+/g, ' ');
+        var htmlUnspaced = htmlTrimmed.replace(/\s+<span\b/g, '<span');
+        matchedTrans = phrases[htmlSpaced] || phrases[htmlUnspaced];
+      }
+
+      if (matchedTrans && matchedTrans !== htmlTrimmed) {
         if (node._cxOrigHTML === undefined) {
           node._cxOrigHTML = node.innerHTML;
           node._cxOrigText = node.textContent;
         }
         node.setAttribute('data-cx-phrase', 'true');
-        setSafeHTML(node, phrases[htmlTrimmed]);
+        setSafeHTML(node, matchedTrans);
         continue;
       }
 
-      // Check 2: leaf element exact text match (only if no child HTML elements)
-      if (node.children && node.children.length > 0) continue;
+      // Check 1b: If element has formatting children (span, strong, em, b, i, mark, small)
+      // and plain text matches phrases[plainText], translate it!
+      if (node.children && node.children.length > 0) {
+        var plainText = node.textContent.trim().replace(/\s+/g, ' ');
+        if (phrases[plainText] && phrases[plainText] !== plainText) {
+          var onlyFormatting = true;
+          for (var c = 0; c < node.children.length; c++) {
+            var cTag = node.children[c].tagName.toLowerCase();
+            if (['span', 'strong', 'em', 'b', 'i', 'mark', 'small'].indexOf(cTag) === -1) {
+              onlyFormatting = false;
+              break;
+            }
+          }
+          if (onlyFormatting) {
+            if (node._cxOrigHTML === undefined) {
+              node._cxOrigHTML = node.innerHTML;
+              node._cxOrigText = node.textContent;
+            }
+            node.setAttribute('data-cx-phrase', 'true');
+            var transFmt = phrases[plainText];
+            if (transFmt.indexOf('<') !== -1) {
+              setSafeHTML(node, transFmt);
+            } else {
+              node.textContent = transFmt;
+            }
+            continue;
+          }
+        }
+        // Has non-formatting children or plainText not in phrases: skip leaf exact match
+        continue;
+      }
 
       var rawText = node.textContent.trim().replace(/\s+/g, ' ');
       if (!rawText || rawText.length < 2 || rawText.length > 2500) continue;
@@ -353,7 +391,7 @@
       }
     }
 
-    // 2. TreeWalker for leaf text nodes (buttons, links, pills, nested text)
+    // 2. TreeWalker for leaf text nodes (buttons, links, pills, nested multiline text)
     try {
       if (typeof document.createTreeWalker === 'function') {
         var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
@@ -379,7 +417,18 @@
               parent._cxOrigHTML = parent.innerHTML;
               parent.setAttribute('data-cx-phrase', 'true');
             }
-            textNode.nodeValue = textNode.nodeValue.replace(val, phrases[val]);
+            var transVal = phrases[val];
+            var leadSpace = /^\s/.test(textNode.nodeValue);
+            var trailSpace = /\s$/.test(textNode.nodeValue);
+            if (transVal.indexOf('<') !== -1 && parent) {
+              var span = document.createElement('span');
+              setSafeHTML(span, transVal);
+              if (leadSpace) span.insertAdjacentText('afterbegin', ' ');
+              if (trailSpace) span.insertAdjacentText('beforeend', ' ');
+              parent.replaceChild(span, textNode);
+            } else {
+              textNode.nodeValue = (leadSpace ? ' ' : '') + transVal + (trailSpace ? ' ' : '');
+            }
           }
         }
       }
