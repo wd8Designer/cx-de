@@ -17,6 +17,21 @@
   function getFooterHTML() {
     const base = getBasePath();
     return `
+    <!-- Cookie Consent Popup -->
+    <div class="cx-cookie-popup" id="cx-cookie-popup" role="dialog" aria-modal="true" aria-labelledby="cx-cookie-title" aria-describedby="cx-cookie-desc">
+      <div class="cx-cookie-popup__content">
+        <h3 class="cx-cookie-popup__title" id="cx-cookie-title">We value your privacy</h3>
+        <p class="cx-cookie-popup__desc" id="cx-cookie-desc">
+          We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking &quot;Accept All&quot;, you consent to our use of cookies.
+        </p>
+        <div class="cx-cookie-popup__actions">
+          <button type="button" class="cx-cookie-btn cx-cookie-btn--outline" id="cx-cookie-customize" onclick="document.getElementById('cx-cookie-popup').style.display='none'">Customize</button>
+          <button type="button" class="cx-cookie-btn cx-cookie-btn--outline" id="cx-cookie-reject" onclick="document.getElementById('cx-cookie-popup').style.display='none'">Reject All</button>
+          <button type="button" class="cx-cookie-btn cx-cookie-btn--primary" id="cx-cookie-accept" onclick="document.getElementById('cx-cookie-popup').style.display='none'">Accept All</button>
+        </div>
+      </div>
+    </div>
+
     <footer class="es-footer es-footer--nested">
       <div class="es-container">
 
@@ -28,7 +43,7 @@
                 <img loading="lazy" src="/images/logo-main.svg" alt="Cypherox" width="231" height="60" />
               </a>
 
-              <p class="es-footer__blurb" data-i18n="footer.blurb">
+              <p class="es-footer__blurb">
                 Cypherox is a team of dedicated experts, selected to deliver
                 outstanding software solutions, enabling businesses to
                 flourish in the digital environment.
@@ -43,7 +58,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/cypheroxtechnologies/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/cypheroxtechnologies" target="_blank" rel="noopener noreferrer">
                     <span class="es-sr-only">Instagram</span>
                     <img loading="lazy" src="/images/instagram-icon.svg" alt="" width="24" height="24"
                       aria-hidden="true" />
@@ -90,14 +105,14 @@
                       <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg></span>
-                  <h3 class="es-footer__heading" data-es-accordion-heading data-i18n="footer.services_title">Services</h3>
+                  <h3 class="es-footer__heading" data-es-accordion-heading>Services</h3>
                   <div class="es-footer__panel" data-es-accordion-panel>
                     <ul class="es-footer__list">
-                      <li><a href="/ai-agent-development" data-i18n="nav.ai_agent">AI Agent Development</a></li>
-                      <li><a href="/generative-ai-development" data-i18n="nav.services_genai">Generative AI Development</a></li>
-                      <li><a href="/ai-ml-development" data-i18n="nav.services_aiml">AI/ML Development</a></li>
-                      <li><a href="/it-consulting-services" data-i18n="nav.services_consulting">IT Consulting Services</a></li>
-                      <li><a href="/ui-ux-design-services" data-i18n="nav.services_uiux">UI/UX Design Services</a></li>
+                      <li><a href="/ai-agent-development">AI Agent Development</a></li>
+                      <li><a href="/generative-ai-development">Generative AI Development</a></li>
+                      <li><a href="/ai-ml-development">AI/ML Development</a></li>
+                      <li><a href="/it-consulting-services">IT Consulting Services</a></li>
+                      <li><a href="/ui-ux-design-services">UI/UX Design Services</a></li>
                     </ul>
                   </div>
                 </div>
@@ -109,14 +124,14 @@
                       <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg></span>
-                  <h3 class="es-footer__heading" data-es-accordion-heading data-i18n="footer.hire_title">Hire Developers</h3>
+                  <h3 class="es-footer__heading" data-es-accordion-heading>Hire Developers</h3>
                   <div class="es-footer__panel" data-es-accordion-panel>
                     <ul class="es-footer__list es-footer__list--contact">
-                      <li><a href="/hire-developers/mobile-app-developers" data-i18n="nav.hire_mobile_app">Mobile App Developers</a></li>
-                      <li><a href="/hire-developers/front-end-developers" data-i18n="nav.hire_frontend">Front-End Developers</a></li>
-                      <li><a href="/hire-developers/back-end-developers" data-i18n="nav.hire_backend">Back-End Developers</a></li>
-                      <li><a href="/hire-developers/ecommerce-developers" data-i18n="nav.hire_ecommerce_dev">E-Commerce Developers</a></li>
-                      <li><a href="/hire-developers/trending-developers" data-i18n="nav.hire_trending">Trending Developers</a></li>
+                      <li><a href="/hire-developers/mobile-app-developers">Mobile App Developers</a></li>
+                      <li><a href="/hire-developers/front-end-developers">Front-End Developers</a></li>
+                      <li><a href="/hire-developers/back-end-developers">Back-End Developers</a></li>
+                      <li><a href="/hire-developers/ecommerce-developers">E-Commerce Developers</a></li>
+                      <li><a href="/hire-developers/trending-developers">Trending Developers</a></li>
                     </ul>
                   </div>
                 </div>
@@ -128,13 +143,13 @@
                       <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg></span>
-                  <h3 class="es-footer__heading" data-es-accordion-heading data-i18n="footer.company_title">Company</h3>
+                  <h3 class="es-footer__heading" data-es-accordion-heading>Company</h3>
                   <div class="es-footer__panel" data-es-accordion-panel>
                     <ul class="es-footer__list">
-                      <li><a href="/about-us" data-i18n="nav.company_about">About Us</a></li>
-                      <li><a href="/blogs" data-i18n="nav.company_blog">Blog</a></li>
-                      <li><a href="/engagement-models" data-i18n="nav.company_engagement">Engagement Models</a></li>
-                      <li><a href="/contact-us" data-i18n="nav.company_contact">Contact Us</a></li>
+                      <li><a href="/about-us">About Us</a></li>
+                      <li><a href="/blogs">Blog</a></li>
+                      <li><a href="/engagement-models">Engagement Models</a></li>
+                      <li><a href="/contact-us">Contact US</a></li>
                     </ul>
                   </div>
                 </div>
@@ -147,8 +162,8 @@
             <p class="es-footer__copyright">&copy; Copyright 2026 <a href="/">Cypherox Technologies Pvt. Ltd.</a></p>
             <p class="es-footer__tagline">
               <ul class="es-footer__list es-footer__list--contact">
-                <li><a href="/privacy-policy" data-i18n="footer.privacy_policy">Privacy Policy</a></li>
-                <li><a href="/terms-and-policy" data-i18n="footer.terms_policy">Terms &amp; Policy</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-and-policy">Terms and Conditions</a></li>
               </ul>
             </p>
           </div>
@@ -206,9 +221,6 @@
 
     if (!footerContainer.innerHTML.trim() || !footerContainer.querySelector('.es-footer')) {
       footerContainer.innerHTML = getFooterHTML();
-      if (window.i18n && typeof window.i18n.applyTranslations === 'function') {
-        window.i18n.applyTranslations(footerContainer);
-      }
     }
   }
 
@@ -253,9 +265,6 @@
           button.setAttribute('aria-controls', panelId);
 
           label.textContent = heading.textContent;
-          if (heading.getAttribute('data-i18n')) {
-            label.setAttribute('data-i18n', heading.getAttribute('data-i18n'));
-          }
           button.appendChild(label);
 
           if (caret) {
